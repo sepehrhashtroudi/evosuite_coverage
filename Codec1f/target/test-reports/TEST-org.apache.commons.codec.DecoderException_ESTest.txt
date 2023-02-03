@@ -1,0 +1,37 @@
+Testsuite: org.apache.commons.codec.DecoderException_ESTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.38 sec
+------------- Standard Error -----------------
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[CLOVER] FATAL ERROR: Clover could not be initialised because it has insufficient security privileges. Please consult the Clover documentation on the security policy file changes required. (class java.lang.SecurityException:Security manager blocks ("java.io.FilePermission" "/home/sepehr/masters/test_generation/evosuite_coverage/Codec1f/.clover/clover4_4_1.db.liverec" "delete")
+java.lang.Thread.getStackTrace(Thread.java:1564)
+org.evosuite.runtime.sandbox.MSecurityManager.checkPermission(MSecurityManager.java:434)
+java.lang.SecurityManager.checkDelete(SecurityManager.java:1007)
+java.io.File.deleteOnExit(File.java:1085)
+com.atlassian.clover.recorder.BaseCoverageRecorder.createLiveRecordingFile(BaseCoverageRecorder.java:215)
+com.atlassian.clover.recorder.BaseCoverageRecorder.startRun(BaseCoverageRecorder.java:168)
+com_atlassian_clover.Clover$InitialisedRuntime$1.run(Clover.java:556)
+com_atlassian_clover.Clover$InitialisedRuntime$1.run(Clover.java:521)
+java.security.AccessController.doPrivileged(Native Method)
+com_atlassian_clover.Clover$InitialisedRuntime.getRecorder(Clover.java:521)
+com_atlassian_clover.Clover.getRecorder(Clover.java:107)
+org.apache.commons.codec.DecoderException$__CLR4_4_1jxjxlctlyrpl.<clinit>(DecoderException.java:26)
+org.apache.commons.codec.DecoderException.<init>(DecoderException.java:41)
+org.apache.commons.codec.DecoderException_ESTest.test0(DecoderException_ESTest.java:20)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+java.util.concurrent.FutureTask.run(FutureTask.java:266)
+java.lang.Thread.run(Thread.java:750)
+)
+------------- ---------------- ---------------
+
+Testcase: test0 took 0.041 sec

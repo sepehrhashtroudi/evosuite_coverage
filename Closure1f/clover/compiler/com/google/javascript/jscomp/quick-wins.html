@@ -1,0 +1,2228 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../../../style.css');
+        @import url('../../../../tree.css');
+        
+    </style>
+
+    <script src="../../../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover.js" type="text/javascript"></script>
+    <script src="../../../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../../../cloud.js" type="text/javascript"></script>
+
+            <title>compiler</title>
+    </head>
+
+<body  >
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                                <ul class="aui-nav">
+                    <li>
+                        <a href="#dropdown2-jira3" aria-owns="dropdown2-jira3" aria-haspopup="true"
+                           class="aui-dropdown2-trigger" aria-controls="dropdown2-header7">
+                            Linked reports
+                            <span class="aui-icon-dropdown"></span>
+                        </a>
+
+                        <div class="aui-dropdown2 aui-style-default aui-dropdown2-in-header" id="dropdown2-jira3"
+                             style="display: none; top: 40px; min-width: 160px; left: 1213px; " aria-hidden="true">
+                            <div class="aui-dropdown2-section">
+                                <ul>
+                                                                                                                <li><a href="../../../../historical.html">compiler-Historical</a></li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        compiler
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../../../" data-package-name="com.google.javascript.jscomp">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <ol class="aui-nav aui-nav-breadcrumbs">
+            
+        <li><a href="../../../../dashboard.html">Project Clover database Thu Jan 12 2023 21:41:04 MST</a></li> 
+    </ol>
+    
+<h1 class="aui-h2-clover">
+            Package com.google.javascript.jscomp
+    </h1>
+<div class="aui-tabs horizontal-tabs">
+            <ul class="tabs-menu">
+                <li class="menu-item ">
+            <a href="pkg-summary.html"><strong>Application code</strong></a>
+        </li>
+                    <li class="menu-item ">
+            <a href="top-risks.html"><strong>Top risks</strong></a>
+        </li>
+        <li class="menu-item active-tab">
+            <a href="quick-wins.html"><strong>Quick wins</strong></a>
+        </li>
+                            </ul>
+    <div class="tabs-pane active-pane" id="tabs-first">
+
+        <div>&#160;</div>
+
+        
+
+
+                        <div style="text-align: right; margin-bottom: 10px">
+            
+                            <button id="cloudDepthCheckbox" class="aui-button active"
+                        onclick="showDeepPackageCloud(this)">Include classes from sub-packages</button>
+            
+                                    <button class="aui-button aui-button-subtle" id="popupHelp">
+    <span class="aui-icon aui-icon-small aui-iconfont-help"></span>&#160;How to read this chart
+</button>
+<script>
+    AJS.InlineDialog(AJS.$("#popupHelp"), "helpDialog",
+            function (content, trigger, showPopup) {
+                var description = quickWinsDescription();
+                var title = 'Quick Wins';
+                content.css({"padding": "20px"}).html(
+                        '<h2>' + title + '</h2>' + description);
+                showPopup();
+                return false;
+            },
+            {
+                width: 600
+            }
+    );
+</script>
+        </div>
+
+        
+
+<div style="padding: 20px; border: 1px solid #cccccc; background-color: #f5f5f5; border-radius: 3px">
+          <div id="deepPackageCloud"  >
+                          
+    
+        
+    
+            <a href="../jscomp/AbstractMessageFormatter.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 22 , # Elements Covered - 4 ">AbstractMessageFormatter</a>
+            
+    
+            <a href="../jscomp/AbstractMessageFormatter.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">AbstractMessageFormatter.Color</a>
+            
+    
+            <a href="../jscomp/AnalyzeNameReferences.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 21 , # Elements Covered - 3 ">AnalyzeNameReferences</a>
+            
+    
+            <a href="../jscomp/AnalyzePrototypeProperties.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 46 , # Elements Covered - 30 ">AnalyzePrototypeProperties</a>
+            
+    
+            <a href="../jscomp/AnalyzePrototypeProperties.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 33 , # Elements Covered - 11 ">AnalyzePrototypeProperties.NameInfo</a>
+            
+    
+            <a href="../jscomp/AnonymousFunctionNamingCallback.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 52 , # Elements Covered - 10 ">AnonymousFunctionNamingCallback</a>
+            
+    
+            <a href="../jscomp/AnonymousFunctionNamingPolicy.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 4 ">AnonymousFunctionNamingPolicy</a>
+            
+    
+            <a href="../jscomp/AstChangeProxy.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 38 , # Elements Covered - 2 ">AstChangeProxy</a>
+            
+    
+            <a href="../jscomp/AstValidator.html" class="tag"
+            style="font-size: 23px;color:#de7b72"
+            title="# Elements - 618 , # Elements Covered - 120 ">AstValidator</a>
+            
+    
+            <a href="../jscomp/BasicErrorManager.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 3 , # Elements Covered - 3 ">BasicErrorManager.ErrorWithLevel</a>
+            
+    
+            <a href="../jscomp/BasicErrorManager.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 60 , # Elements Covered - 38 ">BasicErrorManager.LeveledJSErrorComparator</a>
+            
+    
+            <a href="../jscomp/ByPathWarningsGuard.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 29 , # Elements Covered - 12 ">ByPathWarningsGuard</a>
+            
+    
+            <a href="../jscomp/ChainCalls.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 11 , # Elements Covered - 2 ">ChainCalls</a>
+            
+    
+            <a href="../jscomp/regex/CharRanges.html" class="tag"
+            style="font-size: 18px;color:#89c495"
+            title="# Elements - 327 , # Elements Covered - 316 ">CharRanges</a>
+            
+    
+            <a href="../jscomp/CheckDebuggerStatement.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 7 ">CheckDebuggerStatement</a>
+            
+    
+            <a href="../jscomp/CheckLevel.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 2 , # Elements Covered - 2 ">CheckLevel</a>
+            
+    
+            <a href="../jscomp/CheckMissingGetCssName.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 53 , # Elements Covered - 11 ">CheckMissingGetCssName</a>
+            
+    
+            <a href="../jscomp/CheckProvides.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 4 ">CheckProvides</a>
+            
+    
+            <a href="../jscomp/CheckRegExp.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 31 , # Elements Covered - 11 ">CheckRegExp</a>
+            
+    
+            <a href="../jscomp/CheckRequiresForConstructors.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 19 , # Elements Covered - 3 ">CheckRequiresForConstructors</a>
+            
+    
+            <a href="../jscomp/CheckSideEffects.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 71 , # Elements Covered - 4 ">CheckSideEffects</a>
+            
+    
+            <a href="../jscomp/CheckSideEffects.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 15 , # Elements Covered - 7 ">CheckSideEffects.StripProtection</a>
+            
+    
+            <a href="../jscomp/CheckSuspiciousCode.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 42 , # Elements Covered - 26 ">CheckSuspiciousCode</a>
+            
+    
+            <a href="../jscomp/CleanupPasses.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 20 , # Elements Covered - 14 ">CleanupPasses</a>
+            
+    
+            <a href="../jscomp/CleanupPasses.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 21 , # Elements Covered - 5 ">CleanupPasses.MemoizedScopeCleanupPass</a>
+            
+    
+            <a href="../jscomp/ClosureCodeRemoval.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 30 , # Elements Covered - 4 ">ClosureCodeRemoval</a>
+            
+    
+            <a href="../jscomp/ClosureCodingConvention.html" class="tag"
+            style="font-size: 16px;color:#d04437"
+            title="# Elements - 231 , # Elements Covered - 7 ">ClosureCodingConvention</a>
+            
+    
+            <a href="../jscomp/ClosureOptimizePrimitives.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 46 , # Elements Covered - 5 ">ClosureOptimizePrimitives</a>
+            
+    
+            <a href="../jscomp/CoalesceVariableNames.html" class="tag"
+            style="font-size: 15px;color:#d04437"
+            title="# Elements - 184 , # Elements Covered - 2 ">CoalesceVariableNames</a>
+            
+    
+            <a href="../jscomp/CodeConsumer.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 158 , # Elements Covered - 4 ">CodeConsumer</a>
+            
+    
+            <a href="../jscomp/CodeGenerator.html" class="tag"
+            style="font-size: 29px;color:#d04437"
+            title="# Elements - 917 , # Elements Covered - 3 ">CodeGenerator</a>
+            
+    
+            <a href="../jscomp/CodingConventions.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 3 , # Elements Covered - 2 ">CodingConventions</a>
+            
+    
+            <a href="../jscomp/CodingConventions.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 106 , # Elements Covered - 2 ">CodingConventions.DefaultCodingConvention</a>
+            
+    
+            <a href="../jscomp/CodingConventions.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 68 , # Elements Covered - 6 ">CodingConventions.Proxy</a>
+            
+    
+            <a href="../jscomp/CollapseAnonymousFunctions.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 5 , # Elements Covered - 2 ">CollapseAnonymousFunctions</a>
+            
+    
+            <a href="../jscomp/CollapseVariableDeclarations.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 47 , # Elements Covered - 2 ">CollapseVariableDeclarations</a>
+            
+    
+            <a href="../jscomp/CombinedCompilerPass.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 32 , # Elements Covered - 30 ">CombinedCompilerPass</a>
+            
+    
+            <a href="../jscomp/CombinedCompilerPass.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 33 , # Elements Covered - 22 ">CombinedCompilerPass.CallbackWrapper</a>
+            
+    
+            <a href="../jscomp/CompilationLevel.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 98 , # Elements Covered - 25 ">CompilationLevel</a>
+            
+    
+            <a href="../jscomp/Compiler.html" class="tag"
+            style="font-size: 35px;color:#d5584c"
+            title="# Elements - 1,239 , # Elements Covered - 22 ">Compiler</a>
+            
+    
+            <a href="../jscomp/CompilerInput.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 121 , # Elements Covered - 15 ">CompilerInput</a>
+            
+    
+            <a href="../jscomp/CompilerOptions.html" class="tag"
+            style="font-size: 23px;color:#e28e87"
+            title="# Elements - 619 , # Elements Covered - 124 ">CompilerOptions</a>
+            
+    
+            <a href="../jscomp/ComposeWarningsGuard.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 68 , # Elements Covered - 6 ">ComposeWarningsGuard</a>
+            
+    
+            <a href="../jscomp/ComposeWarningsGuard.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">ComposeWarningsGuard.GuardComparator</a>
+            
+    
+            <a href="../jscomp/parsing/Config.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 16 , # Elements Covered - 12 ">Config</a>
+            
+    
+            <a href="../jscomp/ConstCheck.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 67 , # Elements Covered - 30 ">ConstCheck</a>
+            
+    
+            <a href="../jscomp/ControlFlowAnalysis.html" class="tag"
+            style="font-size: 22px;color:#d9695f"
+            title="# Elements - 585 , # Elements Covered - 73 ">ControlFlowAnalysis</a>
+            
+    
+            <a href="../jscomp/ControlFlowAnalysis.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 17 , # Elements Covered - 3 ">ControlFlowAnalysis.AstControlFlowGraph</a>
+            
+    
+            <a href="../jscomp/ControlFlowGraph.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 40 , # Elements Covered - 11 ">ControlFlowGraph</a>
+            
+    
+            <a href="../jscomp/ControlStructureCheck.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 24 , # Elements Covered - 18 ">ControlStructureCheck</a>
+            
+    
+            <a href="../jscomp/ConvertToDottedProperties.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 26 , # Elements Covered - 13 ">ConvertToDottedProperties</a>
+            
+    
+            <a href="../jscomp/CreateSyntheticBlocks.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 40 , # Elements Covered - 4 ">CreateSyntheticBlocks</a>
+            
+    
+            <a href="../jscomp/CrossModuleMethodMotion.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 66 , # Elements Covered - 4 ">CrossModuleMethodMotion</a>
+            
+    
+            <a href="../jscomp/CrossModuleMethodMotion.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 4 ">CrossModuleMethodMotion.IdGenerator</a>
+            
+    
+            <a href="../jscomp/DefaultPassConfig.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">DefaultPassConfig.HotSwapPassFactory</a>
+            
+    
+            <a href="../jscomp/DefinitionSite.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 6 ">DefinitionSite</a>
+            
+    
+            <a href="../jscomp/DefinitionsRemover.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 69 , # Elements Covered - 5 ">DefinitionsRemover</a>
+            
+    
+            <a href="../jscomp/DefinitionsRemover.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 2 ">DefinitionsRemover.Definition</a>
+            
+    
+            <a href="../jscomp/DefinitionsRemover.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 17 , # Elements Covered - 5 ">DefinitionsRemover.ObjectLiteralPropertyDefinition</a>
+            
+    
+            <a href="../jscomp/Denormalize.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 57 , # Elements Covered - 12 ">Denormalize</a>
+            
+    
+            <a href="../jscomp/Denormalize.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 8 ">Denormalize.StripConstantAnnotations</a>
+            
+    
+            <a href="../jscomp/DevirtualizePrototypeMethods.html" class="tag"
+            style="font-size: 16px;color:#d04437"
+            title="# Elements - 234 , # Elements Covered - 10 ">DevirtualizePrototypeMethods</a>
+            
+    
+            <a href="../jscomp/graph/DiGraph.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">DiGraph</a>
+            
+    
+            <a href="../jscomp/DiagnosticGroup.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 39 , # Elements Covered - 11 ">DiagnosticGroup</a>
+            
+    
+            <a href="../jscomp/DiagnosticGroupWarningsGuard.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 21 , # Elements Covered - 15 ">DiagnosticGroupWarningsGuard</a>
+            
+    
+            <a href="../jscomp/DiagnosticGroups.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 22 , # Elements Covered - 13 ">DiagnosticGroups</a>
+            
+    
+            <a href="../jscomp/DiagnosticType.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 23 , # Elements Covered - 23 ">DiagnosticType</a>
+            
+    
+            <a href="../jscomp/DotFormatter.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="# Elements - 148 , # Elements Covered - 70 ">DotFormatter</a>
+            
+    
+            <a href="../jscomp/EmptyMessageBundle.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 6 ">EmptyMessageBundle</a>
+            
+    
+            <a href="../jscomp/ErrorFormat.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 16 , # Elements Covered - 16 ">ErrorFormat</a>
+            
+    
+            <a href="../jscomp/ErrorPass.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 7 ">ErrorPass</a>
+            
+    
+            <a href="../jscomp/ExternExportsPass.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 84 , # Elements Covered - 13 ">ExternExportsPass</a>
+            
+    
+            <a href="../jscomp/ExtractPrototypeMemberDeclarations.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 55 , # Elements Covered - 6 ">ExtractPrototypeMemberDeclarations</a>
+            
+    
+            <a href="../jscomp/ExtractPrototypeMemberDeclarations.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 4 ">ExtractPrototypeMemberDeclarations.Pattern</a>
+            
+    
+            <a href="../jscomp/FieldCleanupPass.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 6 ">FieldCleanupPass</a>
+            
+    
+            <a href="../jscomp/FieldCleanupPass.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 27 , # Elements Covered - 3 ">FieldCleanupPass.QualifiedNameSearchTraversal</a>
+            
+    
+            <a href="../jscomp/FindExportableNodes.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 42 , # Elements Covered - 3 ">FindExportableNodes</a>
+            
+    
+            <a href="../jscomp/FindExportableNodes.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 10 ">FindExportableNodes.GenerateNodeContext</a>
+            
+    
+            <a href="../jscomp/graph/FixedPointGraphTraversal.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 34 , # Elements Covered - 31 ">FixedPointGraphTraversal</a>
+            
+    
+            <a href="../jscomp/FunctionNames.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 37 , # Elements Covered - 3 ">FunctionNames</a>
+            
+    
+            <a href="../jscomp/FunctionNames.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 11 , # Elements Covered - 2 ">FunctionNames.FunctionListExtractor</a>
+            
+    
+            <a href="../jscomp/GatherRawExports.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 34 , # Elements Covered - 2 ">GatherRawExports</a>
+            
+    
+            <a href="../jscomp/GenerateExports.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 60 , # Elements Covered - 2 ">GenerateExports</a>
+            
+    
+            <a href="../jscomp/GlobalVarReferenceMap.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 99 , # Elements Covered - 4 ">GlobalVarReferenceMap</a>
+            
+    
+            <a href="../jscomp/GlobalVarReferenceMap.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 5 ">GlobalVarReferenceMap.GlobalVarRefCleanupPass</a>
+            
+    
+            <a href="../jscomp/GoogleCodingConvention.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 35 , # Elements Covered - 35 ">GoogleCodingConvention</a>
+            
+    
+            <a href="../jscomp/GoogleJsMessageIdGenerator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 16 , # Elements Covered - 2 ">GoogleJsMessageIdGenerator</a>
+            
+    
+            <a href="../jscomp/graph/Graph.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 48 , # Elements Covered - 12 ">Graph</a>
+            
+    
+            <a href="../jscomp/graph/GraphColoring.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 14 , # Elements Covered - 6 ">GraphColoring</a>
+            
+    
+            <a href="../jscomp/graph/GraphColoring.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 8 ">GraphColoring.Color</a>
+            
+    
+            <a href="../jscomp/graph/GraphColoring.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 34 , # Elements Covered - 7 ">GraphColoring.GreedyGraphColoring</a>
+            
+    
+            <a href="../jscomp/graph/GraphReachability.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 25 , # Elements Covered - 17 ">GraphReachability</a>
+            
+    
+            <a href="../jscomp/GroupVariableDeclarations.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 77 , # Elements Covered - 16 ">GroupVariableDeclarations</a>
+            
+    
+            <a href="../jscomp/IgnoreCajaProperties.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 5 , # Elements Covered - 5 ">IgnoreCajaProperties</a>
+            
+    
+            <a href="../jscomp/InlineProperties.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 48 , # Elements Covered - 5 ">InlineProperties</a>
+            
+    
+            <a href="../jscomp/InlineProperties.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 3 , # Elements Covered - 3 ">InlineProperties.PropertyInfo</a>
+            
+    
+            <a href="../jscomp/JSError.html" class="tag"
+            style="font-size: 14px;color:#de7b72"
+            title="# Elements - 110 , # Elements Covered - 110 ">JSError</a>
+            
+    
+            <a href="../jscomp/JSModule.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="# Elements - 110 , # Elements Covered - 80 ">JSModule</a>
+            
+    
+            <a href="../jscomp/JsAst.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 34 , # Elements Covered - 8 ">JsAst</a>
+            
+    
+            <a href="../jscomp/parsing/JsDocTokenStream.html" class="tag"
+            style="font-size: 18px;color:#d5584c"
+            title="# Elements - 331 , # Elements Covered - 18 ">JsDocTokenStream</a>
+            
+    
+            <a href="../jscomp/deps/JsFileLineParser.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 108 , # Elements Covered - 51 ">JsFileLineParser</a>
+            
+    
+            <a href="../jscomp/deps/JsFileLineParser.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 5 , # Elements Covered - 5 ">JsFileLineParser.ParseException</a>
+            
+    
+            <a href="../jscomp/deps/JsFileParser.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 54 , # Elements Covered - 9 ">JsFileParser</a>
+            
+    
+            <a href="../jscomp/JsMessage.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 81 , # Elements Covered - 4 ">JsMessage.Builder</a>
+            
+    
+            <a href="../jscomp/JsMessage.html" class="tag"
+            style="font-size: 14px;color:#de7b72"
+            title="# Elements - 152 , # Elements Covered - 97 ">JsMessage.Hash</a>
+            
+    
+            <a href="../jscomp/JsMessage.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 16 , # Elements Covered - 14 ">JsMessage.PlaceholderReference</a>
+            
+    
+            <a href="../jscomp/JsMessage.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 8 ">JsMessage.Style</a>
+            
+    
+            <a href="../jscomp/JsMessageExtractor.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 27 , # Elements Covered - 11 ">JsMessageExtractor</a>
+            
+    
+            <a href="../jscomp/JsMessageVisitor.html" class="tag"
+            style="font-size: 19px;color:#d04437"
+            title="# Elements - 410 , # Elements Covered - 8 ">JsMessageVisitor</a>
+            
+    
+            <a href="../jscomp/JvmMetrics.html" class="tag"
+            style="font-size: 15px;color:#e28e87"
+            title="# Elements - 186 , # Elements Covered - 126 ">JvmMetrics</a>
+            
+    
+            <a href="../jscomp/LightweightMessageFormatter.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 57 , # Elements Covered - 11 ">LightweightMessageFormatter</a>
+            
+    
+            <a href="../jscomp/LineNumberCheck.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 26 , # Elements Covered - 25 ">LineNumberCheck</a>
+            
+    
+            <a href="../jscomp/graph/LinkedDirectedGraph.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 161 , # Elements Covered - 46 ">LinkedDirectedGraph</a>
+            
+    
+            <a href="../jscomp/graph/LinkedDirectedGraph.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 2 ">LinkedDirectedGraph.AnnotatedLinkedDirectedGraphEdge</a>
+            
+    
+            <a href="../jscomp/graph/LinkedDirectedGraph.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 6 ">LinkedDirectedGraph.AnnotatedLinkedDirectedGraphNode</a>
+            
+    
+            <a href="../jscomp/graph/LinkedDirectedGraph.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 34 , # Elements Covered - 12 ">LinkedDirectedGraph.LinkedDirectedGraphEdge</a>
+            
+    
+            <a href="../jscomp/graph/LinkedDirectedGraph.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 24 , # Elements Covered - 8 ">LinkedDirectedGraph.LinkedDirectedGraphNode</a>
+            
+    
+            <a href="../jscomp/graph/LinkedUndirectedGraph.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 146 , # Elements Covered - 5 ">LinkedUndirectedGraph</a>
+            
+    
+            <a href="../jscomp/LoggerErrorManager.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 27 , # Elements Covered - 5 ">LoggerErrorManager</a>
+            
+    
+            <a href="../jscomp/MarkNoSideEffectCalls.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 32 , # Elements Covered - 3 ">MarkNoSideEffectCalls</a>
+            
+    
+            <a href="../jscomp/MinimizeExitPoints.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 160 , # Elements Covered - 39 ">MinimizeExitPoints</a>
+            
+    
+            <a href="../jscomp/MoveFunctionDeclarations.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 31 , # Elements Covered - 3 ">MoveFunctionDeclarations</a>
+            
+    
+            <a href="../jscomp/NameAnonymousFunctions.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 6 ">NameAnonymousFunctions</a>
+            
+    
+            <a href="../jscomp/NameAnonymousFunctions.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 15 , # Elements Covered - 2 ">NameAnonymousFunctions.AnonymousFunctionNamer</a>
+            
+    
+            <a href="../jscomp/NameAnonymousFunctionsMapped.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 18 , # Elements Covered - 7 ">NameAnonymousFunctionsMapped</a>
+            
+    
+            <a href="../jscomp/NameGenerator.html" class="tag"
+            style="font-size: 13px;color:#d9695f"
+            title="# Elements - 62 , # Elements Covered - 62 ">NameGenerator</a>
+            
+    
+            <a href="../jscomp/NameReferenceGraphReport.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 105 , # Elements Covered - 5 ">NameReferenceGraphReport</a>
+            
+    
+            <a href="../jscomp/NameReferenceGraphReport.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 16 , # Elements Covered - 2 ">NameReferenceGraphReport.DiGraphNodeComparator</a>
+            
+    
+            <a href="../jscomp/NodeIterators.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 48 , # Elements Covered - 4 ">NodeIterators.FunctionlessLocalScope</a>
+            
+    
+            <a href="../jscomp/NodeIterators.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 71 , # Elements Covered - 4 ">NodeIterators.LocalVarMotion</a>
+            
+    
+            <a href="../jscomp/NodeNameExtractor.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 51 , # Elements Covered - 29 ">NodeNameExtractor</a>
+            
+    
+            <a href="../jscomp/NodeTraversal.html" class="tag"
+            style="font-size: 17px;color:#de7b72"
+            title="# Elements - 278 , # Elements Covered - 108 ">NodeTraversal</a>
+            
+    
+            <a href="../jscomp/NodeTraversal.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 2 , # Elements Covered - 2 ">NodeTraversal.AbstractPostOrderCallback</a>
+            
+    
+            <a href="../jscomp/NodeTraversal.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 2 , # Elements Covered - 2 ">NodeTraversal.AbstractShallowCallback</a>
+            
+    
+            <a href="../jscomp/NodeUtil.html" class="tag"
+            style="font-size: 48px;color:#d5584c"
+            title="# Elements - 1,916 , # Elements Covered - 47 ">NodeUtil</a>
+            
+    
+            <a href="../jscomp/Normalize.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 30 , # Elements Covered - 3 ">Normalize.PropagateConstantAnnotationsOverVars</a>
+            
+    
+            <a href="../jscomp/ObjectPropertyStringPostprocess.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 4 ">ObjectPropertyStringPostprocess</a>
+            
+    
+            <a href="../jscomp/ObjectPropertyStringPreprocess.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 13 , # Elements Covered - 12 ">ObjectPropertyStringPreprocess</a>
+            
+    
+            <a href="../jscomp/OptimizeArgumentsArray.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 104 , # Elements Covered - 2 ">OptimizeArgumentsArray</a>
+            
+    
+            <a href="../jscomp/OptimizeCalls.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 13 , # Elements Covered - 2 ">OptimizeCalls</a>
+            
+    
+            <a href="../jscomp/OptimizeParameters.html" class="tag"
+            style="font-size: 17px;color:#d04437"
+            title="# Elements - 275 , # Elements Covered - 2 ">OptimizeParameters</a>
+            
+    
+            <a href="../jscomp/PassConfig.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 71 , # Elements Covered - 2 ">PassConfig</a>
+            
+    
+            <a href="../jscomp/PassFactory.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 3 ">PassFactory</a>
+            
+    
+            <a href="../jscomp/PeepholeOptimizationsPass.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 87 , # Elements Covered - 3 ">PeepholeOptimizationsPass</a>
+            
+    
+            <a href="../jscomp/PeepholeOptimizationsPass.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 5 , # Elements Covered - 5 ">PeepholeOptimizationsPass.ScopeState</a>
+            
+    
+            <a href="../jscomp/PeepholeOptimizationsPass.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 13 , # Elements Covered - 2 ">PeepholeOptimizationsPass.StateStack</a>
+            
+    
+            <a href="../jscomp/PrepareAst.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 49 , # Elements Covered - 22 ">PrepareAst</a>
+            
+    
+            <a href="../jscomp/PrepareAst.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 49 , # Elements Covered - 18 ">PrepareAst.PrepareAnnotations</a>
+            
+    
+            <a href="../jscomp/PrintStreamErrorManager.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 18 , # Elements Covered - 5 ">PrintStreamErrorManager</a>
+            
+    
+            <a href="../jscomp/ProcessCommonJSModules.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 33 , # Elements Covered - 33 ">ProcessCommonJSModules</a>
+            
+    
+            <a href="../jscomp/ProcessCommonJSModules.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 64 , # Elements Covered - 7 ">ProcessCommonJSModules.ProcessCommonJsModulesCallback</a>
+            
+    
+            <a href="../jscomp/ProcessTweaks.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 81 , # Elements Covered - 4 ">ProcessTweaks</a>
+            
+    
+            <a href="../jscomp/ProcessTweaks.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 35 , # Elements Covered - 16 ">ProcessTweaks.TweakFunction</a>
+            
+    
+            <a href="../jscomp/regex/RegExpTree.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 115 , # Elements Covered - 3 ">RegExpTree.Charset</a>
+            
+    
+            <a href="../jscomp/regex/RegExpTree.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 40 , # Elements Covered - 3 ">RegExpTree.LookaheadAssertion</a>
+            
+    
+            <a href="../jscomp/RemoveTryCatch.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 5 , # Elements Covered - 5 ">RemoveTryCatch</a>
+            
+    
+            <a href="../jscomp/RemoveTryCatch.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 48 , # Elements Covered - 2 ">RemoveTryCatch.RemoveTryCatchCode</a>
+            
+    
+            <a href="../jscomp/RemoveUnusedClassProperties.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 68 , # Elements Covered - 2 ">RemoveUnusedClassProperties</a>
+            
+    
+            <a href="../jscomp/RemoveUnusedNames.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 20 , # Elements Covered - 5 ">RemoveUnusedNames</a>
+            
+    
+            <a href="../jscomp/RemoveUnusedPrototypeProperties.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 63 , # Elements Covered - 9 ">RemoveUnusedPrototypeProperties</a>
+            
+    
+            <a href="../jscomp/RenameProperties.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 123 , # Elements Covered - 20 ">RenameProperties</a>
+            
+    
+            <a href="../jscomp/RenamePrototypes.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 76 , # Elements Covered - 11 ">RenamePrototypes</a>
+            
+    
+            <a href="../jscomp/ReplaceCssNames.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 5 ">ReplaceCssNames</a>
+            
+    
+            <a href="../jscomp/ReplaceMessages.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 150 , # Elements Covered - 4 ">ReplaceMessages</a>
+            
+    
+            <a href="../jscomp/ReplaceMessagesForChrome.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 47 , # Elements Covered - 2 ">ReplaceMessagesForChrome</a>
+            
+    
+            <a href="../jscomp/RhinoErrorReporter.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 21 , # Elements Covered - 10 ">RhinoErrorReporter</a>
+            
+    
+            <a href="../jscomp/RhinoErrorReporter.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 28 , # Elements Covered - 2 ">RhinoErrorReporter.NewRhinoErrorReporter</a>
+            
+    
+            <a href="../jscomp/RhinoErrorReporter.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 2 ">RhinoErrorReporter.OldRhinoErrorReporter</a>
+            
+    
+            <a href="../jscomp/SanityCheck.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 49 , # Elements Covered - 6 ">SanityCheck</a>
+            
+    
+            <a href="../jscomp/Scope.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 109 , # Elements Covered - 17 ">Scope</a>
+            
+    
+            <a href="../jscomp/ShowByPathWarningsGuard.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 19 , # Elements Covered - 13 ">ShowByPathWarningsGuard</a>
+            
+    
+            <a href="../jscomp/SimpleDefinitionFinder.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 179 , # Elements Covered - 26 ">SimpleDefinitionFinder</a>
+            
+    
+            <a href="../jscomp/SimpleDefinitionFinder.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 73 , # Elements Covered - 10 ">SimpleDefinitionFinder.DefinitionGatheringCallback</a>
+            
+    
+            <a href="../jscomp/SimpleDefinitionFinder.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 5 ">SimpleDefinitionFinder.UseSiteGatheringCallback</a>
+            
+    
+            <a href="../jscomp/deps/SimpleDependencyInfo.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 22 , # Elements Covered - 22 ">SimpleDependencyInfo</a>
+            
+    
+            <a href="../jscomp/SimpleFunctionAliasAnalysis.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 41 , # Elements Covered - 9 ">SimpleFunctionAliasAnalysis</a>
+            
+    
+            <a href="../jscomp/SimpleRegion.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 10 ">SimpleRegion</a>
+            
+    
+            <a href="../jscomp/deps/SortedDependencies.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 133 , # Elements Covered - 15 ">SortedDependencies</a>
+            
+    
+            <a href="../jscomp/SourceFile.html" class="tag"
+            style="font-size: 14px;color:#e28e87"
+            title="# Elements - 154 , # Elements Covered - 133 ">SourceFile</a>
+            
+    
+            <a href="../jscomp/SourceFile.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 19 , # Elements Covered - 19 ">SourceFile.Builder</a>
+            
+    
+            <a href="../jscomp/SourceFile.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 14 , # Elements Covered - 14 ">SourceFile.Generated</a>
+            
+    
+            <a href="../jscomp/SourceFile.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 28 , # Elements Covered - 9 ">SourceFile.OnDisk</a>
+            
+    
+            <a href="../jscomp/SourceFile.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 4 ">SourceFile.Preloaded</a>
+            
+    
+            <a href="../jscomp/SourceInformationAnnotator.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 37 , # Elements Covered - 25 ">SourceInformationAnnotator</a>
+            
+    
+            <a href="../jscomp/SpecializeModule.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 108 , # Elements Covered - 8 ">SpecializeModule</a>
+            
+    
+            <a href="../jscomp/SpecializeModule.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 67 , # Elements Covered - 5 ">SpecializeModule.SpecializationState</a>
+            
+    
+            <a href="../jscomp/StrictModeCheck.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 130 , # Elements Covered - 33 ">StrictModeCheck</a>
+            
+    
+            <a href="../jscomp/StrictWarningsGuard.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 10 ">StrictWarningsGuard</a>
+            
+    
+            <a href="../jscomp/Strings.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 22 , # Elements Covered - 19 ">Strings</a>
+            
+    
+            <a href="../jscomp/StripCode.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 11 , # Elements Covered - 7 ">StripCode</a>
+            
+    
+            <a href="../jscomp/SuppressDocWarningsGuard.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 45 , # Elements Covered - 2 ">SuppressDocWarningsGuard</a>
+            
+    
+            <a href="../jscomp/SyntacticScopeCreator.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 116 , # Elements Covered - 22 ">SyntacticScopeCreator</a>
+            
+    
+            <a href="../jscomp/SyntheticAst.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 16 , # Elements Covered - 12 ">SyntheticAst</a>
+            
+    
+            <a href="../jscomp/Tracer.html" class="tag"
+            style="font-size: 15px;color:#de7b72"
+            title="# Elements - 192 , # Elements Covered - 114 ">Tracer</a>
+            
+    
+            <a href="../jscomp/Tracer.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 18 , # Elements Covered - 15 ">Tracer.AtomicTracerStatMap</a>
+            
+    
+            <a href="../jscomp/Tracer.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 39 , # Elements Covered - 3 ">Tracer.Event</a>
+            
+    
+            <a href="../jscomp/Tracer.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 8 ">Tracer.Stat</a>
+            
+    
+            <a href="../jscomp/Tracer.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 155 , # Elements Covered - 32 ">Tracer.ThreadTrace</a>
+            
+    
+            <a href="../jscomp/UnreachableCodeElimination.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 19 , # Elements Covered - 17 ">UnreachableCodeElimination</a>
+            
+    
+            <a href="../jscomp/UnreachableCodeElimination.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 101 , # Elements Covered - 6 ">UnreachableCodeElimination.EliminationPass</a>
+            
+    
+            <a href="../jscomp/UseSite.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 8 ">UseSite</a>
+            
+    
+            <a href="../jscomp/VarCheck.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 96 , # Elements Covered - 3 ">VarCheck</a>
+            
+    
+            <a href="../jscomp/VariableMap.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 86 , # Elements Covered - 2 ">VariableMap</a>
+            
+    
+            <a href="../jscomp/VariableNameGenerator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 4 ">VariableNameGenerator</a>
+            
+    
+            <a href="../jscomp/VariableReferenceCheck.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 3 ">VariableReferenceCheck</a>
+            
+    
+            <a href="../jscomp/VariableVisibilityAnalysis.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 34 , # Elements Covered - 3 ">VariableVisibilityAnalysis</a>
+            
+    
+            <a href="../jscomp/VerboseMessageFormatter.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 23 , # Elements Covered - 2 ">VerboseMessageFormatter</a>
+            
+    
+            <a href="../jscomp/ant/Warning.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 8 ">Warning</a>
+            
+    
+            <a href="../jscomp/WarningLevel.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 48 , # Elements Covered - 14 ">WarningLevel</a>
+            
+    
+            <a href="../jscomp/WarningsGuard.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 6 ">WarningsGuard</a>
+            
+    
+            <a href="../jscomp/WarningsGuard.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 4 ">WarningsGuard.Priority</a>
+            
+    
+            <a href="../jscomp/XtbMessageBundle.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 33 , # Elements Covered - 24 ">XtbMessageBundle</a>
+            
+    
+            <a href="../jscomp/XtbMessageBundle.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 50 , # Elements Covered - 2 ">XtbMessageBundle.Handler</a>
+           </div>
+   
+          <div id="shallowPackageCloud"  style="display: none"  >
+                          
+    
+        
+    
+            <a href="../jscomp/AbstractMessageFormatter.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 22 , # Elements Covered - 4 ">AbstractMessageFormatter</a>
+            
+    
+            <a href="../jscomp/AbstractMessageFormatter.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">AbstractMessageFormatter.Color</a>
+            
+    
+            <a href="../jscomp/AnalyzeNameReferences.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 21 , # Elements Covered - 3 ">AnalyzeNameReferences</a>
+            
+    
+            <a href="../jscomp/AnalyzePrototypeProperties.html" class="tag"
+            style="font-size: 12px;color:#d9695f"
+            title="# Elements - 46 , # Elements Covered - 30 ">AnalyzePrototypeProperties</a>
+            
+    
+            <a href="../jscomp/AnalyzePrototypeProperties.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 33 , # Elements Covered - 11 ">AnalyzePrototypeProperties.NameInfo</a>
+            
+    
+            <a href="../jscomp/AnonymousFunctionNamingCallback.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 52 , # Elements Covered - 10 ">AnonymousFunctionNamingCallback</a>
+            
+    
+            <a href="../jscomp/AnonymousFunctionNamingPolicy.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 4 ">AnonymousFunctionNamingPolicy</a>
+            
+    
+            <a href="../jscomp/AstChangeProxy.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 38 , # Elements Covered - 2 ">AstChangeProxy</a>
+            
+    
+            <a href="../jscomp/AstValidator.html" class="tag"
+            style="font-size: 23px;color:#14892c"
+            title="# Elements - 618 , # Elements Covered - 120 ">AstValidator</a>
+            
+    
+            <a href="../jscomp/BasicErrorManager.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 3 , # Elements Covered - 3 ">BasicErrorManager.ErrorWithLevel</a>
+            
+    
+            <a href="../jscomp/BasicErrorManager.html" class="tag"
+            style="font-size: 13px;color:#de7b72"
+            title="# Elements - 60 , # Elements Covered - 38 ">BasicErrorManager.LeveledJSErrorComparator</a>
+            
+    
+            <a href="../jscomp/ByPathWarningsGuard.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 29 , # Elements Covered - 12 ">ByPathWarningsGuard</a>
+            
+    
+            <a href="../jscomp/ChainCalls.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 11 , # Elements Covered - 2 ">ChainCalls</a>
+            
+    
+            <a href="../jscomp/CheckDebuggerStatement.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 7 ">CheckDebuggerStatement</a>
+            
+    
+            <a href="../jscomp/CheckLevel.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 2 , # Elements Covered - 2 ">CheckLevel</a>
+            
+    
+            <a href="../jscomp/CheckMissingGetCssName.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 53 , # Elements Covered - 11 ">CheckMissingGetCssName</a>
+            
+    
+            <a href="../jscomp/CheckProvides.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 4 ">CheckProvides</a>
+            
+    
+            <a href="../jscomp/CheckRegExp.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 31 , # Elements Covered - 11 ">CheckRegExp</a>
+            
+    
+            <a href="../jscomp/CheckRequiresForConstructors.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 19 , # Elements Covered - 3 ">CheckRequiresForConstructors</a>
+            
+    
+            <a href="../jscomp/CheckSideEffects.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 71 , # Elements Covered - 4 ">CheckSideEffects</a>
+            
+    
+            <a href="../jscomp/CheckSideEffects.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 15 , # Elements Covered - 7 ">CheckSideEffects.StripProtection</a>
+            
+    
+            <a href="../jscomp/CheckSuspiciousCode.html" class="tag"
+            style="font-size: 12px;color:#d9695f"
+            title="# Elements - 42 , # Elements Covered - 26 ">CheckSuspiciousCode</a>
+            
+    
+            <a href="../jscomp/CleanupPasses.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 20 , # Elements Covered - 14 ">CleanupPasses</a>
+            
+    
+            <a href="../jscomp/CleanupPasses.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 21 , # Elements Covered - 5 ">CleanupPasses.MemoizedScopeCleanupPass</a>
+            
+    
+            <a href="../jscomp/ClosureCodeRemoval.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 30 , # Elements Covered - 4 ">ClosureCodeRemoval</a>
+            
+    
+            <a href="../jscomp/ClosureCodingConvention.html" class="tag"
+            style="font-size: 16px;color:#d04437"
+            title="# Elements - 231 , # Elements Covered - 7 ">ClosureCodingConvention</a>
+            
+    
+            <a href="../jscomp/ClosureOptimizePrimitives.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 46 , # Elements Covered - 5 ">ClosureOptimizePrimitives</a>
+            
+    
+            <a href="../jscomp/CoalesceVariableNames.html" class="tag"
+            style="font-size: 15px;color:#d04437"
+            title="# Elements - 184 , # Elements Covered - 2 ">CoalesceVariableNames</a>
+            
+    
+            <a href="../jscomp/CodeConsumer.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 158 , # Elements Covered - 4 ">CodeConsumer</a>
+            
+    
+            <a href="../jscomp/CodeGenerator.html" class="tag"
+            style="font-size: 29px;color:#d04437"
+            title="# Elements - 917 , # Elements Covered - 3 ">CodeGenerator</a>
+            
+    
+            <a href="../jscomp/CodingConventions.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 3 , # Elements Covered - 2 ">CodingConventions</a>
+            
+    
+            <a href="../jscomp/CodingConventions.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 106 , # Elements Covered - 2 ">CodingConventions.DefaultCodingConvention</a>
+            
+    
+            <a href="../jscomp/CodingConventions.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 68 , # Elements Covered - 6 ">CodingConventions.Proxy</a>
+            
+    
+            <a href="../jscomp/CollapseAnonymousFunctions.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 5 , # Elements Covered - 2 ">CollapseAnonymousFunctions</a>
+            
+    
+            <a href="../jscomp/CollapseVariableDeclarations.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 47 , # Elements Covered - 2 ">CollapseVariableDeclarations</a>
+            
+    
+            <a href="../jscomp/CombinedCompilerPass.html" class="tag"
+            style="font-size: 12px;color:#d9695f"
+            title="# Elements - 32 , # Elements Covered - 30 ">CombinedCompilerPass</a>
+            
+    
+            <a href="../jscomp/CombinedCompilerPass.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 33 , # Elements Covered - 22 ">CombinedCompilerPass.CallbackWrapper</a>
+            
+    
+            <a href="../jscomp/CompilationLevel.html" class="tag"
+            style="font-size: 13px;color:#d9695f"
+            title="# Elements - 98 , # Elements Covered - 25 ">CompilationLevel</a>
+            
+    
+            <a href="../jscomp/Compiler.html" class="tag"
+            style="font-size: 35px;color:#d5584c"
+            title="# Elements - 1,239 , # Elements Covered - 22 ">Compiler</a>
+            
+    
+            <a href="../jscomp/CompilerInput.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 121 , # Elements Covered - 15 ">CompilerInput</a>
+            
+    
+            <a href="../jscomp/CompilerOptions.html" class="tag"
+            style="font-size: 23px;color:#14892c"
+            title="# Elements - 619 , # Elements Covered - 124 ">CompilerOptions</a>
+            
+    
+            <a href="../jscomp/ComposeWarningsGuard.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 68 , # Elements Covered - 6 ">ComposeWarningsGuard</a>
+            
+    
+            <a href="../jscomp/ComposeWarningsGuard.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">ComposeWarningsGuard.GuardComparator</a>
+            
+    
+            <a href="../jscomp/ConstCheck.html" class="tag"
+            style="font-size: 13px;color:#d9695f"
+            title="# Elements - 67 , # Elements Covered - 30 ">ConstCheck</a>
+            
+    
+            <a href="../jscomp/ControlFlowAnalysis.html" class="tag"
+            style="font-size: 22px;color:#e7a19b"
+            title="# Elements - 585 , # Elements Covered - 73 ">ControlFlowAnalysis</a>
+            
+    
+            <a href="../jscomp/ControlFlowAnalysis.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 17 , # Elements Covered - 3 ">ControlFlowAnalysis.AstControlFlowGraph</a>
+            
+    
+            <a href="../jscomp/ControlFlowGraph.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 40 , # Elements Covered - 11 ">ControlFlowGraph</a>
+            
+    
+            <a href="../jscomp/ControlStructureCheck.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 24 , # Elements Covered - 18 ">ControlStructureCheck</a>
+            
+    
+            <a href="../jscomp/ConvertToDottedProperties.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 26 , # Elements Covered - 13 ">ConvertToDottedProperties</a>
+            
+    
+            <a href="../jscomp/CreateSyntheticBlocks.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 40 , # Elements Covered - 4 ">CreateSyntheticBlocks</a>
+            
+    
+            <a href="../jscomp/CrossModuleMethodMotion.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 66 , # Elements Covered - 4 ">CrossModuleMethodMotion</a>
+            
+    
+            <a href="../jscomp/CrossModuleMethodMotion.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 4 ">CrossModuleMethodMotion.IdGenerator</a>
+            
+    
+            <a href="../jscomp/DefaultPassConfig.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">DefaultPassConfig.HotSwapPassFactory</a>
+            
+    
+            <a href="../jscomp/DefinitionSite.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 6 ">DefinitionSite</a>
+            
+    
+            <a href="../jscomp/DefinitionsRemover.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 69 , # Elements Covered - 5 ">DefinitionsRemover</a>
+            
+    
+            <a href="../jscomp/DefinitionsRemover.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 2 ">DefinitionsRemover.Definition</a>
+            
+    
+            <a href="../jscomp/DefinitionsRemover.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 17 , # Elements Covered - 5 ">DefinitionsRemover.ObjectLiteralPropertyDefinition</a>
+            
+    
+            <a href="../jscomp/Denormalize.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 57 , # Elements Covered - 12 ">Denormalize</a>
+            
+    
+            <a href="../jscomp/Denormalize.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 10 , # Elements Covered - 8 ">Denormalize.StripConstantAnnotations</a>
+            
+    
+            <a href="../jscomp/DevirtualizePrototypeMethods.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="# Elements - 234 , # Elements Covered - 10 ">DevirtualizePrototypeMethods</a>
+            
+    
+            <a href="../jscomp/DiagnosticGroup.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 39 , # Elements Covered - 11 ">DiagnosticGroup</a>
+            
+    
+            <a href="../jscomp/DiagnosticGroupWarningsGuard.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 21 , # Elements Covered - 15 ">DiagnosticGroupWarningsGuard</a>
+            
+    
+            <a href="../jscomp/DiagnosticGroups.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 22 , # Elements Covered - 13 ">DiagnosticGroups</a>
+            
+    
+            <a href="../jscomp/DiagnosticType.html" class="tag"
+            style="font-size: 12px;color:#d9695f"
+            title="# Elements - 23 , # Elements Covered - 23 ">DiagnosticType</a>
+            
+    
+            <a href="../jscomp/DotFormatter.html" class="tag"
+            style="font-size: 14px;color:#e7a19b"
+            title="# Elements - 148 , # Elements Covered - 70 ">DotFormatter</a>
+            
+    
+            <a href="../jscomp/EmptyMessageBundle.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 6 ">EmptyMessageBundle</a>
+            
+    
+            <a href="../jscomp/ErrorFormat.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 16 , # Elements Covered - 16 ">ErrorFormat</a>
+            
+    
+            <a href="../jscomp/ErrorPass.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 7 ">ErrorPass</a>
+            
+    
+            <a href="../jscomp/ExternExportsPass.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 84 , # Elements Covered - 13 ">ExternExportsPass</a>
+            
+    
+            <a href="../jscomp/ExtractPrototypeMemberDeclarations.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 55 , # Elements Covered - 6 ">ExtractPrototypeMemberDeclarations</a>
+            
+    
+            <a href="../jscomp/ExtractPrototypeMemberDeclarations.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 4 ">ExtractPrototypeMemberDeclarations.Pattern</a>
+            
+    
+            <a href="../jscomp/FieldCleanupPass.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 6 ">FieldCleanupPass</a>
+            
+    
+            <a href="../jscomp/FieldCleanupPass.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 27 , # Elements Covered - 3 ">FieldCleanupPass.QualifiedNameSearchTraversal</a>
+            
+    
+            <a href="../jscomp/FindExportableNodes.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 42 , # Elements Covered - 3 ">FindExportableNodes</a>
+            
+    
+            <a href="../jscomp/FindExportableNodes.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 10 , # Elements Covered - 10 ">FindExportableNodes.GenerateNodeContext</a>
+            
+    
+            <a href="../jscomp/FunctionNames.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 37 , # Elements Covered - 3 ">FunctionNames</a>
+            
+    
+            <a href="../jscomp/FunctionNames.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 11 , # Elements Covered - 2 ">FunctionNames.FunctionListExtractor</a>
+            
+    
+            <a href="../jscomp/GatherRawExports.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 34 , # Elements Covered - 2 ">GatherRawExports</a>
+            
+    
+            <a href="../jscomp/GenerateExports.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 60 , # Elements Covered - 2 ">GenerateExports</a>
+            
+    
+            <a href="../jscomp/GlobalVarReferenceMap.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 99 , # Elements Covered - 4 ">GlobalVarReferenceMap</a>
+            
+    
+            <a href="../jscomp/GlobalVarReferenceMap.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 5 ">GlobalVarReferenceMap.GlobalVarRefCleanupPass</a>
+            
+    
+            <a href="../jscomp/GoogleCodingConvention.html" class="tag"
+            style="font-size: 12px;color:#d9695f"
+            title="# Elements - 35 , # Elements Covered - 35 ">GoogleCodingConvention</a>
+            
+    
+            <a href="../jscomp/GoogleJsMessageIdGenerator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 16 , # Elements Covered - 2 ">GoogleJsMessageIdGenerator</a>
+            
+    
+            <a href="../jscomp/GroupVariableDeclarations.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 77 , # Elements Covered - 16 ">GroupVariableDeclarations</a>
+            
+    
+            <a href="../jscomp/IgnoreCajaProperties.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 5 , # Elements Covered - 5 ">IgnoreCajaProperties</a>
+            
+    
+            <a href="../jscomp/InlineProperties.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 48 , # Elements Covered - 5 ">InlineProperties</a>
+            
+    
+            <a href="../jscomp/InlineProperties.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 3 , # Elements Covered - 3 ">InlineProperties.PropertyInfo</a>
+            
+    
+            <a href="../jscomp/JSError.html" class="tag"
+            style="font-size: 14px;color:#fae1a0"
+            title="# Elements - 110 , # Elements Covered - 110 ">JSError</a>
+            
+    
+            <a href="../jscomp/JSModule.html" class="tag"
+            style="font-size: 14px;color:#e7a19b"
+            title="# Elements - 110 , # Elements Covered - 80 ">JSModule</a>
+            
+    
+            <a href="../jscomp/JsAst.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 34 , # Elements Covered - 8 ">JsAst</a>
+            
+    
+            <a href="../jscomp/JsMessage.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 81 , # Elements Covered - 4 ">JsMessage.Builder</a>
+            
+    
+            <a href="../jscomp/JsMessage.html" class="tag"
+            style="font-size: 14px;color:#fae1a0"
+            title="# Elements - 152 , # Elements Covered - 97 ">JsMessage.Hash</a>
+            
+    
+            <a href="../jscomp/JsMessage.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 16 , # Elements Covered - 14 ">JsMessage.PlaceholderReference</a>
+            
+    
+            <a href="../jscomp/JsMessage.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 8 , # Elements Covered - 8 ">JsMessage.Style</a>
+            
+    
+            <a href="../jscomp/JsMessageExtractor.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 27 , # Elements Covered - 11 ">JsMessageExtractor</a>
+            
+    
+            <a href="../jscomp/JsMessageVisitor.html" class="tag"
+            style="font-size: 19px;color:#d5584c"
+            title="# Elements - 410 , # Elements Covered - 8 ">JsMessageVisitor</a>
+            
+    
+            <a href="../jscomp/JvmMetrics.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="# Elements - 186 , # Elements Covered - 126 ">JvmMetrics</a>
+            
+    
+            <a href="../jscomp/LightweightMessageFormatter.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 57 , # Elements Covered - 11 ">LightweightMessageFormatter</a>
+            
+    
+            <a href="../jscomp/LineNumberCheck.html" class="tag"
+            style="font-size: 12px;color:#d9695f"
+            title="# Elements - 26 , # Elements Covered - 25 ">LineNumberCheck</a>
+            
+    
+            <a href="../jscomp/LoggerErrorManager.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 27 , # Elements Covered - 5 ">LoggerErrorManager</a>
+            
+    
+            <a href="../jscomp/MarkNoSideEffectCalls.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 32 , # Elements Covered - 3 ">MarkNoSideEffectCalls</a>
+            
+    
+            <a href="../jscomp/MinimizeExitPoints.html" class="tag"
+            style="font-size: 15px;color:#de7b72"
+            title="# Elements - 160 , # Elements Covered - 39 ">MinimizeExitPoints</a>
+            
+    
+            <a href="../jscomp/MoveFunctionDeclarations.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 31 , # Elements Covered - 3 ">MoveFunctionDeclarations</a>
+            
+    
+            <a href="../jscomp/NameAnonymousFunctions.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 6 ">NameAnonymousFunctions</a>
+            
+    
+            <a href="../jscomp/NameAnonymousFunctions.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 15 , # Elements Covered - 2 ">NameAnonymousFunctions.AnonymousFunctionNamer</a>
+            
+    
+            <a href="../jscomp/NameAnonymousFunctionsMapped.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 18 , # Elements Covered - 7 ">NameAnonymousFunctionsMapped</a>
+            
+    
+            <a href="../jscomp/NameGenerator.html" class="tag"
+            style="font-size: 13px;color:#e28e87"
+            title="# Elements - 62 , # Elements Covered - 62 ">NameGenerator</a>
+            
+    
+            <a href="../jscomp/NameReferenceGraphReport.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 105 , # Elements Covered - 5 ">NameReferenceGraphReport</a>
+            
+    
+            <a href="../jscomp/NameReferenceGraphReport.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 16 , # Elements Covered - 2 ">NameReferenceGraphReport.DiGraphNodeComparator</a>
+            
+    
+            <a href="../jscomp/NodeIterators.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 48 , # Elements Covered - 4 ">NodeIterators.FunctionlessLocalScope</a>
+            
+    
+            <a href="../jscomp/NodeIterators.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 71 , # Elements Covered - 4 ">NodeIterators.LocalVarMotion</a>
+            
+    
+            <a href="../jscomp/NodeNameExtractor.html" class="tag"
+            style="font-size: 12px;color:#d9695f"
+            title="# Elements - 51 , # Elements Covered - 29 ">NodeNameExtractor</a>
+            
+    
+            <a href="../jscomp/NodeTraversal.html" class="tag"
+            style="font-size: 17px;color:#fae1a0"
+            title="# Elements - 278 , # Elements Covered - 108 ">NodeTraversal</a>
+            
+    
+            <a href="../jscomp/NodeTraversal.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 2 , # Elements Covered - 2 ">NodeTraversal.AbstractPostOrderCallback</a>
+            
+    
+            <a href="../jscomp/NodeTraversal.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 2 , # Elements Covered - 2 ">NodeTraversal.AbstractShallowCallback</a>
+            
+    
+            <a href="../jscomp/NodeUtil.html" class="tag"
+            style="font-size: 48px;color:#de7b72"
+            title="# Elements - 1,916 , # Elements Covered - 47 ">NodeUtil</a>
+            
+    
+            <a href="../jscomp/Normalize.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 30 , # Elements Covered - 3 ">Normalize.PropagateConstantAnnotationsOverVars</a>
+            
+    
+            <a href="../jscomp/ObjectPropertyStringPostprocess.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 4 ">ObjectPropertyStringPostprocess</a>
+            
+    
+            <a href="../jscomp/ObjectPropertyStringPreprocess.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 13 , # Elements Covered - 12 ">ObjectPropertyStringPreprocess</a>
+            
+    
+            <a href="../jscomp/OptimizeArgumentsArray.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 104 , # Elements Covered - 2 ">OptimizeArgumentsArray</a>
+            
+    
+            <a href="../jscomp/OptimizeCalls.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 13 , # Elements Covered - 2 ">OptimizeCalls</a>
+            
+    
+            <a href="../jscomp/OptimizeParameters.html" class="tag"
+            style="font-size: 17px;color:#d04437"
+            title="# Elements - 275 , # Elements Covered - 2 ">OptimizeParameters</a>
+            
+    
+            <a href="../jscomp/PassConfig.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 71 , # Elements Covered - 2 ">PassConfig</a>
+            
+    
+            <a href="../jscomp/PassFactory.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 3 ">PassFactory</a>
+            
+    
+            <a href="../jscomp/PeepholeOptimizationsPass.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 87 , # Elements Covered - 3 ">PeepholeOptimizationsPass</a>
+            
+    
+            <a href="../jscomp/PeepholeOptimizationsPass.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 5 , # Elements Covered - 5 ">PeepholeOptimizationsPass.ScopeState</a>
+            
+    
+            <a href="../jscomp/PeepholeOptimizationsPass.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 13 , # Elements Covered - 2 ">PeepholeOptimizationsPass.StateStack</a>
+            
+    
+            <a href="../jscomp/PrepareAst.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 49 , # Elements Covered - 22 ">PrepareAst</a>
+            
+    
+            <a href="../jscomp/PrepareAst.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 49 , # Elements Covered - 18 ">PrepareAst.PrepareAnnotations</a>
+            
+    
+            <a href="../jscomp/PrintStreamErrorManager.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 18 , # Elements Covered - 5 ">PrintStreamErrorManager</a>
+            
+    
+            <a href="../jscomp/ProcessCommonJSModules.html" class="tag"
+            style="font-size: 12px;color:#d9695f"
+            title="# Elements - 33 , # Elements Covered - 33 ">ProcessCommonJSModules</a>
+            
+    
+            <a href="../jscomp/ProcessCommonJSModules.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 64 , # Elements Covered - 7 ">ProcessCommonJSModules.ProcessCommonJsModulesCallback</a>
+            
+    
+            <a href="../jscomp/ProcessTweaks.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 81 , # Elements Covered - 4 ">ProcessTweaks</a>
+            
+    
+            <a href="../jscomp/ProcessTweaks.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 35 , # Elements Covered - 16 ">ProcessTweaks.TweakFunction</a>
+            
+    
+            <a href="../jscomp/RemoveTryCatch.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 5 , # Elements Covered - 5 ">RemoveTryCatch</a>
+            
+    
+            <a href="../jscomp/RemoveTryCatch.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 48 , # Elements Covered - 2 ">RemoveTryCatch.RemoveTryCatchCode</a>
+            
+    
+            <a href="../jscomp/RemoveUnusedClassProperties.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 68 , # Elements Covered - 2 ">RemoveUnusedClassProperties</a>
+            
+    
+            <a href="../jscomp/RemoveUnusedNames.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 20 , # Elements Covered - 5 ">RemoveUnusedNames</a>
+            
+    
+            <a href="../jscomp/RemoveUnusedPrototypeProperties.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 63 , # Elements Covered - 9 ">RemoveUnusedPrototypeProperties</a>
+            
+    
+            <a href="../jscomp/RenameProperties.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 123 , # Elements Covered - 20 ">RenameProperties</a>
+            
+    
+            <a href="../jscomp/RenamePrototypes.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 76 , # Elements Covered - 11 ">RenamePrototypes</a>
+            
+    
+            <a href="../jscomp/ReplaceCssNames.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 5 ">ReplaceCssNames</a>
+            
+    
+            <a href="../jscomp/ReplaceMessages.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 150 , # Elements Covered - 4 ">ReplaceMessages</a>
+            
+    
+            <a href="../jscomp/ReplaceMessagesForChrome.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 47 , # Elements Covered - 2 ">ReplaceMessagesForChrome</a>
+            
+    
+            <a href="../jscomp/RhinoErrorReporter.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 21 , # Elements Covered - 10 ">RhinoErrorReporter</a>
+            
+    
+            <a href="../jscomp/RhinoErrorReporter.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 28 , # Elements Covered - 2 ">RhinoErrorReporter.NewRhinoErrorReporter</a>
+            
+    
+            <a href="../jscomp/RhinoErrorReporter.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 2 ">RhinoErrorReporter.OldRhinoErrorReporter</a>
+            
+    
+            <a href="../jscomp/SanityCheck.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 49 , # Elements Covered - 6 ">SanityCheck</a>
+            
+    
+            <a href="../jscomp/Scope.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 109 , # Elements Covered - 17 ">Scope</a>
+            
+    
+            <a href="../jscomp/ShowByPathWarningsGuard.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 19 , # Elements Covered - 13 ">ShowByPathWarningsGuard</a>
+            
+    
+            <a href="../jscomp/SimpleDefinitionFinder.html" class="tag"
+            style="font-size: 15px;color:#d9695f"
+            title="# Elements - 179 , # Elements Covered - 26 ">SimpleDefinitionFinder</a>
+            
+    
+            <a href="../jscomp/SimpleDefinitionFinder.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 73 , # Elements Covered - 10 ">SimpleDefinitionFinder.DefinitionGatheringCallback</a>
+            
+    
+            <a href="../jscomp/SimpleDefinitionFinder.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 5 ">SimpleDefinitionFinder.UseSiteGatheringCallback</a>
+            
+    
+            <a href="../jscomp/SimpleFunctionAliasAnalysis.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 41 , # Elements Covered - 9 ">SimpleFunctionAliasAnalysis</a>
+            
+    
+            <a href="../jscomp/SimpleRegion.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 10 , # Elements Covered - 10 ">SimpleRegion</a>
+            
+    
+            <a href="../jscomp/SourceFile.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="# Elements - 154 , # Elements Covered - 133 ">SourceFile</a>
+            
+    
+            <a href="../jscomp/SourceFile.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 19 , # Elements Covered - 19 ">SourceFile.Builder</a>
+            
+    
+            <a href="../jscomp/SourceFile.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 14 , # Elements Covered - 14 ">SourceFile.Generated</a>
+            
+    
+            <a href="../jscomp/SourceFile.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 28 , # Elements Covered - 9 ">SourceFile.OnDisk</a>
+            
+    
+            <a href="../jscomp/SourceFile.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 4 ">SourceFile.Preloaded</a>
+            
+    
+            <a href="../jscomp/SourceInformationAnnotator.html" class="tag"
+            style="font-size: 12px;color:#d9695f"
+            title="# Elements - 37 , # Elements Covered - 25 ">SourceInformationAnnotator</a>
+            
+    
+            <a href="../jscomp/SpecializeModule.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 108 , # Elements Covered - 8 ">SpecializeModule</a>
+            
+    
+            <a href="../jscomp/SpecializeModule.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 67 , # Elements Covered - 5 ">SpecializeModule.SpecializationState</a>
+            
+    
+            <a href="../jscomp/StrictModeCheck.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="# Elements - 130 , # Elements Covered - 33 ">StrictModeCheck</a>
+            
+    
+            <a href="../jscomp/StrictWarningsGuard.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 10 , # Elements Covered - 10 ">StrictWarningsGuard</a>
+            
+    
+            <a href="../jscomp/Strings.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 22 , # Elements Covered - 19 ">Strings</a>
+            
+    
+            <a href="../jscomp/StripCode.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 11 , # Elements Covered - 7 ">StripCode</a>
+            
+    
+            <a href="../jscomp/SuppressDocWarningsGuard.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 45 , # Elements Covered - 2 ">SuppressDocWarningsGuard</a>
+            
+    
+            <a href="../jscomp/SyntacticScopeCreator.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 116 , # Elements Covered - 22 ">SyntacticScopeCreator</a>
+            
+    
+            <a href="../jscomp/SyntheticAst.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 16 , # Elements Covered - 12 ">SyntheticAst</a>
+            
+    
+            <a href="../jscomp/Tracer.html" class="tag"
+            style="font-size: 15px;color:#14892c"
+            title="# Elements - 192 , # Elements Covered - 114 ">Tracer</a>
+            
+    
+            <a href="../jscomp/Tracer.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 18 , # Elements Covered - 15 ">Tracer.AtomicTracerStatMap</a>
+            
+    
+            <a href="../jscomp/Tracer.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 39 , # Elements Covered - 3 ">Tracer.Event</a>
+            
+    
+            <a href="../jscomp/Tracer.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 10 , # Elements Covered - 8 ">Tracer.Stat</a>
+            
+    
+            <a href="../jscomp/Tracer.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="# Elements - 155 , # Elements Covered - 32 ">Tracer.ThreadTrace</a>
+            
+    
+            <a href="../jscomp/UnreachableCodeElimination.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 19 , # Elements Covered - 17 ">UnreachableCodeElimination</a>
+            
+    
+            <a href="../jscomp/UnreachableCodeElimination.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 101 , # Elements Covered - 6 ">UnreachableCodeElimination.EliminationPass</a>
+            
+    
+            <a href="../jscomp/UseSite.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 8 , # Elements Covered - 8 ">UseSite</a>
+            
+    
+            <a href="../jscomp/VarCheck.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 96 , # Elements Covered - 3 ">VarCheck</a>
+            
+    
+            <a href="../jscomp/VariableMap.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 86 , # Elements Covered - 2 ">VariableMap</a>
+            
+    
+            <a href="../jscomp/VariableNameGenerator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 4 ">VariableNameGenerator</a>
+            
+    
+            <a href="../jscomp/VariableReferenceCheck.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 3 ">VariableReferenceCheck</a>
+            
+    
+            <a href="../jscomp/VariableVisibilityAnalysis.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 34 , # Elements Covered - 3 ">VariableVisibilityAnalysis</a>
+            
+    
+            <a href="../jscomp/VerboseMessageFormatter.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 23 , # Elements Covered - 2 ">VerboseMessageFormatter</a>
+            
+    
+            <a href="../jscomp/WarningLevel.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 48 , # Elements Covered - 14 ">WarningLevel</a>
+            
+    
+            <a href="../jscomp/WarningsGuard.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 6 ">WarningsGuard</a>
+            
+    
+            <a href="../jscomp/WarningsGuard.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 4 ">WarningsGuard.Priority</a>
+            
+    
+            <a href="../jscomp/XtbMessageBundle.html" class="tag"
+            style="font-size: 12px;color:#d9695f"
+            title="# Elements - 33 , # Elements Covered - 24 ">XtbMessageBundle</a>
+            
+    
+            <a href="../jscomp/XtbMessageBundle.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 50 , # Elements Covered - 2 ">XtbMessageBundle.Handler</a>
+           </div>
+   </div>
+    </div> <!-- tabs-pane active-pane -->
+</div> <!-- aui-tabs horizontal-tabs -->
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Thu Jan 12 2023 21:41:46 MST using coverage data from Thu Jan 12 2023 21:41:41 MST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

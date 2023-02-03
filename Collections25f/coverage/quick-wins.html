@@ -1,0 +1,2196 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="img/clover.ico" />
+
+    <link rel="stylesheet" href="aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('style.css');
+        @import url('tree.css');
+        
+    </style>
+
+    <script src="jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="package-nodes-tree.js" type="text/javascript"></script>
+    <script src="clover-tree.js" type="text/javascript"></script>
+    <script src="clover.js" type="text/javascript"></script>
+    <script src="clover-descriptions.js" type="text/javascript"></script>
+    <script src="cloud.js" type="text/javascript"></script>
+
+            <title></title>
+    </head>
+
+<body  >
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="aui-nav-selected">
+                    <a href="dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                  <div class="packages-tree-wrapper" data-root-relative="" data-package-name="">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <ol class="aui-nav aui-nav-breadcrumbs">
+            
+        <li><a href="dashboard.html">Project Clover database Tue Jul 26 2022 16:09:18 PDT</a></li>
+    </ol>
+    
+<h1 class="aui-h2-clover">
+            Project overview
+    </h1>
+<div class="aui-tabs horizontal-tabs">
+            <ul class="tabs-menu">
+            <li class="menu-item ">
+            <a href="dashboard.html">Dashboard</a>
+        </li>
+                <li class="menu-item ">
+            <a href="pkg-summary.html"><strong>Application code</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="testsrc-pkg-summary.html"><strong>Test code</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="test-pkg-summary.html"><strong>Test results</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="top-risks.html"><strong>Top risks</strong></a>
+        </li>
+        <li class="menu-item active-tab">
+            <a href="quick-wins.html"><strong>Quick wins</strong></a>
+        </li>
+                                                <li class="menu-item ">
+                <a href="treemap.html"><strong>Coverage tree map</strong></a>
+            </li>
+            </ul>
+    <div class="tabs-pane active-pane" id="tabs-first">
+
+        <div>&#160;</div>
+
+        
+
+
+                        <div style="text-align: right; margin-bottom: 10px">
+            
+            
+                                    <button class="aui-button aui-button-subtle" id="popupHelp">
+    <span class="aui-icon aui-icon-small aui-iconfont-help"></span>&#160;How to read this chart
+</button>
+<script>
+    AJS.InlineDialog(AJS.$("#popupHelp"), "helpDialog",
+            function (content, trigger, showPopup) {
+                var description = quickWinsDescription();
+                var title = 'Quick Wins';
+                content.css({"padding": "20px"}).html(
+                        '<h2>' + title + '</h2>' + description);
+                showPopup();
+                return false;
+            },
+            {
+                width: 600
+            }
+    );
+</script>
+        </div>
+
+        
+
+<div style="padding: 20px; border: 1px solid #cccccc; background-color: #f5f5f5; border-radius: 3px">
+          <div id="deepPackageCloud"  >
+                          
+    
+        
+    
+            <a href="org/apache/commons/collections4/bag/AbstractBagDecorator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 18 , # Elements Covered - 14 ">AbstractBagDecorator</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/AbstractBidiMapDecorator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 14 , # Elements Covered - 8 ">AbstractBidiMapDecorator</a>
+            
+    
+            <a href="org/apache/commons/collections4/trie/AbstractBitwiseTrie.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 47 , # Elements Covered - 39 ">AbstractBitwiseTrie</a>
+            
+    
+            <a href="org/apache/commons/collections4/trie/AbstractBitwiseTrie.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 39 , # Elements Covered - 32 ">AbstractBitwiseTrie.BasicEntry</a>
+            
+    
+            <a href="org/apache/commons/collections4/collection/AbstractCollectionDecorator.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 40 , # Elements Covered - 38 ">AbstractCollectionDecorator</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/AbstractDualBidiMap.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="# Elements - 95 , # Elements Covered - 95 ">AbstractDualBidiMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/AbstractDualBidiMap.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 52 , # Elements Covered - 48 ">AbstractDualBidiMap.BidiMapIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/AbstractDualBidiMap.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 24 , # Elements Covered - 24 ">AbstractDualBidiMap.EntrySet</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/AbstractDualBidiMap.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 17 , # Elements Covered - 17 ">AbstractDualBidiMap.EntrySetIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/AbstractDualBidiMap.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 14 , # Elements Covered - 14 ">AbstractDualBidiMap.KeySet</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/AbstractDualBidiMap.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 17 , # Elements Covered - 17 ">AbstractDualBidiMap.KeySetIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/AbstractDualBidiMap.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 11 , # Elements Covered - 11 ">AbstractDualBidiMap.MapEntry</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/AbstractDualBidiMap.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 14 , # Elements Covered - 14 ">AbstractDualBidiMap.Values</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/AbstractDualBidiMap.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 16 , # Elements Covered - 16 ">AbstractDualBidiMap.ValuesIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/AbstractDualBidiMap.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 42 , # Elements Covered - 42 ">AbstractDualBidiMap.View</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/AbstractEmptyIterator.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 21 , # Elements Covered - 21 ">AbstractEmptyIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/AbstractEmptyMapIterator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 8 ">AbstractEmptyMapIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractHashedMap.html" class="tag"
+            style="font-size: 32px;color:#e7a19b"
+            title="# Elements - 413 , # Elements Covered - 389 ">AbstractHashedMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractHashedMap.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 29 , # Elements Covered - 29 ">AbstractHashedMap.EntrySet</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractHashedMap.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 4 ">AbstractHashedMap.EntrySetIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractHashedMap.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 41 , # Elements Covered - 39 ">AbstractHashedMap.HashEntry</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractHashedMap.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 56 , # Elements Covered - 52 ">AbstractHashedMap.HashIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractHashedMap.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 25 , # Elements Covered - 25 ">AbstractHashedMap.HashMapIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractHashedMap.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 15 , # Elements Covered - 15 ">AbstractHashedMap.KeySet</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractHashedMap.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 4 ">AbstractHashedMap.KeySetIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractHashedMap.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 11 , # Elements Covered - 11 ">AbstractHashedMap.Values</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractHashedMap.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 4 ">AbstractHashedMap.ValuesIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractInputCheckedMapDecorator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 12 , # Elements Covered - 10 ">AbstractInputCheckedMapDecorator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractInputCheckedMapDecorator.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 33 , # Elements Covered - 32 ">AbstractInputCheckedMapDecorator.EntrySet</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractInputCheckedMapDecorator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 6 ">AbstractInputCheckedMapDecorator.EntrySetIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractInputCheckedMapDecorator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 6 ">AbstractInputCheckedMapDecorator.MapEntry</a>
+            
+    
+            <a href="org/apache/commons/collections4/splitmap/AbstractIterableGetMapDecorator.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 36 , # Elements Covered - 28 ">AbstractIterableGetMapDecorator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractIterableMap.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 2 , # Elements Covered - 2 ">AbstractIterableMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/AbstractIteratorDecorator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 4 ">AbstractIteratorDecorator</a>
+            
+    
+            <a href="org/apache/commons/collections4/keyvalue/AbstractKeyValue.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 18 , # Elements Covered - 18 ">AbstractKeyValue</a>
+            
+    
+            <a href="org/apache/commons/collections4/list/AbstractLinkedList.html" class="tag"
+            style="font-size: 26px;color:#e28e87"
+            title="# Elements - 303 , # Elements Covered - 290 ">AbstractLinkedList</a>
+            
+    
+            <a href="org/apache/commons/collections4/list/AbstractLinkedList.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 67 , # Elements Covered - 67 ">AbstractLinkedList.LinkedListIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/list/AbstractLinkedList.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="# Elements - 85 , # Elements Covered - 73 ">AbstractLinkedList.LinkedSubList</a>
+            
+    
+            <a href="org/apache/commons/collections4/list/AbstractLinkedList.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 17 , # Elements Covered - 17 ">AbstractLinkedList.LinkedSubListIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/list/AbstractLinkedList.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 24 , # Elements Covered - 11 ">AbstractLinkedList.Node</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractLinkedMap.html" class="tag"
+            style="font-size: 18px;color:#d9695f"
+            title="# Elements - 127 , # Elements Covered - 121 ">AbstractLinkedMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractLinkedMap.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 4 ">AbstractLinkedMap.EntrySetIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractLinkedMap.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 4 ">AbstractLinkedMap.KeySetIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractLinkedMap.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 2 , # Elements Covered - 2 ">AbstractLinkedMap.LinkEntry</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractLinkedMap.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 57 , # Elements Covered - 49 ">AbstractLinkedMap.LinkIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractLinkedMap.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 27 , # Elements Covered - 27 ">AbstractLinkedMap.LinkMapIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractLinkedMap.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 4 ">AbstractLinkedMap.ValuesIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/list/AbstractListDecorator.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 30 , # Elements Covered - 28 ">AbstractListDecorator</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/AbstractListIteratorDecorator.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 27 , # Elements Covered - 25 ">AbstractListIteratorDecorator</a>
+            
+    
+            <a href="org/apache/commons/collections4/multimap/AbstractListValuedMap.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 55 , # Elements Covered - 40 ">AbstractListValuedMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/multimap/AbstractListValuedMap.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 37 , # Elements Covered - 23 ">AbstractListValuedMap.ValuesListIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/multimap/AbstractListValuedMap.html" class="tag"
+            style="font-size: 15px;color:#d04437"
+            title="# Elements - 78 , # Elements Covered - 12 ">AbstractListValuedMap.WrappedList</a>
+            
+    
+            <a href="org/apache/commons/collections4/bag/AbstractMapBag.html" class="tag"
+            style="font-size: 23px;color:#de7b72"
+            title="# Elements - 244 , # Elements Covered - 235 ">AbstractMapBag</a>
+            
+    
+            <a href="org/apache/commons/collections4/bag/AbstractMapBag.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 38 , # Elements Covered - 36 ">AbstractMapBag.BagIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/bag/AbstractMapBag.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 2 ">AbstractMapBag.MutableInteger</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractMapDecorator.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 44 , # Elements Covered - 44 ">AbstractMapDecorator</a>
+            
+    
+            <a href="org/apache/commons/collections4/keyvalue/AbstractMapEntry.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 25 , # Elements Covered - 25 ">AbstractMapEntry</a>
+            
+    
+            <a href="org/apache/commons/collections4/keyvalue/AbstractMapEntryDecorator.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 24 , # Elements Covered - 18 ">AbstractMapEntryDecorator</a>
+            
+    
+            <a href="org/apache/commons/collections4/multimap/AbstractMultiValuedMap.html" class="tag"
+            style="font-size: 22px;color:#de7b72"
+            title="# Elements - 214 , # Elements Covered - 180 ">AbstractMultiValuedMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/multimap/AbstractMultiValuedMap.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 14 , # Elements Covered - 14 ">AbstractMultiValuedMap.EntryValues</a>
+            
+    
+            <a href="org/apache/commons/collections4/multimap/AbstractMultiValuedMap.html" class="tag"
+            style="font-size: 17px;color:#d5584c"
+            title="# Elements - 103 , # Elements Covered - 92 ">AbstractMultiValuedMap.KeysBag</a>
+            
+    
+            <a href="org/apache/commons/collections4/multimap/AbstractMultiValuedMap.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 4 ">AbstractMultiValuedMap.MultiValuedMapEntry</a>
+            
+    
+            <a href="org/apache/commons/collections4/multimap/AbstractMultiValuedMap.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 27 , # Elements Covered - 17 ">AbstractMultiValuedMap.MultiValuedMapIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/multimap/AbstractMultiValuedMap.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 9 ">AbstractMultiValuedMap.Values</a>
+            
+    
+            <a href="org/apache/commons/collections4/multimap/AbstractMultiValuedMap.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 14 , # Elements Covered - 14 ">AbstractMultiValuedMap.ValuesIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/multimap/AbstractMultiValuedMap.html" class="tag"
+            style="font-size: 17px;color:#d5584c"
+            title="# Elements - 117 , # Elements Covered - 53 ">AbstractMultiValuedMap.WrappedCollection</a>
+            
+    
+            <a href="org/apache/commons/collections4/multimap/AbstractMultiValuedMapDecorator.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 56 , # Elements Covered - 46 ">AbstractMultiValuedMapDecorator</a>
+            
+    
+            <a href="org/apache/commons/collections4/set/AbstractNavigableSetDecorator.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 28 , # Elements Covered - 12 ">AbstractNavigableSetDecorator</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/AbstractOrderedBidiMapDecorator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 16 , # Elements Covered - 12 ">AbstractOrderedBidiMapDecorator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractOrderedMapDecorator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 16 , # Elements Covered - 14 ">AbstractOrderedMapDecorator</a>
+            
+    
+            <a href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html" class="tag"
+            style="font-size: 48px;color:#fae1a0"
+            title="# Elements - 735 , # Elements Covered - 508 ">AbstractPatriciaTrie</a>
+            
+    
+            <a href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 25 , # Elements Covered - 23 ">AbstractPatriciaTrie.EntrySet</a>
+            
+    
+            <a href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 2 , # Elements Covered - 2 ">AbstractPatriciaTrie.EntrySet.EntryIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 12 , # Elements Covered - 12 ">AbstractPatriciaTrie.KeySet</a>
+            
+    
+            <a href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 2 , # Elements Covered - 2 ">AbstractPatriciaTrie.KeySet.KeyIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 21 , # Elements Covered - 21 ">AbstractPatriciaTrie.PrefixRangeEntrySet</a>
+            
+    
+            <a href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 31 , # Elements Covered - 30 ">AbstractPatriciaTrie.PrefixRangeEntrySet.EntryIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 18 , # Elements Covered - 9 ">AbstractPatriciaTrie.PrefixRangeEntrySet.SingletonIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="# Elements - 96 , # Elements Covered - 78 ">AbstractPatriciaTrie.PrefixRangeMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 65 , # Elements Covered - 49 ">AbstractPatriciaTrie.RangeEntryMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 65 , # Elements Covered - 61 ">AbstractPatriciaTrie.RangeEntrySet</a>
+            
+    
+            <a href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 13 , # Elements Covered - 13 ">AbstractPatriciaTrie.RangeEntrySet.EntryIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 80 , # Elements Covered - 50 ">AbstractPatriciaTrie.RangeMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 62 , # Elements Covered - 49 ">AbstractPatriciaTrie.TrieEntry</a>
+            
+    
+            <a href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 34 , # Elements Covered - 32 ">AbstractPatriciaTrie.TrieIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 42 , # Elements Covered - 40 ">AbstractPatriciaTrie.TrieMapIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 19 , # Elements Covered - 19 ">AbstractPatriciaTrie.Values</a>
+            
+    
+            <a href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 2 , # Elements Covered - 2 ">AbstractPatriciaTrie.Values.ValueIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/AbstractQuantifierPredicate.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">AbstractQuantifierPredicate</a>
+            
+    
+            <a href="org/apache/commons/collections4/queue/AbstractQueueDecorator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 16 , # Elements Covered - 6 ">AbstractQueueDecorator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractReferenceMap.html" class="tag"
+            style="font-size: 20px;color:#d9695f"
+            title="# Elements - 168 , # Elements Covered - 138 ">AbstractReferenceMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractReferenceMap.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 68 , # Elements Covered - 66 ">AbstractReferenceMap.ReferenceBaseIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractReferenceMap.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 75 , # Elements Covered - 48 ">AbstractReferenceMap.ReferenceEntry</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractReferenceMap.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 9 ">AbstractReferenceMap.ReferenceEntrySet</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractReferenceMap.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 4 ">AbstractReferenceMap.ReferenceEntrySetIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractReferenceMap.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 9 ">AbstractReferenceMap.ReferenceKeySet</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractReferenceMap.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 4 ">AbstractReferenceMap.ReferenceKeySetIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractReferenceMap.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 25 , # Elements Covered - 25 ">AbstractReferenceMap.ReferenceMapIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractReferenceMap.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 12 , # Elements Covered - 6 ">AbstractReferenceMap.ReferenceStrength</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractReferenceMap.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 9 ">AbstractReferenceMap.ReferenceValues</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractReferenceMap.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 4 ">AbstractReferenceMap.ReferenceValuesIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractReferenceMap.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 5 , # Elements Covered - 3 ">AbstractReferenceMap.WeakRef</a>
+            
+    
+            <a href="org/apache/commons/collections4/list/AbstractSerializableListDecorator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 8 ">AbstractSerializableListDecorator</a>
+            
+    
+            <a href="org/apache/commons/collections4/set/AbstractSerializableSetDecorator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 8 ">AbstractSerializableSetDecorator</a>
+            
+    
+            <a href="org/apache/commons/collections4/set/AbstractSetDecorator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 8 ">AbstractSetDecorator</a>
+            
+    
+            <a href="org/apache/commons/collections4/multimap/AbstractSetValuedMap.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 55 , # Elements Covered - 40 ">AbstractSetValuedMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/multimap/AbstractSetValuedMap.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 29 , # Elements Covered - 2 ">AbstractSetValuedMap.WrappedSet</a>
+            
+    
+            <a href="org/apache/commons/collections4/bag/AbstractSortedBagDecorator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 12 , # Elements Covered - 8 ">AbstractSortedBagDecorator</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/AbstractSortedBidiMapDecorator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 16 , # Elements Covered - 4 ">AbstractSortedBidiMapDecorator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractSortedMapDecorator.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 31 , # Elements Covered - 12 ">AbstractSortedMapDecorator</a>
+            
+    
+            <a href="org/apache/commons/collections4/set/AbstractSortedSetDecorator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 18 , # Elements Covered - 10 ">AbstractSortedSetDecorator</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/AbstractUntypedIteratorDecorator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 13 , # Elements Covered - 11 ">AbstractUntypedIteratorDecorator</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/AllPredicate.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 31 , # Elements Covered - 31 ">AllPredicate</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/AndPredicate.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 14 , # Elements Covered - 12 ">AndPredicate</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/AnyPredicate.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 31 , # Elements Covered - 29 ">AnyPredicate</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/ArrayIterator.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 44 , # Elements Covered - 38 ">ArrayIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/ArrayListIterator.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 37 , # Elements Covered - 35 ">ArrayListIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/ArrayStack.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 44 , # Elements Covered - 35 ">ArrayStack</a>
+            
+    
+            <a href="org/apache/commons/collections4/BagUtils.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 23 , # Elements Covered - 16 ">BagUtils</a>
+            
+    
+            <a href="org/apache/commons/collections4/comparators/BooleanComparator.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 29 , # Elements Covered - 26 ">BooleanComparator</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/BoundedIterator.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 50 , # Elements Covered - 48 ">BoundedIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/CaseInsensitiveMap.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 27 , # Elements Covered - 25 ">CaseInsensitiveMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/CatchAndRethrowClosure.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 5 , # Elements Covered - 5 ">CatchAndRethrowClosure</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/ChainedClosure.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 34 , # Elements Covered - 32 ">ChainedClosure</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/ChainedTransformer.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 32 , # Elements Covered - 30 ">ChainedTransformer</a>
+            
+    
+            <a href="org/apache/commons/collections4/queue/CircularFifoQueue.html" class="tag"
+            style="font-size: 20px;color:#d9695f"
+            title="# Elements - 180 , # Elements Covered - 173 ">CircularFifoQueue</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/CloneTransformer.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 12 , # Elements Covered - 12 ">CloneTransformer</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/ClosureTransformer.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 14 , # Elements Covered - 12 ">ClosureTransformer</a>
+            
+    
+            <a href="org/apache/commons/collections4/ClosureUtils.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 46 , # Elements Covered - 45 ">ClosureUtils</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/CollatingIterator.html" class="tag"
+            style="font-size: 19px;color:#d9695f"
+            title="# Elements - 144 , # Elements Covered - 121 ">CollatingIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/bag/CollectionBag.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 66 , # Elements Covered - 66 ">CollectionBag</a>
+            
+    
+            <a href="org/apache/commons/collections4/bag/CollectionSortedBag.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 66 , # Elements Covered - 66 ">CollectionSortedBag</a>
+            
+    
+            <a href="org/apache/commons/collections4/CollectionUtils.html" class="tag"
+            style="font-size: 42px;color:#89c495"
+            title="# Elements - 629 , # Elements Covered - 608 ">CollectionUtils</a>
+            
+    
+            <a href="org/apache/commons/collections4/CollectionUtils.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 18 , # Elements Covered - 18 ">CollectionUtils.CardinalityHelper</a>
+            
+    
+            <a href="org/apache/commons/collections4/CollectionUtils.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 14 , # Elements Covered - 12 ">CollectionUtils.EquatorWrapper</a>
+            
+    
+            <a href="org/apache/commons/collections4/CollectionUtils.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 15 , # Elements Covered - 15 ">CollectionUtils.SetOperationCardinalityHelper</a>
+            
+    
+            <a href="org/apache/commons/collections4/comparators/ComparableComparator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 10 ">ComparableComparator</a>
+            
+    
+            <a href="org/apache/commons/collections4/comparators/ComparatorChain.html" class="tag"
+            style="font-size: 17px;color:#d5584c"
+            title="# Elements - 111 , # Elements Covered - 81 ">ComparatorChain</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/ComparatorPredicate.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 39 , # Elements Covered - 33 ">ComparatorPredicate</a>
+            
+    
+            <a href="org/apache/commons/collections4/ComparatorUtils.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 54 , # Elements Covered - 8 ">ComparatorUtils</a>
+            
+    
+            <a href="org/apache/commons/collections4/collection/CompositeCollection.html" class="tag"
+            style="font-size: 18px;color:#d5584c"
+            title="# Elements - 123 , # Elements Covered - 106 ">CompositeCollection</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/CompositeMap.html" class="tag"
+            style="font-size: 19px;color:#d9695f"
+            title="# Elements - 150 , # Elements Covered - 142 ">CompositeMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/set/CompositeSet.html" class="tag"
+            style="font-size: 19px;color:#d9695f"
+            title="# Elements - 150 , # Elements Covered - 139 ">CompositeSet</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/ConstantFactory.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 13 , # Elements Covered - 11 ">ConstantFactory</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/ConstantTransformer.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 33 , # Elements Covered - 17 ">ConstantTransformer</a>
+            
+    
+            <a href="org/apache/commons/collections4/list/CursorableLinkedList.html" class="tag"
+            style="font-size: 17px;color:#d5584c"
+            title="# Elements - 111 , # Elements Covered - 97 ">CursorableLinkedList</a>
+            
+    
+            <a href="org/apache/commons/collections4/list/CursorableLinkedList.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 73 , # Elements Covered - 68 ">CursorableLinkedList.Cursor</a>
+            
+    
+            <a href="org/apache/commons/collections4/list/CursorableLinkedList.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 17 , # Elements Covered - 17 ">CursorableLinkedList.SubCursor</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/DefaultEquator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 12 , # Elements Covered - 9 ">DefaultEquator</a>
+            
+    
+            <a href="org/apache/commons/collections4/keyvalue/DefaultKeyValue.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 43 , # Elements Covered - 41 ">DefaultKeyValue</a>
+            
+    
+            <a href="org/apache/commons/collections4/keyvalue/DefaultMapEntry.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 6 ">DefaultMapEntry</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/DefaultedMap.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 37 , # Elements Covered - 31 ">DefaultedMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/sequence/DeleteCommand.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 4 ">DeleteCommand</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/DualHashBidiMap.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 18 , # Elements Covered - 15 ">DualHashBidiMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/DualLinkedHashBidiMap.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 18 , # Elements Covered - 15 ">DualLinkedHashBidiMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/DualTreeBidiMap.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="# Elements - 86 , # Elements Covered - 73 ">DualTreeBidiMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/DualTreeBidiMap.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 51 , # Elements Covered - 43 ">DualTreeBidiMap.BidiOrderedMapIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/DualTreeBidiMap.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 22 , # Elements Covered - 12 ">DualTreeBidiMap.ViewMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/sequence/EditCommand.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 4 ">EditCommand</a>
+            
+    
+            <a href="org/apache/commons/collections4/sequence/EditScript.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 20 , # Elements Covered - 18 ">EditScript</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/EmptyIterator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 6 ">EmptyIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/EmptyListIterator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 4 ">EmptyListIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/EmptyMapIterator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 4 ">EmptyMapIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/EmptyOrderedIterator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 4 ">EmptyOrderedIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/EmptyOrderedMapIterator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 4 ">EmptyOrderedMapIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/EntrySetToMapIteratorAdapter.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 25 , # Elements Covered - 25 ">EntrySetToMapIteratorAdapter</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/EnumerationIterator.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 28 , # Elements Covered - 12 ">EnumerationIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/EnumerationUtils.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 23 , # Elements Covered - 22 ">EnumerationUtils</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/EqualPredicate.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 26 , # Elements Covered - 24 ">EqualPredicate</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/ExceptionClosure.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 8 ">ExceptionClosure</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/ExceptionFactory.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 8 ">ExceptionFactory</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/ExceptionPredicate.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 8 ">ExceptionPredicate</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/ExceptionTransformer.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 8 ">ExceptionTransformer</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/FactoryTransformer.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 13 , # Elements Covered - 11 ">FactoryTransformer</a>
+            
+    
+            <a href="org/apache/commons/collections4/FactoryUtils.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 13 , # Elements Covered - 12 ">FactoryUtils</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/FalsePredicate.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 8 ">FalsePredicate</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/FilterIterator.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 51 , # Elements Covered - 43 ">FilterIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/FilterListIterator.html" class="tag"
+            style="font-size: 17px;color:#d5584c"
+            title="# Elements - 114 , # Elements Covered - 87 ">FilterListIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/comparators/FixedOrderComparator.html" class="tag"
+            style="font-size: 17px;color:#d5584c"
+            title="# Elements - 107 , # Elements Covered - 90 ">FixedOrderComparator</a>
+            
+    
+            <a href="org/apache/commons/collections4/list/FixedSizeList.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 43 , # Elements Covered - 30 ">FixedSizeList</a>
+            
+    
+            <a href="org/apache/commons/collections4/list/FixedSizeList.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 2 ">FixedSizeList.FixedSizeListIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/FixedSizeMap.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 40 , # Elements Covered - 29 ">FixedSizeMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/FixedSizeSortedMap.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 44 , # Elements Covered - 34 ">FixedSizeSortedMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/Flat3Map.html" class="tag"
+            style="font-size: 42px;color:#f6c342"
+            title="# Elements - 613 , # Elements Covered - 392 ">Flat3Map</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/Flat3Map.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 20 , # Elements Covered - 9 ">Flat3Map.EntryIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/Flat3Map.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 27 , # Elements Covered - 25 ">Flat3Map.EntrySet</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/Flat3Map.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 4 ">Flat3Map.EntrySetIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/Flat3Map.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="# Elements - 86 , # Elements Covered - 51 ">Flat3Map.FlatMapEntry</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/Flat3Map.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 75 , # Elements Covered - 46 ">Flat3Map.FlatMapIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/Flat3Map.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 23 , # Elements Covered - 23 ">Flat3Map.KeySet</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/Flat3Map.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 4 ">Flat3Map.KeySetIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/Flat3Map.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 19 , # Elements Covered - 17 ">Flat3Map.Values</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/Flat3Map.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 4 ">Flat3Map.ValuesIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/FluentIterable.html" class="tag"
+            style="font-size: 15px;color:#d04437"
+            title="# Elements - 78 , # Elements Covered - 14 ">FluentIterable</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/ForClosure.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 23 , # Elements Covered - 19 ">ForClosure</a>
+            
+    
+            <a href="org/apache/commons/collections4/FunctorException.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 4 ">FunctorException</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/FunctorUtils.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 77 , # Elements Covered - 65 ">FunctorUtils</a>
+            
+    
+            <a href="org/apache/commons/collections4/list/GrowthList.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 31 , # Elements Covered - 28 ">GrowthList</a>
+            
+    
+            <a href="org/apache/commons/collections4/bag/HashBag.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 11 , # Elements Covered - 11 ">HashBag</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/HashedMap.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 16 , # Elements Covered - 16 ">HashedMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/IdentityPredicate.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 13 , # Elements Covered - 11 ">IdentityPredicate</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/IfClosure.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 31 , # Elements Covered - 19 ">IfClosure</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/IfTransformer.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 37 , # Elements Covered - 29 ">IfTransformer</a>
+            
+    
+            <a href="org/apache/commons/collections4/collection/IndexedCollection.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 73 , # Elements Covered - 70 ">IndexedCollection</a>
+            
+    
+            <a href="org/apache/commons/collections4/sequence/InsertCommand.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 4 ">InsertCommand</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/InstanceofPredicate.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 13 , # Elements Covered - 9 ">InstanceofPredicate</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/InstantiateFactory.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 40 , # Elements Covered - 35 ">InstantiateFactory</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/InstantiateTransformer.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 36 , # Elements Covered - 27 ">InstantiateTransformer</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/InvokerTransformer.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 46 , # Elements Covered - 42 ">InvokerTransformer</a>
+            
+    
+            <a href="org/apache/commons/collections4/IterableUtils.html" class="tag"
+            style="font-size: 19px;color:#d5584c"
+            title="# Elements - 156 , # Elements Covered - 64 ">IterableUtils</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/IteratorChain.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 69 , # Elements Covered - 53 ">IteratorChain</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/IteratorEnumeration.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 11 , # Elements Covered - 8 ">IteratorEnumeration</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/IteratorIterable.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 24 , # Elements Covered - 22 ">IteratorIterable</a>
+            
+    
+            <a href="org/apache/commons/collections4/IteratorUtils.html" class="tag"
+            style="font-size: 31px;color:#de7b72"
+            title="# Elements - 395 , # Elements Covered - 218 ">IteratorUtils</a>
+            
+    
+            <a href="org/apache/commons/collections4/sequence/KeepCommand.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 4 ">KeepCommand</a>
+            
+    
+            <a href="org/apache/commons/collections4/trie/KeyAnalyzer.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 20 , # Elements Covered - 13 ">KeyAnalyzer</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/LRUMap.html" class="tag"
+            style="font-size: 18px;color:#d9695f"
+            title="# Elements - 141 , # Elements Covered - 119 ">LRUMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/LazyIteratorChain.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 34 , # Elements Covered - 34 ">LazyIteratorChain</a>
+            
+    
+            <a href="org/apache/commons/collections4/list/LazyList.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 32 , # Elements Covered - 23 ">LazyList</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/LazyMap.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 33 , # Elements Covered - 33 ">LazyMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/LazySortedMap.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 25 , # Elements Covered - 25 ">LazySortedMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/LinkedMap.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 35 , # Elements Covered - 31 ">LinkedMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/LinkedMap.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 36 , # Elements Covered - 34 ">LinkedMap.LinkedMapList</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/ListIteratorWrapper.html" class="tag"
+            style="font-size: 17px;color:#d5584c"
+            title="# Elements - 109 , # Elements Covered - 91 ">ListIteratorWrapper</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/ListOrderedMap.html" class="tag"
+            style="font-size: 19px;color:#d9695f"
+            title="# Elements - 147 , # Elements Covered - 143 ">ListOrderedMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/ListOrderedMap.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 44 , # Elements Covered - 44 ">ListOrderedMap.EntrySetView</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/ListOrderedMap.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 13 , # Elements Covered - 13 ">ListOrderedMap.KeySetView</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/ListOrderedMap.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 9 ">ListOrderedMap.ListOrderedIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/ListOrderedMap.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 7 ">ListOrderedMap.ListOrderedMapEntry</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/ListOrderedMap.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 52 , # Elements Covered - 48 ">ListOrderedMap.ListOrderedMapIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/ListOrderedMap.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 19 , # Elements Covered - 19 ">ListOrderedMap.ValuesView</a>
+            
+    
+            <a href="org/apache/commons/collections4/set/ListOrderedSet.html" class="tag"
+            style="font-size: 17px;color:#d9695f"
+            title="# Elements - 122 , # Elements Covered - 118 ">ListOrderedSet</a>
+            
+    
+            <a href="org/apache/commons/collections4/set/ListOrderedSet.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 15 , # Elements Covered - 10 ">ListOrderedSet.OrderedSetIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/ListUtils.html" class="tag"
+            style="font-size: 19px;color:#d9695f"
+            title="# Elements - 162 , # Elements Covered - 143 ">ListUtils</a>
+            
+    
+            <a href="org/apache/commons/collections4/ListUtils.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 6 ">ListUtils.CharSequenceAsList</a>
+            
+    
+            <a href="org/apache/commons/collections4/ListUtils.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 8 ">ListUtils.LcsVisitor</a>
+            
+    
+            <a href="org/apache/commons/collections4/ListUtils.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 24 , # Elements Covered - 16 ">ListUtils.Partition</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/LoopingIterator.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 25 , # Elements Covered - 25 ">LoopingIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/LoopingListIterator.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 69 , # Elements Covered - 61 ">LoopingListIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/set/MapBackedSet.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 49 , # Elements Covered - 47 ">MapBackedSet</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/MapTransformer.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 13 , # Elements Covered - 11 ">MapTransformer</a>
+            
+    
+            <a href="org/apache/commons/collections4/MapUtils.html" class="tag"
+            style="font-size: 37px;color:#d9695f"
+            title="# Elements - 518 , # Elements Covered - 161 ">MapUtils</a>
+            
+    
+            <a href="org/apache/commons/collections4/keyvalue/MultiKey.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 54 , # Elements Covered - 54 ">MultiKey</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/MultiKeyMap.html" class="tag"
+            style="font-size: 33px;color:#f6c342"
+            title="# Elements - 437 , # Elements Covered - 416 ">MultiKeyMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/MultiMapUtils.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 60 , # Elements Covered - 39 ">MultiMapUtils</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/MultiValueMap.html" class="tag"
+            style="font-size: 19px;color:#d9695f"
+            title="# Elements - 150 , # Elements Covered - 140 ">MultiValueMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/MultiValueMap.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 5 ">MultiValueMap.ReflectionFactory</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/MultiValueMap.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 7 ">MultiValueMap.Values</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/MultiValueMap.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 14 , # Elements Covered - 14 ">MultiValueMap.ValuesIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/multimap/MultiValuedHashMap.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 26 , # Elements Covered - 8 ">MultiValuedHashMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/multimap/MultiValuedHashMap.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">MultiValuedHashMap.ListValuedHashMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/multimap/MultiValuedHashMap.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">MultiValuedHashMap.SetValuedHashMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/NOPClosure.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 7 ">NOPClosure</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/NOPTransformer.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 8 ">NOPTransformer</a>
+            
+    
+            <a href="org/apache/commons/collections4/list/NodeCachingLinkedList.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 69 , # Elements Covered - 64 ">NodeCachingLinkedList</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/NodeListIterator.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 24 , # Elements Covered - 21 ">NodeListIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/NonePredicate.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 23 , # Elements Covered - 23 ">NonePredicate</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/NotNullPredicate.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 8 ">NotNullPredicate</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/NotPredicate.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 13 , # Elements Covered - 11 ">NotPredicate</a>
+            
+    
+            <a href="org/apache/commons/collections4/comparators/NullComparator.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 50 , # Elements Covered - 29 ">NullComparator</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/NullIsExceptionPredicate.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 17 , # Elements Covered - 15 ">NullIsExceptionPredicate</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/NullIsFalsePredicate.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 17 , # Elements Covered - 15 ">NullIsFalsePredicate</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/NullIsTruePredicate.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 17 , # Elements Covered - 15 ">NullIsTruePredicate</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/NullPredicate.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 8 ">NullPredicate</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/ObjectArrayIterator.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 44 , # Elements Covered - 40 ">ObjectArrayIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/ObjectArrayListIterator.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 37 , # Elements Covered - 34 ">ObjectArrayListIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/ObjectGraphIterator.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 81 , # Elements Covered - 81 ">ObjectGraphIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/OnePredicate.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 28 , # Elements Covered - 26 ">OnePredicate</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/OrPredicate.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 14 , # Elements Covered - 12 ">OrPredicate</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/PassiveExpiringMap.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="# Elements - 96 , # Elements Covered - 88 ">PassiveExpiringMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/PassiveExpiringMap.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 18 , # Elements Covered - 14 ">PassiveExpiringMap.ConstantTimeToLiveExpirationPolicy</a>
+            
+    
+            <a href="org/apache/commons/collections4/trie/PatriciaTrie.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">PatriciaTrie</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/PeekingIterator.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 63 , # Elements Covered - 56 ">PeekingIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/PermutationIterator.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 64 , # Elements Covered - 64 ">PermutationIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/PredicateTransformer.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 13 , # Elements Covered - 11 ">PredicateTransformer</a>
+            
+    
+            <a href="org/apache/commons/collections4/PredicateUtils.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 61 , # Elements Covered - 50 ">PredicateUtils</a>
+            
+    
+            <a href="org/apache/commons/collections4/bag/PredicatedBag.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 19 , # Elements Covered - 19 ">PredicatedBag</a>
+            
+    
+            <a href="org/apache/commons/collections4/collection/PredicatedCollection.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 27 , # Elements Covered - 27 ">PredicatedCollection</a>
+            
+    
+            <a href="org/apache/commons/collections4/collection/PredicatedCollection.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 62 , # Elements Covered - 51 ">PredicatedCollection.Builder</a>
+            
+    
+            <a href="org/apache/commons/collections4/list/PredicatedList.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 35 , # Elements Covered - 32 ">PredicatedList</a>
+            
+    
+            <a href="org/apache/commons/collections4/list/PredicatedList.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 8 ">PredicatedList.PredicatedListIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/PredicatedMap.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 42 , # Elements Covered - 42 ">PredicatedMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/set/PredicatedNavigableSet.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 31 , # Elements Covered - 25 ">PredicatedNavigableSet</a>
+            
+    
+            <a href="org/apache/commons/collections4/queue/PredicatedQueue.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 17 , # Elements Covered - 17 ">PredicatedQueue</a>
+            
+    
+            <a href="org/apache/commons/collections4/set/PredicatedSet.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 10 ">PredicatedSet</a>
+            
+    
+            <a href="org/apache/commons/collections4/bag/PredicatedSortedBag.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 12 , # Elements Covered - 12 ">PredicatedSortedBag</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/PredicatedSortedMap.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 21 , # Elements Covered - 21 ">PredicatedSortedMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/set/PredicatedSortedSet.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 21 , # Elements Covered - 21 ">PredicatedSortedSet</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/PrototypeFactory.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 18 , # Elements Covered - 16 ">PrototypeFactory</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/PrototypeFactory.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 17 , # Elements Covered - 9 ">PrototypeFactory.PrototypeCloneFactory</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/PrototypeFactory.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 21 , # Elements Covered - 20 ">PrototypeFactory.PrototypeSerializationFactory</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/PushbackIterator.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 26 , # Elements Covered - 20 ">PushbackIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/QueueUtils.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 8 ">QueueUtils</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/ReferenceIdentityMap.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 27 , # Elements Covered - 19 ">ReferenceIdentityMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/ReferenceMap.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 16 , # Elements Covered - 8 ">ReferenceMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/comparators/ReverseComparator.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 25 , # Elements Covered - 20 ">ReverseComparator</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/ReverseListIterator.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 42 , # Elements Covered - 40 ">ReverseListIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/sequence/SequencesComparator.html" class="tag"
+            style="font-size: 17px;color:#d9695f"
+            title="# Elements - 113 , # Elements Covered - 111 ">SequencesComparator</a>
+            
+    
+            <a href="org/apache/commons/collections4/sequence/SequencesComparator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 10 ">SequencesComparator.Snake</a>
+            
+    
+            <a href="org/apache/commons/collections4/list/SetUniqueList.html" class="tag"
+            style="font-size: 17px;color:#d5584c"
+            title="# Elements - 110 , # Elements Covered - 102 ">SetUniqueList</a>
+            
+    
+            <a href="org/apache/commons/collections4/list/SetUniqueList.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 10 ">SetUniqueList.SetListIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/list/SetUniqueList.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 21 , # Elements Covered - 21 ">SetUniqueList.SetListListIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/SetUtils.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 57 , # Elements Covered - 29 ">SetUtils</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/SingletonIterator.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 28 , # Elements Covered - 28 ">SingletonIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/SingletonListIterator.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 48 , # Elements Covered - 48 ">SingletonListIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/SingletonMap.html" class="tag"
+            style="font-size: 18px;color:#d5584c"
+            title="# Elements - 127 , # Elements Covered - 84 ">SingletonMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/SingletonMap.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 50 , # Elements Covered - 38 ">SingletonMap.SingletonMapIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/SingletonMap.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 13 , # Elements Covered - 11 ">SingletonMap.SingletonValues</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/SkippingIterator.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 24 , # Elements Covered - 24 ">SkippingIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/SplitMapUtils.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 23 , # Elements Covered - 17 ">SplitMapUtils</a>
+            
+    
+            <a href="org/apache/commons/collections4/SplitMapUtils.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 42 , # Elements Covered - 30 ">SplitMapUtils.WrappedGet</a>
+            
+    
+            <a href="org/apache/commons/collections4/SplitMapUtils.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 34 , # Elements Covered - 32 ">SplitMapUtils.WrappedPut</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/StaticBucketMap.html" class="tag"
+            style="font-size: 21px;color:#d9695f"
+            title="# Elements - 186 , # Elements Covered - 170 ">StaticBucketMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/StaticBucketMap.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 35 , # Elements Covered - 35 ">StaticBucketMap.BaseIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/StaticBucketMap.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 2 , # Elements Covered - 2 ">StaticBucketMap.EntryIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/StaticBucketMap.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 35 , # Elements Covered - 35 ">StaticBucketMap.EntrySet</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/StaticBucketMap.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 2 , # Elements Covered - 2 ">StaticBucketMap.KeyIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/StaticBucketMap.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 21 , # Elements Covered - 21 ">StaticBucketMap.KeySet</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/StaticBucketMap.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 29 , # Elements Covered - 27 ">StaticBucketMap.Node</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/StaticBucketMap.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 2 , # Elements Covered - 2 ">StaticBucketMap.ValueIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/StaticBucketMap.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 6 ">StaticBucketMap.Values</a>
+            
+    
+            <a href="org/apache/commons/collections4/trie/analyzer/StringKeyAnalyzer.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 64 , # Elements Covered - 54 ">StringKeyAnalyzer</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/StringValueTransformer.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 8 ">StringValueTransformer</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/SwitchClosure.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 64 , # Elements Covered - 56 ">SwitchClosure</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/SwitchTransformer.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 67 , # Elements Covered - 59 ">SwitchTransformer</a>
+            
+    
+            <a href="org/apache/commons/collections4/bag/SynchronizedBag.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 31 , # Elements Covered - 29 ">SynchronizedBag</a>
+            
+    
+            <a href="org/apache/commons/collections4/bag/SynchronizedBag.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 2 , # Elements Covered - 2 ">SynchronizedBag.SynchronizedBagSet</a>
+            
+    
+            <a href="org/apache/commons/collections4/collection/SynchronizedCollection.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 69 , # Elements Covered - 67 ">SynchronizedCollection</a>
+            
+    
+            <a href="org/apache/commons/collections4/bag/SynchronizedSortedBag.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 17 , # Elements Covered - 4 ">SynchronizedSortedBag</a>
+            
+    
+            <a href="org/apache/commons/collections4/keyvalue/TiedMapEntry.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 39 , # Elements Covered - 37 ">TiedMapEntry</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/TransformIterator.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 25 , # Elements Covered - 12 ">TransformIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/bag/TransformedBag.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 29 , # Elements Covered - 28 ">TransformedBag</a>
+            
+    
+            <a href="org/apache/commons/collections4/collection/TransformedCollection.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 30 , # Elements Covered - 29 ">TransformedCollection</a>
+            
+    
+            <a href="org/apache/commons/collections4/list/TransformedList.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 44 , # Elements Covered - 40 ">TransformedList</a>
+            
+    
+            <a href="org/apache/commons/collections4/list/TransformedList.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 8 ">TransformedList.TransformedListIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/TransformedMap.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 53 , # Elements Covered - 52 ">TransformedMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/multimap/TransformedMultiValuedMap.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 74 , # Elements Covered - 65 ">TransformedMultiValuedMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/set/TransformedNavigableSet.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 41 , # Elements Covered - 25 ">TransformedNavigableSet</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/TransformedPredicate.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 20 , # Elements Covered - 14 ">TransformedPredicate</a>
+            
+    
+            <a href="org/apache/commons/collections4/queue/TransformedQueue.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 26 , # Elements Covered - 25 ">TransformedQueue</a>
+            
+    
+            <a href="org/apache/commons/collections4/set/TransformedSet.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 18 , # Elements Covered - 17 ">TransformedSet</a>
+            
+    
+            <a href="org/apache/commons/collections4/bag/TransformedSortedBag.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 22 , # Elements Covered - 10 ">TransformedSortedBag</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/TransformedSortedMap.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 30 , # Elements Covered - 29 ">TransformedSortedMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/set/TransformedSortedSet.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 31 , # Elements Covered - 19 ">TransformedSortedSet</a>
+            
+    
+            <a href="org/apache/commons/collections4/splitmap/TransformedSplitMap.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 41 , # Elements Covered - 30 ">TransformedSplitMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/TransformerClosure.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 13 , # Elements Covered - 11 ">TransformerClosure</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/TransformerPredicate.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 18 , # Elements Covered - 16 ">TransformerPredicate</a>
+            
+    
+            <a href="org/apache/commons/collections4/TransformerUtils.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 59 , # Elements Covered - 58 ">TransformerUtils</a>
+            
+    
+            <a href="org/apache/commons/collections4/comparators/TransformingComparator.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 37 , # Elements Covered - 33 ">TransformingComparator</a>
+            
+    
+            <a href="org/apache/commons/collections4/bag/TreeBag.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 33 , # Elements Covered - 30 ">TreeBag</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/TreeBidiMap.html" class="tag"
+            style="font-size: 45px;color:#89c495"
+            title="# Elements - 693 , # Elements Covered - 639 ">TreeBidiMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/TreeBidiMap.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 4 ">TreeBidiMap.DataElement</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/TreeBidiMap.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 27 , # Elements Covered - 25 ">TreeBidiMap.EntryView</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/TreeBidiMap.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 81 , # Elements Covered - 57 ">TreeBidiMap.Inverse</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/TreeBidiMap.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 27 , # Elements Covered - 25 ">TreeBidiMap.InverseEntryView</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/TreeBidiMap.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 6 ">TreeBidiMap.InverseViewMapEntryIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/TreeBidiMap.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 20 , # Elements Covered - 18 ">TreeBidiMap.InverseViewMapIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/TreeBidiMap.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 9 ">TreeBidiMap.KeyView</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/TreeBidiMap.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 71 , # Elements Covered - 67 ">TreeBidiMap.Node</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/TreeBidiMap.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 9 ">TreeBidiMap.ValueView</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/TreeBidiMap.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 7 ">TreeBidiMap.View</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/TreeBidiMap.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 58 , # Elements Covered - 37 ">TreeBidiMap.ViewIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/TreeBidiMap.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 4 ">TreeBidiMap.ViewMapEntryIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/TreeBidiMap.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 20 , # Elements Covered - 18 ">TreeBidiMap.ViewMapIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/list/TreeList.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 79 , # Elements Covered - 76 ">TreeList</a>
+            
+    
+            <a href="org/apache/commons/collections4/list/TreeList.html" class="tag"
+            style="font-size: 31px;color:#e7a19b"
+            title="# Elements - 400 , # Elements Covered - 387 ">TreeList.AVLNode</a>
+            
+    
+            <a href="org/apache/commons/collections4/list/TreeList.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 81 , # Elements Covered - 79 ">TreeList.TreeListIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/TrieUtils.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 3 , # Elements Covered - 2 ">TrieUtils</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/TruePredicate.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 8 ">TruePredicate</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/UniqueFilterIterator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 2 , # Elements Covered - 2 ">UniqueFilterIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/UniquePredicate.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 6 ">UniquePredicate</a>
+            
+    
+            <a href="org/apache/commons/collections4/bag/UnmodifiableBag.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 36 , # Elements Covered - 34 ">UnmodifiableBag</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/UnmodifiableBidiMap.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 38 , # Elements Covered - 38 ">UnmodifiableBidiMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/collection/UnmodifiableBoundedCollection.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 54 , # Elements Covered - 40 ">UnmodifiableBoundedCollection</a>
+            
+    
+            <a href="org/apache/commons/collections4/collection/UnmodifiableCollection.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 23 , # Elements Covered - 23 ">UnmodifiableCollection</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/UnmodifiableEntrySet.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 50 , # Elements Covered - 47 ">UnmodifiableEntrySet</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/UnmodifiableEntrySet.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 4 ">UnmodifiableEntrySet.UnmodifiableEntry</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/UnmodifiableEntrySet.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 6 ">UnmodifiableEntrySet.UnmodifiableEntrySetIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/UnmodifiableIterator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 20 , # Elements Covered - 20 ">UnmodifiableIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/list/UnmodifiableList.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 38 , # Elements Covered - 38 ">UnmodifiableList</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/UnmodifiableListIterator.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 32 , # Elements Covered - 32 ">UnmodifiableListIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/UnmodifiableMap.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 40 , # Elements Covered - 32 ">UnmodifiableMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/keyvalue/UnmodifiableMapEntry.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 8 ">UnmodifiableMapEntry</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/UnmodifiableMapIterator.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 26 , # Elements Covered - 26 ">UnmodifiableMapIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/multimap/UnmodifiableMultiValuedMap.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 36 , # Elements Covered - 24 ">UnmodifiableMultiValuedMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/set/UnmodifiableNavigableSet.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 50 , # Elements Covered - 50 ">UnmodifiableNavigableSet</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/UnmodifiableOrderedBidiMap.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 40 , # Elements Covered - 40 ">UnmodifiableOrderedBidiMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/UnmodifiableOrderedMap.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 35 , # Elements Covered - 35 ">UnmodifiableOrderedMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/UnmodifiableOrderedMapIterator.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 30 , # Elements Covered - 30 ">UnmodifiableOrderedMapIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/queue/UnmodifiableQueue.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 35 , # Elements Covered - 31 ">UnmodifiableQueue</a>
+            
+    
+            <a href="org/apache/commons/collections4/set/UnmodifiableSet.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 23 , # Elements Covered - 23 ">UnmodifiableSet</a>
+            
+    
+            <a href="org/apache/commons/collections4/bag/UnmodifiableSortedBag.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 35 , # Elements Covered - 29 ">UnmodifiableSortedBag</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/UnmodifiableSortedBidiMap.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 47 , # Elements Covered - 47 ">UnmodifiableSortedBidiMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/UnmodifiableSortedMap.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 41 , # Elements Covered - 33 ">UnmodifiableSortedMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/set/UnmodifiableSortedSet.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 37 , # Elements Covered - 37 ">UnmodifiableSortedSet</a>
+            
+    
+            <a href="org/apache/commons/collections4/trie/UnmodifiableTrie.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 65 , # Elements Covered - 54 ">UnmodifiableTrie</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/WhileClosure.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 30 , # Elements Covered - 24 ">WhileClosure</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/ZippingIterator.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 45 , # Elements Covered - 43 ">ZippingIterator</a>
+           </div>
+   
+   </div>
+    </div> <!-- tabs-pane active-pane -->
+</div> <!-- aui-tabs horizontal-tabs -->
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.2.1
+                on Tue Jul 26 2022 16:12:45 PDT using coverage data from Tue Jul 26 2022 16:10:43 PDT.
+            </li>
+        </ul>
+        <ul>
+            <li>Clover free edition. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5e623a5b-08d2-4c93-a62e-f3b0a308d9f8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/maven-build.xml" beforeDir="false" afterPath="$PROJECT_DIR$/maven-build.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestDateTimeFieldType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestDateTimeFieldType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/joda/time/TestDurationFieldType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/joda/time/TestDurationFieldType.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2Ct3r4m8yutBr7rmpBvEc6NpCyO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Csv1f" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RunManager" selected="JUnit.org.joda.time in joda-time">
+    <configuration name="All in joda-time" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="joda-time" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="org.joda.time in joda-time" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="joda-time" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.joda.time.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.joda.time" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.org.joda.time in joda-time" />
+        <item itemvalue="JUnit.All in joda-time" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5e623a5b-08d2-4c93-a62e-f3b0a308d9f8" name="Changes" comment="" />
+      <created>1659608249452</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1659608249452</updated>
+      <workItem from="1659608252457" duration="651000" />
+      <workItem from="1659647739960" duration="2507000" />
+      <workItem from="1659652921795" duration="2105000" />
+      <workItem from="1659670504361" duration="2195000" />
+      <workItem from="1659733065260" duration="30000" />
+      <workItem from="1660010531088" duration="1450000" />
+      <workItem from="1660013101093" duration="3436000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

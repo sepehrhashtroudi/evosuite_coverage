@@ -1,0 +1,2 @@
+processClover (  {"children":["org/apache/commons/csv/"],"name":"Clover database Wed Aug 24 2022 13:36:34 MDT","stats":{"AvgMethodComplexity":2.7307692,"Complexity":213,"ErroneousTests":0,"FailingTests":0,"PassingTests":0,"PcErroneousTests":-1,"PcFailingTests":-1,"PcPassingTests":-1,"TestExecutionTime":0,"Tests":0,"TotalChildren":1,"TotalPercentageCovered":81.008896,"TotalStatements":404,"UncoveredElements":128},"title":"commons-csv"}
+ ); 

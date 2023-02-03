@@ -1,0 +1,1305 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="img/clover.ico" />
+
+    <link rel="stylesheet" href="aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('style.css');
+        @import url('tree.css');
+        
+    </style>
+
+    <script src="jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="package-nodes-tree.js" type="text/javascript"></script>
+    <script src="clover-tree.js" type="text/javascript"></script>
+    <script src="clover.js" type="text/javascript"></script>
+    <script src="clover-descriptions.js" type="text/javascript"></script>
+    <script src="cloud.js" type="text/javascript"></script>
+
+            <title></title>
+    </head>
+
+<body onresize="processTreeMapDashJson(treeMapJson);" >
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="aui-nav-selected">
+                    <a href="dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                  <div class="packages-tree-wrapper" data-root-relative="" data-package-name="">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <ol class="aui-nav aui-nav-breadcrumbs">
+            
+        <li><a href="dashboard.html">Project Clover database Tue Jul 26 2022 16:09:18 PDT</a></li>
+    </ol>
+    
+<h1 class="aui-h2-clover">
+            Project overview
+    </h1>
+<div class="aui-tabs horizontal-tabs">
+        <ul class="tabs-menu">
+            <li class="menu-item active-tab">
+            <a href="dashboard.html">Dashboard</a>
+        </li>
+                <li class="menu-item ">
+            <a href="pkg-summary.html"><strong>Application code</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="testsrc-pkg-summary.html"><strong>Test code</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="test-pkg-summary.html"><strong>Test results</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="top-risks.html"><strong>Top risks</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="quick-wins.html"><strong>Quick wins</strong></a>
+        </li>
+                                                <li class="menu-item ">
+                <a href="treemap.html"><strong>Coverage tree map</strong></a>
+            </li>
+            </ul>
+    <div class="tabs-pane active-pane" id="tabs-first">
+
+        <div>&#160;</div>
+
+
+
+
+
+
+<div class="aui-group">
+    <div class="aui-item">
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                
+                <h3>
+                    Code coverage
+                    <small style="float:right; font-weight: normal">
+                        481 classes,
+                        15,765 /
+                        19,986 elements
+                    </small>
+                </h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.78880215</span>78.9%</div><div style="display: table-cell">
+ <div title="78.9% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:78.9%"></div></div></div></div>
+                <p><a href="pkg-summary.html">See more</a></p>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>
+                    Test results
+                    <small style="float:right; font-weight: normal">
+                        0 /
+                        0 tests
+                        0 secs
+                    </small>
+                </h3>
+            </header>
+            <div class="dashboard-widget-content">
+                                        <div class="aui-message aui-message-warning">
+        <p class="title">
+            <strong>No test results</strong>
+        </p>
+        <p>No test results could be found. Please ensure that you have instrumented your unit tests correctly.</p>
+    </div>
+                                <p><a href="test-pkg-summary.html">See more</a></p>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Code metrics</h3>
+            </header>
+                         
+
+<div id="$statsId" class="aui-item" style="display: ${display}">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this project">Branches:</label></div>
+        <div class="stats-box-value">4,432</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this project">Statements:</label></div>
+        <div class="stats-box-value">11,530</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this project">Methods:</label></div>
+        <div class="stats-box-value">4,024</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this project">Classes:</label></div>
+        <div class="stats-box-value">481</div>
+    </div>
+            <div class="stats-box">
+            <div class="stats-box-label"><label title="Total number of files in this project">Files:</label></div>
+            <div class="stats-box-value">319</div>
+        </div>
+                <div class="stats-box">
+            <div class="stats-box-label"><label title="Total number of packages in this project">Packages:</label></div>
+            <div class="stats-box-value">17</div>
+        </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this project">LOC:</label></div>
+        <div class="stats-box-value">67,556</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this project">NCLOC:</label></div>
+        <div class="stats-box-value">27,901</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this project">Total complexity:</label></div>
+        <div class="stats-box-value">6,646</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this project">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.58</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">2.87</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">8.37</div>
+    </div>
+            <div class="stats-box">
+            <div class="stats-box-label"><label title="Number of classes per package.">Classes/Package:</label></div>
+            <div class="stats-box-value">28.29</div>
+        </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this project">Average method complexity:</label></div>
+        <div class="stats-box-value">1.65</div>
+    </div>
+</div>
+
+</div>        </div>
+
+                <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Class Coverage Distribution</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <div style="text-align: center">                     <img src="img/classDistrubutionChart.png" alt="img/classDistrubutionChart.png" usemap="#classDistrubutionChart.png"/>
+                </div>
+                <map id="classDistrubutionChart.png" name="classDistrubutionChart.png">
+<area shape="rect" coords="282,15,304,206" title="224 classes have 91-100% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="258,145,280,206" title="72 classes have 81-90% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="233,177,255,206" title="34 classes have 71-80% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="209,182,231,206" title="29 classes have 61-70% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="184,198,206,206" title="10 classes have 51-60% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="160,192,182,206" title="17 classes have 41-50% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="135,203,157,206" title="4 classes have 31-40% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="111,204,133,206" title="3 classes have 21-30% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="87,203,109,206" title="4 classes have 11-20% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="62,206,84,207" title="1 class has 1-10% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="38,170,60,206" title="43 classes have 0% coverage" alt="" nohref="nohref"/>
+</map>
+            </div>
+        </div>
+        
+                <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Class Complexity</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <div style="text-align: center">
+                    <img src="img/classComplexityChart.png" alt="img/classComplexityChart.png" usemap="#classComplexityChart.png"/>
+                </div>
+                <map id="classComplexityChart.png" name="classComplexityChart.png">
+<area shape="poly" coords="54,204,51,207,49,204,51,202,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: AbstractNullComparatorTest.TestNullComparator2" alt="" href="org/apache/commons/collections4/comparators/AbstractNullComparatorTest.html#AbstractNullComparatorTest.TestNullComparator2"/>
+<area shape="poly" coords="54,204,51,207,49,204,51,202,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: AbstractNullComparatorTest.TestNullComparator2" alt="" href="org/apache/commons/collections4/comparators/AbstractNullComparatorTest.html#AbstractNullComparatorTest.TestNullComparator2"/>
+<area shape="poly" coords="54,207,51,210,49,207,51,205,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: AbstractNullComparatorTest" alt="" href="org/apache/commons/collections4/comparators/AbstractNullComparatorTest.html#AbstractNullComparatorTest"/>
+<area shape="poly" coords="54,205,51,208,49,205,51,203,54,205,54,205" title="Complexity: 4; Coverage: 0%; Class: ComparableComparatorTest" alt="" href="org/apache/commons/collections4/comparators/ComparableComparatorTest.html#ComparableComparatorTest"/>
+<area shape="poly" coords="272,197,269,200,267,197,269,195,272,197,272,197" title="Complexity: 12; Coverage: 89%; Class: TransformingComparator" alt="" href="org/apache/commons/collections4/comparators/TransformingComparator.html#TransformingComparator"/>
+<area shape="poly" coords="259,174,257,177,254,174,257,172,259,174,259,174" title="Complexity: 35; Coverage: 84%; Class: FixedOrderComparator" alt="" href="org/apache/commons/collections4/comparators/FixedOrderComparator.html#FixedOrderComparator"/>
+<area shape="poly" coords="249,200,247,203,244,200,247,198,249,200,249,200" title="Complexity: 9; Coverage: 80%; Class: ReverseComparator" alt="" href="org/apache/commons/collections4/comparators/ReverseComparator.html#ReverseComparator"/>
+<area shape="poly" coords="298,204,296,207,293,204,296,202,298,204,298,204" title="Complexity: 5; Coverage: 100%; Class: ComparableComparator" alt="" href="org/apache/commons/collections4/comparators/ComparableComparator.html#ComparableComparator"/>
+<area shape="poly" coords="230,174,227,177,225,174,227,172,230,174,230,174" title="Complexity: 35; Coverage: 72%; Class: ComparatorChain" alt="" href="org/apache/commons/collections4/comparators/ComparatorChain.html#ComparatorChain"/>
+<area shape="poly" coords="272,196,269,199,267,196,269,194,272,196,272,196" title="Complexity: 13; Coverage: 89%; Class: BooleanComparator" alt="" href="org/apache/commons/collections4/comparators/BooleanComparator.html#BooleanComparator"/>
+<area shape="poly" coords="196,192,193,195,191,192,193,190,196,192,196,192" title="Complexity: 17; Coverage: 58%; Class: NullComparator" alt="" href="org/apache/commons/collections4/comparators/NullComparator.html#NullComparator"/>
+<area shape="poly" coords="54,203,51,206,49,203,51,201,54,203,54,203" title="Complexity: 6; Coverage: 0%; Class: FixedSizeListTest" alt="" href="org/apache/commons/collections4/list/FixedSizeListTest.html#FixedSizeListTest"/>
+<area shape="poly" coords="274,199,271,202,269,199,271,197,274,199,274,199" title="Complexity: 10; Coverage: 90%; Class: GrowthList" alt="" href="org/apache/commons/collections4/list/GrowthList.html#GrowthList"/>
+<area shape="poly" coords="298,206,296,209,293,206,296,204,298,206,298,206" title="Complexity: 3; Coverage: 100%; Class: TransformedList.TransformedListIterator" alt="" href="org/apache/commons/collections4/list/TransformedList.html#TransformedList.TransformedListIterator"/>
+<area shape="poly" coords="274,190,271,193,269,190,271,188,274,190,274,190" title="Complexity: 19; Coverage: 90%; Class: TransformedList" alt="" href="org/apache/commons/collections4/list/TransformedList.html#TransformedList"/>
+<area shape="poly" coords="281,194,279,197,276,194,279,192,281,194,281,194" title="Complexity: 15; Coverage: 93%; Class: AbstractListDecorator" alt="" href="org/apache/commons/collections4/list/AbstractListDecorator.html#AbstractListDecorator"/>
+<area shape="poly" coords="262,187,259,190,257,187,259,185,262,187,262,187" title="Complexity: 22; Coverage: 85%; Class: AbstractLinkedList.LinkedSubList" alt="" href="org/apache/commons/collections4/list/AbstractLinkedList.html#AbstractLinkedList.LinkedSubList"/>
+<area shape="poly" coords="298,203,296,206,293,203,296,201,298,203,298,203" title="Complexity: 6; Coverage: 100%; Class: AbstractLinkedList.LinkedSubListIterator" alt="" href="org/apache/commons/collections4/list/AbstractLinkedList.html#AbstractLinkedList.LinkedSubListIterator"/>
+<area shape="poly" coords="298,192,296,195,293,192,296,190,298,192,298,192" title="Complexity: 17; Coverage: 100%; Class: AbstractLinkedList.LinkedListIterator" alt="" href="org/apache/commons/collections4/list/AbstractLinkedList.html#AbstractLinkedList.LinkedListIterator"/>
+<area shape="poly" coords="164,200,161,203,159,200,161,198,164,200,164,200" title="Complexity: 9; Coverage: 45%; Class: AbstractLinkedList.Node" alt="" href="org/apache/commons/collections4/list/AbstractLinkedList.html#AbstractLinkedList.Node"/>
+<area shape="poly" coords="286,122,284,125,281,122,284,120,286,122,286,122" title="Complexity: 88; Coverage: 95%; Class: AbstractLinkedList" alt="" href="org/apache/commons/collections4/list/AbstractLinkedList.html#AbstractLinkedList"/>
+<area shape="poly" coords="134,206,132,209,129,206,132,204,134,206,134,206" title="Complexity: 3; Coverage: 33%; Class: FixedSizeList.FixedSizeListIterator" alt="" href="org/apache/commons/collections4/list/FixedSizeList.html#FixedSizeList.FixedSizeListIterator"/>
+<area shape="poly" coords="223,188,220,191,218,188,220,186,223,188,223,188" title="Complexity: 21; Coverage: 69%; Class: FixedSizeList" alt="" href="org/apache/commons/collections4/list/FixedSizeList.html#FixedSizeList"/>
+<area shape="poly" coords="298,203,296,206,293,203,296,201,298,203,298,203" title="Complexity: 6; Coverage: 100%; Class: AbstractLinkedList.LinkedSubListIterator" alt="" href="org/apache/commons/collections4/list/AbstractLinkedList.html#AbstractLinkedList.LinkedSubListIterator"/>
+<area shape="poly" coords="281,187,279,190,276,187,279,185,281,187,281,187" title="Complexity: 22; Coverage: 93%; Class: CursorableLinkedList.Cursor" alt="" href="org/apache/commons/collections4/list/CursorableLinkedList.html#CursorableLinkedList.Cursor"/>
+<area shape="poly" coords="267,176,264,179,262,176,264,174,267,176,267,176" title="Complexity: 33; Coverage: 87%; Class: CursorableLinkedList" alt="" href="org/apache/commons/collections4/list/CursorableLinkedList.html#CursorableLinkedList"/>
+<area shape="poly" coords="298,192,296,195,293,192,296,190,298,192,298,192" title="Complexity: 17; Coverage: 100%; Class: AbstractLinkedList.LinkedListIterator" alt="" href="org/apache/commons/collections4/list/AbstractLinkedList.html#AbstractLinkedList.LinkedListIterator"/>
+<area shape="poly" coords="227,201,225,204,222,201,225,199,227,201,227,201" title="Complexity: 8; Coverage: 71%; Class: LazyList" alt="" href="org/apache/commons/collections4/list/LazyList.html#LazyList"/>
+<area shape="poly" coords="298,202,296,205,293,202,296,200,298,202,298,202" title="Complexity: 7; Coverage: 100%; Class: SetUniqueList.SetListListIterator" alt="" href="org/apache/commons/collections4/list/SetUniqueList.html#SetUniqueList.SetListListIterator"/>
+<area shape="poly" coords="298,206,296,209,293,206,296,204,298,206,298,206" title="Complexity: 3; Coverage: 100%; Class: TransformedList.TransformedListIterator" alt="" href="org/apache/commons/collections4/list/TransformedList.html#TransformedList.TransformedListIterator"/>
+<area shape="poly" coords="279,176,276,179,274,176,276,174,279,176,279,176" title="Complexity: 33; Coverage: 92%; Class: SetUniqueList" alt="" href="org/apache/commons/collections4/list/SetUniqueList.html#SetUniqueList"/>
+<area shape="poly" coords="298,206,296,209,293,206,296,204,298,206,298,206" title="Complexity: 3; Coverage: 100%; Class: TransformedList.TransformedListIterator" alt="" href="org/apache/commons/collections4/list/TransformedList.html#TransformedList.TransformedListIterator"/>
+<area shape="poly" coords="276,194,274,197,271,194,274,192,276,194,276,194" title="Complexity: 15; Coverage: 91%; Class: PredicatedList" alt="" href="org/apache/commons/collections4/list/PredicatedList.html#PredicatedList"/>
+<area shape="poly" coords="298,206,296,209,293,206,296,204,298,206,298,206" title="Complexity: 3; Coverage: 100%; Class: TransformedList.TransformedListIterator" alt="" href="org/apache/commons/collections4/list/TransformedList.html#TransformedList.TransformedListIterator"/>
+<area shape="poly" coords="279,190,276,193,274,190,276,188,279,190,279,190" title="Complexity: 19; Coverage: 92%; Class: NodeCachingLinkedList" alt="" href="org/apache/commons/collections4/list/NodeCachingLinkedList.html#NodeCachingLinkedList"/>
+<area shape="poly" coords="291,189,289,192,286,189,289,187,291,189,291,189" title="Complexity: 20; Coverage: 97%; Class: TreeList.TreeListIterator" alt="" href="org/apache/commons/collections4/list/TreeList.html#TreeList.TreeListIterator"/>
+<area shape="poly" coords="289,104,286,107,284,104,286,102,289,104,289,104" title="Complexity: 106; Coverage: 96%; Class: TreeList.AVLNode" alt="" href="org/apache/commons/collections4/list/TreeList.html#TreeList.AVLNode"/>
+<area shape="poly" coords="289,185,286,188,284,185,286,183,289,185,289,185" title="Complexity: 24; Coverage: 96%; Class: TreeList" alt="" href="org/apache/commons/collections4/list/TreeList.html#TreeList"/>
+<area shape="poly" coords="54,204,51,207,49,204,51,202,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: AbstractNullComparatorTest.TestNullComparator2" alt="" href="org/apache/commons/collections4/comparators/AbstractNullComparatorTest.html#AbstractNullComparatorTest.TestNullComparator2"/>
+<area shape="poly" coords="257,180,254,183,252,180,254,178,257,180,257,180" title="Complexity: 29; Coverage: 83%; Class: UnmodifiableTrie" alt="" href="org/apache/commons/collections4/trie/UnmodifiableTrie.html#UnmodifiableTrie"/>
+<area shape="poly" coords="289,200,286,203,284,200,286,198,289,200,289,200" title="Complexity: 9; Coverage: 96%; Class: AbstractPatriciaTrie.PrefixRangeEntrySet.EntryIterator" alt="" href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html#AbstractPatriciaTrie.PrefixRangeEntrySet.EntryIterator"/>
+<area shape="poly" coords="176,203,174,206,171,203,174,201,176,203,176,203" title="Complexity: 6; Coverage: 50%; Class: AbstractPatriciaTrie.PrefixRangeEntrySet.SingletonIterator" alt="" href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html#AbstractPatriciaTrie.PrefixRangeEntrySet.SingletonIterator"/>
+<area shape="poly" coords="298,203,296,206,293,203,296,201,298,203,298,203" title="Complexity: 6; Coverage: 100%; Class: AbstractLinkedList.LinkedSubListIterator" alt="" href="org/apache/commons/collections4/list/AbstractLinkedList.html#AbstractLinkedList.LinkedSubListIterator"/>
+<area shape="poly" coords="252,177,249,180,247,177,249,175,252,177,252,177" title="Complexity: 32; Coverage: 81%; Class: AbstractPatriciaTrie.PrefixRangeMap" alt="" href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html#AbstractPatriciaTrie.PrefixRangeMap"/>
+<area shape="poly" coords="298,203,296,206,293,203,296,201,298,203,298,203" title="Complexity: 6; Coverage: 100%; Class: AbstractLinkedList.LinkedSubListIterator" alt="" href="org/apache/commons/collections4/list/AbstractLinkedList.html#AbstractLinkedList.LinkedSubListIterator"/>
+<area shape="poly" coords="281,191,279,194,276,191,279,189,281,191,281,191" title="Complexity: 18; Coverage: 93%; Class: AbstractPatriciaTrie.RangeEntrySet" alt="" href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html#AbstractPatriciaTrie.RangeEntrySet"/>
+<area shape="poly" coords="237,182,235,185,232,182,235,180,237,182,237,182" title="Complexity: 27; Coverage: 75%; Class: AbstractPatriciaTrie.RangeEntryMap" alt="" href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html#AbstractPatriciaTrie.RangeEntryMap"/>
+<area shape="poly" coords="205,183,203,186,200,183,203,181,205,183,205,183" title="Complexity: 26; Coverage: 62%; Class: AbstractPatriciaTrie.RangeMap" alt="" href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html#AbstractPatriciaTrie.RangeMap"/>
+<area shape="poly" coords="286,196,284,199,281,196,284,194,286,196,286,196" title="Complexity: 13; Coverage: 95%; Class: AbstractPatriciaTrie.TrieMapIterator" alt="" href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html#AbstractPatriciaTrie.TrieMapIterator"/>
+<area shape="poly" coords="284,199,281,202,279,199,281,197,284,199,284,199" title="Complexity: 10; Coverage: 94%; Class: AbstractPatriciaTrie.TrieIterator" alt="" href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html#AbstractPatriciaTrie.TrieIterator"/>
+<area shape="poly" coords="298,208,296,211,293,208,296,206,298,208,298,208" title="Complexity: 1; Coverage: 100%; Class: AbstractPatriciaTrie.Values.ValueIterator" alt="" href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html#AbstractPatriciaTrie.Values.ValueIterator"/>
+<area shape="poly" coords="298,202,296,205,293,202,296,200,298,202,298,202" title="Complexity: 7; Coverage: 100%; Class: SetUniqueList.SetListListIterator" alt="" href="org/apache/commons/collections4/list/SetUniqueList.html#SetUniqueList.SetListListIterator"/>
+<area shape="poly" coords="298,208,296,211,293,208,296,206,298,208,298,208" title="Complexity: 1; Coverage: 100%; Class: AbstractPatriciaTrie.Values.ValueIterator" alt="" href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html#AbstractPatriciaTrie.Values.ValueIterator"/>
+<area shape="poly" coords="298,204,296,207,293,204,296,202,298,204,298,204" title="Complexity: 5; Coverage: 100%; Class: ComparableComparator" alt="" href="org/apache/commons/collections4/comparators/ComparableComparator.html#ComparableComparator"/>
+<area shape="poly" coords="298,208,296,211,293,208,296,206,298,208,298,208" title="Complexity: 1; Coverage: 100%; Class: AbstractPatriciaTrie.Values.ValueIterator" alt="" href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html#AbstractPatriciaTrie.Values.ValueIterator"/>
+<area shape="poly" coords="279,201,276,204,274,201,276,199,279,201,279,201" title="Complexity: 8; Coverage: 92%; Class: AbstractPatriciaTrie.EntrySet" alt="" href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html#AbstractPatriciaTrie.EntrySet"/>
+<area shape="poly" coords="247,195,245,198,242,195,245,193,247,195,247,195" title="Complexity: 14; Coverage: 79%; Class: AbstractPatriciaTrie.TrieEntry" alt="" href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html#AbstractPatriciaTrie.TrieEntry"/>
+<area shape="poly" coords="54,207,51,210,49,207,51,205,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: AbstractNullComparatorTest" alt="" href="org/apache/commons/collections4/comparators/AbstractNullComparatorTest.html#AbstractNullComparatorTest"/>
+<area shape="poly" coords="223,19,220,21,218,19,220,16,223,19,223,19" title="Complexity: 193; Coverage: 69%; Class: AbstractPatriciaTrie" alt="" href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html#AbstractPatriciaTrie"/>
+<area shape="poly" coords="254,194,252,197,249,194,252,192,254,194,254,194" title="Complexity: 15; Coverage: 82%; Class: AbstractBitwiseTrie.BasicEntry" alt="" href="org/apache/commons/collections4/trie/AbstractBitwiseTrie.html#AbstractBitwiseTrie.BasicEntry"/>
+<area shape="poly" coords="254,193,252,196,249,193,252,191,254,193,254,193" title="Complexity: 16; Coverage: 82%; Class: AbstractBitwiseTrie" alt="" href="org/apache/commons/collections4/trie/AbstractBitwiseTrie.html#AbstractBitwiseTrie"/>
+<area shape="poly" coords="213,201,210,204,208,201,210,199,213,201,213,201" title="Complexity: 8; Coverage: 65%; Class: KeyAnalyzer" alt="" href="org/apache/commons/collections4/trie/KeyAnalyzer.html#KeyAnalyzer"/>
+<area shape="poly" coords="176,207,174,210,171,207,174,205,176,207,176,207" title="Complexity: 2; Coverage: 50%; Class: PatriciaTrie" alt="" href="org/apache/commons/collections4/trie/PatriciaTrie.html#PatriciaTrie"/>
+<area shape="poly" coords="54,203,51,206,49,203,51,201,54,203,54,203" title="Complexity: 6; Coverage: 0%; Class: FixedSizeListTest" alt="" href="org/apache/commons/collections4/list/FixedSizeListTest.html#FixedSizeListTest"/>
+<area shape="poly" coords="54,203,51,206,49,203,51,201,54,203,54,203" title="Complexity: 6; Coverage: 0%; Class: FixedSizeListTest" alt="" href="org/apache/commons/collections4/list/FixedSizeListTest.html#FixedSizeListTest"/>
+<area shape="poly" coords="269,189,267,192,264,189,267,187,269,189,269,189" title="Complexity: 20; Coverage: 88%; Class: PeekingIterator" alt="" href="org/apache/commons/collections4/iterators/PeekingIterator.html#PeekingIterator"/>
+<area shape="poly" coords="298,191,296,194,293,191,296,189,298,191,298,191" title="Complexity: 18; Coverage: 100%; Class: PermutationIterator" alt="" href="org/apache/commons/collections4/iterators/PermutationIterator.html#PermutationIterator"/>
+<area shape="poly" coords="269,186,267,189,264,186,267,184,269,186,269,186" title="Complexity: 23; Coverage: 88%; Class: LoopingListIterator" alt="" href="org/apache/commons/collections4/iterators/LoopingListIterator.html#LoopingListIterator"/>
+<area shape="poly" coords="240,199,237,202,235,199,237,197,240,199,240,199" title="Complexity: 10; Coverage: 76%; Class: PushbackIterator" alt="" href="org/apache/commons/collections4/iterators/PushbackIterator.html#PushbackIterator"/>
+<area shape="poly" coords="298,207,296,210,293,207,296,205,298,207,298,207" title="Complexity: 2; Coverage: 100%; Class: AbstractIteratorDecorator" alt="" href="org/apache/commons/collections4/iterators/AbstractIteratorDecorator.html#AbstractIteratorDecorator"/>
+<area shape="poly" coords="298,208,296,211,293,208,296,206,298,208,298,208" title="Complexity: 1; Coverage: 100%; Class: AbstractPatriciaTrie.Values.ValueIterator" alt="" href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html#AbstractPatriciaTrie.Values.ValueIterator"/>
+<area shape="poly" coords="156,199,154,202,151,199,154,197,156,199,156,199" title="Complexity: 10; Coverage: 42%; Class: EnumerationIterator" alt="" href="org/apache/commons/collections4/iterators/EnumerationIterator.html#EnumerationIterator"/>
+<area shape="poly" coords="257,180,254,183,252,180,254,178,257,180,257,180" title="Complexity: 29; Coverage: 83%; Class: UnmodifiableTrie" alt="" href="org/apache/commons/collections4/trie/UnmodifiableTrie.html#UnmodifiableTrie"/>
+<area shape="poly" coords="298,199,296,202,293,199,296,197,298,199,298,199" title="Complexity: 10; Coverage: 100%; Class: LazyIteratorChain" alt="" href="org/apache/commons/collections4/iterators/LazyIteratorChain.html#LazyIteratorChain"/>
+<area shape="poly" coords="286,197,284,200,281,197,284,195,286,197,286,197" title="Complexity: 12; Coverage: 95%; Class: ZippingIterator" alt="" href="org/apache/commons/collections4/iterators/ZippingIterator.html#ZippingIterator"/>
+<area shape="poly" coords="286,195,284,198,281,195,284,193,286,195,286,195" title="Complexity: 14; Coverage: 95%; Class: ReverseListIterator" alt="" href="org/apache/commons/collections4/iterators/ReverseListIterator.html#ReverseListIterator"/>
+<area shape="poly" coords="298,205,296,208,293,205,296,203,298,205,298,205" title="Complexity: 4; Coverage: 100%; Class: AbstractEmptyMapIterator" alt="" href="org/apache/commons/collections4/iterators/AbstractEmptyMapIterator.html#AbstractEmptyMapIterator"/>
+<area shape="poly" coords="298,199,296,202,293,199,296,197,298,199,298,199" title="Complexity: 10; Coverage: 100%; Class: LazyIteratorChain" alt="" href="org/apache/commons/collections4/iterators/LazyIteratorChain.html#LazyIteratorChain"/>
+<area shape="poly" coords="259,193,257,196,254,193,257,191,259,193,259,193" title="Complexity: 16; Coverage: 84%; Class: FilterIterator" alt="" href="org/apache/commons/collections4/iterators/FilterIterator.html#FilterIterator"/>
+<area shape="poly" coords="298,188,296,191,293,188,296,186,298,188,298,188" title="Complexity: 21; Coverage: 100%; Class: SingletonListIterator" alt="" href="org/apache/commons/collections4/iterators/SingletonListIterator.html#SingletonListIterator"/>
+<area shape="poly" coords="264,194,262,197,259,194,262,192,264,194,264,194" title="Complexity: 15; Coverage: 86%; Class: ArrayIterator" alt="" href="org/apache/commons/collections4/iterators/ArrayIterator.html#ArrayIterator"/>
+<area shape="poly" coords="54,195,51,198,49,195,51,193,54,195,54,195" title="Complexity: 14; Coverage: 0%; Class: EntrySetMapIterator" alt="" href="org/apache/commons/collections4/iterators/EntrySetMapIterator.html#EntrySetMapIterator"/>
+<area shape="poly" coords="259,204,257,207,254,204,257,202,259,204,259,204" title="Complexity: 5; Coverage: 84%; Class: AbstractUntypedIteratorDecorator" alt="" href="org/apache/commons/collections4/iterators/AbstractUntypedIteratorDecorator.html#AbstractUntypedIteratorDecorator"/>
+<area shape="poly" coords="240,187,237,190,235,187,237,185,240,187,240,187" title="Complexity: 22; Coverage: 76%; Class: IteratorChain" alt="" href="org/apache/commons/collections4/iterators/IteratorChain.html#IteratorChain"/>
+<area shape="poly" coords="298,196,296,199,293,196,296,194,298,196,298,196" title="Complexity: 13; Coverage: 100%; Class: UnmodifiableListIterator" alt="" href="org/apache/commons/collections4/iterators/UnmodifiableListIterator.html#UnmodifiableListIterator"/>
+<area shape="poly" coords="240,174,237,177,235,174,237,172,240,174,240,174" title="Complexity: 35; Coverage: 76%; Class: FilterListIterator" alt="" href="org/apache/commons/collections4/iterators/FilterListIterator.html#FilterListIterator"/>
+<area shape="poly" coords="215,206,213,209,210,206,213,204,215,206,215,206" title="Complexity: 3; Coverage: 66%; Class: EmptyListIterator" alt="" href="org/apache/commons/collections4/iterators/EmptyListIterator.html#EmptyListIterator"/>
+<area shape="poly" coords="274,194,271,197,269,194,271,192,274,194,274,194" title="Complexity: 15; Coverage: 90%; Class: ObjectArrayIterator" alt="" href="org/apache/commons/collections4/iterators/ObjectArrayIterator.html#ObjectArrayIterator"/>
+<area shape="poly" coords="298,198,296,201,293,198,296,196,298,198,298,198" title="Complexity: 11; Coverage: 100%; Class: AbstractEmptyIterator" alt="" href="org/apache/commons/collections4/iterators/AbstractEmptyIterator.html#AbstractEmptyIterator"/>
+<area shape="poly" coords="284,195,281,198,279,195,281,193,284,195,284,195" title="Complexity: 14; Coverage: 94%; Class: ArrayListIterator" alt="" href="org/apache/commons/collections4/iterators/ArrayListIterator.html#ArrayListIterator"/>
+<area shape="poly" coords="54,198,51,201,49,198,51,196,54,198,54,198" title="Complexity: 11; Coverage: 0%; Class: AbstractOrderedMapIteratorDecorator" alt="" href="org/apache/commons/collections4/iterators/AbstractOrderedMapIteratorDecorator.html#AbstractOrderedMapIteratorDecorator"/>
+<area shape="poly" coords="276,195,274,198,271,195,274,193,276,195,276,195" title="Complexity: 14; Coverage: 91%; Class: ObjectArrayListIterator" alt="" href="org/apache/commons/collections4/iterators/ObjectArrayListIterator.html#ObjectArrayListIterator"/>
+<area shape="poly" coords="298,201,296,204,293,201,296,199,298,201,298,201" title="Complexity: 8; Coverage: 100%; Class: SkippingIterator" alt="" href="org/apache/commons/collections4/iterators/SkippingIterator.html#SkippingIterator"/>
+<area shape="poly" coords="298,198,296,201,293,198,296,196,298,198,298,198" title="Complexity: 11; Coverage: 100%; Class: AbstractEmptyIterator" alt="" href="org/apache/commons/collections4/iterators/AbstractEmptyIterator.html#AbstractEmptyIterator"/>
+<area shape="poly" coords="298,207,296,210,293,207,296,205,298,207,298,207" title="Complexity: 2; Coverage: 100%; Class: AbstractIteratorDecorator" alt="" href="org/apache/commons/collections4/iterators/AbstractIteratorDecorator.html#AbstractIteratorDecorator"/>
+<area shape="poly" coords="279,197,276,200,274,197,276,195,279,197,279,197" title="Complexity: 12; Coverage: 92%; Class: AbstractListIteratorDecorator" alt="" href="org/apache/commons/collections4/iterators/AbstractListIteratorDecorator.html#AbstractListIteratorDecorator"/>
+<area shape="poly" coords="298,186,296,189,293,186,296,184,298,186,298,186" title="Complexity: 23; Coverage: 100%; Class: ObjectGraphIterator" alt="" href="org/apache/commons/collections4/iterators/ObjectGraphIterator.html#ObjectGraphIterator"/>
+<area shape="poly" coords="298,207,296,210,293,207,296,205,298,207,298,207" title="Complexity: 2; Coverage: 100%; Class: AbstractIteratorDecorator" alt="" href="org/apache/commons/collections4/iterators/AbstractIteratorDecorator.html#AbstractIteratorDecorator"/>
+<area shape="poly" coords="54,200,51,203,49,200,51,198,54,200,54,200" title="Complexity: 9; Coverage: 0%; Class: AbstractMapIteratorDecorator" alt="" href="org/apache/commons/collections4/iterators/AbstractMapIteratorDecorator.html#AbstractMapIteratorDecorator"/>
+<area shape="poly" coords="289,194,286,197,284,194,286,192,289,194,289,194" title="Complexity: 15; Coverage: 96%; Class: BoundedIterator" alt="" href="org/apache/commons/collections4/iterators/BoundedIterator.html#BoundedIterator"/>
+<area shape="poly" coords="230,203,227,206,225,203,227,201,230,203,230,203" title="Complexity: 6; Coverage: 72%; Class: IteratorEnumeration" alt="" href="org/apache/commons/collections4/iterators/IteratorEnumeration.html#IteratorEnumeration"/>
+<area shape="poly" coords="298,207,296,210,293,207,296,205,298,207,298,207" title="Complexity: 2; Coverage: 100%; Class: AbstractIteratorDecorator" alt="" href="org/apache/commons/collections4/iterators/AbstractIteratorDecorator.html#AbstractIteratorDecorator"/>
+<area shape="poly" coords="259,169,257,171,254,169,257,166,259,169,259,169" title="Complexity: 41; Coverage: 84%; Class: CollatingIterator" alt="" href="org/apache/commons/collections4/iterators/CollatingIterator.html#CollatingIterator"/>
+<area shape="poly" coords="298,206,296,209,293,206,296,204,298,206,298,206" title="Complexity: 3; Coverage: 100%; Class: TransformedList.TransformedListIterator" alt="" href="org/apache/commons/collections4/list/TransformedList.html#TransformedList.TransformedListIterator"/>
+<area shape="poly" coords="171,198,169,201,166,198,169,196,171,198,171,198" title="Complexity: 11; Coverage: 48%; Class: TransformIterator" alt="" href="org/apache/commons/collections4/iterators/TransformIterator.html#TransformIterator"/>
+<area shape="poly" coords="267,199,264,202,262,199,264,197,267,199,267,199" title="Complexity: 10; Coverage: 87%; Class: NodeListIterator" alt="" href="org/apache/commons/collections4/iterators/NodeListIterator.html#NodeListIterator"/>
+<area shape="poly" coords="298,197,296,200,293,197,296,195,298,197,298,197" title="Complexity: 12; Coverage: 100%; Class: UnmodifiableOrderedMapIterator" alt="" href="org/apache/commons/collections4/iterators/UnmodifiableOrderedMapIterator.html#UnmodifiableOrderedMapIterator"/>
+<area shape="poly" coords="298,202,296,205,293,202,296,200,298,202,298,202" title="Complexity: 7; Coverage: 100%; Class: SetUniqueList.SetListListIterator" alt="" href="org/apache/commons/collections4/list/SetUniqueList.html#SetUniqueList.SetListListIterator"/>
+<area shape="poly" coords="298,200,296,203,293,200,296,198,298,200,298,200" title="Complexity: 9; Coverage: 100%; Class: LoopingIterator" alt="" href="org/apache/commons/collections4/iterators/LoopingIterator.html#LoopingIterator"/>
+<area shape="poly" coords="276,199,274,202,271,199,274,197,276,199,276,199" title="Complexity: 10; Coverage: 91%; Class: IteratorIterable" alt="" href="org/apache/commons/collections4/iterators/IteratorIterable.html#IteratorIterable"/>
+<area shape="poly" coords="54,205,51,208,49,205,51,203,54,205,54,205" title="Complexity: 4; Coverage: 0%; Class: ComparableComparatorTest" alt="" href="org/apache/commons/collections4/comparators/ComparableComparatorTest.html#ComparableComparatorTest"/>
+<area shape="poly" coords="54,205,51,208,49,205,51,203,54,205,54,205" title="Complexity: 4; Coverage: 0%; Class: ComparableComparatorTest" alt="" href="org/apache/commons/collections4/comparators/ComparableComparatorTest.html#ComparableComparatorTest"/>
+<area shape="poly" coords="54,194,51,197,49,194,51,192,54,194,54,194" title="Complexity: 15; Coverage: 0%; Class: AbstractSortedBagTest" alt="" href="org/apache/commons/collections4/bag/AbstractSortedBagTest.html#AbstractSortedBagTest"/>
+<area shape="poly" coords="298,203,296,206,293,203,296,201,298,203,298,203" title="Complexity: 6; Coverage: 100%; Class: AbstractLinkedList.LinkedSubListIterator" alt="" href="org/apache/commons/collections4/list/AbstractLinkedList.html#AbstractLinkedList.LinkedSubListIterator"/>
+<area shape="poly" coords="298,190,296,193,293,190,296,188,298,190,298,190" title="Complexity: 19; Coverage: 100%; Class: CollectionSortedBag" alt="" href="org/apache/commons/collections4/bag/CollectionSortedBag.html#CollectionSortedBag"/>
+<area shape="poly" coords="110,202,107,205,105,202,107,200,110,202,110,202" title="Complexity: 7; Coverage: 23%; Class: SynchronizedSortedBag" alt="" href="org/apache/commons/collections4/bag/SynchronizedSortedBag.html#SynchronizedSortedBag"/>
+<area shape="poly" coords="164,199,161,202,159,199,161,197,164,199,164,199" title="Complexity: 10; Coverage: 45%; Class: TransformedSortedBag" alt="" href="org/apache/commons/collections4/bag/TransformedSortedBag.html#TransformedSortedBag"/>
+<area shape="poly" coords="298,200,296,203,293,200,296,198,298,200,298,200" title="Complexity: 9; Coverage: 100%; Class: LoopingIterator" alt="" href="org/apache/commons/collections4/iterators/LoopingIterator.html#LoopingIterator"/>
+<area shape="poly" coords="298,208,296,211,293,208,296,206,298,208,298,208" title="Complexity: 1; Coverage: 100%; Class: AbstractPatriciaTrie.Values.ValueIterator" alt="" href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html#AbstractPatriciaTrie.Values.ValueIterator"/>
+<area shape="poly" coords="281,198,279,201,276,198,279,196,281,198,281,198" title="Complexity: 11; Coverage: 93%; Class: SynchronizedBag" alt="" href="org/apache/commons/collections4/bag/SynchronizedBag.html#SynchronizedBag"/>
+<area shape="poly" coords="289,196,286,199,284,196,286,194,289,196,289,196" title="Complexity: 13; Coverage: 96%; Class: TransformedBag" alt="" href="org/apache/commons/collections4/bag/TransformedBag.html#TransformedBag"/>
+<area shape="poly" coords="274,196,271,199,269,196,271,194,274,196,274,196" title="Complexity: 13; Coverage: 90%; Class: TreeBag" alt="" href="org/apache/commons/collections4/bag/TreeBag.html#TreeBag"/>
+<area shape="poly" coords="298,190,296,193,293,190,296,188,298,190,298,190" title="Complexity: 19; Coverage: 100%; Class: CollectionSortedBag" alt="" href="org/apache/commons/collections4/bag/CollectionSortedBag.html#CollectionSortedBag"/>
+<area shape="poly" coords="103,205,100,208,98,205,100,203,103,205,103,205" title="Complexity: 4; Coverage: 20%; Class: AbstractMapBag.MutableInteger" alt="" href="org/apache/commons/collections4/bag/AbstractMapBag.html#AbstractMapBag.MutableInteger"/>
+<area shape="poly" coords="284,200,281,203,279,200,281,198,284,200,284,200" title="Complexity: 9; Coverage: 94%; Class: AbstractMapBag.BagIterator" alt="" href="org/apache/commons/collections4/bag/AbstractMapBag.html#AbstractMapBag.BagIterator"/>
+<area shape="poly" coords="289,149,286,151,284,149,286,146,289,149,289,149" title="Complexity: 61; Coverage: 96%; Class: AbstractMapBag" alt="" href="org/apache/commons/collections4/bag/AbstractMapBag.html#AbstractMapBag"/>
+<area shape="poly" coords="298,205,296,208,293,205,296,203,298,205,298,205" title="Complexity: 4; Coverage: 100%; Class: AbstractEmptyMapIterator" alt="" href="org/apache/commons/collections4/iterators/AbstractEmptyMapIterator.html#AbstractEmptyMapIterator"/>
+<area shape="poly" coords="215,203,213,206,210,203,213,201,215,203,215,203" title="Complexity: 6; Coverage: 66%; Class: AbstractSortedBagDecorator" alt="" href="org/apache/commons/collections4/bag/AbstractSortedBagDecorator.html#AbstractSortedBagDecorator"/>
+<area shape="poly" coords="242,200,240,203,237,200,240,198,242,200,242,200" title="Complexity: 9; Coverage: 77%; Class: AbstractBagDecorator" alt="" href="org/apache/commons/collections4/bag/AbstractBagDecorator.html#AbstractBagDecorator"/>
+<area shape="poly" coords="254,194,252,197,249,194,252,192,254,194,254,194" title="Complexity: 15; Coverage: 82%; Class: AbstractBitwiseTrie.BasicEntry" alt="" href="org/apache/commons/collections4/trie/AbstractBitwiseTrie.html#AbstractBitwiseTrie.BasicEntry"/>
+<area shape="poly" coords="284,194,281,197,279,194,281,192,284,194,284,194" title="Complexity: 15; Coverage: 94%; Class: UnmodifiableBag" alt="" href="org/apache/commons/collections4/bag/UnmodifiableBag.html#UnmodifiableBag"/>
+<area shape="poly" coords="259,187,257,190,254,187,257,185,259,187,259,187" title="Complexity: 22; Coverage: 84%; Class: StringKeyAnalyzer" alt="" href="org/apache/commons/collections4/trie/analyzer/StringKeyAnalyzer.html#StringKeyAnalyzer"/>
+<area shape="poly" coords="54,204,51,207,49,204,51,202,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: AbstractNullComparatorTest.TestNullComparator2" alt="" href="org/apache/commons/collections4/comparators/AbstractNullComparatorTest.html#AbstractNullComparatorTest.TestNullComparator2"/>
+<area shape="poly" coords="54,204,51,207,49,204,51,202,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: AbstractNullComparatorTest.TestNullComparator2" alt="" href="org/apache/commons/collections4/comparators/AbstractNullComparatorTest.html#AbstractNullComparatorTest.TestNullComparator2"/>
+<area shape="poly" coords="54,200,51,203,49,200,51,198,54,200,54,200" title="Complexity: 9; Coverage: 0%; Class: AbstractMapIteratorDecorator" alt="" href="org/apache/commons/collections4/iterators/AbstractMapIteratorDecorator.html#AbstractMapIteratorDecorator"/>
+<area shape="poly" coords="54,205,51,208,49,205,51,203,54,205,54,205" title="Complexity: 4; Coverage: 0%; Class: ComparableComparatorTest" alt="" href="org/apache/commons/collections4/comparators/ComparableComparatorTest.html#ComparableComparatorTest"/>
+<area shape="poly" coords="54,205,51,208,49,205,51,203,54,205,54,205" title="Complexity: 4; Coverage: 0%; Class: ComparableComparatorTest" alt="" href="org/apache/commons/collections4/comparators/ComparableComparatorTest.html#ComparableComparatorTest"/>
+<area shape="poly" coords="54,203,51,206,49,203,51,201,54,203,54,203" title="Complexity: 6; Coverage: 0%; Class: FixedSizeListTest" alt="" href="org/apache/commons/collections4/list/FixedSizeListTest.html#FixedSizeListTest"/>
+<area shape="poly" coords="298,195,296,198,293,195,296,193,298,195,298,195" title="Complexity: 14; Coverage: 100%; Class: UnmodifiableBidiMap" alt="" href="org/apache/commons/collections4/bidimap/UnmodifiableBidiMap.html#UnmodifiableBidiMap"/>
+<area shape="poly" coords="225,178,222,181,220,178,222,176,225,178,225,178" title="Complexity: 31; Coverage: 70%; Class: TreeBidiMap.Inverse" alt="" href="org/apache/commons/collections4/bidimap/TreeBidiMap.html#TreeBidiMap.Inverse"/>
+<area shape="poly" coords="284,183,281,186,279,183,281,181,284,183,284,183" title="Complexity: 26; Coverage: 94%; Class: TreeBidiMap.Node" alt="" href="org/apache/commons/collections4/bidimap/TreeBidiMap.html#TreeBidiMap.Node"/>
+<area shape="poly" coords="237,205,235,208,232,205,235,203,237,205,237,205" title="Complexity: 4; Coverage: 75%; Class: TreeBidiMap.InverseViewMapEntryIterator" alt="" href="org/apache/commons/collections4/bidimap/TreeBidiMap.html#TreeBidiMap.InverseViewMapEntryIterator"/>
+<area shape="poly" coords="215,206,213,209,210,206,213,204,215,206,215,206" title="Complexity: 3; Coverage: 66%; Class: EmptyListIterator" alt="" href="org/apache/commons/collections4/iterators/EmptyListIterator.html#EmptyListIterator"/>
+<area shape="poly" coords="274,201,271,204,269,201,271,199,274,201,274,201" title="Complexity: 8; Coverage: 90%; Class: TreeBidiMap.InverseViewMapIterator" alt="" href="org/apache/commons/collections4/bidimap/TreeBidiMap.html#TreeBidiMap.InverseViewMapIterator"/>
+<area shape="poly" coords="274,201,271,204,269,201,271,199,274,201,274,201" title="Complexity: 8; Coverage: 90%; Class: TreeBidiMap.InverseViewMapIterator" alt="" href="org/apache/commons/collections4/bidimap/TreeBidiMap.html#TreeBidiMap.InverseViewMapIterator"/>
+<area shape="poly" coords="208,195,205,198,203,195,205,193,208,195,208,195" title="Complexity: 14; Coverage: 63%; Class: TreeBidiMap.ViewIterator" alt="" href="org/apache/commons/collections4/bidimap/TreeBidiMap.html#TreeBidiMap.ViewIterator"/>
+<area shape="poly" coords="279,201,276,204,274,201,276,199,279,201,279,201" title="Complexity: 8; Coverage: 92%; Class: AbstractPatriciaTrie.EntrySet" alt="" href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html#AbstractPatriciaTrie.EntrySet"/>
+<area shape="poly" coords="279,201,276,204,274,201,276,199,279,201,279,201" title="Complexity: 8; Coverage: 92%; Class: AbstractPatriciaTrie.EntrySet" alt="" href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html#AbstractPatriciaTrie.EntrySet"/>
+<area shape="poly" coords="298,205,296,208,293,205,296,203,298,205,298,205" title="Complexity: 4; Coverage: 100%; Class: AbstractEmptyMapIterator" alt="" href="org/apache/commons/collections4/iterators/AbstractEmptyMapIterator.html#AbstractEmptyMapIterator"/>
+<area shape="poly" coords="298,205,296,208,293,205,296,203,298,205,298,205" title="Complexity: 4; Coverage: 100%; Class: AbstractEmptyMapIterator" alt="" href="org/apache/commons/collections4/iterators/AbstractEmptyMapIterator.html#AbstractEmptyMapIterator"/>
+<area shape="poly" coords="298,206,296,209,293,206,296,204,298,206,298,206" title="Complexity: 3; Coverage: 100%; Class: TransformedList.TransformedListIterator" alt="" href="org/apache/commons/collections4/list/TransformedList.html#TransformedList.TransformedListIterator"/>
+<area shape="poly" coords="298,207,296,210,293,207,296,205,298,207,298,207" title="Complexity: 2; Coverage: 100%; Class: AbstractIteratorDecorator" alt="" href="org/apache/commons/collections4/iterators/AbstractIteratorDecorator.html#AbstractIteratorDecorator"/>
+<area shape="poly" coords="279,30,276,33,274,30,276,28,279,30,279,30" title="Complexity: 181; Coverage: 92%; Class: TreeBidiMap" alt="" href="org/apache/commons/collections4/bidimap/TreeBidiMap.html#TreeBidiMap"/>
+<area shape="poly" coords="298,192,296,195,293,192,296,190,298,192,298,192" title="Complexity: 17; Coverage: 100%; Class: AbstractLinkedList.LinkedListIterator" alt="" href="org/apache/commons/collections4/list/AbstractLinkedList.html#AbstractLinkedList.LinkedListIterator"/>
+<area shape="poly" coords="115,201,112,204,110,201,112,199,115,201,115,201" title="Complexity: 8; Coverage: 25%; Class: AbstractSortedBidiMapDecorator" alt="" href="org/apache/commons/collections4/bidimap/AbstractSortedBidiMapDecorator.html#AbstractSortedBidiMapDecorator"/>
+<area shape="poly" coords="237,201,235,204,232,201,235,199,237,201,237,201" title="Complexity: 8; Coverage: 75%; Class: AbstractOrderedBidiMapDecorator" alt="" href="org/apache/commons/collections4/bidimap/AbstractOrderedBidiMapDecorator.html#AbstractOrderedBidiMapDecorator"/>
+<area shape="poly" coords="279,193,276,196,274,193,276,191,279,193,279,193" title="Complexity: 16; Coverage: 92%; Class: AbstractDualBidiMap.BidiMapIterator" alt="" href="org/apache/commons/collections4/bidimap/AbstractDualBidiMap.html#AbstractDualBidiMap.BidiMapIterator"/>
+<area shape="poly" coords="298,205,296,208,293,205,296,203,298,205,298,205" title="Complexity: 4; Coverage: 100%; Class: AbstractEmptyMapIterator" alt="" href="org/apache/commons/collections4/iterators/AbstractEmptyMapIterator.html#AbstractEmptyMapIterator"/>
+<area shape="poly" coords="298,205,296,208,293,205,296,203,298,205,298,205" title="Complexity: 4; Coverage: 100%; Class: AbstractEmptyMapIterator" alt="" href="org/apache/commons/collections4/iterators/AbstractEmptyMapIterator.html#AbstractEmptyMapIterator"/>
+<area shape="poly" coords="298,202,296,205,293,202,296,200,298,202,298,202" title="Complexity: 7; Coverage: 100%; Class: SetUniqueList.SetListListIterator" alt="" href="org/apache/commons/collections4/list/SetUniqueList.html#SetUniqueList.SetListListIterator"/>
+<area shape="poly" coords="298,205,296,208,293,205,296,203,298,205,298,205" title="Complexity: 4; Coverage: 100%; Class: AbstractEmptyMapIterator" alt="" href="org/apache/commons/collections4/iterators/AbstractEmptyMapIterator.html#AbstractEmptyMapIterator"/>
+<area shape="poly" coords="298,204,296,207,293,204,296,202,298,204,298,204" title="Complexity: 5; Coverage: 100%; Class: ComparableComparator" alt="" href="org/apache/commons/collections4/comparators/ComparableComparator.html#ComparableComparator"/>
+<area shape="poly" coords="298,205,296,208,293,205,296,203,298,205,298,205" title="Complexity: 4; Coverage: 100%; Class: AbstractEmptyMapIterator" alt="" href="org/apache/commons/collections4/iterators/AbstractEmptyMapIterator.html#AbstractEmptyMapIterator"/>
+<area shape="poly" coords="298,204,296,207,293,204,296,202,298,204,298,204" title="Complexity: 5; Coverage: 100%; Class: ComparableComparator" alt="" href="org/apache/commons/collections4/comparators/ComparableComparator.html#ComparableComparator"/>
+<area shape="poly" coords="298,196,296,199,293,196,296,194,298,196,298,196" title="Complexity: 13; Coverage: 100%; Class: UnmodifiableListIterator" alt="" href="org/apache/commons/collections4/iterators/UnmodifiableListIterator.html#UnmodifiableListIterator"/>
+<area shape="poly" coords="298,176,296,179,293,176,296,174,298,176,298,176" title="Complexity: 33; Coverage: 100%; Class: AbstractDualBidiMap" alt="" href="org/apache/commons/collections4/bidimap/AbstractDualBidiMap.html#AbstractDualBidiMap"/>
+<area shape="poly" coords="259,192,257,195,254,192,257,190,259,192,259,192" title="Complexity: 17; Coverage: 84%; Class: DualTreeBidiMap.BidiOrderedMapIterator" alt="" href="org/apache/commons/collections4/bidimap/DualTreeBidiMap.html#DualTreeBidiMap.BidiOrderedMapIterator"/>
+<area shape="poly" coords="186,199,183,202,181,199,183,197,186,199,186,199" title="Complexity: 10; Coverage: 54%; Class: DualTreeBidiMap.ViewMap" alt="" href="org/apache/commons/collections4/bidimap/DualTreeBidiMap.html#DualTreeBidiMap.ViewMap"/>
+<area shape="poly" coords="259,183,257,186,254,183,257,181,259,183,259,183" title="Complexity: 26; Coverage: 84%; Class: DualTreeBidiMap" alt="" href="org/apache/commons/collections4/bidimap/DualTreeBidiMap.html#DualTreeBidiMap"/>
+<area shape="poly" coords="193,202,191,205,188,202,191,200,193,202,193,202" title="Complexity: 7; Coverage: 57%; Class: AbstractBidiMapDecorator" alt="" href="org/apache/commons/collections4/bidimap/AbstractBidiMapDecorator.html#AbstractBidiMapDecorator"/>
+<area shape="poly" coords="298,194,296,197,293,194,296,192,298,194,298,194" title="Complexity: 15; Coverage: 100%; Class: UnmodifiableOrderedBidiMap" alt="" href="org/apache/commons/collections4/bidimap/UnmodifiableOrderedBidiMap.html#UnmodifiableOrderedBidiMap"/>
+<area shape="poly" coords="257,203,254,206,252,203,254,201,257,203,257,203" title="Complexity: 6; Coverage: 83%; Class: DualHashBidiMap" alt="" href="org/apache/commons/collections4/bidimap/DualHashBidiMap.html#DualHashBidiMap"/>
+<area shape="poly" coords="257,203,254,206,252,203,254,201,257,203,257,203" title="Complexity: 6; Coverage: 83%; Class: DualHashBidiMap" alt="" href="org/apache/commons/collections4/bidimap/DualHashBidiMap.html#DualHashBidiMap"/>
+<area shape="poly" coords="176,207,174,210,171,207,174,205,176,207,176,207" title="Complexity: 2; Coverage: 50%; Class: PatriciaTrie" alt="" href="org/apache/commons/collections4/trie/PatriciaTrie.html#PatriciaTrie"/>
+<area shape="poly" coords="176,207,174,210,171,207,174,205,176,207,176,207" title="Complexity: 2; Coverage: 50%; Class: PatriciaTrie" alt="" href="org/apache/commons/collections4/trie/PatriciaTrie.html#PatriciaTrie"/>
+<area shape="poly" coords="127,197,125,200,122,197,125,195,127,197,127,197" title="Complexity: 12; Coverage: 30%; Class: MultiValuedHashMap" alt="" href="org/apache/commons/collections4/multimap/MultiValuedHashMap.html#MultiValuedHashMap"/>
+<area shape="poly" coords="254,183,252,186,249,183,252,181,254,183,254,183" title="Complexity: 26; Coverage: 82%; Class: AbstractMultiValuedMapDecorator" alt="" href="org/apache/commons/collections4/multimap/AbstractMultiValuedMapDecorator.html#AbstractMultiValuedMapDecorator"/>
+<area shape="poly" coords="215,192,213,195,210,192,213,190,215,192,215,192" title="Complexity: 17; Coverage: 66%; Class: UnmodifiableMultiValuedMap" alt="" href="org/apache/commons/collections4/multimap/UnmodifiableMultiValuedMap.html#UnmodifiableMultiValuedMap"/>
+<area shape="poly" coords="68,201,66,204,63,201,66,199,68,201,68,201" title="Complexity: 8; Coverage: 6%; Class: AbstractSetValuedMap.WrappedSet" alt="" href="org/apache/commons/collections4/multimap/AbstractSetValuedMap.html#AbstractSetValuedMap.WrappedSet"/>
+<area shape="poly" coords="230,194,227,197,225,194,227,192,230,194,230,194" title="Complexity: 15; Coverage: 72%; Class: AbstractSetValuedMap" alt="" href="org/apache/commons/collections4/multimap/AbstractSetValuedMap.html#AbstractSetValuedMap"/>
+<area shape="poly" coords="267,187,264,190,262,187,264,185,267,187,267,187" title="Complexity: 22; Coverage: 87%; Class: TransformedMultiValuedMap" alt="" href="org/apache/commons/collections4/multimap/TransformedMultiValuedMap.html#TransformedMultiValuedMap"/>
+<area shape="poly" coords="205,196,203,199,200,196,203,194,205,196,205,196" title="Complexity: 13; Coverage: 62%; Class: AbstractListValuedMap.ValuesListIterator" alt="" href="org/apache/commons/collections4/multimap/AbstractListValuedMap.html#AbstractListValuedMap.ValuesListIterator"/>
+<area shape="poly" coords="90,187,88,190,85,187,88,185,90,187,90,187" title="Complexity: 22; Coverage: 15%; Class: AbstractListValuedMap.WrappedList" alt="" href="org/apache/commons/collections4/multimap/AbstractListValuedMap.html#AbstractListValuedMap.WrappedList"/>
+<area shape="poly" coords="230,194,227,197,225,194,227,192,230,194,230,194" title="Complexity: 15; Coverage: 72%; Class: AbstractSetValuedMap" alt="" href="org/apache/commons/collections4/multimap/AbstractSetValuedMap.html#AbstractSetValuedMap"/>
+<area shape="poly" coords="298,204,296,207,293,204,296,202,298,204,298,204" title="Complexity: 5; Coverage: 100%; Class: ComparableComparator" alt="" href="org/apache/commons/collections4/comparators/ComparableComparator.html#ComparableComparator"/>
+<area shape="poly" coords="298,206,296,209,293,206,296,204,298,206,298,206" title="Complexity: 3; Coverage: 100%; Class: TransformedList.TransformedListIterator" alt="" href="org/apache/commons/collections4/list/TransformedList.html#TransformedList.TransformedListIterator"/>
+<area shape="poly" coords="205,199,203,202,200,199,203,197,205,199,205,199" title="Complexity: 10; Coverage: 62%; Class: AbstractMultiValuedMap.MultiValuedMapIterator" alt="" href="org/apache/commons/collections4/multimap/AbstractMultiValuedMap.html#AbstractMultiValuedMap.MultiValuedMapIterator"/>
+<area shape="poly" coords="298,207,296,210,293,207,296,205,298,207,298,207" title="Complexity: 2; Coverage: 100%; Class: AbstractIteratorDecorator" alt="" href="org/apache/commons/collections4/iterators/AbstractIteratorDecorator.html#AbstractIteratorDecorator"/>
+<area shape="poly" coords="298,204,296,207,293,204,296,202,298,204,298,204" title="Complexity: 5; Coverage: 100%; Class: ComparableComparator" alt="" href="org/apache/commons/collections4/comparators/ComparableComparator.html#ComparableComparator"/>
+<area shape="poly" coords="272,176,269,179,267,176,269,174,272,176,272,176" title="Complexity: 33; Coverage: 89%; Class: AbstractMultiValuedMap.KeysBag" alt="" href="org/apache/commons/collections4/multimap/AbstractMultiValuedMap.html#AbstractMultiValuedMap.KeysBag"/>
+<area shape="poly" coords="164,176,161,179,159,176,161,174,164,176,164,176" title="Complexity: 33; Coverage: 45%; Class: AbstractMultiValuedMap.WrappedCollection" alt="" href="org/apache/commons/collections4/multimap/AbstractMultiValuedMap.html#AbstractMultiValuedMap.WrappedCollection"/>
+<area shape="poly" coords="259,146,257,148,254,146,257,143,259,146,259,146" title="Complexity: 64; Coverage: 84%; Class: AbstractMultiValuedMap" alt="" href="org/apache/commons/collections4/multimap/AbstractMultiValuedMap.html#AbstractMultiValuedMap"/>
+<area shape="poly" coords="54,204,51,207,49,204,51,202,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: AbstractNullComparatorTest.TestNullComparator2" alt="" href="org/apache/commons/collections4/comparators/AbstractNullComparatorTest.html#AbstractNullComparatorTest.TestNullComparator2"/>
+<area shape="poly" coords="298,199,296,202,293,199,296,197,298,199,298,199" title="Complexity: 10; Coverage: 100%; Class: LazyIteratorChain" alt="" href="org/apache/commons/collections4/iterators/LazyIteratorChain.html#LazyIteratorChain"/>
+<area shape="poly" coords="291,186,289,189,286,186,289,184,291,186,291,186" title="Complexity: 23; Coverage: 97%; Class: SynchronizedCollection" alt="" href="org/apache/commons/collections4/collection/SynchronizedCollection.html#SynchronizedCollection"/>
+<area shape="poly" coords="286,186,284,189,281,186,284,184,286,186,286,186" title="Complexity: 23; Coverage: 95%; Class: IndexedCollection" alt="" href="org/apache/commons/collections4/collection/IndexedCollection.html#IndexedCollection"/>
+<area shape="poly" coords="264,173,262,176,259,173,262,171,264,173,264,173" title="Complexity: 36; Coverage: 86%; Class: CompositeCollection" alt="" href="org/apache/commons/collections4/collection/CompositeCollection.html#CompositeCollection"/>
+<area shape="poly" coords="235,189,232,192,230,189,232,187,235,189,235,189" title="Complexity: 20; Coverage: 74%; Class: UnmodifiableBoundedCollection" alt="" href="org/apache/commons/collections4/collection/UnmodifiableBoundedCollection.html#UnmodifiableBoundedCollection"/>
+<area shape="poly" coords="254,190,252,193,249,190,252,188,254,190,254,190" title="Complexity: 19; Coverage: 82%; Class: PredicatedCollection.Builder" alt="" href="org/apache/commons/collections4/collection/PredicatedCollection.html#PredicatedCollection.Builder"/>
+<area shape="poly" coords="298,200,296,203,293,200,296,198,298,200,298,200" title="Complexity: 9; Coverage: 100%; Class: LoopingIterator" alt="" href="org/apache/commons/collections4/iterators/LoopingIterator.html#LoopingIterator"/>
+<area shape="poly" coords="286,190,284,193,281,190,284,188,286,190,286,190" title="Complexity: 19; Coverage: 95%; Class: AbstractCollectionDecorator" alt="" href="org/apache/commons/collections4/collection/AbstractCollectionDecorator.html#AbstractCollectionDecorator"/>
+<area shape="poly" coords="289,200,286,203,284,200,286,198,289,200,289,200" title="Complexity: 9; Coverage: 96%; Class: AbstractPatriciaTrie.PrefixRangeEntrySet.EntryIterator" alt="" href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html#AbstractPatriciaTrie.PrefixRangeEntrySet.EntryIterator"/>
+<area shape="poly" coords="144,201,142,204,139,201,142,199,144,201,144,201" title="Complexity: 8; Coverage: 37%; Class: AbstractQueueDecorator" alt="" href="org/apache/commons/collections4/queue/AbstractQueueDecorator.html#AbstractQueueDecorator"/>
+<area shape="poly" coords="289,199,286,202,284,199,286,197,289,199,289,199" title="Complexity: 10; Coverage: 96%; Class: TransformedQueue" alt="" href="org/apache/commons/collections4/queue/TransformedQueue.html#TransformedQueue"/>
+<area shape="poly" coords="269,194,267,197,264,194,267,192,269,194,269,194" title="Complexity: 15; Coverage: 88%; Class: UnmodifiableQueue" alt="" href="org/apache/commons/collections4/queue/UnmodifiableQueue.html#UnmodifiableQueue"/>
+<area shape="poly" coords="298,201,296,204,293,201,296,199,298,201,298,201" title="Complexity: 8; Coverage: 100%; Class: SkippingIterator" alt="" href="org/apache/commons/collections4/iterators/SkippingIterator.html#SkippingIterator"/>
+<area shape="poly" coords="289,159,286,161,284,159,286,156,289,159,289,159" title="Complexity: 51; Coverage: 96%; Class: CircularFifoQueue" alt="" href="org/apache/commons/collections4/queue/CircularFifoQueue.html#CircularFifoQueue"/>
+<area shape="poly" coords="284,195,281,198,279,195,281,193,284,195,284,195" title="Complexity: 14; Coverage: 94%; Class: ArrayListIterator" alt="" href="org/apache/commons/collections4/iterators/ArrayListIterator.html#ArrayListIterator"/>
+<area shape="poly" coords="286,192,284,195,281,192,284,190,286,192,286,192" title="Complexity: 17; Coverage: 95%; Class: DefaultKeyValue" alt="" href="org/apache/commons/collections4/keyvalue/DefaultKeyValue.html#DefaultKeyValue"/>
+<area shape="poly" coords="298,205,296,208,293,205,296,203,298,205,298,205" title="Complexity: 4; Coverage: 100%; Class: AbstractEmptyMapIterator" alt="" href="org/apache/commons/collections4/iterators/AbstractEmptyMapIterator.html#AbstractEmptyMapIterator"/>
+<area shape="poly" coords="298,203,296,206,293,203,296,201,298,203,298,203" title="Complexity: 6; Coverage: 100%; Class: AbstractLinkedList.LinkedSubListIterator" alt="" href="org/apache/commons/collections4/list/AbstractLinkedList.html#AbstractLinkedList.LinkedSubListIterator"/>
+<area shape="poly" coords="237,199,235,202,232,199,235,197,237,199,237,199" title="Complexity: 10; Coverage: 75%; Class: AbstractMapEntryDecorator" alt="" href="org/apache/commons/collections4/keyvalue/AbstractMapEntryDecorator.html#AbstractMapEntryDecorator"/>
+<area shape="poly" coords="298,206,296,209,293,206,296,204,298,206,298,206" title="Complexity: 3; Coverage: 100%; Class: TransformedList.TransformedListIterator" alt="" href="org/apache/commons/collections4/list/TransformedList.html#TransformedList.TransformedListIterator"/>
+<area shape="poly" coords="298,190,296,193,293,190,296,188,298,190,298,190" title="Complexity: 19; Coverage: 100%; Class: CollectionSortedBag" alt="" href="org/apache/commons/collections4/bag/CollectionSortedBag.html#CollectionSortedBag"/>
+<area shape="poly" coords="298,199,296,202,293,199,296,197,298,199,298,199" title="Complexity: 10; Coverage: 100%; Class: LazyIteratorChain" alt="" href="org/apache/commons/collections4/iterators/LazyIteratorChain.html#LazyIteratorChain"/>
+<area shape="poly" coords="54,203,51,206,49,203,51,201,54,203,54,203" title="Complexity: 6; Coverage: 0%; Class: FixedSizeListTest" alt="" href="org/apache/commons/collections4/list/FixedSizeListTest.html#FixedSizeListTest"/>
+<area shape="poly" coords="298,205,296,208,293,205,296,203,298,205,298,205" title="Complexity: 4; Coverage: 100%; Class: AbstractEmptyMapIterator" alt="" href="org/apache/commons/collections4/iterators/AbstractEmptyMapIterator.html#AbstractEmptyMapIterator"/>
+<area shape="poly" coords="259,204,257,207,254,204,257,202,259,204,259,204" title="Complexity: 5; Coverage: 84%; Class: AbstractUntypedIteratorDecorator" alt="" href="org/apache/commons/collections4/iterators/AbstractUntypedIteratorDecorator.html#AbstractUntypedIteratorDecorator"/>
+<area shape="poly" coords="298,205,296,208,293,205,296,203,298,205,298,205" title="Complexity: 4; Coverage: 100%; Class: AbstractEmptyMapIterator" alt="" href="org/apache/commons/collections4/iterators/AbstractEmptyMapIterator.html#AbstractEmptyMapIterator"/>
+<area shape="poly" coords="178,198,176,201,173,198,176,196,178,198,178,198" title="Complexity: 11; Coverage: 51%; Class: ConstantTransformer" alt="" href="org/apache/commons/collections4/functors/ConstantTransformer.html#ConstantTransformer"/>
+<area shape="poly" coords="298,205,296,208,293,205,296,203,298,205,298,205" title="Complexity: 4; Coverage: 100%; Class: AbstractEmptyMapIterator" alt="" href="org/apache/commons/collections4/iterators/AbstractEmptyMapIterator.html#AbstractEmptyMapIterator"/>
+<area shape="poly" coords="269,203,267,206,264,203,267,201,269,203,269,203" title="Complexity: 6; Coverage: 88%; Class: NullIsExceptionPredicate" alt="" href="org/apache/commons/collections4/functors/NullIsExceptionPredicate.html#NullIsExceptionPredicate"/>
+<area shape="poly" coords="267,189,264,192,262,189,264,187,267,189,267,189" title="Complexity: 20; Coverage: 87%; Class: InstantiateFactory" alt="" href="org/apache/commons/collections4/functors/InstantiateFactory.html#InstantiateFactory"/>
+<area shape="poly" coords="284,199,281,202,279,199,281,197,284,199,284,199" title="Complexity: 10; Coverage: 94%; Class: AbstractPatriciaTrie.TrieIterator" alt="" href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html#AbstractPatriciaTrie.TrieIterator"/>
+<area shape="poly" coords="267,190,264,193,262,190,264,188,267,190,267,190" title="Complexity: 19; Coverage: 87%; Class: SwitchClosure" alt="" href="org/apache/commons/collections4/functors/SwitchClosure.html#SwitchClosure"/>
+<area shape="poly" coords="259,204,257,207,254,204,257,202,259,204,259,204" title="Complexity: 5; Coverage: 84%; Class: AbstractUntypedIteratorDecorator" alt="" href="org/apache/commons/collections4/iterators/AbstractUntypedIteratorDecorator.html#AbstractUntypedIteratorDecorator"/>
+<area shape="poly" coords="259,204,257,207,254,204,257,202,259,204,259,204" title="Complexity: 5; Coverage: 84%; Class: AbstractUntypedIteratorDecorator" alt="" href="org/apache/commons/collections4/iterators/AbstractUntypedIteratorDecorator.html#AbstractUntypedIteratorDecorator"/>
+<area shape="poly" coords="298,202,296,205,293,202,296,200,298,202,298,202" title="Complexity: 7; Coverage: 100%; Class: SetUniqueList.SetListListIterator" alt="" href="org/apache/commons/collections4/list/SetUniqueList.html#SetUniqueList.SetListListIterator"/>
+<area shape="poly" coords="269,203,267,206,264,203,267,201,269,203,269,203" title="Complexity: 6; Coverage: 88%; Class: NullIsExceptionPredicate" alt="" href="org/apache/commons/collections4/functors/NullIsExceptionPredicate.html#NullIsExceptionPredicate"/>
+<area shape="poly" coords="225,202,222,205,220,202,222,200,225,202,225,202" title="Complexity: 7; Coverage: 70%; Class: TransformedPredicate" alt="" href="org/apache/commons/collections4/functors/TransformedPredicate.html#TransformedPredicate"/>
+<area shape="poly" coords="298,205,296,208,293,205,296,203,298,205,298,205" title="Complexity: 4; Coverage: 100%; Class: AbstractEmptyMapIterator" alt="" href="org/apache/commons/collections4/iterators/AbstractEmptyMapIterator.html#AbstractEmptyMapIterator"/>
+<area shape="poly" coords="249,199,247,202,244,199,247,197,249,199,249,199" title="Complexity: 10; Coverage: 80%; Class: WhileClosure" alt="" href="org/apache/commons/collections4/functors/WhileClosure.html#WhileClosure"/>
+<area shape="poly" coords="281,199,279,202,276,199,279,197,281,199,281,199" title="Complexity: 10; Coverage: 93%; Class: ChainedTransformer" alt="" href="org/apache/commons/collections4/functors/ChainedTransformer.html#ChainedTransformer"/>
+<area shape="poly" coords="298,205,296,208,293,205,296,203,298,205,298,205" title="Complexity: 4; Coverage: 100%; Class: AbstractEmptyMapIterator" alt="" href="org/apache/commons/collections4/iterators/AbstractEmptyMapIterator.html#AbstractEmptyMapIterator"/>
+<area shape="poly" coords="259,204,257,207,254,204,257,202,259,204,259,204" title="Complexity: 5; Coverage: 84%; Class: AbstractUntypedIteratorDecorator" alt="" href="org/apache/commons/collections4/iterators/AbstractUntypedIteratorDecorator.html#AbstractUntypedIteratorDecorator"/>
+<area shape="poly" coords="259,184,257,187,254,184,257,182,259,184,259,184" title="Complexity: 25; Coverage: 84%; Class: FunctorUtils" alt="" href="org/apache/commons/collections4/functors/FunctorUtils.html#FunctorUtils"/>
+<area shape="poly" coords="237,203,235,206,232,203,235,201,237,203,237,203" title="Complexity: 6; Coverage: 75%; Class: DefaultEquator" alt="" href="org/apache/commons/collections4/functors/DefaultEquator.html#DefaultEquator"/>
+<area shape="poly" coords="279,201,276,204,274,201,276,199,279,201,279,201" title="Complexity: 8; Coverage: 92%; Class: AbstractPatriciaTrie.EntrySet" alt="" href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html#AbstractPatriciaTrie.EntrySet"/>
+<area shape="poly" coords="176,207,174,210,171,207,174,205,176,207,176,207" title="Complexity: 2; Coverage: 50%; Class: PatriciaTrie" alt="" href="org/apache/commons/collections4/trie/PatriciaTrie.html#PatriciaTrie"/>
+<area shape="poly" coords="298,205,296,208,293,205,296,203,298,205,298,205" title="Complexity: 4; Coverage: 100%; Class: AbstractEmptyMapIterator" alt="" href="org/apache/commons/collections4/iterators/AbstractEmptyMapIterator.html#AbstractEmptyMapIterator"/>
+<area shape="poly" coords="259,204,257,207,254,204,257,202,259,204,259,204" title="Complexity: 5; Coverage: 84%; Class: AbstractUntypedIteratorDecorator" alt="" href="org/apache/commons/collections4/iterators/AbstractUntypedIteratorDecorator.html#AbstractUntypedIteratorDecorator"/>
+<area shape="poly" coords="262,204,259,207,257,204,259,202,262,204,262,204" title="Complexity: 5; Coverage: 85%; Class: ClosureTransformer" alt="" href="org/apache/commons/collections4/functors/ClosureTransformer.html#ClosureTransformer"/>
+<area shape="poly" coords="279,200,276,203,274,200,276,198,279,200,279,200" title="Complexity: 9; Coverage: 92%; Class: EqualPredicate" alt="" href="org/apache/commons/collections4/functors/EqualPredicate.html#EqualPredicate"/>
+<area shape="poly" coords="298,200,296,203,293,200,296,198,298,200,298,200" title="Complexity: 9; Coverage: 100%; Class: LoopingIterator" alt="" href="org/apache/commons/collections4/iterators/LoopingIterator.html#LoopingIterator"/>
+<area shape="poly" coords="262,203,259,206,257,203,259,201,262,203,262,203" title="Complexity: 6; Coverage: 85%; Class: AndPredicate" alt="" href="org/apache/commons/collections4/functors/AndPredicate.html#AndPredicate"/>
+<area shape="poly" coords="223,204,220,207,218,204,220,202,223,204,223,204" title="Complexity: 5; Coverage: 69%; Class: InstanceofPredicate" alt="" href="org/apache/commons/collections4/functors/InstanceofPredicate.html#InstanceofPredicate"/>
+<area shape="poly" coords="259,204,257,207,254,204,257,202,259,204,259,204" title="Complexity: 5; Coverage: 84%; Class: AbstractUntypedIteratorDecorator" alt="" href="org/apache/commons/collections4/iterators/AbstractUntypedIteratorDecorator.html#AbstractUntypedIteratorDecorator"/>
+<area shape="poly" coords="254,200,252,203,249,200,252,198,254,200,254,200" title="Complexity: 9; Coverage: 82%; Class: ForClosure" alt="" href="org/apache/commons/collections4/functors/ForClosure.html#ForClosure"/>
+<area shape="poly" coords="298,206,296,209,293,206,296,204,298,206,298,206" title="Complexity: 3; Coverage: 100%; Class: TransformedList.TransformedListIterator" alt="" href="org/apache/commons/collections4/list/TransformedList.html#TransformedList.TransformedListIterator"/>
+<area shape="poly" coords="276,187,274,190,271,187,274,185,276,187,276,187" title="Complexity: 22; Coverage: 91%; Class: InvokerTransformer" alt="" href="org/apache/commons/collections4/functors/InvokerTransformer.html#InvokerTransformer"/>
+<area shape="poly" coords="245,196,242,199,240,196,242,194,245,196,245,196" title="Complexity: 13; Coverage: 78%; Class: IfTransformer" alt="" href="org/apache/commons/collections4/functors/IfTransformer.html#IfTransformer"/>
+<area shape="poly" coords="259,198,257,201,254,198,257,196,259,198,259,198" title="Complexity: 11; Coverage: 84%; Class: ComparatorPredicate" alt="" href="org/apache/commons/collections4/functors/ComparatorPredicate.html#ComparatorPredicate"/>
+<area shape="poly" coords="281,200,279,203,276,200,279,198,281,200,281,200" title="Complexity: 9; Coverage: 93%; Class: AnyPredicate" alt="" href="org/apache/commons/collections4/functors/AnyPredicate.html#AnyPredicate"/>
+<area shape="poly" coords="298,204,296,207,293,204,296,202,298,204,298,204" title="Complexity: 5; Coverage: 100%; Class: ComparableComparator" alt="" href="org/apache/commons/collections4/comparators/ComparableComparator.html#ComparableComparator"/>
+<area shape="poly" coords="259,204,257,207,254,204,257,202,259,204,259,204" title="Complexity: 5; Coverage: 84%; Class: AbstractUntypedIteratorDecorator" alt="" href="org/apache/commons/collections4/iterators/AbstractUntypedIteratorDecorator.html#AbstractUntypedIteratorDecorator"/>
+<area shape="poly" coords="298,205,296,208,293,205,296,203,298,205,298,205" title="Complexity: 4; Coverage: 100%; Class: AbstractEmptyMapIterator" alt="" href="org/apache/commons/collections4/iterators/AbstractEmptyMapIterator.html#AbstractEmptyMapIterator"/>
+<area shape="poly" coords="203,197,200,200,198,197,200,195,203,197,203,197" title="Complexity: 12; Coverage: 61%; Class: IfClosure" alt="" href="org/apache/commons/collections4/functors/IfClosure.html#IfClosure"/>
+<area shape="poly" coords="298,205,296,208,293,205,296,203,298,205,298,205" title="Complexity: 4; Coverage: 100%; Class: AbstractEmptyMapIterator" alt="" href="org/apache/commons/collections4/iterators/AbstractEmptyMapIterator.html#AbstractEmptyMapIterator"/>
+<area shape="poly" coords="298,205,296,208,293,205,296,203,298,205,298,205" title="Complexity: 4; Coverage: 100%; Class: AbstractEmptyMapIterator" alt="" href="org/apache/commons/collections4/iterators/AbstractEmptyMapIterator.html#AbstractEmptyMapIterator"/>
+<area shape="poly" coords="269,203,267,206,264,203,267,201,269,203,269,203" title="Complexity: 6; Coverage: 88%; Class: NullIsExceptionPredicate" alt="" href="org/apache/commons/collections4/functors/NullIsExceptionPredicate.html#NullIsExceptionPredicate"/>
+<area shape="poly" coords="298,205,296,208,293,205,296,203,298,205,298,205" title="Complexity: 4; Coverage: 100%; Class: AbstractEmptyMapIterator" alt="" href="org/apache/commons/collections4/iterators/AbstractEmptyMapIterator.html#AbstractEmptyMapIterator"/>
+<area shape="poly" coords="262,203,259,206,257,203,259,201,262,203,262,203" title="Complexity: 6; Coverage: 85%; Class: AndPredicate" alt="" href="org/apache/commons/collections4/functors/AndPredicate.html#AndPredicate"/>
+<area shape="poly" coords="237,188,235,191,232,188,235,186,237,188,237,188" title="Complexity: 21; Coverage: 75%; Class: InstantiateTransformer" alt="" href="org/apache/commons/collections4/functors/InstantiateTransformer.html#InstantiateTransformer"/>
+<area shape="poly" coords="286,202,284,205,281,202,284,200,286,202,286,202" title="Complexity: 7; Coverage: 95%; Class: PrototypeFactory.PrototypeSerializationFactory" alt="" href="org/apache/commons/collections4/functors/PrototypeFactory.html#PrototypeFactory.PrototypeSerializationFactory"/>
+<area shape="poly" coords="181,202,178,205,176,202,178,200,181,202,181,202" title="Complexity: 7; Coverage: 52%; Class: PrototypeFactory.PrototypeCloneFactory" alt="" href="org/apache/commons/collections4/functors/PrototypeFactory.html#PrototypeFactory.PrototypeCloneFactory"/>
+<area shape="poly" coords="269,203,267,206,264,203,267,201,269,203,269,203" title="Complexity: 6; Coverage: 88%; Class: NullIsExceptionPredicate" alt="" href="org/apache/commons/collections4/functors/NullIsExceptionPredicate.html#NullIsExceptionPredicate"/>
+<area shape="poly" coords="269,203,267,206,264,203,267,201,269,203,269,203" title="Complexity: 6; Coverage: 88%; Class: NullIsExceptionPredicate" alt="" href="org/apache/commons/collections4/functors/NullIsExceptionPredicate.html#NullIsExceptionPredicate"/>
+<area shape="poly" coords="298,205,296,208,293,205,296,203,298,205,298,205" title="Complexity: 4; Coverage: 100%; Class: AbstractEmptyMapIterator" alt="" href="org/apache/commons/collections4/iterators/AbstractEmptyMapIterator.html#AbstractEmptyMapIterator"/>
+<area shape="poly" coords="298,206,296,209,293,206,296,204,298,206,298,206" title="Complexity: 3; Coverage: 100%; Class: TransformedList.TransformedListIterator" alt="" href="org/apache/commons/collections4/list/TransformedList.html#TransformedList.TransformedListIterator"/>
+<area shape="poly" coords="269,189,267,192,264,189,267,187,269,189,269,189" title="Complexity: 20; Coverage: 88%; Class: PeekingIterator" alt="" href="org/apache/commons/collections4/iterators/PeekingIterator.html#PeekingIterator"/>
+<area shape="poly" coords="232,195,230,198,227,195,230,193,232,195,232,195" title="Complexity: 14; Coverage: 73%; Class: TransformedSplitMap" alt="" href="org/apache/commons/collections4/splitmap/TransformedSplitMap.html#TransformedSplitMap"/>
+<area shape="poly" coords="242,192,240,195,237,192,240,190,242,192,242,192" title="Complexity: 17; Coverage: 77%; Class: AbstractIterableGetMapDecorator" alt="" href="org/apache/commons/collections4/splitmap/AbstractIterableGetMapDecorator.html#AbstractIterableGetMapDecorator"/>
+<area shape="poly" coords="298,205,296,208,293,205,296,203,298,205,298,205" title="Complexity: 4; Coverage: 100%; Class: AbstractEmptyMapIterator" alt="" href="org/apache/commons/collections4/iterators/AbstractEmptyMapIterator.html#AbstractEmptyMapIterator"/>
+<area shape="poly" coords="294,163,291,165,289,163,291,160,294,163,294,163" title="Complexity: 47; Coverage: 98%; Class: SequencesComparator" alt="" href="org/apache/commons/collections4/sequence/SequencesComparator.html#SequencesComparator"/>
+<area shape="poly" coords="298,207,296,210,293,207,296,205,298,207,298,207" title="Complexity: 2; Coverage: 100%; Class: AbstractIteratorDecorator" alt="" href="org/apache/commons/collections4/iterators/AbstractIteratorDecorator.html#AbstractIteratorDecorator"/>
+<area shape="poly" coords="298,207,296,210,293,207,296,205,298,207,298,207" title="Complexity: 2; Coverage: 100%; Class: AbstractIteratorDecorator" alt="" href="org/apache/commons/collections4/iterators/AbstractIteratorDecorator.html#AbstractIteratorDecorator"/>
+<area shape="poly" coords="298,207,296,210,293,207,296,205,298,207,298,207" title="Complexity: 2; Coverage: 100%; Class: AbstractIteratorDecorator" alt="" href="org/apache/commons/collections4/iterators/AbstractIteratorDecorator.html#AbstractIteratorDecorator"/>
+<area shape="poly" coords="274,202,271,205,269,202,271,200,274,202,274,202" title="Complexity: 7; Coverage: 90%; Class: EditScript" alt="" href="org/apache/commons/collections4/sequence/EditScript.html#EditScript"/>
+<area shape="poly" coords="54,203,51,206,49,203,51,201,54,203,54,203" title="Complexity: 6; Coverage: 0%; Class: FixedSizeListTest" alt="" href="org/apache/commons/collections4/list/FixedSizeListTest.html#FixedSizeListTest"/>
+<area shape="poly" coords="298,207,296,210,293,207,296,205,298,207,298,207" title="Complexity: 2; Coverage: 100%; Class: AbstractIteratorDecorator" alt="" href="org/apache/commons/collections4/iterators/AbstractIteratorDecorator.html#AbstractIteratorDecorator"/>
+<area shape="poly" coords="54,203,51,206,49,203,51,201,54,203,54,203" title="Complexity: 6; Coverage: 0%; Class: FixedSizeListTest" alt="" href="org/apache/commons/collections4/list/FixedSizeListTest.html#FixedSizeListTest"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: EmptyMapMutator" alt="" href="org/apache/commons/collections4/map/EmptyMapMutator.html#EmptyMapMutator"/>
+<area shape="poly" coords="54,201,51,204,49,201,51,199,54,201,54,201" title="Complexity: 8; Coverage: 0%; Class: FixedSizeSortedMapTest" alt="" href="org/apache/commons/collections4/map/FixedSizeSortedMapTest.html#FixedSizeSortedMapTest"/>
+<area shape="poly" coords="54,204,51,207,49,204,51,202,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: AbstractNullComparatorTest.TestNullComparator2" alt="" href="org/apache/commons/collections4/comparators/AbstractNullComparatorTest.html#AbstractNullComparatorTest.TestNullComparator2"/>
+<area shape="poly" coords="54,198,51,201,49,198,51,196,54,198,54,198" title="Complexity: 11; Coverage: 0%; Class: AbstractOrderedMapIteratorDecorator" alt="" href="org/apache/commons/collections4/iterators/AbstractOrderedMapIteratorDecorator.html#AbstractOrderedMapIteratorDecorator"/>
+<area shape="poly" coords="298,199,296,202,293,199,296,197,298,199,298,199" title="Complexity: 10; Coverage: 100%; Class: LazyIteratorChain" alt="" href="org/apache/commons/collections4/iterators/LazyIteratorChain.html#LazyIteratorChain"/>
+<area shape="poly" coords="298,199,296,202,293,199,296,197,298,199,298,199" title="Complexity: 10; Coverage: 100%; Class: LazyIteratorChain" alt="" href="org/apache/commons/collections4/iterators/LazyIteratorChain.html#LazyIteratorChain"/>
+<area shape="poly" coords="249,191,247,194,244,191,247,189,249,191,249,191" title="Complexity: 18; Coverage: 80%; Class: UnmodifiableSortedMap" alt="" href="org/apache/commons/collections4/map/UnmodifiableSortedMap.html#UnmodifiableSortedMap"/>
+<area shape="poly" coords="298,198,296,201,293,198,296,196,298,198,298,198" title="Complexity: 11; Coverage: 100%; Class: AbstractEmptyIterator" alt="" href="org/apache/commons/collections4/iterators/AbstractEmptyIterator.html#AbstractEmptyIterator"/>
+<area shape="poly" coords="262,193,259,196,257,193,259,191,262,193,262,193" title="Complexity: 16; Coverage: 85%; Class: AbstractLinkedMap.LinkIterator" alt="" href="org/apache/commons/collections4/map/AbstractLinkedMap.html#AbstractLinkedMap.LinkIterator"/>
+<area shape="poly" coords="298,208,296,211,293,208,296,206,298,208,298,208" title="Complexity: 1; Coverage: 100%; Class: AbstractPatriciaTrie.Values.ValueIterator" alt="" href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html#AbstractPatriciaTrie.Values.ValueIterator"/>
+<area shape="poly" coords="215,206,213,209,210,206,213,204,215,206,215,206" title="Complexity: 3; Coverage: 66%; Class: EmptyListIterator" alt="" href="org/apache/commons/collections4/iterators/EmptyListIterator.html#EmptyListIterator"/>
+<area shape="poly" coords="215,206,213,209,210,206,213,204,215,206,215,206" title="Complexity: 3; Coverage: 66%; Class: EmptyListIterator" alt="" href="org/apache/commons/collections4/iterators/EmptyListIterator.html#EmptyListIterator"/>
+<area shape="poly" coords="215,206,213,209,210,206,213,204,215,206,215,206" title="Complexity: 3; Coverage: 66%; Class: EmptyListIterator" alt="" href="org/apache/commons/collections4/iterators/EmptyListIterator.html#EmptyListIterator"/>
+<area shape="poly" coords="298,200,296,203,293,200,296,198,298,200,298,200" title="Complexity: 9; Coverage: 100%; Class: LoopingIterator" alt="" href="org/apache/commons/collections4/iterators/LoopingIterator.html#LoopingIterator"/>
+<area shape="poly" coords="286,167,284,169,281,167,284,164,286,167,286,167" title="Complexity: 43; Coverage: 95%; Class: AbstractLinkedMap" alt="" href="org/apache/commons/collections4/map/AbstractLinkedMap.html#AbstractLinkedMap"/>
+<area shape="poly" coords="249,195,247,198,244,195,247,193,249,195,249,195" title="Complexity: 14; Coverage: 80%; Class: UnmodifiableMap" alt="" href="org/apache/commons/collections4/map/UnmodifiableMap.html#UnmodifiableMap"/>
+<area shape="poly" coords="259,166,257,168,254,166,257,163,259,166,259,166" title="Complexity: 44; Coverage: 84%; Class: LRUMap" alt="" href="org/apache/commons/collections4/map/LRUMap.html#LRUMap"/>
+<area shape="poly" coords="298,208,296,211,293,208,296,206,298,208,298,208" title="Complexity: 1; Coverage: 100%; Class: AbstractPatriciaTrie.Values.ValueIterator" alt="" href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html#AbstractPatriciaTrie.Values.ValueIterator"/>
+<area shape="poly" coords="279,193,276,196,274,193,276,191,279,193,279,193" title="Complexity: 16; Coverage: 92%; Class: AbstractDualBidiMap.BidiMapIterator" alt="" href="org/apache/commons/collections4/bidimap/AbstractDualBidiMap.html#AbstractDualBidiMap.BidiMapIterator"/>
+<area shape="poly" coords="298,206,296,209,293,206,296,204,298,206,298,206" title="Complexity: 3; Coverage: 100%; Class: TransformedList.TransformedListIterator" alt="" href="org/apache/commons/collections4/list/TransformedList.html#TransformedList.TransformedListIterator"/>
+<area shape="poly" coords="298,206,296,209,293,206,296,204,298,206,298,206" title="Complexity: 3; Coverage: 100%; Class: TransformedList.TransformedListIterator" alt="" href="org/apache/commons/collections4/list/TransformedList.html#TransformedList.TransformedListIterator"/>
+<area shape="poly" coords="298,193,296,196,293,193,296,191,298,193,298,193" title="Complexity: 16; Coverage: 100%; Class: ListOrderedMap.EntrySetView" alt="" href="org/apache/commons/collections4/map/ListOrderedMap.html#ListOrderedMap.EntrySetView"/>
+<area shape="poly" coords="298,203,296,206,293,203,296,201,298,203,298,203" title="Complexity: 6; Coverage: 100%; Class: AbstractLinkedList.LinkedSubListIterator" alt="" href="org/apache/commons/collections4/list/AbstractLinkedList.html#AbstractLinkedList.LinkedSubListIterator"/>
+<area shape="poly" coords="298,200,296,203,293,200,296,198,298,200,298,200" title="Complexity: 9; Coverage: 100%; Class: LoopingIterator" alt="" href="org/apache/commons/collections4/iterators/LoopingIterator.html#LoopingIterator"/>
+<area shape="poly" coords="291,164,289,166,286,164,289,161,291,164,291,164" title="Complexity: 46; Coverage: 97%; Class: ListOrderedMap" alt="" href="org/apache/commons/collections4/map/ListOrderedMap.html#ListOrderedMap"/>
+<area shape="poly" coords="298,189,296,192,293,189,296,187,298,189,298,189" title="Complexity: 20; Coverage: 100%; Class: AbstractMapDecorator" alt="" href="org/apache/commons/collections4/map/AbstractMapDecorator.html#AbstractMapDecorator"/>
+<area shape="poly" coords="267,201,264,204,262,201,264,199,267,201,267,201" title="Complexity: 8; Coverage: 87%; Class: AbstractOrderedMapDecorator" alt="" href="org/apache/commons/collections4/map/AbstractOrderedMapDecorator.html#AbstractOrderedMapDecorator"/>
+<area shape="poly" coords="286,78,284,80,281,78,284,75,286,78,286,78" title="Complexity: 133; Coverage: 95%; Class: MultiKeyMap" alt="" href="org/apache/commons/collections4/map/MultiKeyMap.html#MultiKeyMap"/>
+<area shape="poly" coords="294,193,291,196,289,193,291,191,294,193,294,193" title="Complexity: 16; Coverage: 98%; Class: TransformedMap" alt="" href="org/apache/commons/collections4/map/TransformedMap.html#TransformedMap"/>
+<area shape="poly" coords="54,205,51,208,49,205,51,203,54,205,54,205" title="Complexity: 4; Coverage: 0%; Class: ComparableComparatorTest" alt="" href="org/apache/commons/collections4/comparators/ComparableComparatorTest.html#ComparableComparatorTest"/>
+<area shape="poly" coords="147,195,144,198,142,195,144,193,147,195,147,195" title="Complexity: 14; Coverage: 38%; Class: AbstractSortedMapDecorator" alt="" href="org/apache/commons/collections4/map/AbstractSortedMapDecorator.html#AbstractSortedMapDecorator"/>
+<area shape="poly" coords="284,164,281,166,279,164,281,161,284,164,284,164" title="Complexity: 46; Coverage: 94%; Class: CompositeMap" alt="" href="org/apache/commons/collections4/map/CompositeMap.html#CompositeMap"/>
+<area shape="poly" coords="176,202,174,205,171,202,174,200,176,202,176,202" title="Complexity: 7; Coverage: 50%; Class: ReferenceMap" alt="" href="org/apache/commons/collections4/map/ReferenceMap.html#ReferenceMap"/>
+<area shape="poly" coords="298,207,296,210,293,207,296,205,298,207,298,207" title="Complexity: 2; Coverage: 100%; Class: AbstractIteratorDecorator" alt="" href="org/apache/commons/collections4/iterators/AbstractIteratorDecorator.html#AbstractIteratorDecorator"/>
+<area shape="poly" coords="272,202,269,205,267,202,269,200,272,202,272,202" title="Complexity: 7; Coverage: 89%; Class: Flat3Map.Values" alt="" href="org/apache/commons/collections4/map/Flat3Map.html#Flat3Map.Values"/>
+<area shape="poly" coords="298,207,296,210,293,207,296,205,298,207,298,207" title="Complexity: 2; Coverage: 100%; Class: AbstractIteratorDecorator" alt="" href="org/apache/commons/collections4/iterators/AbstractIteratorDecorator.html#AbstractIteratorDecorator"/>
+<area shape="poly" coords="298,201,296,204,293,201,296,199,298,201,298,201" title="Complexity: 8; Coverage: 100%; Class: SkippingIterator" alt="" href="org/apache/commons/collections4/iterators/SkippingIterator.html#SkippingIterator"/>
+<area shape="poly" coords="298,207,296,210,293,207,296,205,298,207,298,207" title="Complexity: 2; Coverage: 100%; Class: AbstractIteratorDecorator" alt="" href="org/apache/commons/collections4/iterators/AbstractIteratorDecorator.html#AbstractIteratorDecorator"/>
+<area shape="poly" coords="164,203,161,206,159,203,161,201,164,203,164,203" title="Complexity: 6; Coverage: 45%; Class: Flat3Map.EntryIterator" alt="" href="org/apache/commons/collections4/map/Flat3Map.html#Flat3Map.EntryIterator"/>
+<area shape="poly" coords="198,181,196,184,193,181,196,179,198,181,198,181" title="Complexity: 28; Coverage: 59%; Class: Flat3Map.FlatMapEntry" alt="" href="org/apache/commons/collections4/map/Flat3Map.html#Flat3Map.FlatMapEntry"/>
+<area shape="poly" coords="279,201,276,204,274,201,276,199,279,201,279,201" title="Complexity: 8; Coverage: 92%; Class: AbstractPatriciaTrie.EntrySet" alt="" href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html#AbstractPatriciaTrie.EntrySet"/>
+<area shape="poly" coords="203,185,200,188,198,185,200,183,203,185,203,185" title="Complexity: 24; Coverage: 61%; Class: Flat3Map.FlatMapIterator" alt="" href="org/apache/commons/collections4/map/Flat3Map.html#Flat3Map.FlatMapIterator"/>
+<area shape="poly" coords="208,31,205,34,203,31,205,29,208,31,208,31" title="Complexity: 180; Coverage: 63%; Class: Flat3Map" alt="" href="org/apache/commons/collections4/map/Flat3Map.html#Flat3Map"/>
+<area shape="poly" coords="289,198,286,201,284,198,286,196,289,198,289,198" title="Complexity: 11; Coverage: 96%; Class: TransformedSortedMap" alt="" href="org/apache/commons/collections4/map/TransformedSortedMap.html#TransformedSortedMap"/>
+<area shape="poly" coords="298,207,296,210,293,207,296,205,298,207,298,207" title="Complexity: 2; Coverage: 100%; Class: AbstractIteratorDecorator" alt="" href="org/apache/commons/collections4/iterators/AbstractIteratorDecorator.html#AbstractIteratorDecorator"/>
+<area shape="poly" coords="298,207,296,210,293,207,296,205,298,207,298,207" title="Complexity: 2; Coverage: 100%; Class: AbstractIteratorDecorator" alt="" href="org/apache/commons/collections4/iterators/AbstractIteratorDecorator.html#AbstractIteratorDecorator"/>
+<area shape="poly" coords="289,200,286,203,284,200,286,198,289,200,289,200" title="Complexity: 9; Coverage: 96%; Class: AbstractPatriciaTrie.PrefixRangeEntrySet.EntryIterator" alt="" href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html#AbstractPatriciaTrie.PrefixRangeEntrySet.EntryIterator"/>
+<area shape="poly" coords="257,204,254,207,252,204,254,202,257,204,257,204" title="Complexity: 5; Coverage: 83%; Class: AbstractInputCheckedMapDecorator" alt="" href="org/apache/commons/collections4/map/AbstractInputCheckedMapDecorator.html#AbstractInputCheckedMapDecorator"/>
+<area shape="poly" coords="284,191,281,194,279,191,281,189,284,191,284,191" title="Complexity: 18; Coverage: 94%; Class: LinkedMap.LinkedMapList" alt="" href="org/apache/commons/collections4/map/LinkedMap.html#LinkedMap.LinkedMapList"/>
+<area shape="poly" coords="269,195,267,198,264,195,267,193,269,195,269,195" title="Complexity: 14; Coverage: 88%; Class: LinkedMap" alt="" href="org/apache/commons/collections4/map/LinkedMap.html#LinkedMap"/>
+<area shape="poly" coords="200,207,198,210,195,207,198,205,200,207,200,207" title="Complexity: 2; Coverage: 60%; Class: AbstractReferenceMap.WeakRef" alt="" href="org/apache/commons/collections4/map/AbstractReferenceMap.html#AbstractReferenceMap.WeakRef"/>
+<area shape="poly" coords="54,207,51,210,49,207,51,205,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: AbstractNullComparatorTest" alt="" href="org/apache/commons/collections4/comparators/AbstractNullComparatorTest.html#AbstractNullComparatorTest"/>
+<area shape="poly" coords="298,201,296,204,293,201,296,199,298,201,298,201" title="Complexity: 8; Coverage: 100%; Class: SkippingIterator" alt="" href="org/apache/commons/collections4/iterators/SkippingIterator.html#SkippingIterator"/>
+<area shape="poly" coords="298,207,296,210,293,207,296,205,298,207,298,207" title="Complexity: 2; Coverage: 100%; Class: AbstractIteratorDecorator" alt="" href="org/apache/commons/collections4/iterators/AbstractIteratorDecorator.html#AbstractIteratorDecorator"/>
+<area shape="poly" coords="298,207,296,210,293,207,296,205,298,207,298,207" title="Complexity: 2; Coverage: 100%; Class: AbstractIteratorDecorator" alt="" href="org/apache/commons/collections4/iterators/AbstractIteratorDecorator.html#AbstractIteratorDecorator"/>
+<area shape="poly" coords="298,207,296,210,293,207,296,205,298,207,298,207" title="Complexity: 2; Coverage: 100%; Class: AbstractIteratorDecorator" alt="" href="org/apache/commons/collections4/iterators/AbstractIteratorDecorator.html#AbstractIteratorDecorator"/>
+<area shape="poly" coords="291,192,289,195,286,192,289,190,291,192,291,192" title="Complexity: 17; Coverage: 97%; Class: AbstractReferenceMap.ReferenceBaseIterator" alt="" href="org/apache/commons/collections4/map/AbstractReferenceMap.html#AbstractReferenceMap.ReferenceBaseIterator"/>
+<area shape="poly" coords="210,186,208,189,205,186,208,184,210,186,210,186" title="Complexity: 23; Coverage: 64%; Class: AbstractReferenceMap.ReferenceEntry" alt="" href="org/apache/commons/collections4/map/AbstractReferenceMap.html#AbstractReferenceMap.ReferenceEntry"/>
+<area shape="poly" coords="298,206,296,209,293,206,296,204,298,206,298,206" title="Complexity: 3; Coverage: 100%; Class: TransformedList.TransformedListIterator" alt="" href="org/apache/commons/collections4/list/TransformedList.html#TransformedList.TransformedListIterator"/>
+<area shape="poly" coords="298,206,296,209,293,206,296,204,298,206,298,206" title="Complexity: 3; Coverage: 100%; Class: TransformedList.TransformedListIterator" alt="" href="org/apache/commons/collections4/list/TransformedList.html#TransformedList.TransformedListIterator"/>
+<area shape="poly" coords="298,206,296,209,293,206,296,204,298,206,298,206" title="Complexity: 3; Coverage: 100%; Class: TransformedList.TransformedListIterator" alt="" href="org/apache/commons/collections4/list/TransformedList.html#TransformedList.TransformedListIterator"/>
+<area shape="poly" coords="176,204,174,207,171,204,174,202,176,204,176,204" title="Complexity: 5; Coverage: 50%; Class: AbstractReferenceMap.ReferenceStrength" alt="" href="org/apache/commons/collections4/map/AbstractReferenceMap.html#AbstractReferenceMap.ReferenceStrength"/>
+<area shape="poly" coords="254,161,252,163,249,161,252,158,254,161,254,161" title="Complexity: 49; Coverage: 82%; Class: AbstractReferenceMap" alt="" href="org/apache/commons/collections4/map/AbstractReferenceMap.html#AbstractReferenceMap"/>
+<area shape="poly" coords="257,196,254,199,252,196,254,194,257,196,257,196" title="Complexity: 13; Coverage: 83%; Class: DefaultedMap" alt="" href="org/apache/commons/collections4/map/DefaultedMap.html#DefaultedMap"/>
+<area shape="poly" coords="298,202,296,205,293,202,296,200,298,202,298,202" title="Complexity: 7; Coverage: 100%; Class: SetUniqueList.SetListListIterator" alt="" href="org/apache/commons/collections4/list/SetUniqueList.html#SetUniqueList.SetListListIterator"/>
+<area shape="poly" coords="279,194,276,197,274,194,276,192,279,194,279,194" title="Complexity: 15; Coverage: 92%; Class: AbstractHashedMap.HashIterator" alt="" href="org/apache/commons/collections4/map/AbstractHashedMap.html#AbstractHashedMap.HashIterator"/>
+<area shape="poly" coords="286,195,284,198,281,195,284,193,286,195,286,195" title="Complexity: 14; Coverage: 95%; Class: ReverseListIterator" alt="" href="org/apache/commons/collections4/iterators/ReverseListIterator.html#ReverseListIterator"/>
+<area shape="poly" coords="298,207,296,210,293,207,296,205,298,207,298,207" title="Complexity: 2; Coverage: 100%; Class: AbstractIteratorDecorator" alt="" href="org/apache/commons/collections4/iterators/AbstractIteratorDecorator.html#AbstractIteratorDecorator"/>
+<area shape="poly" coords="298,204,296,207,293,204,296,202,298,204,298,204" title="Complexity: 5; Coverage: 100%; Class: ComparableComparator" alt="" href="org/apache/commons/collections4/comparators/ComparableComparator.html#ComparableComparator"/>
+<area shape="poly" coords="298,207,296,210,293,207,296,205,298,207,298,207" title="Complexity: 2; Coverage: 100%; Class: AbstractIteratorDecorator" alt="" href="org/apache/commons/collections4/iterators/AbstractIteratorDecorator.html#AbstractIteratorDecorator"/>
+<area shape="poly" coords="298,203,296,206,293,203,296,201,298,203,298,203" title="Complexity: 6; Coverage: 100%; Class: AbstractLinkedList.LinkedSubListIterator" alt="" href="org/apache/commons/collections4/list/AbstractLinkedList.html#AbstractLinkedList.LinkedSubListIterator"/>
+<area shape="poly" coords="298,207,296,210,293,207,296,205,298,207,298,207" title="Complexity: 2; Coverage: 100%; Class: AbstractIteratorDecorator" alt="" href="org/apache/commons/collections4/iterators/AbstractIteratorDecorator.html#AbstractIteratorDecorator"/>
+<area shape="poly" coords="298,200,296,203,293,200,296,198,298,200,298,200" title="Complexity: 9; Coverage: 100%; Class: LoopingIterator" alt="" href="org/apache/commons/collections4/iterators/LoopingIterator.html#LoopingIterator"/>
+<area shape="poly" coords="298,201,296,204,293,201,296,199,298,201,298,201" title="Complexity: 8; Coverage: 100%; Class: SkippingIterator" alt="" href="org/apache/commons/collections4/iterators/SkippingIterator.html#SkippingIterator"/>
+<area shape="poly" coords="284,97,281,99,279,97,281,94,284,97,284,97" title="Complexity: 114; Coverage: 94%; Class: AbstractHashedMap" alt="" href="org/apache/commons/collections4/map/AbstractHashedMap.html#AbstractHashedMap"/>
+<area shape="poly" coords="298,207,296,210,293,207,296,205,298,207,298,207" title="Complexity: 2; Coverage: 100%; Class: AbstractIteratorDecorator" alt="" href="org/apache/commons/collections4/iterators/AbstractIteratorDecorator.html#AbstractIteratorDecorator"/>
+<area shape="poly" coords="298,206,296,209,293,206,296,204,298,206,298,206" title="Complexity: 3; Coverage: 100%; Class: TransformedList.TransformedListIterator" alt="" href="org/apache/commons/collections4/list/TransformedList.html#TransformedList.TransformedListIterator"/>
+<area shape="poly" coords="284,192,281,195,279,192,281,190,284,192,284,192" title="Complexity: 17; Coverage: 94%; Class: UnmodifiableEntrySet" alt="" href="org/apache/commons/collections4/map/UnmodifiableEntrySet.html#UnmodifiableEntrySet"/>
+<area shape="poly" coords="242,190,240,193,237,190,240,188,242,190,242,190" title="Complexity: 19; Coverage: 77%; Class: FixedSizeSortedMap" alt="" href="org/apache/commons/collections4/map/FixedSizeSortedMap.html#FixedSizeSortedMap"/>
+<area shape="poly" coords="230,194,227,197,225,194,227,192,230,194,230,194" title="Complexity: 15; Coverage: 72%; Class: AbstractSetValuedMap" alt="" href="org/apache/commons/collections4/multimap/AbstractSetValuedMap.html#AbstractSetValuedMap"/>
+<area shape="poly" coords="259,203,257,206,254,203,257,201,259,203,259,203" title="Complexity: 6; Coverage: 84%; Class: SingletonMap.SingletonValues" alt="" href="org/apache/commons/collections4/map/SingletonMap.html#SingletonMap.SingletonValues"/>
+<area shape="poly" coords="240,192,237,195,235,192,237,190,240,192,240,192" title="Complexity: 17; Coverage: 76%; Class: SingletonMap.SingletonMapIterator" alt="" href="org/apache/commons/collections4/map/SingletonMap.html#SingletonMap.SingletonMapIterator"/>
+<area shape="poly" coords="215,162,213,164,210,162,213,159,215,162,215,162" title="Complexity: 48; Coverage: 66%; Class: SingletonMap" alt="" href="org/apache/commons/collections4/map/SingletonMap.html#SingletonMap"/>
+<area shape="poly" coords="225,197,222,200,220,197,222,195,225,197,225,197" title="Complexity: 12; Coverage: 70%; Class: ReferenceIdentityMap" alt="" href="org/apache/commons/collections4/map/ReferenceIdentityMap.html#ReferenceIdentityMap"/>
+<area shape="poly" coords="298,206,296,209,293,206,296,204,298,206,298,206" title="Complexity: 3; Coverage: 100%; Class: TransformedList.TransformedListIterator" alt="" href="org/apache/commons/collections4/list/TransformedList.html#TransformedList.TransformedListIterator"/>
+<area shape="poly" coords="298,200,296,203,293,200,296,198,298,200,298,200" title="Complexity: 9; Coverage: 100%; Class: LoopingIterator" alt="" href="org/apache/commons/collections4/iterators/LoopingIterator.html#LoopingIterator"/>
+<area shape="poly" coords="298,199,296,202,293,199,296,197,298,199,298,199" title="Complexity: 10; Coverage: 100%; Class: LazyIteratorChain" alt="" href="org/apache/commons/collections4/iterators/LazyIteratorChain.html#LazyIteratorChain"/>
+<area shape="poly" coords="298,208,296,211,293,208,296,206,298,208,298,208" title="Complexity: 1; Coverage: 100%; Class: AbstractPatriciaTrie.Values.ValueIterator" alt="" href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html#AbstractPatriciaTrie.Values.ValueIterator"/>
+<area shape="poly" coords="298,208,296,211,293,208,296,206,298,208,298,208" title="Complexity: 1; Coverage: 100%; Class: AbstractPatriciaTrie.Values.ValueIterator" alt="" href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html#AbstractPatriciaTrie.Values.ValueIterator"/>
+<area shape="poly" coords="298,208,296,211,293,208,296,206,298,208,298,208" title="Complexity: 1; Coverage: 100%; Class: AbstractPatriciaTrie.Values.ValueIterator" alt="" href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html#AbstractPatriciaTrie.Values.ValueIterator"/>
+<area shape="poly" coords="298,200,296,203,293,200,296,198,298,200,298,200" title="Complexity: 9; Coverage: 100%; Class: LoopingIterator" alt="" href="org/apache/commons/collections4/iterators/LoopingIterator.html#LoopingIterator"/>
+<area shape="poly" coords="281,198,279,201,276,198,279,196,281,198,281,198" title="Complexity: 11; Coverage: 93%; Class: SynchronizedBag" alt="" href="org/apache/commons/collections4/bag/SynchronizedBag.html#SynchronizedBag"/>
+<area shape="poly" coords="276,156,274,158,271,156,274,153,276,156,276,156" title="Complexity: 54; Coverage: 91%; Class: StaticBucketMap" alt="" href="org/apache/commons/collections4/map/StaticBucketMap.html#StaticBucketMap"/>
+<area shape="poly" coords="298,196,296,199,293,196,296,194,298,196,298,196" title="Complexity: 13; Coverage: 100%; Class: UnmodifiableListIterator" alt="" href="org/apache/commons/collections4/iterators/UnmodifiableListIterator.html#UnmodifiableListIterator"/>
+<area shape="poly" coords="279,199,276,202,274,199,276,197,279,199,279,199" title="Complexity: 10; Coverage: 92%; Class: CaseInsensitiveMap" alt="" href="org/apache/commons/collections4/map/CaseInsensitiveMap.html#CaseInsensitiveMap"/>
+<area shape="poly" coords="298,194,296,197,293,194,296,192,298,194,298,194" title="Complexity: 15; Coverage: 100%; Class: UnmodifiableOrderedBidiMap" alt="" href="org/apache/commons/collections4/bidimap/UnmodifiableOrderedBidiMap.html#UnmodifiableOrderedBidiMap"/>
+<area shape="poly" coords="298,200,296,203,293,200,296,198,298,200,298,200" title="Complexity: 9; Coverage: 100%; Class: LoopingIterator" alt="" href="org/apache/commons/collections4/iterators/LoopingIterator.html#LoopingIterator"/>
+<area shape="poly" coords="242,203,240,206,237,203,240,201,242,203,242,203" title="Complexity: 6; Coverage: 77%; Class: PassiveExpiringMap.ConstantTimeToLiveExpirationPolicy" alt="" href="org/apache/commons/collections4/map/PassiveExpiringMap.html#PassiveExpiringMap.ConstantTimeToLiveExpirationPolicy"/>
+<area shape="poly" coords="276,176,274,179,271,176,274,174,276,176,276,176" title="Complexity: 33; Coverage: 91%; Class: PassiveExpiringMap" alt="" href="org/apache/commons/collections4/map/PassiveExpiringMap.html#PassiveExpiringMap"/>
+<area shape="poly" coords="257,206,254,209,252,206,254,204,257,206,257,206" title="Complexity: 3; Coverage: 83%; Class: MultiValueMap.ReflectionFactory" alt="" href="org/apache/commons/collections4/map/MultiValueMap.html#MultiValueMap.ReflectionFactory"/>
+<area shape="poly" coords="298,204,296,207,293,204,296,202,298,204,298,204" title="Complexity: 5; Coverage: 100%; Class: ComparableComparator" alt="" href="org/apache/commons/collections4/comparators/ComparableComparator.html#ComparableComparator"/>
+<area shape="poly" coords="242,206,240,209,237,206,240,204,242,206,242,206" title="Complexity: 3; Coverage: 77%; Class: MultiValueMap.Values" alt="" href="org/apache/commons/collections4/map/MultiValueMap.html#MultiValueMap.Values"/>
+<area shape="poly" coords="281,164,279,166,276,164,279,161,281,164,281,164" title="Complexity: 46; Coverage: 93%; Class: MultiValueMap" alt="" href="org/apache/commons/collections4/map/MultiValueMap.html#MultiValueMap"/>
+<area shape="poly" coords="54,202,51,205,49,202,51,200,54,202,54,202" title="Complexity: 7; Coverage: 0%; Class: MockTestCase" alt="" href="org/apache/commons/collections4/MockTestCase.html#MockTestCase"/>
+<area shape="poly" coords="54,174,51,177,49,174,51,172,54,174,54,174" title="Complexity: 35; Coverage: 0%; Class: BulkTestSuiteMaker" alt="" href="org/apache/commons/collections4/BulkTest.html#BulkTestSuiteMaker"/>
+<area shape="poly" coords="54,200,51,203,49,200,51,198,54,200,54,200" title="Complexity: 9; Coverage: 0%; Class: AbstractMapIteratorDecorator" alt="" href="org/apache/commons/collections4/iterators/AbstractMapIteratorDecorator.html#AbstractMapIteratorDecorator"/>
+<area shape="poly" coords="54,204,51,207,49,204,51,202,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: AbstractNullComparatorTest.TestNullComparator2" alt="" href="org/apache/commons/collections4/comparators/AbstractNullComparatorTest.html#AbstractNullComparatorTest.TestNullComparator2"/>
+<area shape="poly" coords="54,197,51,200,49,197,51,195,54,197,54,197" title="Complexity: 12; Coverage: 0%; Class: MapPerformance.DummyMap" alt="" href="org/apache/commons/collections4/MapPerformance.html#MapPerformance.DummyMap"/>
+<area shape="poly" coords="54,205,51,208,49,205,51,203,54,205,54,205" title="Complexity: 4; Coverage: 0%; Class: ComparableComparatorTest" alt="" href="org/apache/commons/collections4/comparators/ComparableComparatorTest.html#ComparableComparatorTest"/>
+<area shape="poly" coords="213,187,210,190,208,187,210,185,213,187,213,187" title="Complexity: 22; Coverage: 65%; Class: MultiMapUtils" alt="" href="org/apache/commons/collections4/MultiMapUtils.html#MultiMapUtils"/>
+<area shape="poly" coords="188,76,186,78,183,76,186,73,188,76,188,76" title="Complexity: 135; Coverage: 55%; Class: IteratorUtils" alt="" href="org/apache/commons/collections4/IteratorUtils.html#IteratorUtils"/>
+<area shape="poly" coords="279,202,276,205,274,202,276,200,279,202,279,202" title="Complexity: 7; Coverage: 92%; Class: FactoryUtils" alt="" href="org/apache/commons/collections4/FactoryUtils.html#FactoryUtils"/>
+<area shape="poly" coords="95,175,93,178,90,175,93,173,95,175,95,175" title="Complexity: 34; Coverage: 17%; Class: FluentIterable" alt="" href="org/apache/commons/collections4/FluentIterable.html#FluentIterable"/>
+<area shape="poly" coords="215,202,213,205,210,202,213,200,215,202,215,202" title="Complexity: 7; Coverage: 66%; Class: ListUtils.Partition" alt="" href="org/apache/commons/collections4/ListUtils.html#ListUtils.Partition"/>
+<area shape="poly" coords="298,206,296,209,293,206,296,204,298,206,298,206" title="Complexity: 3; Coverage: 100%; Class: TransformedList.TransformedListIterator" alt="" href="org/apache/commons/collections4/list/TransformedList.html#TransformedList.TransformedListIterator"/>
+<area shape="poly" coords="298,204,296,207,293,204,296,202,298,204,298,204" title="Complexity: 5; Coverage: 100%; Class: ComparableComparator" alt="" href="org/apache/commons/collections4/comparators/ComparableComparator.html#ComparableComparator"/>
+<area shape="poly" coords="269,157,267,159,264,157,267,154,269,157,269,157" title="Complexity: 53; Coverage: 88%; Class: ListUtils" alt="" href="org/apache/commons/collections4/ListUtils.html#ListUtils"/>
+<area shape="poly" coords="223,197,220,200,218,197,220,195,223,197,223,197" title="Complexity: 12; Coverage: 69%; Class: BagUtils" alt="" href="org/apache/commons/collections4/BagUtils.html#BagUtils"/>
+<area shape="poly" coords="269,204,267,207,264,204,267,202,269,204,269,204" title="Complexity: 5; Coverage: 88%; Class: QueueUtils" alt="" href="org/apache/commons/collections4/QueueUtils.html#QueueUtils"/>
+<area shape="poly" coords="215,207,213,210,210,207,213,205,215,207,215,207" title="Complexity: 2; Coverage: 66%; Class: TrieUtils" alt="" href="org/apache/commons/collections4/TrieUtils.html#TrieUtils"/>
+<area shape="poly" coords="286,202,284,205,281,202,284,200,286,202,286,202" title="Complexity: 7; Coverage: 95%; Class: PrototypeFactory.PrototypeSerializationFactory" alt="" href="org/apache/commons/collections4/functors/PrototypeFactory.html#PrototypeFactory.PrototypeSerializationFactory"/>
+<area shape="poly" coords="247,193,245,196,242,193,245,191,247,193,247,193" title="Complexity: 16; Coverage: 79%; Class: ArrayStack" alt="" href="org/apache/commons/collections4/ArrayStack.html#ArrayStack"/>
+<area shape="poly" coords="129,52,127,55,124,52,127,50,129,52,129,52" title="Complexity: 159; Coverage: 31%; Class: MapUtils" alt="" href="org/apache/commons/collections4/MapUtils.html#MapUtils"/>
+<area shape="poly" coords="262,204,259,207,257,204,259,202,262,204,262,204" title="Complexity: 5; Coverage: 85%; Class: ClosureTransformer" alt="" href="org/apache/commons/collections4/functors/ClosureTransformer.html#ClosureTransformer"/>
+<area shape="poly" coords="298,204,296,207,293,204,296,202,298,204,298,204" title="Complexity: 5; Coverage: 100%; Class: ComparableComparator" alt="" href="org/apache/commons/collections4/comparators/ComparableComparator.html#ComparableComparator"/>
+<area shape="poly" coords="298,202,296,205,293,202,296,200,298,202,298,202" title="Complexity: 7; Coverage: 100%; Class: SetUniqueList.SetListListIterator" alt="" href="org/apache/commons/collections4/list/SetUniqueList.html#SetUniqueList.SetListListIterator"/>
+<area shape="poly" coords="289,18,286,20,284,18,286,15,289,18,289,18" title="Complexity: 194; Coverage: 96%; Class: CollectionUtils" alt="" href="org/apache/commons/collections4/CollectionUtils.html#CollectionUtils"/>
+<area shape="poly" coords="291,191,289,194,286,191,289,189,291,191,291,191" title="Complexity: 18; Coverage: 97%; Class: ClosureUtils" alt="" href="org/apache/commons/collections4/ClosureUtils.html#ClosureUtils"/>
+<area shape="poly" coords="176,205,174,208,171,205,174,203,176,205,176,205" title="Complexity: 4; Coverage: 50%; Class: FunctorException" alt="" href="org/apache/commons/collections4/FunctorException.html#FunctorException"/>
+<area shape="poly" coords="88,190,85,193,83,190,85,188,88,190,88,190" title="Complexity: 19; Coverage: 14%; Class: ComparatorUtils" alt="" href="org/apache/commons/collections4/ComparatorUtils.html#ComparatorUtils"/>
+<area shape="poly" coords="252,179,249,182,247,179,249,177,252,179,252,179" title="Complexity: 30; Coverage: 81%; Class: PredicateUtils" alt="" href="org/apache/commons/collections4/PredicateUtils.html#PredicateUtils"/>
+<area shape="poly" coords="154,151,151,153,149,151,151,148,154,151,154,151" title="Complexity: 59; Coverage: 41%; Class: IterableUtils" alt="" href="org/apache/commons/collections4/IterableUtils.html#IterableUtils"/>
+<area shape="poly" coords="294,184,291,187,289,184,291,182,294,184,294,184" title="Complexity: 25; Coverage: 98%; Class: TransformerUtils" alt="" href="org/apache/commons/collections4/TransformerUtils.html#TransformerUtils"/>
+<area shape="poly" coords="176,183,174,186,171,183,174,181,176,183,176,183" title="Complexity: 26; Coverage: 50%; Class: SetUtils" alt="" href="org/apache/commons/collections4/SetUtils.html#SetUtils"/>
+<area shape="poly" coords="284,193,281,196,279,193,281,191,284,193,284,193" title="Complexity: 16; Coverage: 94%; Class: SplitMapUtils.WrappedPut" alt="" href="org/apache/commons/collections4/SplitMapUtils.html#SplitMapUtils.WrappedPut"/>
+<area shape="poly" coords="227,191,225,194,222,191,225,189,227,191,227,191" title="Complexity: 18; Coverage: 71%; Class: SplitMapUtils.WrappedGet" alt="" href="org/apache/commons/collections4/SplitMapUtils.html#SplitMapUtils.WrappedGet"/>
+<area shape="poly" coords="232,201,230,204,227,201,230,199,232,201,232,201" title="Complexity: 8; Coverage: 73%; Class: SplitMapUtils" alt="" href="org/apache/commons/collections4/SplitMapUtils.html#SplitMapUtils"/>
+<area shape="poly" coords="54,183,51,186,49,183,51,181,54,183,54,183" title="Complexity: 26; Coverage: 0%; Class: AbstractNavigableSetTest.TestNavigableSetSubSet" alt="" href="org/apache/commons/collections4/set/AbstractNavigableSetTest.html#AbstractNavigableSetTest.TestNavigableSetSubSet"/>
+<area shape="poly" coords="54,195,51,198,49,195,51,193,54,195,54,195" title="Complexity: 14; Coverage: 0%; Class: EntrySetMapIterator" alt="" href="org/apache/commons/collections4/iterators/EntrySetMapIterator.html#EntrySetMapIterator"/>
+<area shape="poly" coords="54,205,51,208,49,205,51,203,54,205,54,205" title="Complexity: 4; Coverage: 0%; Class: ComparableComparatorTest" alt="" href="org/apache/commons/collections4/comparators/ComparableComparatorTest.html#ComparableComparatorTest"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: EmptyMapMutator" alt="" href="org/apache/commons/collections4/map/EmptyMapMutator.html#EmptyMapMutator"/>
+<area shape="poly" coords="54,190,51,193,49,190,51,188,54,190,54,190" title="Complexity: 19; Coverage: 0%; Class: AbstractSortedSetTest.TestSortedSetSubSet" alt="" href="org/apache/commons/collections4/set/AbstractSortedSetTest.html#AbstractSortedSetTest.TestSortedSetSubSet"/>
+<area shape="poly" coords="54,192,51,195,49,192,51,190,54,192,54,192" title="Complexity: 17; Coverage: 0%; Class: AbstractSortedSetTest" alt="" href="org/apache/commons/collections4/set/AbstractSortedSetTest.html#AbstractSortedSetTest"/>
+<area shape="poly" coords="279,168,276,170,274,168,276,165,279,168,279,168" title="Complexity: 42; Coverage: 92%; Class: CompositeSet" alt="" href="org/apache/commons/collections4/set/CompositeSet.html#CompositeSet"/>
+<area shape="poly" coords="286,190,284,193,281,190,284,188,286,190,286,190" title="Complexity: 19; Coverage: 95%; Class: AbstractCollectionDecorator" alt="" href="org/apache/commons/collections4/collection/AbstractCollectionDecorator.html#AbstractCollectionDecorator"/>
+<area shape="poly" coords="200,191,198,194,195,191,198,189,200,191,200,191" title="Complexity: 18; Coverage: 60%; Class: TransformedNavigableSet" alt="" href="org/apache/commons/collections4/set/TransformedNavigableSet.html#TransformedNavigableSet"/>
+<area shape="poly" coords="298,194,296,197,293,194,296,192,298,194,298,194" title="Complexity: 15; Coverage: 100%; Class: UnmodifiableOrderedBidiMap" alt="" href="org/apache/commons/collections4/bidimap/UnmodifiableOrderedBidiMap.html#UnmodifiableOrderedBidiMap"/>
+<area shape="poly" coords="284,201,281,204,279,201,281,199,284,201,284,201" title="Complexity: 8; Coverage: 94%; Class: TransformedSet" alt="" href="org/apache/commons/collections4/set/TransformedSet.html#TransformedSet"/>
+<area shape="poly" coords="298,189,296,192,293,189,296,187,298,189,298,189" title="Complexity: 20; Coverage: 100%; Class: AbstractMapDecorator" alt="" href="org/apache/commons/collections4/map/AbstractMapDecorator.html#AbstractMapDecorator"/>
+<area shape="poly" coords="249,204,247,207,244,204,247,202,249,204,249,204" title="Complexity: 5; Coverage: 80%; Class: AbstractSetDecorator" alt="" href="org/apache/commons/collections4/set/AbstractSetDecorator.html#AbstractSetDecorator"/>
+<area shape="poly" coords="298,200,296,203,293,200,296,198,298,200,298,200" title="Complexity: 9; Coverage: 100%; Class: LoopingIterator" alt="" href="org/apache/commons/collections4/iterators/LoopingIterator.html#LoopingIterator"/>
+<area shape="poly" coords="188,200,186,203,183,200,186,198,188,200,188,200" title="Complexity: 9; Coverage: 55%; Class: AbstractSortedSetDecorator" alt="" href="org/apache/commons/collections4/set/AbstractSortedSetDecorator.html#AbstractSortedSetDecorator"/>
+<area shape="poly" coords="215,204,213,207,210,204,213,202,215,204,215,204" title="Complexity: 5; Coverage: 66%; Class: ListOrderedSet.OrderedSetIterator" alt="" href="org/apache/commons/collections4/set/ListOrderedSet.html#ListOrderedSet.OrderedSetIterator"/>
+<area shape="poly" coords="289,172,286,175,284,172,286,170,289,172,289,172" title="Complexity: 37; Coverage: 96%; Class: ListOrderedSet" alt="" href="org/apache/commons/collections4/set/ListOrderedSet.html#ListOrderedSet"/>
+<area shape="poly" coords="298,199,296,202,293,199,296,197,298,199,298,199" title="Complexity: 10; Coverage: 100%; Class: LazyIteratorChain" alt="" href="org/apache/commons/collections4/iterators/LazyIteratorChain.html#LazyIteratorChain"/>
+<area shape="poly" coords="203,196,200,199,198,196,200,194,203,196,203,196" title="Complexity: 13; Coverage: 61%; Class: TransformedSortedSet" alt="" href="org/apache/commons/collections4/set/TransformedSortedSet.html#TransformedSortedSet"/>
+<area shape="poly" coords="298,204,296,207,293,204,296,202,298,204,298,204" title="Complexity: 5; Coverage: 100%; Class: ComparableComparator" alt="" href="org/apache/commons/collections4/comparators/ComparableComparator.html#ComparableComparator"/>
+<area shape="poly" coords="249,195,247,198,244,195,247,193,249,195,249,195" title="Complexity: 14; Coverage: 80%; Class: UnmodifiableMap" alt="" href="org/apache/commons/collections4/map/UnmodifiableMap.html#UnmodifiableMap"/>
+<area shape="poly" coords="156,195,154,198,151,195,154,193,156,195,156,195" title="Complexity: 14; Coverage: 42%; Class: AbstractNavigableSetDecorator" alt="" href="org/apache/commons/collections4/set/AbstractNavigableSetDecorator.html#AbstractNavigableSetDecorator"/>
+<area shape="poly" coords="298,206,296,209,293,206,296,204,298,206,298,206" title="Complexity: 3; Coverage: 100%; Class: TransformedList.TransformedListIterator" alt="" href="org/apache/commons/collections4/list/TransformedList.html#TransformedList.TransformedListIterator"/>
+</map>
+            </div>
+        </div>
+        
+                    <div class="dashboard-widget">
+                <header class="dashboard-widget-header">
+                    <h3>Coverage tree map</h3>
+                </header>
+                <div class="dashboard-widget-content">
+                    <div id="infovis" style="width:100%; height:250px;">
+                        <div id="treemap-loader" style="position:relative;top:50px;">
+                            <p>
+                                Generating Coverage Tree Map. Please wait...
+                            </p>
+                            <p>
+                                <img src="img/ajax-loader.gif" alt="Loading Treemap"/>
+                            </p>
+                        </div>
+                    </div>
+                    <p><a href="treemap.html">See more</a></p>
+                </div>
+
+            </div>
+            </div>
+
+
+    <div class="aui-item">
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Top 20 project risks</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                
+                                                                <a class="tag" href="org/apache/commons/collections4/sequence/SequencesComparator.html"
+                            style="font-size: 28px;color:#89c495"
+                            title="Average Method Complexity - 7.833 , Coverage - 98.2% ">SequencesComparator</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/collections4/list/TreeList.html"
+                            style="font-size: 18px;color:#89c495"
+                            title="Average Method Complexity - 3.212 , Coverage - 96.7% ">TreeList.AVLNode</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/collections4/functors/PrototypeFactory.html"
+                            style="font-size: 19px;color:#89c495"
+                            title="Average Method Complexity - 3.5 , Coverage - 95.2% ">PrototypeFactory.PrototypeSerializationFactory</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/collections4/map/MultiKeyMap.html"
+                            style="font-size: 18px;color:#89c495"
+                            title="Average Method Complexity - 3.41 , Coverage - 95.2% ">MultiKeyMap</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/collections4/CollectionUtils.html"
+                            style="font-size: 17px;color:#89c495"
+                            title="Average Method Complexity - 2.658 , Coverage - 96.7% ">CollectionUtils</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/collections4/iterators/BoundedIterator.html"
+                            style="font-size: 17px;color:#89c495"
+                            title="Average Method Complexity - 2.5 , Coverage - 96% ">BoundedIterator</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/collections4/map/AbstractReferenceMap.html"
+                            style="font-size: 16px;color:#89c495"
+                            title="Average Method Complexity - 2.429 , Coverage - 97.1% ">AbstractReferenceMap.ReferenceBaseIterator</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/collections4/bag/AbstractMapBag.html"
+                            style="font-size: 16px;color:#89c495"
+                            title="Average Method Complexity - 2.259 , Coverage - 96.3% ">AbstractMapBag</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/collections4/map/AbstractInputCheckedMapDecorator.html"
+                            style="font-size: 16px;color:#89c495"
+                            title="Average Method Complexity - 2.25 , Coverage - 97% ">AbstractInputCheckedMapDecorator.EntrySet</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html"
+                            style="font-size: 16px;color:#89c495"
+                            title="Average Method Complexity - 2.25 , Coverage - 96.8% ">AbstractPatriciaTrie.PrefixRangeEntrySet.EntryIterator</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html"
+                            style="font-size: 18px;color:#89c495"
+                            title="Average Method Complexity - 3 , Coverage - 93.8% ">AbstractPatriciaTrie.RangeEntrySet</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/collections4/queue/CircularFifoQueue.html"
+                            style="font-size: 16px;color:#89c495"
+                            title="Average Method Complexity - 2.125 , Coverage - 96.1% ">CircularFifoQueue</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/collections4/bidimap/TreeBidiMap.html"
+                            style="font-size: 17px;color:#14892c"
+                            title="Average Method Complexity - 2.785 , Coverage - 92.2% ">TreeBidiMap</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/collections4/functors/InvokerTransformer.html"
+                            style="font-size: 20px;color:#14892c"
+                            title="Average Method Complexity - 4.4 , Coverage - 91.3% ">InvokerTransformer</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/collections4/list/TreeList.html"
+                            style="font-size: 15px;color:#89c495"
+                            title="Average Method Complexity - 1.818 , Coverage - 97.5% ">TreeList.TreeListIterator</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/collections4/iterators/ZippingIterator.html"
+                            style="font-size: 16px;color:#89c495"
+                            title="Average Method Complexity - 2 , Coverage - 95.6% ">ZippingIterator</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/collections4/bag/AbstractMapBag.html"
+                            style="font-size: 16px;color:#89c495"
+                            title="Average Method Complexity - 2.25 , Coverage - 94.7% ">AbstractMapBag.BagIterator</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/collections4/map/AbstractHashedMap.html"
+                            style="font-size: 16px;color:#89c495"
+                            title="Average Method Complexity - 2 , Coverage - 95.1% ">AbstractHashedMap.HashEntry</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/collections4/list/CursorableLinkedList.html"
+                            style="font-size: 16px;color:#89c495"
+                            title="Average Method Complexity - 2.444 , Coverage - 93.2% ">CursorableLinkedList.Cursor</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/collections4/map/AbstractHashedMap.html"
+                            style="font-size: 16px;color:#89c495"
+                            title="Average Method Complexity - 2.235 , Coverage - 94.2% ">AbstractHashedMap</a>
+                                                    <p><a href="top-risks.html">See more</a></p>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Most complex packages</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                
+                <table class="aui">
+                                            
+                                                <tr>
+                            <td>1. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.84248555</span>84.2%</div><div style="display: table-cell">
+ <div title="84.2% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:84.2%"></div></div></div></div></td>
+                            <td>
+                                <a href="org/apache/commons/collections4/map/pkg-summary.html">org.apache.commons.collections4.map</a>
+                                <span class="aui-badge" title="Package complexity">1593</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>2. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.5969622</span>59.7%</div><div style="display: table-cell">
+ <div title="59.7% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:59.7%"></div></div></div></div></td>
+                            <td>
+                                <a href="org/apache/commons/collections4/pkg-summary.html">org.apache.commons.collections4</a>
+                                <span class="aui-badge" title="Package complexity">973</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>3. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.8259061</span>82.6%</div><div style="display: table-cell">
+ <div title="82.6% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:82.6%"></div></div></div></div></td>
+                            <td>
+                                <a href="org/apache/commons/collections4/iterators/pkg-summary.html">org.apache.commons.collections4.iterators</a>
+                                <span class="aui-badge" title="Package complexity">577</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>4. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.85858583</span>85.9%</div><div style="display: table-cell">
+ <div title="85.9% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:85.9%"></div></div></div></div></td>
+                            <td>
+                                <a href="org/apache/commons/collections4/bidimap/pkg-summary.html">org.apache.commons.collections4.bidimap</a>
+                                <span class="aui-badge" title="Package complexity">566</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>5. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.9206349</span>92.1%</div><div style="display: table-cell">
+ <div title="92.1% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:92.1%"></div></div></div></div></td>
+                            <td>
+                                <a href="org/apache/commons/collections4/list/pkg-summary.html">org.apache.commons.collections4.list</a>
+                                <span class="aui-badge" title="Package complexity">538</span>
+                            </td>
+                        </tr>
+                                    </table>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Most complex classes</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <table class="aui">
+                                            
+                                                <tr>
+                            <td>1. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.96661365</span>96.7%</div><div style="display: table-cell">
+ <div title="96.7% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:96.7%"></div></div></div></div></td>
+                            <td>
+                                <a  href="org/apache/commons/collections4/CollectionUtils.html"  title="org.apache.commons.collections4.CollectionUtils">CollectionUtils</a>
+                                <span class="aui-badge" title="Class complexity">194</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>2. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.69115645</span>69.1%</div><div style="display: table-cell">
+ <div title="69.1% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:69.1%"></div></div></div></div></td>
+                            <td>
+                                <a  href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html"  title="org.apache.commons.collections4.trie.AbstractPatriciaTrie">AbstractPatriciaTrie</a>
+                                <span class="aui-badge" title="Class complexity">193</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>3. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.9220779</span>92.2%</div><div style="display: table-cell">
+ <div title="92.2% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:92.2%"></div></div></div></div></td>
+                            <td>
+                                <a  href="org/apache/commons/collections4/bidimap/TreeBidiMap.html"  title="org.apache.commons.collections4.bidimap.TreeBidiMap">TreeBidiMap</a>
+                                <span class="aui-badge" title="Class complexity">181</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>4. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.63947797</span>63.9%</div><div style="display: table-cell">
+ <div title="63.9% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:63.9%"></div></div></div></div></td>
+                            <td>
+                                <a  href="org/apache/commons/collections4/map/Flat3Map.html"  title="org.apache.commons.collections4.map.Flat3Map">Flat3Map</a>
+                                <span class="aui-badge" title="Class complexity">180</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>5. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.3108108</span>31.1%</div><div style="display: table-cell">
+ <div title="31.1% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:31.1%"></div></div></div></div></td>
+                            <td>
+                                <a  href="org/apache/commons/collections4/MapUtils.html"  title="org.apache.commons.collections4.MapUtils">MapUtils</a>
+                                <span class="aui-badge" title="Class complexity">159</span>
+                            </td>
+                        </tr>
+                                    </table>
+            </div>
+        </div>
+
+                <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Least tested methods</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <table class="aui">
+                                            
+
+                    <tr>
+                        <td align="right">1.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="IteratorUtils.getIterator(Object)&#160;:&#160;Iterator&lt;?&gt;" href="org/apache/commons/collections4/IteratorUtils.html?line=1179#src-1179">IteratorUtils.getIterator(Object)&#160;:&#160;Iterator&lt;?&gt;</a>
+                            <span class="aui-badge" title="Method complexity">17</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">2.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="AbstractPatriciaTrie.floorEntry(K)&#160;:&#160;TrieEntry&lt;K,V&gt;" href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html?line=1041#src-1041">AbstractPatriciaTrie.floorEntry(K)&#160;:&#160;TrieEntry&lt;K,V&gt;</a>
+                            <span class="aui-badge" title="Method complexity">8</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">3.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="BulkTestSuiteMaker.addBulk(BulkTest,Method)&#160;:&#160;void" href="org/apache/commons/collections4/BulkTest.html?line=373#src-373">BulkTestSuiteMaker.addBulk(BulkTest,Method)&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">5</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">4.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="AbstractNavigableSetTest.TestNavigableSetSubSet.TestNavigableSetSubSet(int,boolean,boolean)" href="org/apache/commons/collections4/set/AbstractNavigableSetTest.html?line=190#src-190">AbstractNavigableSetTest.TestNavigableSetSubSet.TestNavigableSetSubSet(int,boolean,boolean)</a>
+                            <span class="aui-badge" title="Method complexity">4</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">5.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="MapUtils.getBoolean(Map&lt;?&#160;super&#160;K,&#160;?&gt;,K)&#160;:&#160;Boolean" href="org/apache/commons/collections4/MapUtils.html?line=151#src-151">MapUtils.getBoolean(Map&lt;?&#160;super&#160;K,&#160;?&gt;,K)&#160;:&#160;Boolean</a>
+                            <span class="aui-badge" title="Method complexity">7</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">6.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="BulkTestSuiteMaker.isTest(Method)&#160;:&#160;boolean" href="org/apache/commons/collections4/BulkTest.html?line=464#src-464">BulkTestSuiteMaker.isTest(Method)&#160;:&#160;boolean</a>
+                            <span class="aui-badge" title="Method complexity">6</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">7.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="BulkTestSuiteMaker.isBulk(Method)&#160;:&#160;boolean" href="org/apache/commons/collections4/BulkTest.html?line=487#src-487">BulkTestSuiteMaker.isBulk(Method)&#160;:&#160;boolean</a>
+                            <span class="aui-badge" title="Method complexity">6</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">8.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="AbstractPatriciaTrie.selectR(TrieEntry&lt;K,&#160;V&gt;,int,K,int,Reference&lt;Map.Entry&lt;K,&#160;V&gt;&gt;)&#160;:&#160;boolean" href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html?line=350#src-350">AbstractPatriciaTrie.selectR(TrieEntry&lt;K,&#160;V&gt;,int,K,int,Reference&lt;Map.Entry&lt;K,&#160;V&gt;&gt;)&#160;:&#160;boolean</a>
+                            <span class="aui-badge" title="Method complexity">6</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">9.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="AbstractSortedSetTest.verify()&#160;:&#160;void" href="org/apache/commons/collections4/set/AbstractSortedSetTest.html?line=52#src-52">AbstractSortedSetTest.verify()&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">4</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">10.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="AbstractSortedBagTest.verify()&#160;:&#160;void" href="org/apache/commons/collections4/bag/AbstractSortedBagTest.html?line=42#src-42">AbstractSortedBagTest.verify()&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">4</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">11.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="AbstractListValuedMap.WrappedList.equals(Object)&#160;:&#160;boolean" href="org/apache/commons/collections4/multimap/AbstractListValuedMap.html?line=220#src-220">AbstractListValuedMap.WrappedList.equals(Object)&#160;:&#160;boolean</a>
+                            <span class="aui-badge" title="Method complexity">5</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">12.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="AbstractSetValuedMap.WrappedSet.equals(Object)&#160;:&#160;boolean" href="org/apache/commons/collections4/multimap/AbstractSetValuedMap.html?line=153#src-153">AbstractSetValuedMap.WrappedSet.equals(Object)&#160;:&#160;boolean</a>
+                            <span class="aui-badge" title="Method complexity">5</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">13.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="AbstractReferenceMap.purge(Reference&lt;?&gt;)&#160;:&#160;void" href="org/apache/commons/collections4/map/AbstractReferenceMap.html?line=391#src-391">AbstractReferenceMap.purge(Reference&lt;?&gt;)&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">4</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">14.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="MapUtils.getNumber(Map&lt;?&#160;super&#160;K,&#160;?&gt;,K)&#160;:&#160;Number" href="org/apache/commons/collections4/MapUtils.html?line=184#src-184">MapUtils.getNumber(Map&lt;?&#160;super&#160;K,&#160;?&gt;,K)&#160;:&#160;Number</a>
+                            <span class="aui-badge" title="Method complexity">6</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">15.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="AbstractReferenceMap.ReferenceEntry.purge(Reference&lt;?&gt;)&#160;:&#160;boolean" href="org/apache/commons/collections4/map/AbstractReferenceMap.html?line=726#src-726">AbstractReferenceMap.ReferenceEntry.purge(Reference&lt;?&gt;)&#160;:&#160;boolean</a>
+                            <span class="aui-badge" title="Method complexity">5</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">16.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="AbstractSortedSetTest.TestSortedSetSubSet.TestSortedSetSubSet(int,boolean)" href="org/apache/commons/collections4/set/AbstractSortedSetTest.html?line=200#src-200">AbstractSortedSetTest.TestSortedSetSubSet.TestSortedSetSubSet(int,boolean)</a>
+                            <span class="aui-badge" title="Method complexity">2</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">17.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="Flat3Map.FlatMapEntry.equals(Object)&#160;:&#160;boolean" href="org/apache/commons/collections4/map/Flat3Map.html?line=856#src-856">Flat3Map.FlatMapEntry.equals(Object)&#160;:&#160;boolean</a>
+                            <span class="aui-badge" title="Method complexity">5</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">18.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="TreeBidiMap.ViewIterator.navigatePrevious()&#160;:&#160;Node&lt;K,&#160;V&gt;" href="org/apache/commons/collections4/bidimap/TreeBidiMap.html?line=1657#src-1657">TreeBidiMap.ViewIterator.navigatePrevious()&#160;:&#160;Node&lt;K,&#160;V&gt;</a>
+                            <span class="aui-badge" title="Method complexity">4</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">19.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="AbstractNavigableSetTest.TestNavigableSetSubSet.TestNavigableSetSubSet(int,int,boolean)" href="org/apache/commons/collections4/set/AbstractNavigableSetTest.html?line=219#src-219">AbstractNavigableSetTest.TestNavigableSetSubSet.TestNavigableSetSubSet(int,int,boolean)</a>
+                            <span class="aui-badge" title="Method complexity">3</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">20.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="MapPerformance.testAll()&#160;:&#160;void" href="org/apache/commons/collections4/MapPerformance.html?line=43#src-43">MapPerformance.testAll()&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">1</span>
+
+                        </td>
+                    </tr>
+                                    </table>
+            </div>
+        </div>
+        
+    </div>
+</div>
+                            </div> <!-- tabs-pane active-pane -->
+                        </div>
+
+    <script type="text/javascript" src="jit.js" ></script>
+    <script type="text/javascript" src="treemap-dash-json.js" ></script>
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.2.1
+                on Tue Jul 26 2022 16:12:45 PDT using coverage data from Tue Jul 26 2022 16:10:43 PDT.
+            </li>
+        </ul>
+        <ul>
+            <li>Clover free edition. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

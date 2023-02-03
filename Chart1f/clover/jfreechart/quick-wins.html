@@ -1,0 +1,2964 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="img/clover.ico" />
+
+    <link rel="stylesheet" href="aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('style.css');
+        @import url('tree.css');
+        
+    </style>
+
+    <script src="jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="package-nodes-tree.js" type="text/javascript"></script>
+    <script src="clover-tree.js" type="text/javascript"></script>
+    <script src="clover.js" type="text/javascript"></script>
+    <script src="clover-descriptions.js" type="text/javascript"></script>
+    <script src="cloud.js" type="text/javascript"></script>
+
+            <title>jfreechart</title>
+    </head>
+
+<body  >
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                                <ul class="aui-nav">
+                    <li>
+                        <a href="#dropdown2-jira3" aria-owns="dropdown2-jira3" aria-haspopup="true"
+                           class="aui-dropdown2-trigger" aria-controls="dropdown2-header7">
+                            Linked reports
+                            <span class="aui-icon-dropdown"></span>
+                        </a>
+
+                        <div class="aui-dropdown2 aui-style-default aui-dropdown2-in-header" id="dropdown2-jira3"
+                             style="display: none; top: 40px; min-width: 160px; left: 1213px; " aria-hidden="true">
+                            <div class="aui-dropdown2-section">
+                                <ul>
+                                                                                                                <li><a href="historical.html">jfreechart-Historical</a></li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        jfreechart
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="aui-nav-selected">
+                    <a href="dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                  <div class="packages-tree-wrapper" data-root-relative="" data-package-name="">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <ol class="aui-nav aui-nav-breadcrumbs">
+            
+        <li><a href="dashboard.html">Project Clover database Sat Aug 27 2022 03:56:50 MDT</a></li>
+    </ol>
+    
+<h1 class="aui-h2-clover">
+            Project overview
+    </h1>
+<div class="aui-tabs horizontal-tabs">
+            <ul class="tabs-menu">
+            <li class="menu-item ">
+            <a href="dashboard.html">Dashboard</a>
+        </li>
+                <li class="menu-item ">
+            <a href="pkg-summary.html"><strong>Application code</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="testsrc-pkg-summary.html"><strong>Test code</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="test-pkg-summary.html"><strong>Test results</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="top-risks.html"><strong>Top risks</strong></a>
+        </li>
+        <li class="menu-item active-tab">
+            <a href="quick-wins.html"><strong>Quick wins</strong></a>
+        </li>
+                                                <li class="menu-item ">
+                <a href="treemap.html"><strong>Coverage tree map</strong></a>
+            </li>
+            </ul>
+    <div class="tabs-pane active-pane" id="tabs-first">
+
+        <div>&#160;</div>
+
+        
+
+
+                        <div style="text-align: right; margin-bottom: 10px">
+            
+            
+                                    <button class="aui-button aui-button-subtle" id="popupHelp">
+    <span class="aui-icon aui-icon-small aui-iconfont-help"></span>&#160;How to read this chart
+</button>
+<script>
+    AJS.InlineDialog(AJS.$("#popupHelp"), "helpDialog",
+            function (content, trigger, showPopup) {
+                var description = quickWinsDescription();
+                var title = 'Quick Wins';
+                content.css({"padding": "20px"}).html(
+                        '<h2>' + title + '</h2>' + description);
+                showPopup();
+                return false;
+            },
+            {
+                width: 600
+            }
+    );
+</script>
+        </div>
+
+        
+
+<div style="padding: 20px; border: 1px solid #cccccc; background-color: #f5f5f5; border-radius: 3px">
+          <div id="deepPackageCloud"  >
+                          
+    
+        
+    
+            <a href="org/jfree/chart/annotations/AbstractAnnotation.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 40 , # Elements Covered - 34 ">AbstractAnnotation</a>
+            
+    
+            <a href="org/jfree/chart/block/AbstractBlock.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 202 , # Elements Covered - 191 ">AbstractBlock</a>
+            
+    
+            <a href="org/jfree/data/category/AbstractCategoryDataset.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 7 ">AbstractCategoryDataset</a>
+            
+    
+            <a href="org/jfree/chart/labels/AbstractCategoryItemLabelGenerator.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 119 , # Elements Covered - 109 ">AbstractCategoryItemLabelGenerator</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.html" class="tag"
+            style="font-size: 22px;color:#d9695f"
+            title="# Elements - 781 , # Elements Covered - 390 ">AbstractCategoryItemRenderer</a>
+            
+    
+            <a href="org/jfree/data/general/AbstractDataset.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 41 , # Elements Covered - 34 ">AbstractDataset</a>
+            
+    
+            <a href="org/jfree/chart/plot/dial/AbstractDialLayer.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 46 , # Elements Covered - 34 ">AbstractDialLayer</a>
+            
+    
+            <a href="org/jfree/data/xy/AbstractIntervalXYDataset.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 32 , # Elements Covered - 30 ">AbstractIntervalXYDataset</a>
+            
+    
+            <a href="org/jfree/chart/panel/AbstractMouseHandler.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 13 , # Elements Covered - 13 ">AbstractMouseHandler</a>
+            
+    
+            <a href="org/jfree/chart/util/AbstractObjectList.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 115 , # Elements Covered - 88 ">AbstractObjectList</a>
+            
+    
+            <a href="org/jfree/chart/panel/AbstractOverlay.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 26 , # Elements Covered - 25 ">AbstractOverlay</a>
+            
+    
+            <a href="org/jfree/data/pie/AbstractPieDataset.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 7 ">AbstractPieDataset</a>
+            
+    
+            <a href="org/jfree/chart/labels/AbstractPieItemLabelGenerator.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 92 , # Elements Covered - 85 ">AbstractPieItemLabelGenerator</a>
+            
+    
+            <a href="org/jfree/chart/plot/AbstractPieLabelDistributor.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 14 , # Elements Covered - 14 ">AbstractPieLabelDistributor</a>
+            
+    
+            <a href="org/jfree/chart/renderer/AbstractRenderer.html" class="tag"
+            style="font-size: 26px;color:#e7a19b"
+            title="# Elements - 1,097 , # Elements Covered - 871 ">AbstractRenderer</a>
+            
+    
+            <a href="org/jfree/data/general/AbstractSeriesDataset.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 14 , # Elements Covered - 14 ">AbstractSeriesDataset</a>
+            
+    
+            <a href="org/jfree/chart/annotations/AbstractXYAnnotation.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 54 , # Elements Covered - 41 ">AbstractXYAnnotation</a>
+            
+    
+            <a href="org/jfree/data/xy/AbstractXYDataset.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 23 , # Elements Covered - 21 ">AbstractXYDataset</a>
+            
+    
+            <a href="org/jfree/chart/labels/AbstractXYItemLabelGenerator.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 127 , # Elements Covered - 119 ">AbstractXYItemLabelGenerator</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/AbstractXYItemRenderer.html" class="tag"
+            style="font-size: 23px;color:#d9695f"
+            title="# Elements - 903 , # Elements Covered - 360 ">AbstractXYItemRenderer</a>
+            
+    
+            <a href="org/jfree/data/xy/AbstractXYZDataset.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 7 ">AbstractXYZDataset</a>
+            
+    
+            <a href="org/jfree/chart/util/Align.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 32 , # Elements Covered - 30 ">Align</a>
+            
+    
+            <a href="org/jfree/chart/event/AnnotationChangeEvent.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 5 , # Elements Covered - 5 ">AnnotationChangeEvent</a>
+            
+    
+            <a href="org/jfree/chart/plot/dial/ArcDialFrame.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 170 , # Elements Covered - 158 ">ArcDialFrame</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/AreaRenderer.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 169 , # Elements Covered - 44 ">AreaRenderer</a>
+            
+    
+            <a href="org/jfree/chart/renderer/AreaRendererEndType.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 34 , # Elements Covered - 17 ">AreaRendererEndType</a>
+            
+    
+            <a href="org/jfree/chart/util/ArrayUtilities.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 114 , # Elements Covered - 111 ">ArrayUtilities</a>
+            
+    
+            <a href="org/jfree/chart/needle/ArrowNeedle.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 58 , # Elements Covered - 58 ">ArrowNeedle</a>
+            
+    
+            <a href="org/jfree/chart/util/AttributedStringUtilities.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 41 , # Elements Covered - 38 ">AttributedStringUtilities</a>
+            
+    
+            <a href="org/jfree/chart/axis/Axis.html" class="tag"
+            style="font-size: 18px;color:#de7b72"
+            title="# Elements - 531 , # Elements Covered - 437 ">Axis</a>
+            
+    
+            <a href="org/jfree/chart/event/AxisChangeEvent.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 5 , # Elements Covered - 5 ">AxisChangeEvent</a>
+            
+    
+            <a href="org/jfree/chart/axis/AxisCollection.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 38 , # Elements Covered - 37 ">AxisCollection</a>
+            
+    
+            <a href="org/jfree/chart/entity/AxisEntity.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 58 , # Elements Covered - 50 ">AxisEntity</a>
+            
+    
+            <a href="org/jfree/chart/entity/AxisLabelEntity.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 14 , # Elements Covered - 14 ">AxisLabelEntity</a>
+            
+    
+            <a href="org/jfree/chart/axis/AxisLocation.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 63 , # Elements Covered - 41 ">AxisLocation</a>
+            
+    
+            <a href="org/jfree/chart/axis/AxisSpace.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 153 , # Elements Covered - 151 ">AxisSpace</a>
+            
+    
+            <a href="org/jfree/chart/axis/AxisState.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 42 , # Elements Covered - 42 ">AxisState</a>
+            
+    
+            <a href="org/jfree/chart/demo/BarChartDemo1.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 56 , # Elements Covered - 2 ">BarChartDemo1</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/BarRenderer.html" class="tag"
+            style="font-size: 19px;color:#d5584c"
+            title="# Elements - 611 , # Elements Covered - 222 ">BarRenderer</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/BarRenderer3D.html" class="tag"
+            style="font-size: 17px;color:#d5584c"
+            title="# Elements - 388 , # Elements Covered - 145 ">BarRenderer3D</a>
+            
+    
+            <a href="org/jfree/chart/ui/BasicProjectInfo.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 56 , # Elements Covered - 56 ">BasicProjectInfo</a>
+            
+    
+            <a href="org/jfree/chart/ui/BasicProjectInfo.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 33 , # Elements Covered - 24 ">BasicProjectInfo.OptionalLibraryHolder</a>
+            
+    
+            <a href="org/jfree/chart/block/BlockBorder.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 79 , # Elements Covered - 73 ">BlockBorder</a>
+            
+    
+            <a href="org/jfree/chart/block/BlockContainer.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 99 , # Elements Covered - 98 ">BlockContainer</a>
+            
+    
+            <a href="org/jfree/chart/block/BlockParams.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 16 , # Elements Covered - 16 ">BlockParams</a>
+            
+    
+            <a href="org/jfree/chart/block/BlockResult.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 6 ">BlockResult</a>
+            
+    
+            <a href="org/jfree/chart/util/BooleanList.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 13 , # Elements Covered - 13 ">BooleanList</a>
+            
+    
+            <a href="org/jfree/chart/block/BorderArrangement.html" class="tag"
+            style="font-size: 16px;color:#d9695f"
+            title="# Elements - 347 , # Elements Covered - 336 ">BorderArrangement</a>
+            
+    
+            <a href="org/jfree/data/statistics/BoxAndWhiskerCalculator.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 109 , # Elements Covered - 107 ">BoxAndWhiskerCalculator</a>
+            
+    
+            <a href="org/jfree/data/statistics/BoxAndWhiskerItem.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 83 , # Elements Covered - 83 ">BoxAndWhiskerItem</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/BoxAndWhiskerRenderer.html" class="tag"
+            style="font-size: 17px;color:#d04437"
+            title="# Elements - 421 , # Elements Covered - 82 ">BoxAndWhiskerRenderer</a>
+            
+    
+            <a href="org/jfree/chart/labels/BoxAndWhiskerToolTipGenerator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 31 , # Elements Covered - 23 ">BoxAndWhiskerToolTipGenerator</a>
+            
+    
+            <a href="org/jfree/chart/labels/BoxAndWhiskerXYToolTipGenerator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 35 , # Elements Covered - 27 ">BoxAndWhiskerXYToolTipGenerator</a>
+            
+    
+            <a href="org/jfree/chart/labels/BubbleXYItemLabelGenerator.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 84 , # Elements Covered - 55 ">BubbleXYItemLabelGenerator</a>
+            
+    
+            <a href="org/jfree/chart/BufferedImageRenderingSource.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 21 , # Elements Covered - 21 ">BufferedImageRenderingSource</a>
+            
+    
+            <a href="org/jfree/data/io/CSV.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 74 , # Elements Covered - 51 ">CSV</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/CandlestickRenderer.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="# Elements - 342 , # Elements Covered - 137 ">CandlestickRenderer</a>
+            
+    
+            <a href="org/jfree/chart/axis/CategoryAnchor.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 33 , # Elements Covered - 17 ">CategoryAnchor</a>
+            
+    
+            <a href="org/jfree/chart/axis/CategoryAxis.html" class="tag"
+            style="font-size: 20px;color:#de7b72"
+            title="# Elements - 631 , # Elements Covered - 437 ">CategoryAxis</a>
+            
+    
+            <a href="org/jfree/chart/axis/CategoryAxis3D.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 78 , # Elements Covered - 44 ">CategoryAxis3D</a>
+            
+    
+            <a href="org/jfree/chart/plot/CategoryCrosshairState.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 51 , # Elements Covered - 51 ">CategoryCrosshairState</a>
+            
+    
+            <a href="org/jfree/data/xml/CategoryDatasetHandler.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 29 , # Elements Covered - 29 ">CategoryDatasetHandler</a>
+            
+    
+            <a href="org/jfree/chart/entity/CategoryItemEntity.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 50 , # Elements Covered - 50 ">CategoryItemEntity</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/CategoryItemRendererState.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 51 , # Elements Covered - 51 ">CategoryItemRendererState</a>
+            
+    
+            <a href="org/jfree/chart/entity/CategoryLabelEntity.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 31 , # Elements Covered - 31 ">CategoryLabelEntity</a>
+            
+    
+            <a href="org/jfree/chart/axis/CategoryLabelPosition.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 82 , # Elements Covered - 82 ">CategoryLabelPosition</a>
+            
+    
+            <a href="org/jfree/chart/axis/CategoryLabelPositions.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 123 , # Elements Covered - 123 ">CategoryLabelPositions</a>
+            
+    
+            <a href="org/jfree/chart/axis/CategoryLabelWidthType.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 33 , # Elements Covered - 19 ">CategoryLabelWidthType</a>
+            
+    
+            <a href="org/jfree/chart/annotations/CategoryLineAnnotation.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 155 , # Elements Covered - 107 ">CategoryLineAnnotation</a>
+            
+    
+            <a href="org/jfree/chart/plot/CategoryMarker.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 45 , # Elements Covered - 45 ">CategoryMarker</a>
+            
+    
+            <a href="org/jfree/chart/plot/CategoryPlot.html" class="tag"
+            style="font-size: 42px;color:#89c495"
+            title="# Elements - 2,328 , # Elements Covered - 1,501 ">CategoryPlot</a>
+            
+    
+            <a href="org/jfree/chart/annotations/CategoryPointerAnnotation.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 171 , # Elements Covered - 117 ">CategoryPointerAnnotation</a>
+            
+    
+            <a href="org/jfree/data/xml/CategorySeriesHandler.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 34 , # Elements Covered - 34 ">CategorySeriesHandler</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/CategoryStepRenderer.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 131 , # Elements Covered - 71 ">CategoryStepRenderer</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/CategoryStepRenderer.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 3 , # Elements Covered - 3 ">CategoryStepRenderer.State</a>
+            
+    
+            <a href="org/jfree/data/xy/CategoryTableXYDataset.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 88 , # Elements Covered - 88 ">CategoryTableXYDataset</a>
+            
+    
+            <a href="org/jfree/chart/annotations/CategoryTextAnnotation.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 89 , # Elements Covered - 81 ">CategoryTextAnnotation</a>
+            
+    
+            <a href="org/jfree/chart/axis/CategoryTick.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 40 , # Elements Covered - 40 ">CategoryTick</a>
+            
+    
+            <a href="org/jfree/data/category/CategoryToPieDataset.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 145 , # Elements Covered - 122 ">CategoryToPieDataset</a>
+            
+    
+            <a href="org/jfree/chart/block/CenterArrangement.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 112 , # Elements Covered - 81 ">CenterArrangement</a>
+            
+    
+            <a href="org/jfree/chart/event/ChartChangeEvent.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 16 , # Elements Covered - 16 ">ChartChangeEvent</a>
+            
+    
+            <a href="org/jfree/chart/event/ChartChangeEventType.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 35 , # Elements Covered - 19 ">ChartChangeEventType</a>
+            
+    
+            <a href="org/jfree/chart/ChartColor.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 4 ">ChartColor</a>
+            
+    
+            <a href="org/jfree/chart/editor/ChartEditorManager.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 11 , # Elements Covered - 10 ">ChartEditorManager</a>
+            
+    
+            <a href="org/jfree/chart/entity/ChartEntity.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 151 , # Elements Covered - 141 ">ChartEntity</a>
+            
+    
+            <a href="org/jfree/chart/ChartFactory.html" class="tag"
+            style="font-size: 18px;color:#de7b72"
+            title="# Elements - 529 , # Elements Covered - 480 ">ChartFactory</a>
+            
+    
+            <a href="org/jfree/chart/ChartMouseEvent.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 11 , # Elements Covered - 11 ">ChartMouseEvent</a>
+            
+    
+            <a href="org/jfree/chart/ChartPanel.html" class="tag"
+            style="font-size: 26px;color:#d9695f"
+            title="# Elements - 1,110 , # Elements Covered - 368 ">ChartPanel</a>
+            
+    
+            <a href="org/jfree/chart/event/ChartProgressEvent.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 17 , # Elements Covered - 17 ">ChartProgressEvent</a>
+            
+    
+            <a href="org/jfree/chart/ChartRenderingInfo.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 68 , # Elements Covered - 59 ">ChartRenderingInfo</a>
+            
+    
+            <a href="org/jfree/chart/ChartTransferable.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 65 , # Elements Covered - 62 ">ChartTransferable</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/ClusteredXYBarRenderer.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 160 , # Elements Covered - 71 ">ClusteredXYBarRenderer</a>
+            
+    
+            <a href="org/jfree/chart/block/ColorBlock.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 43 , # Elements Covered - 35 ">ColorBlock</a>
+            
+    
+            <a href="org/jfree/chart/block/ColumnArrangement.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 175 , # Elements Covered - 135 ">ColumnArrangement</a>
+            
+    
+            <a href="org/jfree/chart/plot/CombinedDomainCategoryPlot.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="# Elements - 315 , # Elements Covered - 232 ">CombinedDomainCategoryPlot</a>
+            
+    
+            <a href="org/jfree/chart/plot/CombinedDomainXYPlot.html" class="tag"
+            style="font-size: 16px;color:#d9695f"
+            title="# Elements - 310 , # Elements Covered - 262 ">CombinedDomainXYPlot</a>
+            
+    
+            <a href="org/jfree/chart/plot/CombinedRangeCategoryPlot.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 272 , # Elements Covered - 202 ">CombinedRangeCategoryPlot</a>
+            
+    
+            <a href="org/jfree/chart/plot/CombinedRangeXYPlot.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 293 , # Elements Covered - 227 ">CombinedRangeXYPlot</a>
+            
+    
+            <a href="org/jfree/data/ComparableObjectItem.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 50 , # Elements Covered - 50 ">ComparableObjectItem</a>
+            
+    
+            <a href="org/jfree/data/ComparableObjectSeries.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 180 , # Elements Covered - 167 ">ComparableObjectSeries</a>
+            
+    
+            <a href="org/jfree/chart/axis/CompassFormat.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 16 , # Elements Covered - 16 ">CompassFormat</a>
+            
+    
+            <a href="org/jfree/chart/plot/CompassPlot.html" class="tag"
+            style="font-size: 16px;color:#d9695f"
+            title="# Elements - 381 , # Elements Covered - 331 ">CompassPlot</a>
+            
+    
+            <a href="org/jfree/chart/title/CompositeTitle.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 64 , # Elements Covered - 55 ">CompositeTitle</a>
+            
+    
+            <a href="org/jfree/chart/ui/Contributor.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 7 ">Contributor</a>
+            
+    
+            <a href="org/jfree/chart/plot/Crosshair.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 251 , # Elements Covered - 210 ">Crosshair</a>
+            
+    
+            <a href="org/jfree/chart/panel/CrosshairOverlay.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="# Elements - 381 , # Elements Covered - 133 ">CrosshairOverlay</a>
+            
+    
+            <a href="org/jfree/chart/plot/CrosshairState.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 84 , # Elements Covered - 84 ">CrosshairState</a>
+            
+    
+            <a href="org/jfree/chart/urls/CustomCategoryURLGenerator.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 79 , # Elements Covered - 75 ">CustomCategoryURLGenerator</a>
+            
+    
+            <a href="org/jfree/chart/urls/CustomPieURLGenerator.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 78 , # Elements Covered - 78 ">CustomPieURLGenerator</a>
+            
+    
+            <a href="org/jfree/chart/labels/CustomXYToolTipGenerator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 62 , # Elements Covered - 61 ">CustomXYToolTipGenerator</a>
+            
+    
+            <a href="org/jfree/chart/urls/CustomXYURLGenerator.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 79 , # Elements Covered - 75 ">CustomXYURLGenerator</a>
+            
+    
+            <a href="org/jfree/chart/axis/CyclicNumberAxis.html" class="tag"
+            style="font-size: 19px;color:#d9695f"
+            title="# Elements - 547 , # Elements Covered - 275 ">CyclicNumberAxis</a>
+            
+    
+            <a href="org/jfree/chart/axis/CyclicNumberAxis.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 3 , # Elements Covered - 3 ">CyclicNumberAxis.CycleBoundTick</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/CyclicXYItemRenderer.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 181 , # Elements Covered - 12 ">CyclicXYItemRenderer</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/CyclicXYItemRenderer.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 44 , # Elements Covered - 42 ">CyclicXYItemRenderer.OverwriteDataSet</a>
+            
+    
+            <a href="org/jfree/data/resources/DataPackageResources.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 2 , # Elements Covered - 2 ">DataPackageResources</a>
+            
+    
+            <a href="org/jfree/data/resources/DataPackageResources_de.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 2 , # Elements Covered - 2 ">DataPackageResources_de</a>
+            
+    
+            <a href="org/jfree/data/resources/DataPackageResources_es.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 2 , # Elements Covered - 2 ">DataPackageResources_es</a>
+            
+    
+            <a href="org/jfree/data/resources/DataPackageResources_fr.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 2 , # Elements Covered - 2 ">DataPackageResources_fr</a>
+            
+    
+            <a href="org/jfree/data/resources/DataPackageResources_pl.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 2 , # Elements Covered - 2 ">DataPackageResources_pl</a>
+            
+    
+            <a href="org/jfree/data/resources/DataPackageResources_ru.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 2 , # Elements Covered - 2 ">DataPackageResources_ru</a>
+            
+    
+            <a href="org/jfree/data/DataUtilities.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 158 , # Elements Covered - 147 ">DataUtilities</a>
+            
+    
+            <a href="org/jfree/data/general/DatasetAndSelection.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 7 ">DatasetAndSelection</a>
+            
+    
+            <a href="org/jfree/data/event/DatasetChangeEvent.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 12 , # Elements Covered - 12 ">DatasetChangeEvent</a>
+            
+    
+            <a href="org/jfree/data/general/DatasetGroup.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 28 , # Elements Covered - 28 ">DatasetGroup</a>
+            
+    
+            <a href="org/jfree/data/xml/DatasetReader.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 28 , # Elements Covered - 24 ">DatasetReader</a>
+            
+    
+            <a href="org/jfree/chart/plot/DatasetRenderingOrder.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 31 , # Elements Covered - 19 ">DatasetRenderingOrder</a>
+            
+    
+            <a href="org/jfree/data/general/DatasetUtilities.html" class="tag"
+            style="font-size: 29px;color:#f6c342"
+            title="# Elements - 1,337 , # Elements Covered - 1,075 ">DatasetUtilities</a>
+            
+    
+            <a href="org/jfree/chart/axis/DateAxis.html" class="tag"
+            style="font-size: 23px;color:#e28e87"
+            title="# Elements - 862 , # Elements Covered - 609 ">DateAxis</a>
+            
+    
+            <a href="org/jfree/chart/axis/DateAxis.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 28 , # Elements Covered - 6 ">DateAxis.DefaultTimeline</a>
+            
+    
+            <a href="org/jfree/data/time/DateRange.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 23 , # Elements Covered - 23 ">DateRange</a>
+            
+    
+            <a href="org/jfree/chart/axis/DateTick.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 24 , # Elements Covered - 24 ">DateTick</a>
+            
+    
+            <a href="org/jfree/chart/axis/DateTickMarkPosition.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 33 , # Elements Covered - 17 ">DateTickMarkPosition</a>
+            
+    
+            <a href="org/jfree/chart/axis/DateTickUnit.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 120 , # Elements Covered - 108 ">DateTickUnit</a>
+            
+    
+            <a href="org/jfree/chart/axis/DateTickUnitType.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 52 , # Elements Covered - 20 ">DateTickUnitType</a>
+            
+    
+            <a href="org/jfree/chart/title/DateTitle.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 10 ">DateTitle</a>
+            
+    
+            <a href="org/jfree/data/time/Day.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 121 , # Elements Covered - 115 ">Day</a>
+            
+    
+            <a href="org/jfree/chart/editor/DefaultAxisEditor.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 140 , # Elements Covered - 122 ">DefaultAxisEditor</a>
+            
+    
+            <a href="org/jfree/data/statistics/DefaultBoxAndWhiskerCategoryDataset.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="# Elements - 317 , # Elements Covered - 191 ">DefaultBoxAndWhiskerCategoryDataset</a>
+            
+    
+            <a href="org/jfree/data/statistics/DefaultBoxAndWhiskerXYDataset.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 170 , # Elements Covered - 117 ">DefaultBoxAndWhiskerXYDataset</a>
+            
+    
+            <a href="org/jfree/data/category/DefaultCategoryDataset.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 140 , # Elements Covered - 120 ">DefaultCategoryDataset</a>
+            
+    
+            <a href="org/jfree/chart/editor/DefaultChartEditor.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 89 , # Elements Covered - 85 ">DefaultChartEditor</a>
+            
+    
+            <a href="org/jfree/chart/editor/DefaultChartEditorFactory.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 3 , # Elements Covered - 3 ">DefaultChartEditorFactory</a>
+            
+    
+            <a href="org/jfree/chart/plot/DefaultDrawingSupplier.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 210 , # Elements Covered - 124 ">DefaultDrawingSupplier</a>
+            
+    
+            <a href="org/jfree/data/general/DefaultHeatMapDataset.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 109 , # Elements Covered - 42 ">DefaultHeatMapDataset</a>
+            
+    
+            <a href="org/jfree/data/xy/DefaultHighLowDataset.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 145 , # Elements Covered - 107 ">DefaultHighLowDataset</a>
+            
+    
+            <a href="org/jfree/data/category/DefaultIntervalCategoryDataset.html" class="tag"
+            style="font-size: 16px;color:#d9695f"
+            title="# Elements - 317 , # Elements Covered - 268 ">DefaultIntervalCategoryDataset</a>
+            
+    
+            <a href="org/jfree/data/xy/DefaultIntervalXYDataset.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 164 , # Elements Covered - 88 ">DefaultIntervalXYDataset</a>
+            
+    
+            <a href="org/jfree/data/DefaultKeyedValue.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 48 , # Elements Covered - 47 ">DefaultKeyedValue</a>
+            
+    
+            <a href="org/jfree/data/general/DefaultKeyedValueDataset.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 63 , # Elements Covered - 63 ">DefaultKeyedValueDataset</a>
+            
+    
+            <a href="org/jfree/data/DefaultKeyedValues.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 175 , # Elements Covered - 170 ">DefaultKeyedValues</a>
+            
+    
+            <a href="org/jfree/data/DefaultKeyedValues2D.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 242 , # Elements Covered - 224 ">DefaultKeyedValues2D</a>
+            
+    
+            <a href="org/jfree/data/statistics/DefaultMultiValueCategoryDataset.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 165 , # Elements Covered - 137 ">DefaultMultiValueCategoryDataset</a>
+            
+    
+            <a href="org/jfree/chart/editor/DefaultNumberAxisEditor.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 131 , # Elements Covered - 115 ">DefaultNumberAxisEditor</a>
+            
+    
+            <a href="org/jfree/data/xy/DefaultOHLCDataset.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 91 , # Elements Covered - 84 ">DefaultOHLCDataset</a>
+            
+    
+            <a href="org/jfree/data/pie/DefaultPieDataset.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 141 , # Elements Covered - 136 ">DefaultPieDataset</a>
+            
+    
+            <a href="org/jfree/chart/editor/DefaultPlotEditor.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 306 , # Elements Covered - 231 ">DefaultPlotEditor</a>
+            
+    
+            <a href="org/jfree/chart/renderer/DefaultPolarItemRenderer.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 123 , # Elements Covered - 94 ">DefaultPolarItemRenderer</a>
+            
+    
+            <a href="org/jfree/chart/util/DefaultShadowGenerator.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 137 , # Elements Covered - 104 ">DefaultShadowGenerator</a>
+            
+    
+            <a href="org/jfree/data/statistics/DefaultStatisticalCategoryDataset.html" class="tag"
+            style="font-size: 15px;color:#d9695f"
+            title="# Elements - 282 , # Elements Covered - 270 ">DefaultStatisticalCategoryDataset</a>
+            
+    
+            <a href="org/jfree/data/xy/DefaultTableXYDataset.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 267 , # Elements Covered - 186 ">DefaultTableXYDataset</a>
+            
+    
+            <a href="org/jfree/chart/editor/DefaultTitleEditor.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 102 , # Elements Covered - 90 ">DefaultTitleEditor</a>
+            
+    
+            <a href="org/jfree/data/general/DefaultValueDataset.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 27 , # Elements Covered - 27 ">DefaultValueDataset</a>
+            
+    
+            <a href="org/jfree/data/xy/DefaultWindDataset.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 103 , # Elements Covered - 89 ">DefaultWindDataset</a>
+            
+    
+            <a href="org/jfree/data/xy/DefaultXYDataset.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 119 , # Elements Covered - 99 ">DefaultXYDataset</a>
+            
+    
+            <a href="org/jfree/data/xy/DefaultXYZDataset.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 133 , # Elements Covered - 95 ">DefaultXYZDataset</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/DeviationRenderer.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 122 , # Elements Covered - 58 ">DeviationRenderer</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/DeviationRenderer.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 4 ">DeviationRenderer.State</a>
+            
+    
+            <a href="org/jfree/chart/plot/dial/DialBackground.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 69 , # Elements Covered - 59 ">DialBackground</a>
+            
+    
+            <a href="org/jfree/chart/plot/dial/DialCap.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 96 , # Elements Covered - 86 ">DialCap</a>
+            
+    
+            <a href="org/jfree/chart/plot/dial/DialLayerChangeEvent.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 5 , # Elements Covered - 5 ">DialLayerChangeEvent</a>
+            
+    
+            <a href="org/jfree/chart/plot/dial/DialPlot.html" class="tag"
+            style="font-size: 16px;color:#d9695f"
+            title="# Elements - 348 , # Elements Covered - 285 ">DialPlot</a>
+            
+    
+            <a href="org/jfree/chart/plot/dial/DialPointer.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 42 , # Elements Covered - 36 ">DialPointer</a>
+            
+    
+            <a href="org/jfree/chart/plot/dial/DialPointer.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 67 , # Elements Covered - 46 ">DialPointer.Pin</a>
+            
+    
+            <a href="org/jfree/chart/plot/dial/DialPointer.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 103 , # Elements Covered - 67 ">DialPointer.Pointer</a>
+            
+    
+            <a href="org/jfree/chart/plot/DialShape.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 35 , # Elements Covered - 19 ">DialShape</a>
+            
+    
+            <a href="org/jfree/chart/plot/dial/DialTextAnnotation.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 124 , # Elements Covered - 116 ">DialTextAnnotation</a>
+            
+    
+            <a href="org/jfree/chart/plot/dial/DialValueIndicator.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 278 , # Elements Covered - 200 ">DialValueIndicator</a>
+            
+    
+            <a href="org/jfree/chart/imagemap/DynamicDriveToolTipTagFragmentGenerator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 7 ">DynamicDriveToolTipTagFragmentGenerator</a>
+            
+    
+            <a href="org/jfree/data/time/DynamicTimeSeriesCollection.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="# Elements - 318 , # Elements Covered - 184 ">DynamicTimeSeriesCollection</a>
+            
+    
+            <a href="org/jfree/data/time/DynamicTimeSeriesCollection.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 12 , # Elements Covered - 12 ">DynamicTimeSeriesCollection.ValueSequence</a>
+            
+    
+            <a href="org/jfree/chart/block/EmptyBlock.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 14 , # Elements Covered - 14 ">EmptyBlock</a>
+            
+    
+            <a href="org/jfree/chart/encoders/EncoderUtil.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 24 , # Elements Covered - 16 ">EncoderUtil</a>
+            
+    
+            <a href="org/jfree/chart/axis/ExtendedCategoryAxis.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 78 , # Elements Covered - 58 ">ExtendedCategoryAxis</a>
+            
+    
+            <a href="org/jfree/chart/ui/ExtensionFileFilter.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 16 , # Elements Covered - 16 ">ExtensionFileFilter</a>
+            
+    
+            <a href="org/jfree/chart/plot/FastScatterPlot.html" class="tag"
+            style="font-size: 17px;color:#d9695f"
+            title="# Elements - 408 , # Elements Covered - 346 ">FastScatterPlot</a>
+            
+    
+            <a href="org/jfree/data/time/FixedMillisecond.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 71 , # Elements Covered - 70 ">FixedMillisecond</a>
+            
+    
+            <a href="org/jfree/chart/block/FlowArrangement.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 190 , # Elements Covered - 150 ">FlowArrangement</a>
+            
+    
+            <a href="org/jfree/chart/ui/FontChooserPanel.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 82 , # Elements Covered - 82 ">FontChooserPanel</a>
+            
+    
+            <a href="org/jfree/chart/ui/FontDisplayField.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 15 , # Elements Covered - 15 ">FontDisplayField</a>
+            
+    
+            <a href="org/jfree/chart/text/G2TextMeasurer.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 7 ">G2TextMeasurer</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/GanttRenderer.html" class="tag"
+            style="font-size: 15px;color:#d04437"
+            title="# Elements - 278 , # Elements Covered - 70 ">GanttRenderer</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/GradientBarPainter.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 179 , # Elements Covered - 151 ">GradientBarPainter</a>
+            
+    
+            <a href="org/jfree/chart/util/GradientPaintTransformType.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 40 , # Elements Covered - 19 ">GradientPaintTransformType</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/GradientXYBarPainter.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 179 , # Elements Covered - 154 ">GradientXYBarPainter</a>
+            
+    
+            <a href="org/jfree/chart/renderer/GrayPaintScale.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 58 , # Elements Covered - 58 ">GrayPaintScale</a>
+            
+    
+            <a href="org/jfree/chart/block/GridArrangement.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 223 , # Elements Covered - 162 ">GridArrangement</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/GroupedStackedBarRenderer.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 160 , # Elements Covered - 47 ">GroupedStackedBarRenderer</a>
+            
+    
+            <a href="org/jfree/chart/util/HashUtilities.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 61 , # Elements Covered - 61 ">HashUtilities</a>
+            
+    
+            <a href="org/jfree/data/general/HeatMapUtilities.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 42 , # Elements Covered - 39 ">HeatMapUtilities</a>
+            
+    
+            <a href="org/jfree/chart/util/HexNumberFormat.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 26 , # Elements Covered - 26 ">HexNumberFormat</a>
+            
+    
+            <a href="org/jfree/chart/labels/HighLowItemLabelGenerator.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 84 , # Elements Covered - 77 ">HighLowItemLabelGenerator</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/HighLowRenderer.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 193 , # Elements Covered - 73 ">HighLowRenderer</a>
+            
+    
+            <a href="org/jfree/data/statistics/HistogramBin.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 38 , # Elements Covered - 38 ">HistogramBin</a>
+            
+    
+            <a href="org/jfree/data/statistics/HistogramDataset.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 177 , # Elements Covered - 161 ">HistogramDataset</a>
+            
+    
+            <a href="org/jfree/data/statistics/HistogramType.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 39 , # Elements Covered - 23 ">HistogramType</a>
+            
+    
+            <a href="org/jfree/chart/util/HorizontalAlignment.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 36 , # Elements Covered - 19 ">HorizontalAlignment</a>
+            
+    
+            <a href="org/jfree/data/time/Hour.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 146 , # Elements Covered - 130 ">Hour</a>
+            
+    
+            <a href="org/jfree/chart/encoders/ImageEncoderFactory.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 38 , # Elements Covered - 24 ">ImageEncoderFactory</a>
+            
+    
+            <a href="org/jfree/chart/imagemap/ImageMapUtilities.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 100 , # Elements Covered - 87 ">ImageMapUtilities</a>
+            
+    
+            <a href="org/jfree/chart/title/ImageTitle.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 125 , # Elements Covered - 120 ">ImageTitle</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/IntervalBarRenderer.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 100 , # Elements Covered - 26 ">IntervalBarRenderer</a>
+            
+    
+            <a href="org/jfree/chart/labels/IntervalCategoryItemLabelGenerator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 36 , # Elements Covered - 34 ">IntervalCategoryItemLabelGenerator</a>
+            
+    
+            <a href="org/jfree/chart/labels/IntervalCategoryToolTipGenerator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 46 , # Elements Covered - 44 ">IntervalCategoryToolTipGenerator</a>
+            
+    
+            <a href="org/jfree/chart/plot/IntervalMarker.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 54 , # Elements Covered - 54 ">IntervalMarker</a>
+            
+    
+            <a href="org/jfree/data/xy/IntervalXYDelegate.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 146 , # Elements Covered - 142 ">IntervalXYDelegate</a>
+            
+    
+            <a href="org/jfree/chart/labels/IntervalXYItemLabelGenerator.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 86 , # Elements Covered - 80 ">IntervalXYItemLabelGenerator</a>
+            
+    
+            <a href="org/jfree/data/xml/ItemHandler.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 38 , # Elements Covered - 37 ">ItemHandler</a>
+            
+    
+            <a href="org/jfree/chart/labels/ItemLabelAnchor.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 122 , # Elements Covered - 17 ">ItemLabelAnchor</a>
+            
+    
+            <a href="org/jfree/chart/labels/ItemLabelPosition.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 56 , # Elements Covered - 56 ">ItemLabelPosition</a>
+            
+    
+            <a href="org/jfree/data/jdbc/JDBCCategoryDataset.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 97 , # Elements Covered - 62 ">JDBCCategoryDataset</a>
+            
+    
+            <a href="org/jfree/data/jdbc/JDBCPieDataset.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 70 , # Elements Covered - 49 ">JDBCPieDataset</a>
+            
+    
+            <a href="org/jfree/data/jdbc/JDBCXYDataset.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 200 , # Elements Covered - 166 ">JDBCXYDataset</a>
+            
+    
+            <a href="org/jfree/chart/JFreeChart.html" class="tag"
+            style="font-size: 20px;color:#de7b72"
+            title="# Elements - 622 , # Elements Covered - 497 ">JFreeChart</a>
+            
+    
+            <a href="org/jfree/chart/entity/JFreeChartEntity.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 58 , # Elements Covered - 52 ">JFreeChartEntity</a>
+            
+    
+            <a href="org/jfree/chart/JFreeChart.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 24 , # Elements Covered - 11 ">JFreeChartInfo</a>
+            
+    
+            <a href="org/jfree/chart/resources/JFreeChartResources.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 2 , # Elements Covered - 2 ">JFreeChartResources</a>
+            
+    
+            <a href="org/jfree/data/xml/KeyHandler.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 27 , # Elements Covered - 26 ">KeyHandler</a>
+            
+    
+            <a href="org/jfree/data/KeyToGroupMap.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 150 , # Elements Covered - 143 ">KeyToGroupMap</a>
+            
+    
+            <a href="org/jfree/data/KeyedObject.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 36 , # Elements Covered - 36 ">KeyedObject</a>
+            
+    
+            <a href="org/jfree/data/KeyedObjectComparator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 67 , # Elements Covered - 63 ">KeyedObjectComparator</a>
+            
+    
+            <a href="org/jfree/data/KeyedObjectComparatorType.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 21 , # Elements Covered - 19 ">KeyedObjectComparatorType</a>
+            
+    
+            <a href="org/jfree/data/KeyedObjects.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 153 , # Elements Covered - 139 ">KeyedObjects</a>
+            
+    
+            <a href="org/jfree/data/KeyedObjects2D.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 247 , # Elements Covered - 233 ">KeyedObjects2D</a>
+            
+    
+            <a href="org/jfree/data/KeyedValueComparator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 77 , # Elements Covered - 65 ">KeyedValueComparator</a>
+            
+    
+            <a href="org/jfree/data/KeyedValueComparatorType.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 21 , # Elements Covered - 19 ">KeyedValueComparatorType</a>
+            
+    
+            <a href="org/jfree/chart/ui/LCBLayout.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 122 , # Elements Covered - 121 ">LCBLayout</a>
+            
+    
+            <a href="org/jfree/chart/block/LabelBlock.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 133 , # Elements Covered - 104 ">LabelBlock</a>
+            
+    
+            <a href="org/jfree/chart/util/Layer.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 32 , # Elements Covered - 19 ">Layer</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/LayeredBarRenderer.html" class="tag"
+            style="font-size: 15px;color:#d04437"
+            title="# Elements - 241 , # Elements Covered - 46 ">LayeredBarRenderer</a>
+            
+    
+            <a href="org/jfree/chart/title/LegendGraphic.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 275 , # Elements Covered - 148 ">LegendGraphic</a>
+            
+    
+            <a href="org/jfree/chart/LegendItem.html" class="tag"
+            style="font-size: 16px;color:#d9695f"
+            title="# Elements - 349 , # Elements Covered - 263 ">LegendItem</a>
+            
+    
+            <a href="org/jfree/chart/title/LegendItemBlockContainer.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 36 , # Elements Covered - 36 ">LegendItemBlockContainer</a>
+            
+    
+            <a href="org/jfree/chart/LegendItemCollection.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 31 , # Elements Covered - 31 ">LegendItemCollection</a>
+            
+    
+            <a href="org/jfree/chart/entity/LegendItemEntity.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 33 , # Elements Covered - 33 ">LegendItemEntity</a>
+            
+    
+            <a href="org/jfree/chart/LegendRenderingOrder.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 29 , # Elements Covered - 17 ">LegendRenderingOrder</a>
+            
+    
+            <a href="org/jfree/chart/title/LegendTitle.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 258 , # Elements Covered - 225 ">LegendTitle</a>
+            
+    
+            <a href="org/jfree/chart/util/LengthAdjustmentType.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 35 , # Elements Covered - 19 ">LengthAdjustmentType</a>
+            
+    
+            <a href="org/jfree/chart/block/LengthConstraintType.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 35 , # Elements Covered - 19 ">LengthConstraintType</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/LevelRenderer.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 156 , # Elements Covered - 106 ">LevelRenderer</a>
+            
+    
+            <a href="org/jfree/chart/ui/Library.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 43 , # Elements Covered - 43 ">Library</a>
+            
+    
+            <a href="org/jfree/chart/ui/Licences.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 10 ">Licences</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/LineAndShapeRenderer.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="# Elements - 314 , # Elements Covered - 155 ">LineAndShapeRenderer</a>
+            
+    
+            <a href="org/jfree/chart/block/LineBorder.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 95 , # Elements Covered - 79 ">LineBorder</a>
+            
+    
+            <a href="org/jfree/data/function/LineFunction2D.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 29 , # Elements Covered - 29 ">LineFunction2D</a>
+            
+    
+            <a href="org/jfree/chart/needle/LineNeedle.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 25 , # Elements Covered - 25 ">LineNeedle</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/LineRenderer3D.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="# Elements - 310 , # Elements Covered - 195 ">LineRenderer3D</a>
+            
+    
+            <a href="org/jfree/chart/util/LineUtilities.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 70 , # Elements Covered - 67 ">LineUtilities</a>
+            
+    
+            <a href="org/jfree/chart/axis/LogAxis.html" class="tag"
+            style="font-size: 17px;color:#d9695f"
+            title="# Elements - 399 , # Elements Covered - 366 ">LogAxis</a>
+            
+    
+            <a href="org/jfree/chart/util/LogFormat.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 83 , # Elements Covered - 81 ">LogFormat</a>
+            
+    
+            <a href="org/jfree/chart/axis/LogarithmicAxis.html" class="tag"
+            style="font-size: 18px;color:#d9695f"
+            title="# Elements - 485 , # Elements Covered - 341 ">LogarithmicAxis</a>
+            
+    
+            <a href="org/jfree/chart/needle/LongNeedle.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 74 , # Elements Covered - 74 ">LongNeedle</a>
+            
+    
+            <a href="org/jfree/chart/renderer/LookupPaintScale.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 108 , # Elements Covered - 91 ">LookupPaintScale</a>
+            
+    
+            <a href="org/jfree/chart/renderer/LookupPaintScale.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 41 , # Elements Covered - 33 ">LookupPaintScale.PaintItem</a>
+            
+    
+            <a href="org/jfree/chart/plot/Marker.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 216 , # Elements Covered - 190 ">Marker</a>
+            
+    
+            <a href="org/jfree/chart/axis/MarkerAxisBand.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 90 , # Elements Covered - 73 ">MarkerAxisBand</a>
+            
+    
+            <a href="org/jfree/chart/event/MarkerChangeEvent.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 5 , # Elements Covered - 5 ">MarkerChangeEvent</a>
+            
+    
+            <a href="org/jfree/data/xy/MatrixSeries.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 64 , # Elements Covered - 55 ">MatrixSeries</a>
+            
+    
+            <a href="org/jfree/data/xy/MatrixSeriesCollection.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 93 , # Elements Covered - 92 ">MatrixSeriesCollection</a>
+            
+    
+            <a href="org/jfree/data/statistics/MeanAndStandardDeviation.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 44 , # Elements Covered - 44 ">MeanAndStandardDeviation</a>
+            
+    
+            <a href="org/jfree/chart/plot/MeterInterval.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 67 , # Elements Covered - 53 ">MeterInterval</a>
+            
+    
+            <a href="org/jfree/chart/needle/MeterNeedle.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 132 , # Elements Covered - 116 ">MeterNeedle</a>
+            
+    
+            <a href="org/jfree/chart/plot/MeterPlot.html" class="tag"
+            style="font-size: 18px;color:#de7b72"
+            title="# Elements - 541 , # Elements Covered - 435 ">MeterPlot</a>
+            
+    
+            <a href="org/jfree/chart/needle/MiddlePinNeedle.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 44 , # Elements Covered - 44 ">MiddlePinNeedle</a>
+            
+    
+            <a href="org/jfree/data/time/Millisecond.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 137 , # Elements Covered - 125 ">Millisecond</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/MinMaxCategoryRenderer.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 207 , # Elements Covered - 86 ">MinMaxCategoryRenderer</a>
+            
+    
+            <a href="org/jfree/data/time/Minute.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 155 , # Elements Covered - 135 ">Minute</a>
+            
+    
+            <a href="org/jfree/chart/axis/ModuloAxis.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 159 , # Elements Covered - 147 ">ModuloAxis</a>
+            
+    
+            <a href="org/jfree/data/time/Month.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 187 , # Elements Covered - 183 ">Month</a>
+            
+    
+            <a href="org/jfree/chart/axis/MonthDateFormat.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 119 , # Elements Covered - 117 ">MonthDateFormat</a>
+            
+    
+            <a href="org/jfree/chart/MouseWheelHandler.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 51 , # Elements Covered - 32 ">MouseWheelHandler</a>
+            
+    
+            <a href="org/jfree/data/time/MovingAverage.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 167 , # Elements Covered - 147 ">MovingAverage</a>
+            
+    
+            <a href="org/jfree/chart/plot/MultiplePiePlot.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 303 , # Elements Covered - 159 ">MultiplePiePlot</a>
+            
+    
+            <a href="org/jfree/chart/labels/MultipleXYSeriesLabelGenerator.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 93 , # Elements Covered - 88 ">MultipleXYSeriesLabelGenerator</a>
+            
+    
+            <a href="org/jfree/data/function/NormalDistributionFunction2D.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 36 , # Elements Covered - 36 ">NormalDistributionFunction2D</a>
+            
+    
+            <a href="org/jfree/data/xy/NormalizedMatrixSeries.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 20 , # Elements Covered - 20 ">NormalizedMatrixSeries</a>
+            
+    
+            <a href="org/jfree/chart/renderer/NotOutlierException.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 2 , # Elements Covered - 2 ">NotOutlierException</a>
+            
+    
+            <a href="org/jfree/chart/axis/NumberAxis.html" class="tag"
+            style="font-size: 21px;color:#e28e87"
+            title="# Elements - 705 , # Elements Covered - 627 ">NumberAxis</a>
+            
+    
+            <a href="org/jfree/chart/axis/NumberAxis3D.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 42 , # Elements Covered - 33 ">NumberAxis3D</a>
+            
+    
+            <a href="org/jfree/chart/util/NumberCellRenderer.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 17 , # Elements Covered - 17 ">NumberCellRenderer</a>
+            
+    
+            <a href="org/jfree/chart/axis/NumberTick.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 8 ">NumberTick</a>
+            
+    
+            <a href="org/jfree/chart/axis/NumberTickUnit.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 45 , # Elements Covered - 44 ">NumberTickUnit</a>
+            
+    
+            <a href="org/jfree/data/time/ohlc/OHLC.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 47 , # Elements Covered - 47 ">OHLC</a>
+            
+    
+            <a href="org/jfree/data/xy/OHLCDataItem.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 61 , # Elements Covered - 61 ">OHLCDataItem</a>
+            
+    
+            <a href="org/jfree/data/time/ohlc/OHLCItem.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 34 , # Elements Covered - 26 ">OHLCItem</a>
+            
+    
+            <a href="org/jfree/data/time/ohlc/OHLCSeries.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 19 , # Elements Covered - 19 ">OHLCSeries</a>
+            
+    
+            <a href="org/jfree/data/time/ohlc/OHLCSeriesCollection.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 142 , # Elements Covered - 112 ">OHLCSeriesCollection</a>
+            
+    
+            <a href="org/jfree/chart/util/ObjectList.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 9 ">ObjectList</a>
+            
+    
+            <a href="org/jfree/chart/util/ObjectUtilities.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 180 , # Elements Covered - 145 ">ObjectUtilities</a>
+            
+    
+            <a href="org/jfree/chart/renderer/Outlier.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 51 , # Elements Covered - 51 ">Outlier</a>
+            
+    
+            <a href="org/jfree/chart/renderer/OutlierList.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 33 , # Elements Covered - 33 ">OutlierList</a>
+            
+    
+            <a href="org/jfree/chart/renderer/OutlierListCollection.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 37 , # Elements Covered - 37 ">OutlierListCollection</a>
+            
+    
+            <a href="org/jfree/chart/imagemap/OverLIBToolTipTagFragmentGenerator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 4 ">OverLIBToolTipTagFragmentGenerator</a>
+            
+    
+            <a href="org/jfree/chart/event/OverlayChangeEvent.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 2 , # Elements Covered - 2 ">OverlayChangeEvent</a>
+            
+    
+            <a href="org/jfree/chart/util/PaintList.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 70 , # Elements Covered - 44 ">PaintList</a>
+            
+    
+            <a href="org/jfree/chart/util/PaintMap.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 69 , # Elements Covered - 45 ">PaintMap</a>
+            
+    
+            <a href="org/jfree/chart/ui/PaintSample.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 23 , # Elements Covered - 20 ">PaintSample</a>
+            
+    
+            <a href="org/jfree/chart/title/PaintScaleLegend.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="# Elements - 327 , # Elements Covered - 217 ">PaintScaleLegend</a>
+            
+    
+            <a href="org/jfree/chart/util/PaintUtilities.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 59 , # Elements Covered - 57 ">PaintUtilities</a>
+            
+    
+            <a href="org/jfree/chart/panel/PanHandler.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 59 , # Elements Covered - 20 ">PanHandler</a>
+            
+    
+            <a href="org/jfree/chart/axis/PeriodAxis.html" class="tag"
+            style="font-size: 19px;color:#d9695f"
+            title="# Elements - 560 , # Elements Covered - 370 ">PeriodAxis</a>
+            
+    
+            <a href="org/jfree/chart/axis/PeriodAxisLabelInfo.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 121 , # Elements Covered - 81 ">PeriodAxisLabelInfo</a>
+            
+    
+            <a href="org/jfree/chart/demo/PieChartDemo1.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 28 , # Elements Covered - 22 ">PieChartDemo1</a>
+            
+    
+            <a href="org/jfree/data/pie/PieDatasetChangeInfo.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 10 ">PieDatasetChangeInfo</a>
+            
+    
+            <a href="org/jfree/data/pie/PieDatasetChangeType.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 28 , # Elements Covered - 19 ">PieDatasetChangeType</a>
+            
+    
+            <a href="org/jfree/data/xml/PieDatasetHandler.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 28 , # Elements Covered - 28 ">PieDatasetHandler</a>
+            
+    
+            <a href="org/jfree/chart/plot/PieLabelDistributor.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 101 , # Elements Covered - 101 ">PieLabelDistributor</a>
+            
+    
+            <a href="org/jfree/chart/plot/PieLabelLinkStyle.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 36 , # Elements Covered - 19 ">PieLabelLinkStyle</a>
+            
+    
+            <a href="org/jfree/chart/plot/PieLabelRecord.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 93 , # Elements Covered - 75 ">PieLabelRecord</a>
+            
+    
+            <a href="org/jfree/chart/plot/PiePlot.html" class="tag"
+            style="font-size: 31px;color:#e28e87"
+            title="# Elements - 1,472 , # Elements Covered - 669 ">PiePlot</a>
+            
+    
+            <a href="org/jfree/chart/plot/PiePlot3D.html" class="tag"
+            style="font-size: 19px;color:#d5584c"
+            title="# Elements - 564 , # Elements Covered - 92 ">PiePlot3D</a>
+            
+    
+            <a href="org/jfree/chart/plot/PiePlotState.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 44 , # Elements Covered - 44 ">PiePlotState</a>
+            
+    
+            <a href="org/jfree/chart/entity/PieSectionEntity.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 56 , # Elements Covered - 56 ">PieSectionEntity</a>
+            
+    
+            <a href="org/jfree/chart/plot/PieSelectionAttributes.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 158 , # Elements Covered - 135 ">PieSelectionAttributes</a>
+            
+    
+            <a href="org/jfree/chart/needle/PinNeedle.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 43 , # Elements Covered - 43 ">PinNeedle</a>
+            
+    
+            <a href="org/jfree/chart/plot/Plot.html" class="tag"
+            style="font-size: 19px;color:#d9695f"
+            title="# Elements - 549 , # Elements Covered - 395 ">Plot</a>
+            
+    
+            <a href="org/jfree/chart/event/PlotChangeEvent.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 5 , # Elements Covered - 5 ">PlotChangeEvent</a>
+            
+    
+            <a href="org/jfree/chart/entity/PlotEntity.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 58 , # Elements Covered - 50 ">PlotEntity</a>
+            
+    
+            <a href="org/jfree/chart/plot/PlotOrientation.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 32 , # Elements Covered - 19 ">PlotOrientation</a>
+            
+    
+            <a href="org/jfree/chart/plot/PlotRenderingInfo.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 84 , # Elements Covered - 74 ">PlotRenderingInfo</a>
+            
+    
+            <a href="org/jfree/chart/plot/PlotState.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 4 ">PlotState</a>
+            
+    
+            <a href="org/jfree/chart/plot/PlotUtilities.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 13 , # Elements Covered - 13 ">PlotUtilities</a>
+            
+    
+            <a href="org/jfree/chart/needle/PlumNeedle.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 34 , # Elements Covered - 34 ">PlumNeedle</a>
+            
+    
+            <a href="org/jfree/chart/needle/PointerNeedle.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 58 , # Elements Covered - 53 ">PointerNeedle</a>
+            
+    
+            <a href="org/jfree/chart/PolarChartPanel.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 87 , # Elements Covered - 78 ">PolarChartPanel</a>
+            
+    
+            <a href="org/jfree/chart/plot/PolarPlot.html" class="tag"
+            style="font-size: 18px;color:#d9695f"
+            title="# Elements - 476 , # Elements Covered - 328 ">PolarPlot</a>
+            
+    
+            <a href="org/jfree/data/function/PolynomialFunction2D.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 26 , # Elements Covered - 26 ">PolynomialFunction2D</a>
+            
+    
+            <a href="org/jfree/data/function/PowerFunction2D.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 29 , # Elements Covered - 29 ">PowerFunction2D</a>
+            
+    
+            <a href="org/jfree/chart/ui/ProjectInfo.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 70 , # Elements Covered - 70 ">ProjectInfo</a>
+            
+    
+            <a href="org/jfree/data/time/Quarter.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 133 , # Elements Covered - 131 ">Quarter</a>
+            
+    
+            <a href="org/jfree/chart/axis/QuarterDateFormat.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 51 , # Elements Covered - 49 ">QuarterDateFormat</a>
+            
+    
+            <a href="org/jfree/data/Range.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 137 , # Elements Covered - 137 ">Range</a>
+            
+    
+            <a href="org/jfree/data/RangeType.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 35 , # Elements Covered - 19 ">RangeType</a>
+            
+    
+            <a href="org/jfree/chart/util/RectangleAnchor.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 140 , # Elements Covered - 99 ">RectangleAnchor</a>
+            
+    
+            <a href="org/jfree/chart/block/RectangleConstraint.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 116 , # Elements Covered - 112 ">RectangleConstraint</a>
+            
+    
+            <a href="org/jfree/chart/util/RectangleEdge.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 82 , # Elements Covered - 61 ">RectangleEdge</a>
+            
+    
+            <a href="org/jfree/chart/util/RectangleInsets.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 230 , # Elements Covered - 229 ">RectangleInsets</a>
+            
+    
+            <a href="org/jfree/chart/util/RefineryUtilities.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 72 , # Elements Covered - 46 ">RefineryUtilities</a>
+            
+    
+            <a href="org/jfree/chart/panel/RegionSelectionHandler.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 105 , # Elements Covered - 48 ">RegionSelectionHandler</a>
+            
+    
+            <a href="org/jfree/data/statistics/Regression.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 248 , # Elements Covered - 152 ">Regression</a>
+            
+    
+            <a href="org/jfree/data/time/RegularTimePeriod.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 50 , # Elements Covered - 50 ">RegularTimePeriod</a>
+            
+    
+            <a href="org/jfree/chart/util/RelativeDateFormat.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 231 , # Elements Covered - 227 ">RelativeDateFormat</a>
+            
+    
+            <a href="org/jfree/chart/renderer/RenderAttributes.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 232 , # Elements Covered - 203 ">RenderAttributes</a>
+            
+    
+            <a href="org/jfree/chart/event/RendererChangeEvent.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 10 ">RendererChangeEvent</a>
+            
+    
+            <a href="org/jfree/chart/renderer/RendererState.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 15 , # Elements Covered - 15 ">RendererState</a>
+            
+    
+            <a href="org/jfree/chart/renderer/RendererUtilities.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 165 , # Elements Covered - 66 ">RendererUtilities</a>
+            
+    
+            <a href="org/jfree/chart/util/ResourceBundleWrapper.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 27 , # Elements Covered - 26 ">ResourceBundleWrapper</a>
+            
+    
+            <a href="org/jfree/chart/plot/RingPlot.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 218 , # Elements Covered - 82 ">RingPlot</a>
+            
+    
+            <a href="org/jfree/data/xml/RootHandler.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 28 , # Elements Covered - 27 ">RootHandler</a>
+            
+    
+            <a href="org/jfree/chart/util/Rotation.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 35 , # Elements Covered - 23 ">Rotation</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/SamplingXYLineRenderer.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 110 , # Elements Covered - 42 ">SamplingXYLineRenderer</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/SamplingXYLineRenderer.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 7 ">SamplingXYLineRenderer.State</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/ScatterRenderer.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 210 , # Elements Covered - 113 ">ScatterRenderer</a>
+            
+    
+            <a href="org/jfree/data/time/Second.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 156 , # Elements Covered - 127 ">Second</a>
+            
+    
+            <a href="org/jfree/chart/axis/SegmentedTimeline.html" class="tag"
+            style="font-size: 16px;color:#d9695f"
+            title="# Elements - 327 , # Elements Covered - 277 ">SegmentedTimeline</a>
+            
+    
+            <a href="org/jfree/chart/axis/SegmentedTimeline.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 2 , # Elements Covered - 2 ">SegmentedTimeline.BaseTimelineSegmentRange</a>
+            
+    
+            <a href="org/jfree/chart/axis/SegmentedTimeline.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 101 , # Elements Covered - 98 ">SegmentedTimeline.Segment</a>
+            
+    
+            <a href="org/jfree/chart/axis/SegmentedTimeline.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 38 , # Elements Covered - 37 ">SegmentedTimeline.SegmentRange</a>
+            
+    
+            <a href="org/jfree/data/SelectableValue.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 11 , # Elements Covered - 11 ">SelectableValue</a>
+            
+    
+            <a href="org/jfree/data/time/SerialDate.html" class="tag"
+            style="font-size: 15px;color:#d9695f"
+            title="# Elements - 262 , # Elements Covered - 251 ">SerialDate</a>
+            
+    
+            <a href="org/jfree/chart/util/SerialUtilities.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="# Elements - 358 , # Elements Covered - 104 ">SerialUtilities</a>
+            
+    
+            <a href="org/jfree/data/general/Series.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 93 , # Elements Covered - 88 ">Series</a>
+            
+    
+            <a href="org/jfree/data/event/SeriesChangeEvent.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 9 ">SeriesChangeEvent</a>
+            
+    
+            <a href="org/jfree/data/general/SeriesChangeInfo.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 10 ">SeriesChangeInfo</a>
+            
+    
+            <a href="org/jfree/data/general/SeriesChangeType.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 28 , # Elements Covered - 19 ">SeriesChangeType</a>
+            
+    
+            <a href="org/jfree/data/general/SeriesException.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 2 , # Elements Covered - 2 ">SeriesException</a>
+            
+    
+            <a href="org/jfree/chart/plot/SeriesRenderingOrder.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 31 , # Elements Covered - 19 ">SeriesRenderingOrder</a>
+            
+    
+            <a href="org/jfree/chart/util/ShapeList.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 54 , # Elements Covered - 29 ">ShapeList</a>
+            
+    
+            <a href="org/jfree/chart/util/ShapeUtilities.html" class="tag"
+            style="font-size: 16px;color:#d9695f"
+            title="# Elements - 352 , # Elements Covered - 274 ">ShapeUtilities</a>
+            
+    
+            <a href="org/jfree/chart/needle/ShipNeedle.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 32 , # Elements Covered - 32 ">ShipNeedle</a>
+            
+    
+            <a href="org/jfree/chart/title/ShortTextTitle.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 99 , # Elements Covered - 95 ">ShortTextTitle</a>
+            
+    
+            <a href="org/jfree/data/statistics/SimpleHistogramBin.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 121 , # Elements Covered - 119 ">SimpleHistogramBin</a>
+            
+    
+            <a href="org/jfree/data/statistics/SimpleHistogramDataset.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 162 , # Elements Covered - 128 ">SimpleHistogramDataset</a>
+            
+    
+            <a href="org/jfree/data/time/SimpleTimePeriod.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 74 , # Elements Covered - 68 ">SimpleTimePeriod</a>
+            
+    
+            <a href="org/jfree/chart/util/Size2D.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 36 , # Elements Covered - 36 ">Size2D</a>
+            
+    
+            <a href="org/jfree/data/category/SlidingCategoryDataset.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 103 , # Elements Covered - 99 ">SlidingCategoryDataset</a>
+            
+    
+            <a href="org/jfree/data/gantt/SlidingGanttCategoryDataset.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 173 , # Elements Covered - 149 ">SlidingGanttCategoryDataset</a>
+            
+    
+            <a href="org/jfree/chart/util/SortOrder.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 31 , # Elements Covered - 19 ">SortOrder</a>
+            
+    
+            <a href="org/jfree/chart/plot/SpiderWebPlot.html" class="tag"
+            style="font-size: 20px;color:#d9695f"
+            title="# Elements - 649 , # Elements Covered - 410 ">SpiderWebPlot</a>
+            
+    
+            <a href="org/jfree/data/time/SpreadsheetDate.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 124 , # Elements Covered - 124 ">SpreadsheetDate</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/StackedAreaRenderer.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 217 , # Elements Covered - 61 ">StackedAreaRenderer</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/StackedBarRenderer.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 168 , # Elements Covered - 51 ">StackedBarRenderer</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/StackedBarRenderer3D.html" class="tag"
+            style="font-size: 17px;color:#d5584c"
+            title="# Elements - 409 , # Elements Covered - 87 ">StackedBarRenderer3D</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/StackedXYAreaRenderer.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 211 , # Elements Covered - 60 ">StackedXYAreaRenderer</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/StackedXYAreaRenderer.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 20 , # Elements Covered - 20 ">StackedXYAreaRenderer.StackedXYAreaRendererState</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/StackedXYAreaRenderer2.html" class="tag"
+            style="font-size: 15px;color:#d04437"
+            title="# Elements - 266 , # Elements Covered - 51 ">StackedXYAreaRenderer2</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/StackedXYBarRenderer.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 184 , # Elements Covered - 71 ">StackedXYBarRenderer</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/StandardBarPainter.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 93 , # Elements Covered - 79 ">StandardBarPainter</a>
+            
+    
+            <a href="org/jfree/chart/labels/StandardCategoryItemLabelGenerator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 20 , # Elements Covered - 20 ">StandardCategoryItemLabelGenerator</a>
+            
+    
+            <a href="org/jfree/chart/labels/StandardCategorySeriesLabelGenerator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 40 , # Elements Covered - 40 ">StandardCategorySeriesLabelGenerator</a>
+            
+    
+            <a href="org/jfree/chart/labels/StandardCategoryToolTipGenerator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 18 , # Elements Covered - 18 ">StandardCategoryToolTipGenerator</a>
+            
+    
+            <a href="org/jfree/chart/urls/StandardCategoryURLGenerator.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 78 , # Elements Covered - 68 ">StandardCategoryURLGenerator</a>
+            
+    
+            <a href="org/jfree/chart/StandardChartTheme.html" class="tag"
+            style="font-size: 24px;color:#e28e87"
+            title="# Elements - 933 , # Elements Covered - 748 ">StandardChartTheme</a>
+            
+    
+            <a href="org/jfree/chart/labels/StandardCrosshairLabelGenerator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 43 , # Elements Covered - 41 ">StandardCrosshairLabelGenerator</a>
+            
+    
+            <a href="org/jfree/chart/plot/dial/StandardDialFrame.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 106 , # Elements Covered - 96 ">StandardDialFrame</a>
+            
+    
+            <a href="org/jfree/chart/plot/dial/StandardDialRange.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 136 , # Elements Covered - 121 ">StandardDialRange</a>
+            
+    
+            <a href="org/jfree/chart/plot/dial/StandardDialScale.html" class="tag"
+            style="font-size: 16px;color:#d9695f"
+            title="# Elements - 337 , # Elements Covered - 299 ">StandardDialScale</a>
+            
+    
+            <a href="org/jfree/chart/entity/StandardEntityCollection.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 51 , # Elements Covered - 51 ">StandardEntityCollection</a>
+            
+    
+            <a href="org/jfree/chart/util/StandardGradientPaintTransformer.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 51 , # Elements Covered - 49 ">StandardGradientPaintTransformer</a>
+            
+    
+            <a href="org/jfree/chart/labels/StandardPieSectionLabelGenerator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 40 , # Elements Covered - 40 ">StandardPieSectionLabelGenerator</a>
+            
+    
+            <a href="org/jfree/chart/labels/StandardPieToolTipGenerator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 14 , # Elements Covered - 14 ">StandardPieToolTipGenerator</a>
+            
+    
+            <a href="org/jfree/chart/urls/StandardPieURLGenerator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 57 , # Elements Covered - 56 ">StandardPieURLGenerator</a>
+            
+    
+            <a href="org/jfree/chart/axis/StandardTickUnitSource.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 21 , # Elements Covered - 21 ">StandardTickUnitSource</a>
+            
+    
+            <a href="org/jfree/chart/imagemap/StandardToolTipTagFragmentGenerator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 4 ">StandardToolTipTagFragmentGenerator</a>
+            
+    
+            <a href="org/jfree/chart/imagemap/StandardURLTagFragmentGenerator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 4 ">StandardURLTagFragmentGenerator</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/StandardXYBarPainter.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 93 , # Elements Covered - 79 ">StandardXYBarPainter</a>
+            
+    
+            <a href="org/jfree/chart/labels/StandardXYItemLabelGenerator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 26 , # Elements Covered - 26 ">StandardXYItemLabelGenerator</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/StandardXYItemRenderer.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="# Elements - 378 , # Elements Covered - 172 ">StandardXYItemRenderer</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/StandardXYItemRenderer.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 10 ">StandardXYItemRenderer.State</a>
+            
+    
+            <a href="org/jfree/chart/labels/StandardXYSeriesLabelGenerator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 40 , # Elements Covered - 40 ">StandardXYSeriesLabelGenerator</a>
+            
+    
+            <a href="org/jfree/chart/labels/StandardXYToolTipGenerator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 26 , # Elements Covered - 26 ">StandardXYToolTipGenerator</a>
+            
+    
+            <a href="org/jfree/chart/urls/StandardXYURLGenerator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 51 , # Elements Covered - 51 ">StandardXYURLGenerator</a>
+            
+    
+            <a href="org/jfree/chart/labels/StandardXYZToolTipGenerator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 74 , # Elements Covered - 48 ">StandardXYZToolTipGenerator</a>
+            
+    
+            <a href="org/jfree/chart/urls/StandardXYZURLGenerator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 2 , # Elements Covered - 2 ">StandardXYZURLGenerator</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/StatisticalBarRenderer.html" class="tag"
+            style="font-size: 15px;color:#d04437"
+            title="# Elements - 291 , # Elements Covered - 54 ">StatisticalBarRenderer</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/StatisticalLineAndShapeRenderer.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 204 , # Elements Covered - 55 ">StatisticalLineAndShapeRenderer</a>
+            
+    
+            <a href="org/jfree/data/statistics/Statistics.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 246 , # Elements Covered - 243 ">Statistics</a>
+            
+    
+            <a href="org/jfree/chart/util/StringUtilities.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 17 , # Elements Covered - 15 ">StringUtilities</a>
+            
+    
+            <a href="org/jfree/chart/ui/StrokeChooserPanel.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 14 , # Elements Covered - 12 ">StrokeChooserPanel</a>
+            
+    
+            <a href="org/jfree/chart/util/StrokeList.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 49 , # Elements Covered - 24 ">StrokeList</a>
+            
+    
+            <a href="org/jfree/chart/util/StrokeMap.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 69 , # Elements Covered - 45 ">StrokeMap</a>
+            
+    
+            <a href="org/jfree/chart/ui/StrokeSample.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 41 , # Elements Covered - 20 ">StrokeSample</a>
+            
+    
+            <a href="org/jfree/chart/axis/SubCategoryAxis.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 199 , # Elements Covered - 97 ">SubCategoryAxis</a>
+            
+    
+            <a href="org/jfree/chart/encoders/SunJPEGEncoderAdapter.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 36 , # Elements Covered - 26 ">SunJPEGEncoderAdapter</a>
+            
+    
+            <a href="org/jfree/chart/encoders/SunPNGEncoderAdapter.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 20 , # Elements Covered - 20 ">SunPNGEncoderAdapter</a>
+            
+    
+            <a href="org/jfree/chart/axis/SymbolAxis.html" class="tag"
+            style="font-size: 16px;color:#d9695f"
+            title="# Elements - 358 , # Elements Covered - 272 ">SymbolAxis</a>
+            
+    
+            <a href="org/jfree/chart/labels/SymbolicXYItemLabelGenerator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 45 , # Elements Covered - 36 ">SymbolicXYItemLabelGenerator</a>
+            
+    
+            <a href="org/jfree/chart/util/TableOrder.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 31 , # Elements Covered - 19 ">TableOrder</a>
+            
+    
+            <a href="org/jfree/data/gantt/Task.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 71 , # Elements Covered - 71 ">Task</a>
+            
+    
+            <a href="org/jfree/data/gantt/TaskSeries.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 58 , # Elements Covered - 58 ">TaskSeries</a>
+            
+    
+            <a href="org/jfree/data/gantt/TaskSeriesCollection.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 270 , # Elements Covered - 170 ">TaskSeriesCollection</a>
+            
+    
+            <a href="org/jfree/chart/text/TextAnchor.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 84 , # Elements Covered - 19 ">TextAnchor</a>
+            
+    
+            <a href="org/jfree/chart/annotations/TextAnnotation.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 108 , # Elements Covered - 100 ">TextAnnotation</a>
+            
+    
+            <a href="org/jfree/chart/text/TextBlock.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 108 , # Elements Covered - 107 ">TextBlock</a>
+            
+    
+            <a href="org/jfree/chart/text/TextBlockAnchor.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 59 , # Elements Covered - 19 ">TextBlockAnchor</a>
+            
+    
+            <a href="org/jfree/chart/text/TextBox.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 164 , # Elements Covered - 127 ">TextBox</a>
+            
+    
+            <a href="org/jfree/chart/text/TextFragment.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 98 , # Elements Covered - 89 ">TextFragment</a>
+            
+    
+            <a href="org/jfree/chart/text/TextLine.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 93 , # Elements Covered - 92 ">TextLine</a>
+            
+    
+            <a href="org/jfree/chart/title/TextTitle.html" class="tag"
+            style="font-size: 17px;color:#d9695f"
+            title="# Elements - 426 , # Elements Covered - 283 ">TextTitle</a>
+            
+    
+            <a href="org/jfree/chart/text/TextUtilities.html" class="tag"
+            style="font-size: 16px;color:#d9695f"
+            title="# Elements - 337 , # Elements Covered - 315 ">TextUtilities</a>
+            
+    
+            <a href="org/jfree/chart/plot/ThermometerPlot.html" class="tag"
+            style="font-size: 19px;color:#de7b72"
+            title="# Elements - 600 , # Elements Covered - 477 ">ThermometerPlot</a>
+            
+    
+            <a href="org/jfree/chart/axis/Tick.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 53 , # Elements Covered - 49 ">Tick</a>
+            
+    
+            <a href="org/jfree/chart/entity/TickLabelEntity.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 2 , # Elements Covered - 2 ">TickLabelEntity</a>
+            
+    
+            <a href="org/jfree/chart/axis/TickType.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 30 , # Elements Covered - 17 ">TickType</a>
+            
+    
+            <a href="org/jfree/chart/axis/TickUnit.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 50 , # Elements Covered - 44 ">TickUnit</a>
+            
+    
+            <a href="org/jfree/chart/axis/TickUnits.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 46 , # Elements Covered - 46 ">TickUnits</a>
+            
+    
+            <a href="org/jfree/data/time/TimePeriodAnchor.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 35 , # Elements Covered - 19 ">TimePeriodAnchor</a>
+            
+    
+            <a href="org/jfree/data/time/TimePeriodFormatException.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 2 , # Elements Covered - 2 ">TimePeriodFormatException</a>
+            
+    
+            <a href="org/jfree/data/time/TimePeriodValue.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 55 , # Elements Covered - 52 ">TimePeriodValue</a>
+            
+    
+            <a href="org/jfree/data/time/TimePeriodValues.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 207 , # Elements Covered - 205 ">TimePeriodValues</a>
+            
+    
+            <a href="org/jfree/data/time/TimePeriodValuesCollection.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 162 , # Elements Covered - 145 ">TimePeriodValuesCollection</a>
+            
+    
+            <a href="org/jfree/data/time/TimeSeries.html" class="tag"
+            style="font-size: 19px;color:#de7b72"
+            title="# Elements - 567 , # Elements Covered - 428 ">TimeSeries</a>
+            
+    
+            <a href="org/jfree/chart/demo/TimeSeriesChartDemo1.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 80 , # Elements Covered - 71 ">TimeSeriesChartDemo1</a>
+            
+    
+            <a href="org/jfree/data/time/TimeSeriesCollection.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 280 , # Elements Covered - 233 ">TimeSeriesCollection</a>
+            
+    
+            <a href="org/jfree/data/time/TimeSeriesDataItem.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 68 , # Elements Covered - 66 ">TimeSeriesDataItem</a>
+            
+    
+            <a href="org/jfree/data/time/TimeSeriesTableModel.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 85 , # Elements Covered - 84 ">TimeSeriesTableModel</a>
+            
+    
+            <a href="org/jfree/chart/urls/TimeSeriesURLGenerator.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 85 , # Elements Covered - 78 ">TimeSeriesURLGenerator</a>
+            
+    
+            <a href="org/jfree/data/time/TimeTableXYDataset.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 166 , # Elements Covered - 152 ">TimeTableXYDataset</a>
+            
+    
+            <a href="org/jfree/chart/title/Title.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 139 , # Elements Covered - 116 ">Title</a>
+            
+    
+            <a href="org/jfree/chart/event/TitleChangeEvent.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 5 , # Elements Covered - 5 ">TitleChangeEvent</a>
+            
+    
+            <a href="org/jfree/chart/entity/TitleEntity.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 58 , # Elements Covered - 50 ">TitleEntity</a>
+            
+    
+            <a href="org/jfree/chart/util/UnitType.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 31 , # Elements Covered - 19 ">UnitType</a>
+            
+    
+            <a href="org/jfree/data/UnknownKeyException.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 2 , # Elements Covered - 2 ">UnknownKeyException</a>
+            
+    
+            <a href="org/jfree/chart/axis/ValueAxis.html" class="tag"
+            style="font-size: 20px;color:#de7b72"
+            title="# Elements - 642 , # Elements Covered - 510 ">ValueAxis</a>
+            
+    
+            <a href="org/jfree/data/xml/ValueHandler.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 34 , # Elements Covered - 29 ">ValueHandler</a>
+            
+    
+            <a href="org/jfree/chart/plot/ValueMarker.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 32 , # Elements Covered - 32 ">ValueMarker</a>
+            
+    
+            <a href="org/jfree/chart/axis/ValueTick.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 30 , # Elements Covered - 30 ">ValueTick</a>
+            
+    
+            <a href="org/jfree/data/xy/Vector.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 37 , # Elements Covered - 37 ">Vector</a>
+            
+    
+            <a href="org/jfree/data/xy/VectorDataItem.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 24 , # Elements Covered - 20 ">VectorDataItem</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/VectorRenderer.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 180 , # Elements Covered - 84 ">VectorRenderer</a>
+            
+    
+            <a href="org/jfree/data/xy/VectorSeries.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 24 , # Elements Covered - 24 ">VectorSeries</a>
+            
+    
+            <a href="org/jfree/data/xy/VectorSeriesCollection.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 87 , # Elements Covered - 82 ">VectorSeriesCollection</a>
+            
+    
+            <a href="org/jfree/chart/util/VerticalAlignment.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 35 , # Elements Covered - 19 ">VerticalAlignment</a>
+            
+    
+            <a href="org/jfree/data/general/WaferMapDataset.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 85 , # Elements Covered - 85 ">WaferMapDataset</a>
+            
+    
+            <a href="org/jfree/chart/plot/WaferMapPlot.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 163 , # Elements Covered - 153 ">WaferMapPlot</a>
+            
+    
+            <a href="org/jfree/chart/renderer/WaferMapRenderer.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 169 , # Elements Covered - 141 ">WaferMapRenderer</a>
+            
+    
+            <a href="org/jfree/chart/renderer/category/WaterfallBarRenderer.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 231 , # Elements Covered - 125 ">WaterfallBarRenderer</a>
+            
+    
+            <a href="org/jfree/data/time/Week.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 232 , # Elements Covered - 212 ">Week</a>
+            
+    
+            <a href="org/jfree/data/xy/DefaultWindDataset.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 48 , # Elements Covered - 48 ">WindDataItem</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/WindItemRenderer.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 50 , # Elements Covered - 9 ">WindItemRenderer</a>
+            
+    
+            <a href="org/jfree/chart/needle/WindNeedle.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 30 , # Elements Covered - 30 ">WindNeedle</a>
+            
+    
+            <a href="org/jfree/data/xy/XIntervalDataItem.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 25 , # Elements Covered - 19 ">XIntervalDataItem</a>
+            
+    
+            <a href="org/jfree/data/xy/XIntervalSeries.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 20 , # Elements Covered - 20 ">XIntervalSeries</a>
+            
+    
+            <a href="org/jfree/data/xy/XIntervalSeriesCollection.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 94 , # Elements Covered - 69 ">XIntervalSeriesCollection</a>
+            
+    
+            <a href="org/jfree/chart/entity/XYAnnotationEntity.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 26 , # Elements Covered - 24 ">XYAnnotationEntity</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/XYAreaRenderer.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="# Elements - 324 , # Elements Covered - 130 ">XYAreaRenderer</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/XYAreaRenderer.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 4 ">XYAreaRenderer.XYAreaRendererState</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/XYAreaRenderer2.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 162 , # Elements Covered - 66 ">XYAreaRenderer2</a>
+            
+    
+            <a href="org/jfree/data/xy/XYBarDataset.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 82 , # Elements Covered - 78 ">XYBarDataset</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/XYBarRenderer.html" class="tag"
+            style="font-size: 19px;color:#d5584c"
+            title="# Elements - 550 , # Elements Covered - 187 ">XYBarRenderer</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/XYBarRenderer.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 6 ">XYBarRenderer.XYBarRendererState</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/XYBlockRenderer.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 178 , # Elements Covered - 136 ">XYBlockRenderer</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/XYBoxAndWhiskerRenderer.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="# Elements - 332 , # Elements Covered - 101 ">XYBoxAndWhiskerRenderer</a>
+            
+    
+            <a href="org/jfree/chart/annotations/XYBoxAnnotation.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 109 , # Elements Covered - 87 ">XYBoxAnnotation</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/XYBubbleRenderer.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 151 , # Elements Covered - 45 ">XYBubbleRenderer</a>
+            
+    
+            <a href="org/jfree/data/xy/XYCoordinate.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 60 , # Elements Covered - 60 ">XYCoordinate</a>
+            
+    
+            <a href="org/jfree/chart/util/XYCoordinateType.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 33 , # Elements Covered - 17 ">XYCoordinateType</a>
+            
+    
+            <a href="org/jfree/chart/plot/XYCrosshairState.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 1 , # Elements Covered - 1 ">XYCrosshairState</a>
+            
+    
+            <a href="org/jfree/chart/annotations/XYDataImageAnnotation.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 112 , # Elements Covered - 86 ">XYDataImageAnnotation</a>
+            
+    
+            <a href="org/jfree/data/xy/XYDataItem.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 88 , # Elements Covered - 87 ">XYDataItem</a>
+            
+    
+            <a href="org/jfree/data/xy/XYDatasetTableModel.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 50 , # Elements Covered - 49 ">XYDatasetTableModel</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/XYDifferenceRenderer.html" class="tag"
+            style="font-size: 19px;color:#d5584c"
+            title="# Elements - 599 , # Elements Covered - 121 ">XYDifferenceRenderer</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/XYDotRenderer.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 133 , # Elements Covered - 69 ">XYDotRenderer</a>
+            
+    
+            <a href="org/jfree/chart/annotations/XYDrawableAnnotation.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 86 , # Elements Covered - 74 ">XYDrawableAnnotation</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/XYErrorRenderer.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 168 , # Elements Covered - 89 ">XYErrorRenderer</a>
+            
+    
+            <a href="org/jfree/chart/annotations/XYImageAnnotation.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 96 , # Elements Covered - 82 ">XYImageAnnotation</a>
+            
+    
+            <a href="org/jfree/data/xy/XYInterval.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 47 , # Elements Covered - 47 ">XYInterval</a>
+            
+    
+            <a href="org/jfree/data/xy/XYIntervalDataItem.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 39 , # Elements Covered - 29 ">XYIntervalDataItem</a>
+            
+    
+            <a href="org/jfree/data/xy/XYIntervalSeries.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 26 , # Elements Covered - 26 ">XYIntervalSeries</a>
+            
+    
+            <a href="org/jfree/data/xy/XYIntervalSeriesCollection.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 98 , # Elements Covered - 83 ">XYIntervalSeriesCollection</a>
+            
+    
+            <a href="org/jfree/chart/entity/XYItemEntity.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 38 , # Elements Covered - 38 ">XYItemEntity</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/XYItemRendererState.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 25 , # Elements Covered - 25 ">XYItemRendererState</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/XYLine3DRenderer.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 69 , # Elements Covered - 62 ">XYLine3DRenderer</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/XYLineAndShapeRenderer.html" class="tag"
+            style="font-size: 17px;color:#d5584c"
+            title="# Elements - 426 , # Elements Covered - 210 ">XYLineAndShapeRenderer</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/XYLineAndShapeRenderer.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 8 ">XYLineAndShapeRenderer.State</a>
+            
+    
+            <a href="org/jfree/chart/annotations/XYLineAnnotation.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 115 , # Elements Covered - 78 ">XYLineAnnotation</a>
+            
+    
+            <a href="org/jfree/chart/plot/XYPlot.html" class="tag"
+            style="font-size: 48px;color:#14892c"
+            title="# Elements - 2,788 , # Elements Covered - 1,402 ">XYPlot</a>
+            
+    
+            <a href="org/jfree/chart/annotations/XYPointerAnnotation.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 183 , # Elements Covered - 134 ">XYPointerAnnotation</a>
+            
+    
+            <a href="org/jfree/chart/annotations/XYPolygonAnnotation.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 124 , # Elements Covered - 98 ">XYPolygonAnnotation</a>
+            
+    
+            <a href="org/jfree/data/xy/XYSeries.html" class="tag"
+            style="font-size: 17px;color:#d9695f"
+            title="# Elements - 391 , # Elements Covered - 332 ">XYSeries</a>
+            
+    
+            <a href="org/jfree/data/xy/XYSeriesCollection.html" class="tag"
+            style="font-size: 15px;color:#d9695f"
+            title="# Elements - 304 , # Elements Covered - 272 ">XYSeriesCollection</a>
+            
+    
+            <a href="org/jfree/chart/annotations/XYShapeAnnotation.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 111 , # Elements Covered - 80 ">XYShapeAnnotation</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/XYShapeRenderer.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 203 , # Elements Covered - 128 ">XYShapeRenderer</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/XYSplineRenderer.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 135 , # Elements Covered - 43 ">XYSplineRenderer</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/XYSplineRenderer.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 19 , # Elements Covered - 19 ">XYSplineRenderer.ControlPoint</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/XYStepAreaRenderer.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 240 , # Elements Covered - 99 ">XYStepAreaRenderer</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/XYStepRenderer.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 114 , # Elements Covered - 42 ">XYStepRenderer</a>
+            
+    
+            <a href="org/jfree/data/gantt/XYTaskDataset.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 132 , # Elements Covered - 118 ">XYTaskDataset</a>
+            
+    
+            <a href="org/jfree/chart/annotations/XYTextAnnotation.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 225 , # Elements Covered - 175 ">XYTextAnnotation</a>
+            
+    
+            <a href="org/jfree/chart/annotations/XYTitleAnnotation.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 169 , # Elements Covered - 142 ">XYTitleAnnotation</a>
+            
+    
+            <a href="org/jfree/data/xy/YInterval.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 33 , # Elements Covered - 33 ">YInterval</a>
+            
+    
+            <a href="org/jfree/data/xy/YIntervalDataItem.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 25 , # Elements Covered - 19 ">YIntervalDataItem</a>
+            
+    
+            <a href="org/jfree/chart/renderer/xy/YIntervalRenderer.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 88 , # Elements Covered - 35 ">YIntervalRenderer</a>
+            
+    
+            <a href="org/jfree/data/xy/YIntervalSeries.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 20 , # Elements Covered - 20 ">YIntervalSeries</a>
+            
+    
+            <a href="org/jfree/data/xy/YIntervalSeriesCollection.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 90 , # Elements Covered - 73 ">YIntervalSeriesCollection</a>
+            
+    
+            <a href="org/jfree/data/xy/YWithXInterval.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 33 , # Elements Covered - 33 ">YWithXInterval</a>
+            
+    
+            <a href="org/jfree/data/time/Year.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 88 , # Elements Covered - 87 ">Year</a>
+            
+    
+            <a href="org/jfree/chart/panel/ZoomHandler.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 136 , # Elements Covered - 57 ">ZoomHandler</a>
+           </div>
+   
+   </div>
+    </div> <!-- tabs-pane active-pane -->
+</div> <!-- aui-tabs horizontal-tabs -->
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Sun Aug 28 2022 17:50:52 MDT using coverage data from Sun Aug 28 2022 17:50:47 MDT.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

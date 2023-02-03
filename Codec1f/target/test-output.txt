@@ -1,0 +1,38 @@
+    [junit] Running org.apache.commons.codec.DecoderException_ESTest
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.38 sec
+    [junit] Running org.apache.commons.codec.EncoderException_ESTest
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.35 sec
+    [junit] Running org.apache.commons.codec.StringEncoderComparator_ESTest
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.446 sec
+    [junit] Running org.apache.commons.codec.binary.Base64_ESTest
+    [junit] Tests run: 43, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.476 sec
+    [junit] Running org.apache.commons.codec.binary.BinaryCodec_ESTest
+    [junit] Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.442 sec
+    [junit] Running org.apache.commons.codec.binary.Hex_ESTest
+    [junit] Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.432 sec
+    [junit] Running org.apache.commons.codec.digest.DigestUtils_ESTest
+    [junit] Tests run: 66, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.135 sec
+    [junit] Running org.apache.commons.codec.language.Caverphone_ESTest
+    [junit] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.382 sec
+    [junit] Running org.apache.commons.codec.language.DoubleMetaphone_ESTest
+    [junit] Tests run: 80, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.571 sec
+    [junit] Running org.apache.commons.codec.language.Metaphone_ESTest
+    [junit] Tests run: 56, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.517 sec
+    [junit] Running org.apache.commons.codec.language.RefinedSoundex_ESTest
+    [junit] Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.43 sec
+    [junit] Running org.apache.commons.codec.language.SoundexUtils_ESTest
+    [junit] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.482 sec
+    [junit] Running org.apache.commons.codec.language.Soundex_ESTest
+    [junit] Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.428 sec
+    [junit] Running org.apache.commons.codec.net.BCodec_ESTest
+    [junit] Tests run: 29, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.476 sec
+    [junit] Running org.apache.commons.codec.net.CharacterEncodingNames_ESTest
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.315 sec
+    [junit] Running org.apache.commons.codec.net.QCodec_ESTest
+    [junit] Tests run: 32, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.477 sec
+    [junit] Running org.apache.commons.codec.net.QuotedPrintableCodec_ESTest
+    [junit] Tests run: 45, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.479 sec
+    [junit] Running org.apache.commons.codec.net.RFC1522Codec_ESTest
+    [junit] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.472 sec
+    [junit] Running org.apache.commons.codec.net.URLCodec_ESTest
+    [junit] Tests run: 54, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.5 sec

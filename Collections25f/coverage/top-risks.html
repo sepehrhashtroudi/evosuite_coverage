@@ -1,0 +1,2196 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="img/clover.ico" />
+
+    <link rel="stylesheet" href="aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('style.css');
+        @import url('tree.css');
+        
+    </style>
+
+    <script src="jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="package-nodes-tree.js" type="text/javascript"></script>
+    <script src="clover-tree.js" type="text/javascript"></script>
+    <script src="clover.js" type="text/javascript"></script>
+    <script src="clover-descriptions.js" type="text/javascript"></script>
+    <script src="cloud.js" type="text/javascript"></script>
+
+            <title></title>
+    </head>
+
+<body  >
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="aui-nav-selected">
+                    <a href="dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                  <div class="packages-tree-wrapper" data-root-relative="" data-package-name="">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <ol class="aui-nav aui-nav-breadcrumbs">
+            
+        <li><a href="dashboard.html">Project Clover database Tue Jul 26 2022 16:09:18 PDT</a></li>
+    </ol>
+    
+<h1 class="aui-h2-clover">
+            Project overview
+    </h1>
+<div class="aui-tabs horizontal-tabs">
+            <ul class="tabs-menu">
+            <li class="menu-item ">
+            <a href="dashboard.html">Dashboard</a>
+        </li>
+                <li class="menu-item ">
+            <a href="pkg-summary.html"><strong>Application code</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="testsrc-pkg-summary.html"><strong>Test code</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="test-pkg-summary.html"><strong>Test results</strong></a>
+        </li>
+                <li class="menu-item active-tab">
+            <a href="top-risks.html"><strong>Top risks</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="quick-wins.html"><strong>Quick wins</strong></a>
+        </li>
+                                                <li class="menu-item ">
+                <a href="treemap.html"><strong>Coverage tree map</strong></a>
+            </li>
+            </ul>
+    <div class="tabs-pane active-pane" id="tabs-first">
+
+        <div>&#160;</div>
+
+        
+
+
+                        <div style="text-align: right; margin-bottom: 10px">
+            
+            
+                                    <button class="aui-button aui-button-subtle" id="popupHelp">
+    <span class="aui-icon aui-icon-small aui-iconfont-help"></span>&#160;How to read this chart
+</button>
+<script>
+    AJS.InlineDialog(AJS.$("#popupHelp"), "helpDialog",
+            function (content, trigger, showPopup) {
+                var description = topRisksDescription();
+                var title = 'Top Risks';
+                content.css({"padding": "20px"}).html(
+                        '<h2>' + title + '</h2>' + description);
+                showPopup();
+                return false;
+            },
+            {
+                width: 600
+            }
+    );
+</script>
+        </div>
+
+        
+
+<div style="padding: 20px; border: 1px solid #cccccc; background-color: #f5f5f5; border-radius: 3px">
+          <div id="deepPackageCloud"  >
+                          
+    
+        
+    
+            <a href="org/apache/commons/collections4/bag/AbstractBagDecorator.html" class="tag"
+            style="font-size: 16px;color:#fae1a0"
+            title="Average Method Complexity - 1 , Coverage - 77.8% ">AbstractBagDecorator</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/AbstractBidiMapDecorator.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 57.1% ">AbstractBidiMapDecorator</a>
+            
+    
+            <a href="org/apache/commons/collections4/trie/AbstractBitwiseTrie.html" class="tag"
+            style="font-size: 19px;color:#fae1a0"
+            title="Average Method Complexity - 1.6 , Coverage - 83% ">AbstractBitwiseTrie</a>
+            
+    
+            <a href="org/apache/commons/collections4/trie/AbstractBitwiseTrie.html" class="tag"
+            style="font-size: 19px;color:#fae1a0"
+            title="Average Method Complexity - 1.667 , Coverage - 82.1% ">AbstractBitwiseTrie.BasicEntry</a>
+            
+    
+            <a href="org/apache/commons/collections4/collection/AbstractCollectionDecorator.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1.056 , Coverage - 95% ">AbstractCollectionDecorator</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/AbstractDualBidiMap.html" class="tag"
+            style="font-size: 18px;color:#89c495"
+            title="Average Method Complexity - 1.32 , Coverage - 100% ">AbstractDualBidiMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/AbstractDualBidiMap.html" class="tag"
+            style="font-size: 20px;color:#14892c"
+            title="Average Method Complexity - 1.778 , Coverage - 92.3% ">AbstractDualBidiMap.BidiMapIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/AbstractDualBidiMap.html" class="tag"
+            style="font-size: 22px;color:#89c495"
+            title="Average Method Complexity - 2.333 , Coverage - 100% ">AbstractDualBidiMap.EntrySet</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/AbstractDualBidiMap.html" class="tag"
+            style="font-size: 18px;color:#89c495"
+            title="Average Method Complexity - 1.333 , Coverage - 100% ">AbstractDualBidiMap.EntrySetIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/AbstractDualBidiMap.html" class="tag"
+            style="font-size: 17px;color:#89c495"
+            title="Average Method Complexity - 1.25 , Coverage - 100% ">AbstractDualBidiMap.KeySet</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/AbstractDualBidiMap.html" class="tag"
+            style="font-size: 18px;color:#89c495"
+            title="Average Method Complexity - 1.333 , Coverage - 100% ">AbstractDualBidiMap.KeySetIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/AbstractDualBidiMap.html" class="tag"
+            style="font-size: 21px;color:#89c495"
+            title="Average Method Complexity - 2 , Coverage - 100% ">AbstractDualBidiMap.MapEntry</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/AbstractDualBidiMap.html" class="tag"
+            style="font-size: 17px;color:#89c495"
+            title="Average Method Complexity - 1.25 , Coverage - 100% ">AbstractDualBidiMap.Values</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/AbstractDualBidiMap.html" class="tag"
+            style="font-size: 18px;color:#89c495"
+            title="Average Method Complexity - 1.333 , Coverage - 100% ">AbstractDualBidiMap.ValuesIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/AbstractDualBidiMap.html" class="tag"
+            style="font-size: 21px;color:#89c495"
+            title="Average Method Complexity - 2.167 , Coverage - 100% ">AbstractDualBidiMap.View</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/AbstractEmptyIterator.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">AbstractEmptyIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/AbstractEmptyMapIterator.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">AbstractEmptyMapIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractHashedMap.html" class="tag"
+            style="font-size: 22px;color:#14892c"
+            title="Average Method Complexity - 2.235 , Coverage - 94.2% ">AbstractHashedMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractHashedMap.html" class="tag"
+            style="font-size: 18px;color:#89c495"
+            title="Average Method Complexity - 1.5 , Coverage - 100% ">AbstractHashedMap.EntrySet</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractHashedMap.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">AbstractHashedMap.EntrySetIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractHashedMap.html" class="tag"
+            style="font-size: 21px;color:#89c495"
+            title="Average Method Complexity - 2 , Coverage - 95.1% ">AbstractHashedMap.HashEntry</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractHashedMap.html" class="tag"
+            style="font-size: 23px;color:#14892c"
+            title="Average Method Complexity - 2.5 , Coverage - 92.9% ">AbstractHashedMap.HashIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractHashedMap.html" class="tag"
+            style="font-size: 19px;color:#89c495"
+            title="Average Method Complexity - 1.6 , Coverage - 100% ">AbstractHashedMap.HashMapIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractHashedMap.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">AbstractHashedMap.KeySet</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractHashedMap.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">AbstractHashedMap.KeySetIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractHashedMap.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">AbstractHashedMap.Values</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractHashedMap.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">AbstractHashedMap.ValuesIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractInputCheckedMapDecorator.html" class="tag"
+            style="font-size: 17px;color:#fae1a0"
+            title="Average Method Complexity - 1.25 , Coverage - 83.3% ">AbstractInputCheckedMapDecorator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractInputCheckedMapDecorator.html" class="tag"
+            style="font-size: 22px;color:#89c495"
+            title="Average Method Complexity - 2.25 , Coverage - 97% ">AbstractInputCheckedMapDecorator.EntrySet</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractInputCheckedMapDecorator.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">AbstractInputCheckedMapDecorator.EntrySetIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractInputCheckedMapDecorator.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">AbstractInputCheckedMapDecorator.MapEntry</a>
+            
+    
+            <a href="org/apache/commons/collections4/splitmap/AbstractIterableGetMapDecorator.html" class="tag"
+            style="font-size: 16px;color:#fae1a0"
+            title="Average Method Complexity - 1.062 , Coverage - 77.8% ">AbstractIterableGetMapDecorator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractIterableMap.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">AbstractIterableMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/AbstractIteratorDecorator.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">AbstractIteratorDecorator</a>
+            
+    
+            <a href="org/apache/commons/collections4/keyvalue/AbstractKeyValue.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">AbstractKeyValue</a>
+            
+    
+            <a href="org/apache/commons/collections4/list/AbstractLinkedList.html" class="tag"
+            style="font-size: 20px;color:#89c495"
+            title="Average Method Complexity - 1.796 , Coverage - 95.7% ">AbstractLinkedList</a>
+            
+    
+            <a href="org/apache/commons/collections4/list/AbstractLinkedList.html" class="tag"
+            style="font-size: 18px;color:#89c495"
+            title="Average Method Complexity - 1.417 , Coverage - 100% ">AbstractLinkedList.LinkedListIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/list/AbstractLinkedList.html" class="tag"
+            style="font-size: 19px;color:#14892c"
+            title="Average Method Complexity - 1.571 , Coverage - 85.9% ">AbstractLinkedList.LinkedSubList</a>
+            
+    
+            <a href="org/apache/commons/collections4/list/AbstractLinkedList.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">AbstractLinkedList.LinkedSubListIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/list/AbstractLinkedList.html" class="tag"
+            style="font-size: 16px;color:#e28e87"
+            title="Average Method Complexity - 1 , Coverage - 45.8% ">AbstractLinkedList.Node</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractLinkedMap.html" class="tag"
+            style="font-size: 20px;color:#89c495"
+            title="Average Method Complexity - 1.87 , Coverage - 95.3% ">AbstractLinkedMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractLinkedMap.html" class="tag"
+            style="font-size: 16px;color:#f6c342"
+            title="Average Method Complexity - 1 , Coverage - 66.7% ">AbstractLinkedMap.EntrySetIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractLinkedMap.html" class="tag"
+            style="font-size: 16px;color:#f6c342"
+            title="Average Method Complexity - 1 , Coverage - 66.7% ">AbstractLinkedMap.KeySetIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractLinkedMap.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">AbstractLinkedMap.LinkEntry</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractLinkedMap.html" class="tag"
+            style="font-size: 20px;color:#14892c"
+            title="Average Method Complexity - 1.778 , Coverage - 86% ">AbstractLinkedMap.LinkIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractLinkedMap.html" class="tag"
+            style="font-size: 18px;color:#89c495"
+            title="Average Method Complexity - 1.5 , Coverage - 100% ">AbstractLinkedMap.LinkMapIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractLinkedMap.html" class="tag"
+            style="font-size: 16px;color:#f6c342"
+            title="Average Method Complexity - 1 , Coverage - 66.7% ">AbstractLinkedMap.ValuesIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/list/AbstractListDecorator.html" class="tag"
+            style="font-size: 16px;color:#14892c"
+            title="Average Method Complexity - 1 , Coverage - 93.3% ">AbstractListDecorator</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/AbstractListIteratorDecorator.html" class="tag"
+            style="font-size: 17px;color:#14892c"
+            title="Average Method Complexity - 1.091 , Coverage - 92.6% ">AbstractListIteratorDecorator</a>
+            
+    
+            <a href="org/apache/commons/collections4/multimap/AbstractListValuedMap.html" class="tag"
+            style="font-size: 23px;color:#f6c342"
+            title="Average Method Complexity - 2.5 , Coverage - 72.7% ">AbstractListValuedMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/multimap/AbstractListValuedMap.html" class="tag"
+            style="font-size: 17px;color:#f6c342"
+            title="Average Method Complexity - 1.182 , Coverage - 62.2% ">AbstractListValuedMap.ValuesListIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/multimap/AbstractListValuedMap.html" class="tag"
+            style="font-size: 19px;color:#d5584c"
+            title="Average Method Complexity - 1.692 , Coverage - 15.4% ">AbstractListValuedMap.WrappedList</a>
+            
+    
+            <a href="org/apache/commons/collections4/bag/AbstractMapBag.html" class="tag"
+            style="font-size: 22px;color:#89c495"
+            title="Average Method Complexity - 2.259 , Coverage - 96.3% ">AbstractMapBag</a>
+            
+    
+            <a href="org/apache/commons/collections4/bag/AbstractMapBag.html" class="tag"
+            style="font-size: 22px;color:#14892c"
+            title="Average Method Complexity - 2.25 , Coverage - 94.7% ">AbstractMapBag.BagIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/bag/AbstractMapBag.html" class="tag"
+            style="font-size: 18px;color:#d9695f"
+            title="Average Method Complexity - 1.333 , Coverage - 20% ">AbstractMapBag.MutableInteger</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractMapDecorator.html" class="tag"
+            style="font-size: 17px;color:#89c495"
+            title="Average Method Complexity - 1.111 , Coverage - 100% ">AbstractMapDecorator</a>
+            
+    
+            <a href="org/apache/commons/collections4/keyvalue/AbstractMapEntry.html" class="tag"
+            style="font-size: 23px;color:#89c495"
+            title="Average Method Complexity - 2.5 , Coverage - 100% ">AbstractMapEntry</a>
+            
+    
+            <a href="org/apache/commons/collections4/keyvalue/AbstractMapEntryDecorator.html" class="tag"
+            style="font-size: 17px;color:#fae1a0"
+            title="Average Method Complexity - 1.25 , Coverage - 75% ">AbstractMapEntryDecorator</a>
+            
+    
+            <a href="org/apache/commons/collections4/multimap/AbstractMultiValuedMap.html" class="tag"
+            style="font-size: 23px;color:#14892c"
+            title="Average Method Complexity - 2.462 , Coverage - 84.1% ">AbstractMultiValuedMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/multimap/AbstractMultiValuedMap.html" class="tag"
+            style="font-size: 17px;color:#89c495"
+            title="Average Method Complexity - 1.25 , Coverage - 100% ">AbstractMultiValuedMap.EntryValues</a>
+            
+    
+            <a href="org/apache/commons/collections4/multimap/AbstractMultiValuedMap.html" class="tag"
+            style="font-size: 18px;color:#14892c"
+            title="Average Method Complexity - 1.5 , Coverage - 89.3% ">AbstractMultiValuedMap.KeysBag</a>
+            
+    
+            <a href="org/apache/commons/collections4/multimap/AbstractMultiValuedMap.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">AbstractMultiValuedMap.MultiValuedMapEntry</a>
+            
+    
+            <a href="org/apache/commons/collections4/multimap/AbstractMultiValuedMap.html" class="tag"
+            style="font-size: 18px;color:#f6c342"
+            title="Average Method Complexity - 1.429 , Coverage - 63% ">AbstractMultiValuedMap.MultiValuedMapIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/multimap/AbstractMultiValuedMap.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">AbstractMultiValuedMap.Values</a>
+            
+    
+            <a href="org/apache/commons/collections4/multimap/AbstractMultiValuedMap.html" class="tag"
+            style="font-size: 17px;color:#89c495"
+            title="Average Method Complexity - 1.25 , Coverage - 100% ">AbstractMultiValuedMap.ValuesIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/multimap/AbstractMultiValuedMap.html" class="tag"
+            style="font-size: 21px;color:#e28e87"
+            title="Average Method Complexity - 2.062 , Coverage - 45.3% ">AbstractMultiValuedMap.WrappedCollection</a>
+            
+    
+            <a href="org/apache/commons/collections4/multimap/AbstractMultiValuedMapDecorator.html" class="tag"
+            style="font-size: 16px;color:#fae1a0"
+            title="Average Method Complexity - 1.083 , Coverage - 82.1% ">AbstractMultiValuedMapDecorator</a>
+            
+    
+            <a href="org/apache/commons/collections4/set/AbstractNavigableSetDecorator.html" class="tag"
+            style="font-size: 16px;color:#e28e87"
+            title="Average Method Complexity - 1 , Coverage - 42.9% ">AbstractNavigableSetDecorator</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/AbstractOrderedBidiMapDecorator.html" class="tag"
+            style="font-size: 16px;color:#fae1a0"
+            title="Average Method Complexity - 1 , Coverage - 75% ">AbstractOrderedBidiMapDecorator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractOrderedMapDecorator.html" class="tag"
+            style="font-size: 16px;color:#14892c"
+            title="Average Method Complexity - 1 , Coverage - 87.5% ">AbstractOrderedMapDecorator</a>
+            
+    
+            <a href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html" class="tag"
+            style="font-size: 29px;color:#f6c342"
+            title="Average Method Complexity - 3.784 , Coverage - 69.1% ">AbstractPatriciaTrie</a>
+            
+    
+            <a href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html" class="tag"
+            style="font-size: 19px;color:#14892c"
+            title="Average Method Complexity - 1.6 , Coverage - 92% ">AbstractPatriciaTrie.EntrySet</a>
+            
+    
+            <a href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">AbstractPatriciaTrie.EntrySet.EntryIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">AbstractPatriciaTrie.KeySet</a>
+            
+    
+            <a href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">AbstractPatriciaTrie.KeySet.KeyIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html" class="tag"
+            style="font-size: 21px;color:#89c495"
+            title="Average Method Complexity - 2 , Coverage - 100% ">AbstractPatriciaTrie.PrefixRangeEntrySet</a>
+            
+    
+            <a href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html" class="tag"
+            style="font-size: 22px;color:#89c495"
+            title="Average Method Complexity - 2.25 , Coverage - 96.8% ">AbstractPatriciaTrie.PrefixRangeEntrySet.EntryIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html" class="tag"
+            style="font-size: 18px;color:#e7a19b"
+            title="Average Method Complexity - 1.5 , Coverage - 50% ">AbstractPatriciaTrie.PrefixRangeEntrySet.SingletonIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html" class="tag"
+            style="font-size: 22px;color:#fae1a0"
+            title="Average Method Complexity - 2.286 , Coverage - 81.2% ">AbstractPatriciaTrie.PrefixRangeMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html" class="tag"
+            style="font-size: 24px;color:#fae1a0"
+            title="Average Method Complexity - 2.7 , Coverage - 75.4% ">AbstractPatriciaTrie.RangeEntryMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html" class="tag"
+            style="font-size: 25px;color:#14892c"
+            title="Average Method Complexity - 3 , Coverage - 93.8% ">AbstractPatriciaTrie.RangeEntrySet</a>
+            
+    
+            <a href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html" class="tag"
+            style="font-size: 21px;color:#89c495"
+            title="Average Method Complexity - 2 , Coverage - 100% ">AbstractPatriciaTrie.RangeEntrySet.EntryIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html" class="tag"
+            style="font-size: 21px;color:#f6c342"
+            title="Average Method Complexity - 2 , Coverage - 62.5% ">AbstractPatriciaTrie.RangeMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html" class="tag"
+            style="font-size: 24px;color:#fae1a0"
+            title="Average Method Complexity - 2.8 , Coverage - 79% ">AbstractPatriciaTrie.TrieEntry</a>
+            
+    
+            <a href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html" class="tag"
+            style="font-size: 19px;color:#14892c"
+            title="Average Method Complexity - 1.667 , Coverage - 94.1% ">AbstractPatriciaTrie.TrieIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html" class="tag"
+            style="font-size: 19px;color:#89c495"
+            title="Average Method Complexity - 1.625 , Coverage - 95.2% ">AbstractPatriciaTrie.TrieMapIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html" class="tag"
+            style="font-size: 18px;color:#89c495"
+            title="Average Method Complexity - 1.4 , Coverage - 100% ">AbstractPatriciaTrie.Values</a>
+            
+    
+            <a href="org/apache/commons/collections4/trie/AbstractPatriciaTrie.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">AbstractPatriciaTrie.Values.ValueIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/AbstractQuantifierPredicate.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">AbstractQuantifierPredicate</a>
+            
+    
+            <a href="org/apache/commons/collections4/queue/AbstractQueueDecorator.html" class="tag"
+            style="font-size: 16px;color:#de7b72"
+            title="Average Method Complexity - 1 , Coverage - 37.5% ">AbstractQueueDecorator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractReferenceMap.html" class="tag"
+            style="font-size: 19px;color:#fae1a0"
+            title="Average Method Complexity - 1.69 , Coverage - 82.1% ">AbstractReferenceMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractReferenceMap.html" class="tag"
+            style="font-size: 23px;color:#89c495"
+            title="Average Method Complexity - 2.429 , Coverage - 97.1% ">AbstractReferenceMap.ReferenceBaseIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractReferenceMap.html" class="tag"
+            style="font-size: 23px;color:#f6c342"
+            title="Average Method Complexity - 2.556 , Coverage - 64% ">AbstractReferenceMap.ReferenceEntry</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractReferenceMap.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">AbstractReferenceMap.ReferenceEntrySet</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractReferenceMap.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">AbstractReferenceMap.ReferenceEntrySetIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractReferenceMap.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">AbstractReferenceMap.ReferenceKeySet</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractReferenceMap.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">AbstractReferenceMap.ReferenceKeySetIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractReferenceMap.html" class="tag"
+            style="font-size: 19px;color:#89c495"
+            title="Average Method Complexity - 1.6 , Coverage - 100% ">AbstractReferenceMap.ReferenceMapIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractReferenceMap.html" class="tag"
+            style="font-size: 23px;color:#e7a19b"
+            title="Average Method Complexity - 2.5 , Coverage - 50% ">AbstractReferenceMap.ReferenceStrength</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractReferenceMap.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">AbstractReferenceMap.ReferenceValues</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractReferenceMap.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">AbstractReferenceMap.ReferenceValuesIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractReferenceMap.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 60% ">AbstractReferenceMap.WeakRef</a>
+            
+    
+            <a href="org/apache/commons/collections4/list/AbstractSerializableListDecorator.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">AbstractSerializableListDecorator</a>
+            
+    
+            <a href="org/apache/commons/collections4/set/AbstractSerializableSetDecorator.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">AbstractSerializableSetDecorator</a>
+            
+    
+            <a href="org/apache/commons/collections4/set/AbstractSetDecorator.html" class="tag"
+            style="font-size: 16px;color:#fae1a0"
+            title="Average Method Complexity - 1 , Coverage - 80% ">AbstractSetDecorator</a>
+            
+    
+            <a href="org/apache/commons/collections4/multimap/AbstractSetValuedMap.html" class="tag"
+            style="font-size: 23px;color:#f6c342"
+            title="Average Method Complexity - 2.5 , Coverage - 72.7% ">AbstractSetValuedMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/multimap/AbstractSetValuedMap.html" class="tag"
+            style="font-size: 24px;color:#d5584c"
+            title="Average Method Complexity - 2.667 , Coverage - 6.9% ">AbstractSetValuedMap.WrappedSet</a>
+            
+    
+            <a href="org/apache/commons/collections4/bag/AbstractSortedBagDecorator.html" class="tag"
+            style="font-size: 16px;color:#f6c342"
+            title="Average Method Complexity - 1 , Coverage - 66.7% ">AbstractSortedBagDecorator</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/AbstractSortedBidiMapDecorator.html" class="tag"
+            style="font-size: 16px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 25% ">AbstractSortedBidiMapDecorator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/AbstractSortedMapDecorator.html" class="tag"
+            style="font-size: 17px;color:#de7b72"
+            title="Average Method Complexity - 1.167 , Coverage - 38.7% ">AbstractSortedMapDecorator</a>
+            
+    
+            <a href="org/apache/commons/collections4/set/AbstractSortedSetDecorator.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 55.6% ">AbstractSortedSetDecorator</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/AbstractUntypedIteratorDecorator.html" class="tag"
+            style="font-size: 17px;color:#14892c"
+            title="Average Method Complexity - 1.25 , Coverage - 84.6% ">AbstractUntypedIteratorDecorator</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/AllPredicate.html" class="tag"
+            style="font-size: 22px;color:#89c495"
+            title="Average Method Complexity - 2.25 , Coverage - 100% ">AllPredicate</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/AndPredicate.html" class="tag"
+            style="font-size: 18px;color:#14892c"
+            title="Average Method Complexity - 1.5 , Coverage - 85.7% ">AndPredicate</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/AnyPredicate.html" class="tag"
+            style="font-size: 22px;color:#14892c"
+            title="Average Method Complexity - 2.25 , Coverage - 93.5% ">AnyPredicate</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/ArrayIterator.html" class="tag"
+            style="font-size: 18px;color:#14892c"
+            title="Average Method Complexity - 1.364 , Coverage - 86.4% ">ArrayIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/ArrayListIterator.html" class="tag"
+            style="font-size: 17px;color:#14892c"
+            title="Average Method Complexity - 1.273 , Coverage - 94.6% ">ArrayListIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/ArrayStack.html" class="tag"
+            style="font-size: 21px;color:#fae1a0"
+            title="Average Method Complexity - 2 , Coverage - 79.5% ">ArrayStack</a>
+            
+    
+            <a href="org/apache/commons/collections4/BagUtils.html" class="tag"
+            style="font-size: 16px;color:#f6c342"
+            title="Average Method Complexity - 1 , Coverage - 69.6% ">BagUtils</a>
+            
+    
+            <a href="org/apache/commons/collections4/comparators/BooleanComparator.html" class="tag"
+            style="font-size: 18px;color:#14892c"
+            title="Average Method Complexity - 1.444 , Coverage - 89.7% ">BooleanComparator</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/BoundedIterator.html" class="tag"
+            style="font-size: 23px;color:#89c495"
+            title="Average Method Complexity - 2.5 , Coverage - 96% ">BoundedIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/CaseInsensitiveMap.html" class="tag"
+            style="font-size: 17px;color:#14892c"
+            title="Average Method Complexity - 1.25 , Coverage - 92.6% ">CaseInsensitiveMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/CatchAndRethrowClosure.html" class="tag"
+            style="font-size: 25px;color:#89c495"
+            title="Average Method Complexity - 3 , Coverage - 100% ">CatchAndRethrowClosure</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/ChainedClosure.html" class="tag"
+            style="font-size: 19px;color:#14892c"
+            title="Average Method Complexity - 1.667 , Coverage - 94.1% ">ChainedClosure</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/ChainedTransformer.html" class="tag"
+            style="font-size: 19px;color:#14892c"
+            title="Average Method Complexity - 1.667 , Coverage - 93.8% ">ChainedTransformer</a>
+            
+    
+            <a href="org/apache/commons/collections4/queue/CircularFifoQueue.html" class="tag"
+            style="font-size: 21px;color:#89c495"
+            title="Average Method Complexity - 2.125 , Coverage - 96.1% ">CircularFifoQueue</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/CloneTransformer.html" class="tag"
+            style="font-size: 17px;color:#89c495"
+            title="Average Method Complexity - 1.25 , Coverage - 100% ">CloneTransformer</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/ClosureTransformer.html" class="tag"
+            style="font-size: 17px;color:#14892c"
+            title="Average Method Complexity - 1.25 , Coverage - 85.7% ">ClosureTransformer</a>
+            
+    
+            <a href="org/apache/commons/collections4/ClosureUtils.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1.059 , Coverage - 97.8% ">ClosureUtils</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/CollatingIterator.html" class="tag"
+            style="font-size: 20px;color:#14892c"
+            title="Average Method Complexity - 1.864 , Coverage - 84% ">CollatingIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/bag/CollectionBag.html" class="tag"
+            style="font-size: 19px;color:#89c495"
+            title="Average Method Complexity - 1.727 , Coverage - 100% ">CollectionBag</a>
+            
+    
+            <a href="org/apache/commons/collections4/bag/CollectionSortedBag.html" class="tag"
+            style="font-size: 19px;color:#89c495"
+            title="Average Method Complexity - 1.727 , Coverage - 100% ">CollectionSortedBag</a>
+            
+    
+            <a href="org/apache/commons/collections4/CollectionUtils.html" class="tag"
+            style="font-size: 24px;color:#89c495"
+            title="Average Method Complexity - 2.658 , Coverage - 96.7% ">CollectionUtils</a>
+            
+    
+            <a href="org/apache/commons/collections4/CollectionUtils.html" class="tag"
+            style="font-size: 17px;color:#89c495"
+            title="Average Method Complexity - 1.167 , Coverage - 100% ">CollectionUtils.CardinalityHelper</a>
+            
+    
+            <a href="org/apache/commons/collections4/CollectionUtils.html" class="tag"
+            style="font-size: 17px;color:#14892c"
+            title="Average Method Complexity - 1.25 , Coverage - 85.7% ">CollectionUtils.EquatorWrapper</a>
+            
+    
+            <a href="org/apache/commons/collections4/CollectionUtils.html" class="tag"
+            style="font-size: 17px;color:#89c495"
+            title="Average Method Complexity - 1.25 , Coverage - 100% ">CollectionUtils.SetOperationCardinalityHelper</a>
+            
+    
+            <a href="org/apache/commons/collections4/comparators/ComparableComparator.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ComparableComparator</a>
+            
+    
+            <a href="org/apache/commons/collections4/comparators/ComparatorChain.html" class="tag"
+            style="font-size: 20px;color:#f6c342"
+            title="Average Method Complexity - 1.944 , Coverage - 73% ">ComparatorChain</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/ComparatorPredicate.html" class="tag"
+            style="font-size: 24px;color:#14892c"
+            title="Average Method Complexity - 2.75 , Coverage - 84.6% ">ComparatorPredicate</a>
+            
+    
+            <a href="org/apache/commons/collections4/ComparatorUtils.html" class="tag"
+            style="font-size: 19px;color:#d5584c"
+            title="Average Method Complexity - 1.727 , Coverage - 14.8% ">ComparatorUtils</a>
+            
+    
+            <a href="org/apache/commons/collections4/collection/CompositeCollection.html" class="tag"
+            style="font-size: 18px;color:#14892c"
+            title="Average Method Complexity - 1.44 , Coverage - 86.2% ">CompositeCollection</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/CompositeMap.html" class="tag"
+            style="font-size: 21px;color:#14892c"
+            title="Average Method Complexity - 2.091 , Coverage - 94.7% ">CompositeMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/set/CompositeSet.html" class="tag"
+            style="font-size: 19px;color:#14892c"
+            title="Average Method Complexity - 1.615 , Coverage - 92.7% ">CompositeSet</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/ConstantFactory.html" class="tag"
+            style="font-size: 17px;color:#14892c"
+            title="Average Method Complexity - 1.25 , Coverage - 84.6% ">ConstantFactory</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/ConstantTransformer.html" class="tag"
+            style="font-size: 19px;color:#e7a19b"
+            title="Average Method Complexity - 1.571 , Coverage - 51.5% ">ConstantTransformer</a>
+            
+    
+            <a href="org/apache/commons/collections4/list/CursorableLinkedList.html" class="tag"
+            style="font-size: 19px;color:#14892c"
+            title="Average Method Complexity - 1.65 , Coverage - 87.4% ">CursorableLinkedList</a>
+            
+    
+            <a href="org/apache/commons/collections4/list/CursorableLinkedList.html" class="tag"
+            style="font-size: 23px;color:#14892c"
+            title="Average Method Complexity - 2.444 , Coverage - 93.2% ">CursorableLinkedList.Cursor</a>
+            
+    
+            <a href="org/apache/commons/collections4/list/CursorableLinkedList.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">CursorableLinkedList.SubCursor</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/DefaultEquator.html" class="tag"
+            style="font-size: 17px;color:#fae1a0"
+            title="Average Method Complexity - 1.2 , Coverage - 75% ">DefaultEquator</a>
+            
+    
+            <a href="org/apache/commons/collections4/keyvalue/DefaultKeyValue.html" class="tag"
+            style="font-size: 20px;color:#89c495"
+            title="Average Method Complexity - 1.889 , Coverage - 95.3% ">DefaultKeyValue</a>
+            
+    
+            <a href="org/apache/commons/collections4/keyvalue/DefaultMapEntry.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">DefaultMapEntry</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/DefaultedMap.html" class="tag"
+            style="font-size: 18px;color:#fae1a0"
+            title="Average Method Complexity - 1.444 , Coverage - 83.8% ">DefaultedMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/sequence/DeleteCommand.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">DeleteCommand</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/DualHashBidiMap.html" class="tag"
+            style="font-size: 16px;color:#fae1a0"
+            title="Average Method Complexity - 1 , Coverage - 83.3% ">DualHashBidiMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/DualLinkedHashBidiMap.html" class="tag"
+            style="font-size: 16px;color:#fae1a0"
+            title="Average Method Complexity - 1 , Coverage - 83.3% ">DualLinkedHashBidiMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/DualTreeBidiMap.html" class="tag"
+            style="font-size: 17px;color:#14892c"
+            title="Average Method Complexity - 1.3 , Coverage - 84.9% ">DualTreeBidiMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/DualTreeBidiMap.html" class="tag"
+            style="font-size: 19px;color:#14892c"
+            title="Average Method Complexity - 1.545 , Coverage - 84.3% ">DualTreeBidiMap.BidiOrderedMapIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/DualTreeBidiMap.html" class="tag"
+            style="font-size: 17px;color:#e7a19b"
+            title="Average Method Complexity - 1.111 , Coverage - 54.5% ">DualTreeBidiMap.ViewMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/sequence/EditCommand.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">EditCommand</a>
+            
+    
+            <a href="org/apache/commons/collections4/sequence/EditScript.html" class="tag"
+            style="font-size: 16px;color:#14892c"
+            title="Average Method Complexity - 1 , Coverage - 90% ">EditScript</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/EmptyIterator.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">EmptyIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/EmptyListIterator.html" class="tag"
+            style="font-size: 16px;color:#f6c342"
+            title="Average Method Complexity - 1 , Coverage - 66.7% ">EmptyListIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/EmptyMapIterator.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">EmptyMapIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/EmptyOrderedIterator.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">EmptyOrderedIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/EmptyOrderedMapIterator.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">EmptyOrderedMapIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/EntrySetToMapIteratorAdapter.html" class="tag"
+            style="font-size: 17px;color:#89c495"
+            title="Average Method Complexity - 1.111 , Coverage - 100% ">EntrySetToMapIteratorAdapter</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/EnumerationIterator.html" class="tag"
+            style="font-size: 17px;color:#e28e87"
+            title="Average Method Complexity - 1.25 , Coverage - 42.9% ">EnumerationIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/EnumerationUtils.html" class="tag"
+            style="font-size: 20px;color:#89c495"
+            title="Average Method Complexity - 1.75 , Coverage - 95.7% ">EnumerationUtils</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/EqualPredicate.html" class="tag"
+            style="font-size: 18px;color:#14892c"
+            title="Average Method Complexity - 1.5 , Coverage - 92.3% ">EqualPredicate</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/ExceptionClosure.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ExceptionClosure</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/ExceptionFactory.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ExceptionFactory</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/ExceptionPredicate.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ExceptionPredicate</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/ExceptionTransformer.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ExceptionTransformer</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/FactoryTransformer.html" class="tag"
+            style="font-size: 17px;color:#14892c"
+            title="Average Method Complexity - 1.25 , Coverage - 84.6% ">FactoryTransformer</a>
+            
+    
+            <a href="org/apache/commons/collections4/FactoryUtils.html" class="tag"
+            style="font-size: 16px;color:#14892c"
+            title="Average Method Complexity - 1 , Coverage - 92.3% ">FactoryUtils</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/FalsePredicate.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">FalsePredicate</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/FilterIterator.html" class="tag"
+            style="font-size: 18px;color:#14892c"
+            title="Average Method Complexity - 1.455 , Coverage - 84.3% ">FilterIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/FilterListIterator.html" class="tag"
+            style="font-size: 19px;color:#fae1a0"
+            title="Average Method Complexity - 1.667 , Coverage - 76.3% ">FilterListIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/comparators/FixedOrderComparator.html" class="tag"
+            style="font-size: 25px;color:#14892c"
+            title="Average Method Complexity - 2.917 , Coverage - 84.1% ">FixedOrderComparator</a>
+            
+    
+            <a href="org/apache/commons/collections4/list/FixedSizeList.html" class="tag"
+            style="font-size: 16px;color:#f6c342"
+            title="Average Method Complexity - 1 , Coverage - 69.8% ">FixedSizeList</a>
+            
+    
+            <a href="org/apache/commons/collections4/list/FixedSizeList.html" class="tag"
+            style="font-size: 16px;color:#de7b72"
+            title="Average Method Complexity - 1 , Coverage - 33.3% ">FixedSizeList.FixedSizeListIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/FixedSizeMap.html" class="tag"
+            style="font-size: 17px;color:#f6c342"
+            title="Average Method Complexity - 1.154 , Coverage - 72.5% ">FixedSizeMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/FixedSizeSortedMap.html" class="tag"
+            style="font-size: 17px;color:#fae1a0"
+            title="Average Method Complexity - 1.118 , Coverage - 77.3% ">FixedSizeSortedMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/Flat3Map.html" class="tag"
+            style="font-size: 47px;color:#f6c342"
+            title="Average Method Complexity - 7.826 , Coverage - 63.9% ">Flat3Map</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/Flat3Map.html" class="tag"
+            style="font-size: 18px;color:#e28e87"
+            title="Average Method Complexity - 1.5 , Coverage - 45% ">Flat3Map.EntryIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/Flat3Map.html" class="tag"
+            style="font-size: 19px;color:#14892c"
+            title="Average Method Complexity - 1.6 , Coverage - 92.6% ">Flat3Map.EntrySet</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/Flat3Map.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">Flat3Map.EntrySetIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/Flat3Map.html" class="tag"
+            style="font-size: 28px;color:#e7a19b"
+            title="Average Method Complexity - 3.5 , Coverage - 59.3% ">Flat3Map.FlatMapEntry</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/Flat3Map.html" class="tag"
+            style="font-size: 24px;color:#e7a19b"
+            title="Average Method Complexity - 2.667 , Coverage - 61.3% ">Flat3Map.FlatMapIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/Flat3Map.html" class="tag"
+            style="font-size: 18px;color:#89c495"
+            title="Average Method Complexity - 1.333 , Coverage - 100% ">Flat3Map.KeySet</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/Flat3Map.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">Flat3Map.KeySetIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/Flat3Map.html" class="tag"
+            style="font-size: 18px;color:#14892c"
+            title="Average Method Complexity - 1.4 , Coverage - 89.5% ">Flat3Map.Values</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/Flat3Map.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">Flat3Map.ValuesIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/FluentIterable.html" class="tag"
+            style="font-size: 17px;color:#d9695f"
+            title="Average Method Complexity - 1.097 , Coverage - 17.9% ">FluentIterable</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/ForClosure.html" class="tag"
+            style="font-size: 20px;color:#fae1a0"
+            title="Average Method Complexity - 1.8 , Coverage - 82.6% ">ForClosure</a>
+            
+    
+            <a href="org/apache/commons/collections4/FunctorException.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">FunctorException</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/FunctorUtils.html" class="tag"
+            style="font-size: 22px;color:#14892c"
+            title="Average Method Complexity - 2.273 , Coverage - 84.4% ">FunctorUtils</a>
+            
+    
+            <a href="org/apache/commons/collections4/list/GrowthList.html" class="tag"
+            style="font-size: 18px;color:#14892c"
+            title="Average Method Complexity - 1.429 , Coverage - 90.3% ">GrowthList</a>
+            
+    
+            <a href="org/apache/commons/collections4/bag/HashBag.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">HashBag</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/HashedMap.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">HashedMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/IdentityPredicate.html" class="tag"
+            style="font-size: 17px;color:#14892c"
+            title="Average Method Complexity - 1.25 , Coverage - 84.6% ">IdentityPredicate</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/IfClosure.html" class="tag"
+            style="font-size: 18px;color:#e7a19b"
+            title="Average Method Complexity - 1.5 , Coverage - 61.3% ">IfClosure</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/IfTransformer.html" class="tag"
+            style="font-size: 20px;color:#fae1a0"
+            title="Average Method Complexity - 1.857 , Coverage - 78.4% ">IfTransformer</a>
+            
+    
+            <a href="org/apache/commons/collections4/collection/IndexedCollection.html" class="tag"
+            style="font-size: 18px;color:#89c495"
+            title="Average Method Complexity - 1.438 , Coverage - 95.9% ">IndexedCollection</a>
+            
+    
+            <a href="org/apache/commons/collections4/sequence/InsertCommand.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">InsertCommand</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/InstanceofPredicate.html" class="tag"
+            style="font-size: 17px;color:#f6c342"
+            title="Average Method Complexity - 1.25 , Coverage - 69.2% ">InstanceofPredicate</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/InstantiateFactory.html" class="tag"
+            style="font-size: 30px;color:#14892c"
+            title="Average Method Complexity - 4 , Coverage - 87.5% ">InstantiateFactory</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/InstantiateTransformer.html" class="tag"
+            style="font-size: 31px;color:#fae1a0"
+            title="Average Method Complexity - 4.2 , Coverage - 75% ">InstantiateTransformer</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/InvokerTransformer.html" class="tag"
+            style="font-size: 32px;color:#14892c"
+            title="Average Method Complexity - 4.4 , Coverage - 91.3% ">InvokerTransformer</a>
+            
+    
+            <a href="org/apache/commons/collections4/IterableUtils.html" class="tag"
+            style="font-size: 18px;color:#e28e87"
+            title="Average Method Complexity - 1.475 , Coverage - 41% ">IterableUtils</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/IteratorChain.html" class="tag"
+            style="font-size: 19px;color:#fae1a0"
+            title="Average Method Complexity - 1.571 , Coverage - 76.8% ">IteratorChain</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/IteratorEnumeration.html" class="tag"
+            style="font-size: 16px;color:#f6c342"
+            title="Average Method Complexity - 1 , Coverage - 72.7% ">IteratorEnumeration</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/IteratorIterable.html" class="tag"
+            style="font-size: 18px;color:#14892c"
+            title="Average Method Complexity - 1.429 , Coverage - 91.7% ">IteratorIterable</a>
+            
+    
+            <a href="org/apache/commons/collections4/IteratorUtils.html" class="tag"
+            style="font-size: 21px;color:#e7a19b"
+            title="Average Method Complexity - 2.015 , Coverage - 55.2% ">IteratorUtils</a>
+            
+    
+            <a href="org/apache/commons/collections4/sequence/KeepCommand.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">KeepCommand</a>
+            
+    
+            <a href="org/apache/commons/collections4/trie/KeyAnalyzer.html" class="tag"
+            style="font-size: 19px;color:#f6c342"
+            title="Average Method Complexity - 1.6 , Coverage - 65% ">KeyAnalyzer</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/LRUMap.html" class="tag"
+            style="font-size: 20px;color:#14892c"
+            title="Average Method Complexity - 1.76 , Coverage - 84.4% ">LRUMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/LazyIteratorChain.html" class="tag"
+            style="font-size: 23px;color:#89c495"
+            title="Average Method Complexity - 2.5 , Coverage - 100% ">LazyIteratorChain</a>
+            
+    
+            <a href="org/apache/commons/collections4/list/LazyList.html" class="tag"
+            style="font-size: 21px;color:#f6c342"
+            title="Average Method Complexity - 2 , Coverage - 71.9% ">LazyList</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/LazyMap.html" class="tag"
+            style="font-size: 18px;color:#89c495"
+            title="Average Method Complexity - 1.429 , Coverage - 100% ">LazyMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/LazySortedMap.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">LazySortedMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/LinkedMap.html" class="tag"
+            style="font-size: 17px;color:#14892c"
+            title="Average Method Complexity - 1.167 , Coverage - 88.6% ">LinkedMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/LinkedMap.html" class="tag"
+            style="font-size: 16px;color:#14892c"
+            title="Average Method Complexity - 1 , Coverage - 94.4% ">LinkedMap.LinkedMapList</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/ListIteratorWrapper.html" class="tag"
+            style="font-size: 24px;color:#fae1a0"
+            title="Average Method Complexity - 2.636 , Coverage - 83.5% ">ListIteratorWrapper</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/ListOrderedMap.html" class="tag"
+            style="font-size: 19px;color:#89c495"
+            title="Average Method Complexity - 1.643 , Coverage - 97.3% ">ListOrderedMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/ListOrderedMap.html" class="tag"
+            style="font-size: 18px;color:#89c495"
+            title="Average Method Complexity - 1.333 , Coverage - 100% ">ListOrderedMap.EntrySetView</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/ListOrderedMap.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ListOrderedMap.KeySetView</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/ListOrderedMap.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ListOrderedMap.ListOrderedIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/ListOrderedMap.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ListOrderedMap.ListOrderedMapEntry</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/ListOrderedMap.html" class="tag"
+            style="font-size: 18px;color:#14892c"
+            title="Average Method Complexity - 1.455 , Coverage - 92.3% ">ListOrderedMap.ListOrderedMapIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/ListOrderedMap.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ListOrderedMap.ValuesView</a>
+            
+    
+            <a href="org/apache/commons/collections4/set/ListOrderedSet.html" class="tag"
+            style="font-size: 19px;color:#89c495"
+            title="Average Method Complexity - 1.682 , Coverage - 96.7% ">ListOrderedSet</a>
+            
+    
+            <a href="org/apache/commons/collections4/set/ListOrderedSet.html" class="tag"
+            style="font-size: 16px;color:#f6c342"
+            title="Average Method Complexity - 1 , Coverage - 66.7% ">ListOrderedSet.OrderedSetIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/ListUtils.html" class="tag"
+            style="font-size: 22px;color:#14892c"
+            title="Average Method Complexity - 2.208 , Coverage - 88.3% ">ListUtils</a>
+            
+    
+            <a href="org/apache/commons/collections4/ListUtils.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ListUtils.CharSequenceAsList</a>
+            
+    
+            <a href="org/apache/commons/collections4/ListUtils.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ListUtils.LcsVisitor</a>
+            
+    
+            <a href="org/apache/commons/collections4/ListUtils.html" class="tag"
+            style="font-size: 20px;color:#f6c342"
+            title="Average Method Complexity - 1.75 , Coverage - 66.7% ">ListUtils.Partition</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/LoopingIterator.html" class="tag"
+            style="font-size: 18px;color:#89c495"
+            title="Average Method Complexity - 1.5 , Coverage - 100% ">LoopingIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/LoopingListIterator.html" class="tag"
+            style="font-size: 20px;color:#14892c"
+            title="Average Method Complexity - 1.769 , Coverage - 88.4% ">LoopingListIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/set/MapBackedSet.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1.056 , Coverage - 95.9% ">MapBackedSet</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/MapTransformer.html" class="tag"
+            style="font-size: 17px;color:#14892c"
+            title="Average Method Complexity - 1.25 , Coverage - 84.6% ">MapTransformer</a>
+            
+    
+            <a href="org/apache/commons/collections4/MapUtils.html" class="tag"
+            style="font-size: 21px;color:#de7b72"
+            title="Average Method Complexity - 2.178 , Coverage - 31.1% ">MapUtils</a>
+            
+    
+            <a href="org/apache/commons/collections4/keyvalue/MultiKey.html" class="tag"
+            style="font-size: 18px;color:#89c495"
+            title="Average Method Complexity - 1.357 , Coverage - 100% ">MultiKey</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/MultiKeyMap.html" class="tag"
+            style="font-size: 27px;color:#89c495"
+            title="Average Method Complexity - 3.41 , Coverage - 95.2% ">MultiKeyMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/MultiMapUtils.html" class="tag"
+            style="font-size: 19px;color:#f6c342"
+            title="Average Method Complexity - 1.571 , Coverage - 65% ">MultiMapUtils</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/MultiValueMap.html" class="tag"
+            style="font-size: 19px;color:#14892c"
+            title="Average Method Complexity - 1.704 , Coverage - 93.3% ">MultiValueMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/MultiValueMap.html" class="tag"
+            style="font-size: 18px;color:#fae1a0"
+            title="Average Method Complexity - 1.5 , Coverage - 83.3% ">MultiValueMap.ReflectionFactory</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/MultiValueMap.html" class="tag"
+            style="font-size: 16px;color:#fae1a0"
+            title="Average Method Complexity - 1 , Coverage - 77.8% ">MultiValueMap.Values</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/MultiValueMap.html" class="tag"
+            style="font-size: 17px;color:#89c495"
+            title="Average Method Complexity - 1.25 , Coverage - 100% ">MultiValueMap.ValuesIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/multimap/MultiValuedHashMap.html" class="tag"
+            style="font-size: 16px;color:#de7b72"
+            title="Average Method Complexity - 1 , Coverage - 30.8% ">MultiValuedHashMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/multimap/MultiValuedHashMap.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">MultiValuedHashMap.ListValuedHashMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/multimap/MultiValuedHashMap.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">MultiValuedHashMap.SetValuedHashMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/NOPClosure.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">NOPClosure</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/NOPTransformer.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">NOPTransformer</a>
+            
+    
+            <a href="org/apache/commons/collections4/list/NodeCachingLinkedList.html" class="tag"
+            style="font-size: 18px;color:#14892c"
+            title="Average Method Complexity - 1.357 , Coverage - 92.8% ">NodeCachingLinkedList</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/NodeListIterator.html" class="tag"
+            style="font-size: 21px;color:#14892c"
+            title="Average Method Complexity - 2 , Coverage - 87.5% ">NodeListIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/NonePredicate.html" class="tag"
+            style="font-size: 20px;color:#89c495"
+            title="Average Method Complexity - 1.75 , Coverage - 100% ">NonePredicate</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/NotNullPredicate.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">NotNullPredicate</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/NotPredicate.html" class="tag"
+            style="font-size: 17px;color:#14892c"
+            title="Average Method Complexity - 1.25 , Coverage - 84.6% ">NotPredicate</a>
+            
+    
+            <a href="org/apache/commons/collections4/comparators/NullComparator.html" class="tag"
+            style="font-size: 23px;color:#e7a19b"
+            title="Average Method Complexity - 2.429 , Coverage - 58% ">NullComparator</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/NullIsExceptionPredicate.html" class="tag"
+            style="font-size: 18px;color:#14892c"
+            title="Average Method Complexity - 1.5 , Coverage - 88.2% ">NullIsExceptionPredicate</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/NullIsFalsePredicate.html" class="tag"
+            style="font-size: 18px;color:#14892c"
+            title="Average Method Complexity - 1.5 , Coverage - 88.2% ">NullIsFalsePredicate</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/NullIsTruePredicate.html" class="tag"
+            style="font-size: 18px;color:#14892c"
+            title="Average Method Complexity - 1.5 , Coverage - 88.2% ">NullIsTruePredicate</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/NullPredicate.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">NullPredicate</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/ObjectArrayIterator.html" class="tag"
+            style="font-size: 18px;color:#14892c"
+            title="Average Method Complexity - 1.5 , Coverage - 90.9% ">ObjectArrayIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/ObjectArrayListIterator.html" class="tag"
+            style="font-size: 17px;color:#14892c"
+            title="Average Method Complexity - 1.273 , Coverage - 91.9% ">ObjectArrayListIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/ObjectGraphIterator.html" class="tag"
+            style="font-size: 25px;color:#89c495"
+            title="Average Method Complexity - 2.875 , Coverage - 100% ">ObjectGraphIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/OnePredicate.html" class="tag"
+            style="font-size: 21px;color:#14892c"
+            title="Average Method Complexity - 2 , Coverage - 92.9% ">OnePredicate</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/OrPredicate.html" class="tag"
+            style="font-size: 18px;color:#14892c"
+            title="Average Method Complexity - 1.5 , Coverage - 85.7% ">OrPredicate</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/PassiveExpiringMap.html" class="tag"
+            style="font-size: 17px;color:#14892c"
+            title="Average Method Complexity - 1.222 , Coverage - 91.7% ">PassiveExpiringMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/PassiveExpiringMap.html" class="tag"
+            style="font-size: 18px;color:#fae1a0"
+            title="Average Method Complexity - 1.5 , Coverage - 77.8% ">PassiveExpiringMap.ConstantTimeToLiveExpirationPolicy</a>
+            
+    
+            <a href="org/apache/commons/collections4/trie/PatriciaTrie.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">PatriciaTrie</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/PeekingIterator.html" class="tag"
+            style="font-size: 23px;color:#14892c"
+            title="Average Method Complexity - 2.5 , Coverage - 88.9% ">PeekingIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/PermutationIterator.html" class="tag"
+            style="font-size: 32px;color:#89c495"
+            title="Average Method Complexity - 4.5 , Coverage - 100% ">PermutationIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/PredicateTransformer.html" class="tag"
+            style="font-size: 17px;color:#14892c"
+            title="Average Method Complexity - 1.25 , Coverage - 84.6% ">PredicateTransformer</a>
+            
+    
+            <a href="org/apache/commons/collections4/PredicateUtils.html" class="tag"
+            style="font-size: 16px;color:#fae1a0"
+            title="Average Method Complexity - 1 , Coverage - 82% ">PredicateUtils</a>
+            
+    
+            <a href="org/apache/commons/collections4/bag/PredicatedBag.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">PredicatedBag</a>
+            
+    
+            <a href="org/apache/commons/collections4/collection/PredicatedCollection.html" class="tag"
+            style="font-size: 17px;color:#89c495"
+            title="Average Method Complexity - 1.286 , Coverage - 100% ">PredicatedCollection</a>
+            
+    
+            <a href="org/apache/commons/collections4/collection/PredicatedCollection.html" class="tag"
+            style="font-size: 19px;color:#fae1a0"
+            title="Average Method Complexity - 1.583 , Coverage - 82.3% ">PredicatedCollection.Builder</a>
+            
+    
+            <a href="org/apache/commons/collections4/list/PredicatedList.html" class="tag"
+            style="font-size: 16px;color:#14892c"
+            title="Average Method Complexity - 1 , Coverage - 91.4% ">PredicatedList</a>
+            
+    
+            <a href="org/apache/commons/collections4/list/PredicatedList.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">PredicatedList.PredicatedListIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/PredicatedMap.html" class="tag"
+            style="font-size: 19px;color:#89c495"
+            title="Average Method Complexity - 1.667 , Coverage - 100% ">PredicatedMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/set/PredicatedNavigableSet.html" class="tag"
+            style="font-size: 16px;color:#fae1a0"
+            title="Average Method Complexity - 1 , Coverage - 80.6% ">PredicatedNavigableSet</a>
+            
+    
+            <a href="org/apache/commons/collections4/queue/PredicatedQueue.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">PredicatedQueue</a>
+            
+    
+            <a href="org/apache/commons/collections4/set/PredicatedSet.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">PredicatedSet</a>
+            
+    
+            <a href="org/apache/commons/collections4/bag/PredicatedSortedBag.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">PredicatedSortedBag</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/PredicatedSortedMap.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">PredicatedSortedMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/set/PredicatedSortedSet.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">PredicatedSortedSet</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/PrototypeFactory.html" class="tag"
+            style="font-size: 25px;color:#14892c"
+            title="Average Method Complexity - 3 , Coverage - 88.9% ">PrototypeFactory</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/PrototypeFactory.html" class="tag"
+            style="font-size: 22px;color:#e7a19b"
+            title="Average Method Complexity - 2.333 , Coverage - 52.9% ">PrototypeFactory.PrototypeCloneFactory</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/PrototypeFactory.html" class="tag"
+            style="font-size: 28px;color:#89c495"
+            title="Average Method Complexity - 3.5 , Coverage - 95.2% ">PrototypeFactory.PrototypeSerializationFactory</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/PushbackIterator.html" class="tag"
+            style="font-size: 19px;color:#fae1a0"
+            title="Average Method Complexity - 1.667 , Coverage - 76.9% ">PushbackIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/QueueUtils.html" class="tag"
+            style="font-size: 16px;color:#14892c"
+            title="Average Method Complexity - 1 , Coverage - 88.9% ">QueueUtils</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/ReferenceIdentityMap.html" class="tag"
+            style="font-size: 17px;color:#f6c342"
+            title="Average Method Complexity - 1.091 , Coverage - 70.4% ">ReferenceIdentityMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/ReferenceMap.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">ReferenceMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/comparators/ReverseComparator.html" class="tag"
+            style="font-size: 20px;color:#fae1a0"
+            title="Average Method Complexity - 1.8 , Coverage - 80% ">ReverseComparator</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/ReverseListIterator.html" class="tag"
+            style="font-size: 17px;color:#89c495"
+            title="Average Method Complexity - 1.273 , Coverage - 95.2% ">ReverseListIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/sequence/SequencesComparator.html" class="tag"
+            style="font-size: 48px;color:#89c495"
+            title="Average Method Complexity - 7.833 , Coverage - 98.2% ">SequencesComparator</a>
+            
+    
+            <a href="org/apache/commons/collections4/sequence/SequencesComparator.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">SequencesComparator.Snake</a>
+            
+    
+            <a href="org/apache/commons/collections4/list/SetUniqueList.html" class="tag"
+            style="font-size: 19px;color:#14892c"
+            title="Average Method Complexity - 1.65 , Coverage - 92.7% ">SetUniqueList</a>
+            
+    
+            <a href="org/apache/commons/collections4/list/SetUniqueList.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">SetUniqueList.SetListIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/list/SetUniqueList.html" class="tag"
+            style="font-size: 17px;color:#89c495"
+            title="Average Method Complexity - 1.167 , Coverage - 100% ">SetUniqueList.SetListListIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/SetUtils.html" class="tag"
+            style="font-size: 18px;color:#e7a19b"
+            title="Average Method Complexity - 1.368 , Coverage - 50.9% ">SetUtils</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/SingletonIterator.html" class="tag"
+            style="font-size: 20px;color:#89c495"
+            title="Average Method Complexity - 1.833 , Coverage - 100% ">SingletonIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/SingletonListIterator.html" class="tag"
+            style="font-size: 20px;color:#89c495"
+            title="Average Method Complexity - 1.909 , Coverage - 100% ">SingletonListIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/SingletonMap.html" class="tag"
+            style="font-size: 18px;color:#f6c342"
+            title="Average Method Complexity - 1.455 , Coverage - 66.1% ">SingletonMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/SingletonMap.html" class="tag"
+            style="font-size: 19px;color:#fae1a0"
+            title="Average Method Complexity - 1.545 , Coverage - 76% ">SingletonMap.SingletonMapIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/SingletonMap.html" class="tag"
+            style="font-size: 16px;color:#14892c"
+            title="Average Method Complexity - 1 , Coverage - 84.6% ">SingletonMap.SingletonValues</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/SkippingIterator.html" class="tag"
+            style="font-size: 21px;color:#89c495"
+            title="Average Method Complexity - 2 , Coverage - 100% ">SkippingIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/SplitMapUtils.html" class="tag"
+            style="font-size: 24px;color:#fae1a0"
+            title="Average Method Complexity - 2.667 , Coverage - 73.9% ">SplitMapUtils</a>
+            
+    
+            <a href="org/apache/commons/collections4/SplitMapUtils.html" class="tag"
+            style="font-size: 17px;color:#f6c342"
+            title="Average Method Complexity - 1.125 , Coverage - 71.4% ">SplitMapUtils.WrappedGet</a>
+            
+    
+            <a href="org/apache/commons/collections4/SplitMapUtils.html" class="tag"
+            style="font-size: 16px;color:#14892c"
+            title="Average Method Complexity - 1.067 , Coverage - 94.1% ">SplitMapUtils.WrappedPut</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/StaticBucketMap.html" class="tag"
+            style="font-size: 25px;color:#14892c"
+            title="Average Method Complexity - 2.842 , Coverage - 91.4% ">StaticBucketMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/StaticBucketMap.html" class="tag"
+            style="font-size: 25px;color:#89c495"
+            title="Average Method Complexity - 3 , Coverage - 100% ">StaticBucketMap.BaseIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/StaticBucketMap.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">StaticBucketMap.EntryIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/StaticBucketMap.html" class="tag"
+            style="font-size: 21px;color:#89c495"
+            title="Average Method Complexity - 2 , Coverage - 100% ">StaticBucketMap.EntrySet</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/StaticBucketMap.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">StaticBucketMap.KeyIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/StaticBucketMap.html" class="tag"
+            style="font-size: 20px;color:#89c495"
+            title="Average Method Complexity - 1.8 , Coverage - 100% ">StaticBucketMap.KeySet</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/StaticBucketMap.html" class="tag"
+            style="font-size: 22px;color:#14892c"
+            title="Average Method Complexity - 2.2 , Coverage - 93.1% ">StaticBucketMap.Node</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/StaticBucketMap.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">StaticBucketMap.ValueIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/StaticBucketMap.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">StaticBucketMap.Values</a>
+            
+    
+            <a href="org/apache/commons/collections4/trie/analyzer/StringKeyAnalyzer.html" class="tag"
+            style="font-size: 28px;color:#14892c"
+            title="Average Method Complexity - 3.667 , Coverage - 84.4% ">StringKeyAnalyzer</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/StringValueTransformer.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">StringValueTransformer</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/SwitchClosure.html" class="tag"
+            style="font-size: 22px;color:#14892c"
+            title="Average Method Complexity - 2.375 , Coverage - 87.5% ">SwitchClosure</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/SwitchTransformer.html" class="tag"
+            style="font-size: 23px;color:#14892c"
+            title="Average Method Complexity - 2.5 , Coverage - 88.1% ">SwitchTransformer</a>
+            
+    
+            <a href="org/apache/commons/collections4/bag/SynchronizedBag.html" class="tag"
+            style="font-size: 17px;color:#14892c"
+            title="Average Method Complexity - 1.1 , Coverage - 93.5% ">SynchronizedBag</a>
+            
+    
+            <a href="org/apache/commons/collections4/bag/SynchronizedBag.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">SynchronizedBag.SynchronizedBagSet</a>
+            
+    
+            <a href="org/apache/commons/collections4/collection/SynchronizedCollection.html" class="tag"
+            style="font-size: 17px;color:#89c495"
+            title="Average Method Complexity - 1.15 , Coverage - 97.1% ">SynchronizedCollection</a>
+            
+    
+            <a href="org/apache/commons/collections4/bag/SynchronizedSortedBag.html" class="tag"
+            style="font-size: 16px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 23.5% ">SynchronizedSortedBag</a>
+            
+    
+            <a href="org/apache/commons/collections4/keyvalue/TiedMapEntry.html" class="tag"
+            style="font-size: 21px;color:#14892c"
+            title="Average Method Complexity - 2 , Coverage - 94.9% ">TiedMapEntry</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/TransformIterator.html" class="tag"
+            style="font-size: 16px;color:#e28e87"
+            title="Average Method Complexity - 1 , Coverage - 48% ">TransformIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/bag/TransformedBag.html" class="tag"
+            style="font-size: 17px;color:#89c495"
+            title="Average Method Complexity - 1.3 , Coverage - 96.6% ">TransformedBag</a>
+            
+    
+            <a href="org/apache/commons/collections4/collection/TransformedCollection.html" class="tag"
+            style="font-size: 17px;color:#89c495"
+            title="Average Method Complexity - 1.286 , Coverage - 96.7% ">TransformedCollection</a>
+            
+    
+            <a href="org/apache/commons/collections4/list/TransformedList.html" class="tag"
+            style="font-size: 17px;color:#14892c"
+            title="Average Method Complexity - 1.188 , Coverage - 90.9% ">TransformedList</a>
+            
+    
+            <a href="org/apache/commons/collections4/list/TransformedList.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">TransformedList.TransformedListIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/TransformedMap.html" class="tag"
+            style="font-size: 18px;color:#89c495"
+            title="Average Method Complexity - 1.333 , Coverage - 98.1% ">TransformedMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/multimap/TransformedMultiValuedMap.html" class="tag"
+            style="font-size: 21px;color:#14892c"
+            title="Average Method Complexity - 2 , Coverage - 87.8% ">TransformedMultiValuedMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/set/TransformedNavigableSet.html" class="tag"
+            style="font-size: 17px;color:#e7a19b"
+            title="Average Method Complexity - 1.2 , Coverage - 61% ">TransformedNavigableSet</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/TransformedPredicate.html" class="tag"
+            style="font-size: 18px;color:#f6c342"
+            title="Average Method Complexity - 1.4 , Coverage - 70% ">TransformedPredicate</a>
+            
+    
+            <a href="org/apache/commons/collections4/queue/TransformedQueue.html" class="tag"
+            style="font-size: 17px;color:#89c495"
+            title="Average Method Complexity - 1.111 , Coverage - 96.2% ">TransformedQueue</a>
+            
+    
+            <a href="org/apache/commons/collections4/set/TransformedSet.html" class="tag"
+            style="font-size: 19px;color:#14892c"
+            title="Average Method Complexity - 1.6 , Coverage - 94.4% ">TransformedSet</a>
+            
+    
+            <a href="org/apache/commons/collections4/bag/TransformedSortedBag.html" class="tag"
+            style="font-size: 18px;color:#e28e87"
+            title="Average Method Complexity - 1.429 , Coverage - 45.5% ">TransformedSortedBag</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/TransformedSortedMap.html" class="tag"
+            style="font-size: 17px;color:#89c495"
+            title="Average Method Complexity - 1.1 , Coverage - 96.7% ">TransformedSortedMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/set/TransformedSortedSet.html" class="tag"
+            style="font-size: 17px;color:#e7a19b"
+            title="Average Method Complexity - 1.3 , Coverage - 61.3% ">TransformedSortedSet</a>
+            
+    
+            <a href="org/apache/commons/collections4/splitmap/TransformedSplitMap.html" class="tag"
+            style="font-size: 17px;color:#fae1a0"
+            title="Average Method Complexity - 1.273 , Coverage - 73.2% ">TransformedSplitMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/TransformerClosure.html" class="tag"
+            style="font-size: 17px;color:#14892c"
+            title="Average Method Complexity - 1.25 , Coverage - 84.6% ">TransformerClosure</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/TransformerPredicate.html" class="tag"
+            style="font-size: 18px;color:#14892c"
+            title="Average Method Complexity - 1.5 , Coverage - 88.9% ">TransformerPredicate</a>
+            
+    
+            <a href="org/apache/commons/collections4/TransformerUtils.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1.042 , Coverage - 98.3% ">TransformerUtils</a>
+            
+    
+            <a href="org/apache/commons/collections4/comparators/TransformingComparator.html" class="tag"
+            style="font-size: 23px;color:#14892c"
+            title="Average Method Complexity - 2.4 , Coverage - 89.2% ">TransformingComparator</a>
+            
+    
+            <a href="org/apache/commons/collections4/bag/TreeBag.html" class="tag"
+            style="font-size: 17px;color:#14892c"
+            title="Average Method Complexity - 1.3 , Coverage - 90.9% ">TreeBag</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/TreeBidiMap.html" class="tag"
+            style="font-size: 24px;color:#14892c"
+            title="Average Method Complexity - 2.785 , Coverage - 92.2% ">TreeBidiMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/TreeBidiMap.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">TreeBidiMap.DataElement</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/TreeBidiMap.html" class="tag"
+            style="font-size: 21px;color:#14892c"
+            title="Average Method Complexity - 2 , Coverage - 92.6% ">TreeBidiMap.EntryView</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/TreeBidiMap.html" class="tag"
+            style="font-size: 18px;color:#f6c342"
+            title="Average Method Complexity - 1.348 , Coverage - 70.4% ">TreeBidiMap.Inverse</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/TreeBidiMap.html" class="tag"
+            style="font-size: 21px;color:#14892c"
+            title="Average Method Complexity - 2 , Coverage - 92.6% ">TreeBidiMap.InverseEntryView</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/TreeBidiMap.html" class="tag"
+            style="font-size: 16px;color:#fae1a0"
+            title="Average Method Complexity - 1 , Coverage - 75% ">TreeBidiMap.InverseViewMapEntryIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/TreeBidiMap.html" class="tag"
+            style="font-size: 18px;color:#14892c"
+            title="Average Method Complexity - 1.333 , Coverage - 90% ">TreeBidiMap.InverseViewMapIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/TreeBidiMap.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">TreeBidiMap.KeyView</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/TreeBidiMap.html" class="tag"
+            style="font-size: 17px;color:#14892c"
+            title="Average Method Complexity - 1.238 , Coverage - 94.4% ">TreeBidiMap.Node</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/TreeBidiMap.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">TreeBidiMap.ValueView</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/TreeBidiMap.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">TreeBidiMap.View</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/TreeBidiMap.html" class="tag"
+            style="font-size: 22px;color:#f6c342"
+            title="Average Method Complexity - 2.333 , Coverage - 63.8% ">TreeBidiMap.ViewIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/TreeBidiMap.html" class="tag"
+            style="font-size: 16px;color:#f6c342"
+            title="Average Method Complexity - 1 , Coverage - 66.7% ">TreeBidiMap.ViewMapEntryIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/TreeBidiMap.html" class="tag"
+            style="font-size: 18px;color:#14892c"
+            title="Average Method Complexity - 1.333 , Coverage - 90% ">TreeBidiMap.ViewMapIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/list/TreeList.html" class="tag"
+            style="font-size: 18px;color:#89c495"
+            title="Average Method Complexity - 1.5 , Coverage - 96.2% ">TreeList</a>
+            
+    
+            <a href="org/apache/commons/collections4/list/TreeList.html" class="tag"
+            style="font-size: 26px;color:#89c495"
+            title="Average Method Complexity - 3.212 , Coverage - 96.7% ">TreeList.AVLNode</a>
+            
+    
+            <a href="org/apache/commons/collections4/list/TreeList.html" class="tag"
+            style="font-size: 20px;color:#89c495"
+            title="Average Method Complexity - 1.818 , Coverage - 97.5% ">TreeList.TreeListIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/TrieUtils.html" class="tag"
+            style="font-size: 16px;color:#f6c342"
+            title="Average Method Complexity - 1 , Coverage - 66.7% ">TrieUtils</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/TruePredicate.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">TruePredicate</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/UniqueFilterIterator.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">UniqueFilterIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/UniquePredicate.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">UniquePredicate</a>
+            
+    
+            <a href="org/apache/commons/collections4/bag/UnmodifiableBag.html" class="tag"
+            style="font-size: 16px;color:#14892c"
+            title="Average Method Complexity - 1.071 , Coverage - 94.4% ">UnmodifiableBag</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/UnmodifiableBidiMap.html" class="tag"
+            style="font-size: 17px;color:#89c495"
+            title="Average Method Complexity - 1.167 , Coverage - 100% ">UnmodifiableBidiMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/collection/UnmodifiableBoundedCollection.html" class="tag"
+            style="font-size: 19px;color:#fae1a0"
+            title="Average Method Complexity - 1.538 , Coverage - 74.1% ">UnmodifiableBoundedCollection</a>
+            
+    
+            <a href="org/apache/commons/collections4/collection/UnmodifiableCollection.html" class="tag"
+            style="font-size: 17px;color:#89c495"
+            title="Average Method Complexity - 1.111 , Coverage - 100% ">UnmodifiableCollection</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/UnmodifiableEntrySet.html" class="tag"
+            style="font-size: 19px;color:#14892c"
+            title="Average Method Complexity - 1.545 , Coverage - 94% ">UnmodifiableEntrySet</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/UnmodifiableEntrySet.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">UnmodifiableEntrySet.UnmodifiableEntry</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/UnmodifiableEntrySet.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">UnmodifiableEntrySet.UnmodifiableEntrySetIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/UnmodifiableIterator.html" class="tag"
+            style="font-size: 18px;color:#89c495"
+            title="Average Method Complexity - 1.4 , Coverage - 100% ">UnmodifiableIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/list/UnmodifiableList.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1.062 , Coverage - 100% ">UnmodifiableList</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/UnmodifiableListIterator.html" class="tag"
+            style="font-size: 17px;color:#89c495"
+            title="Average Method Complexity - 1.182 , Coverage - 100% ">UnmodifiableListIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/UnmodifiableMap.html" class="tag"
+            style="font-size: 17px;color:#fae1a0"
+            title="Average Method Complexity - 1.167 , Coverage - 80% ">UnmodifiableMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/keyvalue/UnmodifiableMapEntry.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">UnmodifiableMapEntry</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/UnmodifiableMapIterator.html" class="tag"
+            style="font-size: 17px;color:#89c495"
+            title="Average Method Complexity - 1.25 , Coverage - 100% ">UnmodifiableMapIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/multimap/UnmodifiableMultiValuedMap.html" class="tag"
+            style="font-size: 16px;color:#f6c342"
+            title="Average Method Complexity - 1.062 , Coverage - 66.7% ">UnmodifiableMultiValuedMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/set/UnmodifiableNavigableSet.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1.053 , Coverage - 100% ">UnmodifiableNavigableSet</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/UnmodifiableOrderedBidiMap.html" class="tag"
+            style="font-size: 17px;color:#89c495"
+            title="Average Method Complexity - 1.154 , Coverage - 100% ">UnmodifiableOrderedBidiMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/UnmodifiableOrderedMap.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1.083 , Coverage - 100% ">UnmodifiableOrderedMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/UnmodifiableOrderedMapIterator.html" class="tag"
+            style="font-size: 17px;color:#89c495"
+            title="Average Method Complexity - 1.2 , Coverage - 100% ">UnmodifiableOrderedMapIterator</a>
+            
+    
+            <a href="org/apache/commons/collections4/queue/UnmodifiableQueue.html" class="tag"
+            style="font-size: 16px;color:#14892c"
+            title="Average Method Complexity - 1.071 , Coverage - 88.6% ">UnmodifiableQueue</a>
+            
+    
+            <a href="org/apache/commons/collections4/set/UnmodifiableSet.html" class="tag"
+            style="font-size: 17px;color:#89c495"
+            title="Average Method Complexity - 1.111 , Coverage - 100% ">UnmodifiableSet</a>
+            
+    
+            <a href="org/apache/commons/collections4/bag/UnmodifiableSortedBag.html" class="tag"
+            style="font-size: 16px;color:#fae1a0"
+            title="Average Method Complexity - 1.071 , Coverage - 82.9% ">UnmodifiableSortedBag</a>
+            
+    
+            <a href="org/apache/commons/collections4/bidimap/UnmodifiableSortedBidiMap.html" class="tag"
+            style="font-size: 17px;color:#89c495"
+            title="Average Method Complexity - 1.133 , Coverage - 100% ">UnmodifiableSortedBidiMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/map/UnmodifiableSortedMap.html" class="tag"
+            style="font-size: 16px;color:#fae1a0"
+            title="Average Method Complexity - 1.059 , Coverage - 80.5% ">UnmodifiableSortedMap</a>
+            
+    
+            <a href="org/apache/commons/collections4/set/UnmodifiableSortedSet.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1.071 , Coverage - 100% ">UnmodifiableSortedSet</a>
+            
+    
+            <a href="org/apache/commons/collections4/trie/UnmodifiableTrie.html" class="tag"
+            style="font-size: 16px;color:#fae1a0"
+            title="Average Method Complexity - 1.074 , Coverage - 83.1% ">UnmodifiableTrie</a>
+            
+    
+            <a href="org/apache/commons/collections4/functors/WhileClosure.html" class="tag"
+            style="font-size: 19px;color:#fae1a0"
+            title="Average Method Complexity - 1.667 , Coverage - 80% ">WhileClosure</a>
+            
+    
+            <a href="org/apache/commons/collections4/iterators/ZippingIterator.html" class="tag"
+            style="font-size: 21px;color:#89c495"
+            title="Average Method Complexity - 2 , Coverage - 95.6% ">ZippingIterator</a>
+           </div>
+   
+   </div>
+    </div> <!-- tabs-pane active-pane -->
+</div> <!-- aui-tabs horizontal-tabs -->
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.2.1
+                on Tue Jul 26 2022 16:12:45 PDT using coverage data from Tue Jul 26 2022 16:10:43 PDT.
+            </li>
+        </ul>
+        <ul>
+            <li>Clover free edition. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

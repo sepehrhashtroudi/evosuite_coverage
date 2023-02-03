@@ -1,0 +1,57 @@
+Testsuite: org.apache.commons.lang3.AnnotationUtils_ESTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.459 sec
+------------- Standard Error -----------------
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[CLOVER] FATAL ERROR: Clover could not be initialised because it has insufficient security privileges. Please consult the Clover documentation on the security policy file changes required. (class java.lang.SecurityException:Security manager blocks ("java.io.FilePermission" "/home/sepehr/test_generation/evosuite_coverage/Lang1f/.clover/clover4_4_1.db.liverec" "delete")
+java.lang.Thread.getStackTrace(Thread.java:1564)
+org.evosuite.runtime.sandbox.MSecurityManager.checkPermission(MSecurityManager.java:434)
+java.lang.SecurityManager.checkDelete(SecurityManager.java:1007)
+java.io.File.deleteOnExit(File.java:1085)
+com.atlassian.clover.recorder.BaseCoverageRecorder.createLiveRecordingFile(BaseCoverageRecorder.java:215)
+com.atlassian.clover.recorder.BaseCoverageRecorder.startRun(BaseCoverageRecorder.java:168)
+com_atlassian_clover.Clover$InitialisedRuntime$1.run(Clover.java:556)
+com_atlassian_clover.Clover$InitialisedRuntime$1.run(Clover.java:521)
+java.security.AccessController.doPrivileged(Native Method)
+com_atlassian_clover.Clover$InitialisedRuntime.getRecorder(Clover.java:521)
+com_atlassian_clover.Clover.getRecorder(Clover.java:107)
+org.apache.commons.lang3.SystemUtils$__CLR4_4_17xn7xnl79jdqa2.<clinit>(SystemUtils.java:36)
+org.apache.commons.lang3.SystemUtils.getSystemProperty(SystemUtils.java:1319)
+org.apache.commons.lang3.SystemUtils.<clinit>(SystemUtils.java)
+java.lang.Class.forName0(Native Method)
+java.lang.Class.forName(Class.java:348)
+org.evosuite.runtime.classhandling.ClassStateSupport.loadClasses(ClassStateSupport.java:163)
+org.evosuite.runtime.classhandling.ClassStateSupport.initializeClasses(ClassStateSupport.java:64)
+org.apache.commons.lang3.AnnotationUtils_ESTest_scaffolding.initializeClasses(AnnotationUtils_ESTest_scaffolding.java:89)
+org.apache.commons.lang3.AnnotationUtils_ESTest_scaffolding.initEvoSuiteFramework(AnnotationUtils_ESTest_scaffolding.java:40)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:534)
+org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1196)
+org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1041)
+)
+------------- ---------------- ---------------
+
+Testcase: test06 took 0.013 sec
+Testcase: test07 took 0.005 sec
+Testcase: test08 took 0.004 sec
+Testcase: test09 took 0.025 sec
+Testcase: test10 took 0.009 sec
+Testcase: test00 took 0.005 sec
+Testcase: test11 took 0.004 sec
+Testcase: test01 took 0.003 sec
+Testcase: test12 took 0.004 sec
+Testcase: test02 took 0.004 sec
+Testcase: test03 took 0.003 sec
+Testcase: test04 took 0.003 sec
+Testcase: test05 took 0.004 sec
