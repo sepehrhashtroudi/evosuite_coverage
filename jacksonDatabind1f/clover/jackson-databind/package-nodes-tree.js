@@ -9,7 +9,7 @@ var Packages = {
     "text": "com.fasterxml.jackson.databind",
     "package": "com.fasterxml.jackson.databind",
     "url": "com/fasterxml/jackson/databind/pkg-summary.html",
-            "coverage": "5%",
+            "coverage": "5.1%",
         "icon": "aui-icon aui-icon-small aui-iconfont-devtools-folder-closed",
             "li_attr": {"data-is-link": "true"},
         "a_attr": {"href": "com/fasterxml/jackson/databind/pkg-summary.html"},

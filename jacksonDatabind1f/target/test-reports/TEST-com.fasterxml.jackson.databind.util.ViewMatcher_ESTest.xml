@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="sepehr-UX310UQK" name="com.fasterxml.jackson.databind.util.ViewMatcher_ESTest" skipped="0" tests="9" time="0.344" timestamp="2023-01-16T06:48:25">
+<testsuite errors="0" failures="0" hostname="sepehr-UX310UQK" name="com.fasterxml.jackson.databind.util.ViewMatcher_ESTest" skipped="0" tests="9" time="0.402" timestamp="2023-02-05T11:22:10">
   <properties>
     <property name="java.vendor" value="Private Build" />
     <property name="sun.java.launcher" value="SUN_STANDARD" />
@@ -50,7 +50,7 @@
     <property name="clover.dir" value="/home/sepehr/masters/test_generation/evosuite_coverage/jacksonDatabind1f/clover" />
     <property name="java.vm.info" value="mixed mode" />
     <property name="ant.file" value="/home/sepehr/masters/test_generation/evosuite_coverage/jacksonDatabind1f/build.xml" />
-    <property name="os.version" value="5.15.0-57-generic" />
+    <property name="os.version" value="5.15.0-58-generic" />
     <property name="maven.build.testOutputDir" value="target/test-classes" />
     <property name="project.reporting.outputEncoding" value="UTF-8" />
     <property name="replacer.version" value="1.5.2" />
@@ -81,8 +81,8 @@
     <property name="maven.settings.interactiveMode" value="true" />
     <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
     <property name="ant.version" value="Apache Ant(TM) version 1.10.7 compiled on October 24 2019" />
-    <property name="java.class.path" value="/home/sepehr/.ant/lib/clover.jar:/home/sepehr/masters/test_generation/evosuite_coverage/jacksonDatabind1f/evosuite-standalone-runtime-1.0.6.jar:/home/sepehr/masters/test_generation/evosuite_coverage/jacksonDatabind1f/hamcrest-core-1.3.jar:/home/sepehr/masters/test_generation/evosuite_coverage/jacksonDatabind1f/junit-4.12.jar:/home/sepehr/masters/test_generation/evosuite_coverage/jacksonDatabind1f/evosuite-tests:/home/sepehr/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.2.1/jackson-annotations-2.2.1.jar:/home/sepehr/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.2.1/jackson-core-2.2.1.jar:/home/sepehr/.m2/repository/junit/junit/4.10/junit-4.10.jar:/home/sepehr/.m2/repository/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar:/home/sepehr/.m2/repository/cglib/cglib/2.2.2/cglib-2.2.2.jar:/home/sepehr/.m2/repository/asm/asm/3.3.1/asm-3.3.1.jar:/home/sepehr/.m2/repository/org/codehaus/groovy/groovy/1.7.9/groovy-1.7.9.jar:/home/sepehr/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/home/sepehr/.m2/repository/asm/asm-commons/3.2/asm-commons-3.2.jar:/home/sepehr/.m2/repository/asm/asm-util/3.2/asm-util-3.2.jar:/home/sepehr/.m2/repository/asm/asm-analysis/3.2/asm-analysis-3.2.jar:/home/sepehr/.m2/repository/asm/asm-tree/3.2/asm-tree-3.2.jar:/home/sepehr/.m2/repository/org/hibernate/hibernate-cglib-repack/2.1_3/hibernate-cglib-repack-2.1_3.jar:/home/sepehr/masters/test_generation/evosuite_coverage/jacksonDatabind1f/target/classes:/home/sepehr/masters/test_generation/evosuite_coverage/jacksonDatabind1f/target/test-classes:/usr/share/java/ant-launcher-1.10.7.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-junit.jar:/usr/share/ant/lib/ant-junit4.jar" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.fasterxml.jackson.databind.util.ViewMatcher_ESTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/sepehr/masters/test_generation/evosuite_coverage/jacksonDatabind1f/target/test-reports/TEST-com.fasterxml.jackson.databind.util.ViewMatcher_ESTest.xml formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter crashfile=/home/sepehr/masters/test_generation/evosuite_coverage/jacksonDatabind1f/junitvmwatcher408039184166287824.properties propsfile=/home/sepehr/masters/test_generation/evosuite_coverage/jacksonDatabind1f/junit2671705366456974091.properties" />
+    <property name="java.class.path" value="/home/sepehr/.ant/lib/clover.jar:/home/sepehr/masters/test_generation/evosuite_coverage/jacksonDatabind1f/evosuite-standalone-runtime-1.0.6.jar:/home/sepehr/masters/test_generation/evosuite_coverage/jacksonDatabind1f/evosuite-tests:/home/sepehr/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.2.1/jackson-annotations-2.2.1.jar:/home/sepehr/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.2.1/jackson-core-2.2.1.jar:/home/sepehr/.m2/repository/junit/junit/4.10/junit-4.10.jar:/home/sepehr/.m2/repository/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar:/home/sepehr/.m2/repository/cglib/cglib/2.2.2/cglib-2.2.2.jar:/home/sepehr/.m2/repository/asm/asm/3.3.1/asm-3.3.1.jar:/home/sepehr/.m2/repository/org/codehaus/groovy/groovy/1.7.9/groovy-1.7.9.jar:/home/sepehr/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/home/sepehr/.m2/repository/asm/asm-commons/3.2/asm-commons-3.2.jar:/home/sepehr/.m2/repository/asm/asm-util/3.2/asm-util-3.2.jar:/home/sepehr/.m2/repository/asm/asm-analysis/3.2/asm-analysis-3.2.jar:/home/sepehr/.m2/repository/asm/asm-tree/3.2/asm-tree-3.2.jar:/home/sepehr/.m2/repository/org/hibernate/hibernate-cglib-repack/2.1_3/hibernate-cglib-repack-2.1_3.jar:/home/sepehr/masters/test_generation/evosuite_coverage/jacksonDatabind1f/target/classes:/home/sepehr/masters/test_generation/evosuite_coverage/jacksonDatabind1f/target/test-classes:/home/sepehr/masters/test_generation/evosuite_coverage/jacksonDatabind1f/junit-4.12.jar:/home/sepehr/masters/test_generation/evosuite_coverage/jacksonDatabind1f/hamcrest-core-1.3.jar:/usr/share/java/ant-launcher-1.10.7.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-junit.jar:/usr/share/ant/lib/ant-junit4.jar" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.fasterxml.jackson.databind.util.ViewMatcher_ESTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/sepehr/masters/test_generation/evosuite_coverage/jacksonDatabind1f/target/test-reports/TEST-com.fasterxml.jackson.databind.util.ViewMatcher_ESTest.xml formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter crashfile=/home/sepehr/masters/test_generation/evosuite_coverage/jacksonDatabind1f/junitvmwatcher2178017770526230627.properties propsfile=/home/sepehr/masters/test_generation/evosuite_coverage/jacksonDatabind1f/junit694980013690284820.properties" />
     <property name="project.name" value="jackson-databind" />
     <property name="project.build.directory" value="target" />
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
@@ -122,13 +122,13 @@
     <property name="osgi.dynamicImport" value="" />
     <property name="clover.flushpolicy" value="directed" />
   </properties>
-  <testcase classname="com.fasterxml.jackson.databind.util.ViewMatcher_ESTest" name="test0" time="0.031" />
+  <testcase classname="com.fasterxml.jackson.databind.util.ViewMatcher_ESTest" name="test0" time="0.035" />
   <testcase classname="com.fasterxml.jackson.databind.util.ViewMatcher_ESTest" name="test1" time="0.002" />
-  <testcase classname="com.fasterxml.jackson.databind.util.ViewMatcher_ESTest" name="test6" time="0.003" />
-  <testcase classname="com.fasterxml.jackson.databind.util.ViewMatcher_ESTest" name="test7" time="0.003" />
-  <testcase classname="com.fasterxml.jackson.databind.util.ViewMatcher_ESTest" name="test8" time="0.003" />
+  <testcase classname="com.fasterxml.jackson.databind.util.ViewMatcher_ESTest" name="test6" time="0.002" />
+  <testcase classname="com.fasterxml.jackson.databind.util.ViewMatcher_ESTest" name="test7" time="0.002" />
+  <testcase classname="com.fasterxml.jackson.databind.util.ViewMatcher_ESTest" name="test8" time="0.001" />
   <testcase classname="com.fasterxml.jackson.databind.util.ViewMatcher_ESTest" name="test2" time="0.003" />
-  <testcase classname="com.fasterxml.jackson.databind.util.ViewMatcher_ESTest" name="test3" time="0.002" />
+  <testcase classname="com.fasterxml.jackson.databind.util.ViewMatcher_ESTest" name="test3" time="0.003" />
   <testcase classname="com.fasterxml.jackson.databind.util.ViewMatcher_ESTest" name="test4" time="0.002" />
   <testcase classname="com.fasterxml.jackson.databind.util.ViewMatcher_ESTest" name="test5" time="0.003" />
   <system-out><![CDATA[]]></system-out>

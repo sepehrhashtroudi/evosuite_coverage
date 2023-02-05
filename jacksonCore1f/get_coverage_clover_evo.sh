@@ -11,7 +11,7 @@ javac evosuite-tests/com/fasterxml/jackson/core/**/**/*.java
 javac evosuite-tests/com/fasterxml/jackson/core/**/*.java
 javac evosuite-tests/com/fasterxml/jackson/core/*.java
 
-# rm -rf target/classes
+rm -rf target
 
 #javac evosuite-tests/org/apache/commons/lang3/*.java
 #javac evosuite-tests/org/apache/commons/lang3/**/*.java

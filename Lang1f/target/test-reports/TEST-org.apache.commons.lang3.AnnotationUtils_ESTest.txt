@@ -1,5 +1,5 @@
 Testsuite: org.apache.commons.lang3.AnnotationUtils_ESTest
-Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.246 sec
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.113 sec
 ------------- Standard Error -----------------
 SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
@@ -16,7 +16,7 @@ com_atlassian_clover.Clover$InitialisedRuntime$1.run(Clover.java:521)
 java.security.AccessController.doPrivileged(Native Method)
 com_atlassian_clover.Clover$InitialisedRuntime.getRecorder(Clover.java:521)
 com_atlassian_clover.Clover.getRecorder(Clover.java:107)
-org.apache.commons.lang3.SystemUtils$__CLR4_4_18se8seldpnk7k6.<clinit>(SystemUtils.java:36)
+org.apache.commons.lang3.SystemUtils$__CLR4_4_18se8seldr8vtrd.<clinit>(SystemUtils.java:36)
 org.apache.commons.lang3.SystemUtils.getSystemProperty(SystemUtils.java:1319)
 org.apache.commons.lang3.SystemUtils.<clinit>(SystemUtils.java)
 java.lang.Class.forName0(Native Method)
@@ -42,16 +42,16 @@ org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunne
 )
 ------------- ---------------- ---------------
 
-Testcase: test06 took 0.011 sec
+Testcase: test06 took 0.012 sec
 Testcase: test07 took 0.004 sec
 Testcase: test08 took 0.004 sec
-Testcase: test09 took 0.025 sec
+Testcase: test09 took 0.024 sec
 Testcase: test10 took 0.01 sec
-Testcase: test00 took 0.005 sec
+Testcase: test00 took 0.004 sec
 Testcase: test11 took 0.004 sec
-Testcase: test01 took 0.003 sec
+Testcase: test01 took 0.004 sec
 Testcase: test12 took 0.004 sec
-Testcase: test02 took 0.002 sec
-Testcase: test03 took 0.002 sec
-Testcase: test04 took 0.003 sec
-Testcase: test05 took 0.004 sec
+Testcase: test02 took 0.003 sec
+Testcase: test03 took 0.003 sec
+Testcase: test04 took 0.002 sec
+Testcase: test05 took 0.003 sec

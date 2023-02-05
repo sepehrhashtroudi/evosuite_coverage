@@ -72,6 +72,18 @@
       </fileset>
     </copy>
   </target>
+  <taskdef resource="cloverlib.xml" />
+  <clover-env/>
+
+  <target name="with.clover">
+    <clover-setup >
+      <files>
+        <exclude name="**/*_ESTest.java"/>
+        <exclude name="**/*_ESTest_scaffolding.java"/>
+      </files>
+    </clover-setup>
+  </target>
+
   <target name="test" description="o Run the test cases" if="test.failure" depends="internal-test">
     <fail message="There were test failures.">
     </fail>
@@ -79,13 +91,20 @@
   <target name="internal-test" depends="compile.tests">
     <mkdir dir="${testreportdir}">
     </mkdir>
-    <junit dir="./" failureproperty="test.failure" printSummary="yes" fork="true" haltonerror="true">
+    <junit dir="./"  printSummary="yes" fork="true" haltonerror="false" haltonfailure="false">
       <sysproperty key="basedir" value=".">
       </sysproperty>
       <formatter type="xml">
       </formatter>
       <formatter usefile="false" type="plain">
       </formatter>
+      <classpath>
+        <pathelement path="/home/sepehr/.ant/lib/clover.jar"/>
+        <pathelement path="./evosuite-standalone-runtime-1.0.6.jar"/>
+        <pathelement path="./hamcrest-core-1.3.jar"/>
+        <pathelement path="./junit-4.12.jar"/>
+        <pathelement path="${basedir}/evosuite-tests" />
+      </classpath>
       <classpath>
         <fileset dir="${libdir}">
           <include name="*.jar">
@@ -97,8 +116,12 @@
         </pathelement>
       </classpath>
       <batchtest todir="${testreportdir}">
-        <fileset dir="src/test">
-          <include name="**/*Test.java">
+<!--        <fileset dir="src/test">-->
+<!--          <include name="**/*Test.java">-->
+<!--          </include>-->
+<!--        </fileset>-->
+        <fileset dir="${basedir}/evosuite-tests">
+          <include name="**/*ESTest.java">
           </include>
         </fileset>
       </batchtest>

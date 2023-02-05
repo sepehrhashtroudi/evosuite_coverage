@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="sepehr-UX310UQK" name="com.fasterxml.jackson.core.JsonParseException_ESTest" skipped="0" tests="1" time="0.018" timestamp="2023-02-05T08:24:11">
+<testsuite errors="1" failures="0" hostname="sepehr-UX310UQK" name="com.fasterxml.jackson.core.JsonParseException_ESTest" skipped="0" tests="1" time="0.036" timestamp="2023-02-05T11:30:56">
   <properties>
     <property name="java.vendor" value="Private Build" />
     <property name="sun.java.launcher" value="SUN_STANDARD" />
@@ -79,13 +79,13 @@
     <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib" />
     <property name="test.target" value="test" />
     <property name="maven.settings.offline" value="false" />
-    <property name="project.build.resourceEncoding" value="UTF-8" />
     <property name="java.vm.vendor" value="Private Build" />
+    <property name="project.build.resourceEncoding" value="UTF-8" />
     <property name="maven.settings.interactiveMode" value="true" />
     <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
-    <property name="java.class.path" value="/usr/share/ant/lib/ant-launcher.jar:/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/./target/classes/:/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/./evosuite-tests/:/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/./evosuite-standalone-runtime-1.0.6.jar:/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/./junit-4.12.jar:/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/hamcrest-core-1.3.jar:/home/sepehr/.ant/lib/evosuite-standalone-runtime-1.0.6.jar:/home/sepehr/.ant/lib/clover.jar:/home/sepehr/.ant/lib/evosuite-1.0.6.jar:/usr/share/ant/lib/ant-apache-bsf.jar:/usr/share/ant/lib/ant-testutil.jar:/usr/share/ant/lib/ant-swing.jar:/usr/share/ant/lib/ant-apache-resolver.jar:/usr/share/ant/lib/ant-jmf.jar:/usr/share/ant/lib/ant-jdepend.jar:/usr/share/ant/lib/ant-junit.jar:/usr/share/ant/lib/ant-jsch.jar:/usr/share/ant/lib/ant-launcher.jar:/usr/share/ant/lib/ant-apache-bcel.jar:/usr/share/ant/lib/ant-apache-xalan2.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-commons-net.jar:/usr/share/ant/lib/ant-apache-regexp.jar:/usr/share/ant/lib/ant-apache-oro.jar:/usr/share/ant/lib/ant-javamail.jar:/usr/share/ant/lib/ant-junit4.jar:/usr/share/ant/lib/ant-commons-logging.jar:/usr/share/ant/lib/ant-antlr.jar:/usr/share/ant/lib/ant-xz.jar:/usr/share/ant/lib/junit-4.12.jar:/usr/share/ant/lib/ant-apache-log4j.jar:/usr/lib/jvm/java-8-openjdk-amd64/lib/tools.jar" />
-    <property name="sun.java.command" value="org.apache.tools.ant.launch.Launcher -cp ./target/classes:./evosuite-tests:./evosuite-standalone-runtime-1.0.6.jar:./junit-4.12.jar:hamcrest-core-1.3.jar with.clover test clover.report" />
     <property name="ant.version" value="Apache Ant(TM) version 1.10.7 compiled on October 24 2019" />
+    <property name="java.class.path" value="/home/sepehr/.m2/repository/junit/junit/4.8.2/junit-4.8.2.jar:/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/evosuite-tests:/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/target/classes:/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/target/test-classes:/home/sepehr/.ant/lib/clover.jar:/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/evosuite-standalone-runtime-1.0.6.jar:/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/hamcrest-core-1.3.jar:/home/sepehr/.ant/lib/evosuite-1.0.6.jar:/usr/share/java/ant-launcher-1.10.7.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-junit.jar:/usr/share/ant/lib/ant-junit4.jar" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.fasterxml.jackson.core.JsonParseException_ESTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/target/test-reports/TEST-com.fasterxml.jackson.core.JsonParseException_ESTest.xml formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter crashfile=/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/junitvmwatcher5673919138054313087.properties propsfile=/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/junit6558597630464479200.properties" />
     <property name="project.name" value="jackson-core" />
     <property name="project.build.directory" value="target" />
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
@@ -99,18 +99,18 @@
     <property name="junit.present" value="true" />
     <property name="project.title" value="jackson-core" />
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
-    <property name="os.arch" value="amd64" />
-    <property name="maven.build.testResourceDir.0" value="src/test/resources" />
-    <property name="clover.jarpath" value="/home/sepehr/.ant/lib/clover.jar" />
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
+    <property name="os.arch" value="amd64" />
+    <property name="clover.jarpath" value="/home/sepehr/.ant/lib/clover.jar" />
+    <property name="maven.build.testResourceDir.0" value="src/test/resources" />
     <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext" />
     <property name="user.dir" value="/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f" />
     <property name="ant.file.jackson-core-from-maven" value="/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/maven-build.xml" />
     <property name="osgi.private" value="" />
     <property name="line.separator" value="&#xa;" />
-    <property name="osgi.versionpolicy" value="${range;[===,=+);${@}}" />
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM" />
-    <property name="basedir" value="/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f" />
+    <property name="osgi.versionpolicy" value="${range;[===,=+);${@}}" />
+    <property name="basedir" value="." />
     <property name="javadoc.maxmemory" value="1g" />
     <property name="ant.java.version" value="1.8" />
     <property name="osgi.import" value="*" />
@@ -124,36 +124,29 @@
     <property name="osgi.dynamicImport" value="" />
     <property name="clover.flushpolicy" value="directed" />
   </properties>
-  <testcase classname="com.fasterxml.jackson.core.JsonParseException_ESTest" name="test0" time="0.008" />
-  <system-out><![CDATA[01:24:11.811 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Seeing class for first time: com.fasterxml.jackson.core.JsonParseException_ESTest
-01:24:11.811 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Instrumenting class 'com.fasterxml.jackson.core.JsonParseException_ESTest'.
-01:24:11.812 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Seeing class for first time: com.fasterxml.jackson.core.JsonParseException_ESTest_scaffolding
-01:24:11.812 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Instrumenting class 'com.fasterxml.jackson.core.JsonParseException_ESTest_scaffolding'.
-01:24:11.814 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Keeping class: com.fasterxml.jackson.core.JsonParseException_ESTest_scaffolding
-01:24:11.815 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Keeping class: com.fasterxml.jackson.core.JsonParseException_ESTest
-01:24:11.815 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Seeing class for first time: com.fasterxml.jackson.core.JsonParseException
-01:24:11.815 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Instrumenting class 'com.fasterxml.jackson.core.JsonParseException'.
-01:24:11.815 [main] INFO  o.e.r.i.MethodCallReplacementClassAdapter - Adding mock interface to class com/fasterxml/jackson/core/JsonParseException
-01:24:11.819 [main] INFO  o.e.r.i.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/fasterxml/jackson/core/JsonParseException
-01:24:11.819 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Seeing class for first time: com.fasterxml.jackson.core.JsonProcessingException
-01:24:11.819 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Instrumenting class 'com.fasterxml.jackson.core.JsonProcessingException'.
-01:24:11.819 [main] INFO  o.e.r.i.MethodCallReplacementClassAdapter - Adding mock interface to class com/fasterxml/jackson/core/JsonProcessingException
-01:24:11.820 [main] INFO  o.e.r.i.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/fasterxml/jackson/core/JsonProcessingException
-01:24:11.820 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Keeping class: com.fasterxml.jackson.core.JsonProcessingException
-01:24:11.820 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Keeping class: com.fasterxml.jackson.core.JsonParseException
-01:24:11.829 [main] DEBUG o.e.runtime.sandbox.MSecurityManager - Adding privileged thread: "Reference Handler"
-01:24:11.830 [main] DEBUG o.e.runtime.sandbox.MSecurityManager - Adding privileged thread: "Finalizer"
-01:24:11.830 [main] DEBUG o.e.runtime.sandbox.MSecurityManager - Adding privileged thread: "Signal Dispatcher"
-01:24:11.830 [main] DEBUG o.e.runtime.sandbox.MSecurityManager - Adding privileged thread: "Keep-Alive-Timer"
-01:24:11.830 [main] DEBUG o.e.runtime.sandbox.MSecurityManager - Adding privileged thread: "Java2D Disposer"
-01:24:11.830 [main] DEBUG o.e.runtime.sandbox.MSecurityManager - Adding privileged thread: "AWT-XAWT"
-01:24:11.830 [main] DEBUG o.e.runtime.sandbox.MSecurityManager - Adding privileged thread: "process reaper"
-01:24:11.830 [main] DEBUG o.e.runtime.sandbox.MSecurityManager - Adding privileged thread: "main"
-01:24:11.830 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Seeing class for first time: com.fasterxml.jackson.core.JsonLocation
-01:24:11.830 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Instrumenting class 'com.fasterxml.jackson.core.JsonLocation'.
-01:24:11.830 [main] INFO  o.e.r.i.MethodCallReplacementClassAdapter - Adding mock interface to class com/fasterxml/jackson/core/JsonLocation
-01:24:11.831 [main] INFO  o.e.r.i.CreateClassResetClassAdapter - Found static initializer in class com/fasterxml/jackson/core/JsonLocation
-01:24:11.831 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Keeping class: com.fasterxml.jackson.core.JsonLocation
+  <testcase classname="com.fasterxml.jackson.core.JsonParseException_ESTest" name="initializationError" time="0.007">
+    <error message="Field nfr must implement MethodRule" type="java.lang.Exception">java.lang.Exception: Field nfr must implement MethodRule
+	at org.evosuite.runtime.EvoRunner.&lt;init&gt;(EvoRunner.java:77)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+</error>
+  </testcase>
+  <system-out><![CDATA[04:30:56.067 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Seeing class for first time: com.fasterxml.jackson.core.JsonParseException_ESTest
+04:30:56.069 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Instrumenting class 'com.fasterxml.jackson.core.JsonParseException_ESTest'.
+04:30:56.098 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Seeing class for first time: com.fasterxml.jackson.core.JsonParseException_ESTest_scaffolding
+04:30:56.098 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Instrumenting class 'com.fasterxml.jackson.core.JsonParseException_ESTest_scaffolding'.
+04:30:56.102 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Keeping class: com.fasterxml.jackson.core.JsonParseException_ESTest_scaffolding
+04:30:56.102 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Keeping class: com.fasterxml.jackson.core.JsonParseException_ESTest
+04:30:56.102 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Seeing class for first time: com.fasterxml.jackson.core.JsonParseException
+04:30:56.102 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Instrumenting class 'com.fasterxml.jackson.core.JsonParseException'.
+04:30:56.108 [main] INFO  o.e.r.i.MethodCallReplacementClassAdapter - Adding mock interface to class com/fasterxml/jackson/core/JsonParseException
+04:30:56.214 [main] INFO  o.e.r.i.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/fasterxml/jackson/core/JsonParseException
+04:30:56.214 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Seeing class for first time: com.fasterxml.jackson.core.JsonProcessingException
+04:30:56.214 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Instrumenting class 'com.fasterxml.jackson.core.JsonProcessingException'.
+04:30:56.215 [main] INFO  o.e.r.i.MethodCallReplacementClassAdapter - Adding mock interface to class com/fasterxml/jackson/core/JsonProcessingException
+04:30:56.218 [main] INFO  o.e.r.i.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/fasterxml/jackson/core/JsonProcessingException
+04:30:56.218 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Keeping class: com.fasterxml.jackson.core.JsonProcessingException
+04:30:56.218 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Keeping class: com.fasterxml.jackson.core.JsonParseException
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

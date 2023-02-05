@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="sepehr-UX310UQK" name="com.fasterxml.jackson.core.Base64Variant_ESTest" skipped="0" tests="72" time="1.379" timestamp="2023-02-05T08:24:05">
+<testsuite errors="1" failures="0" hostname="sepehr-UX310UQK" name="com.fasterxml.jackson.core.Base64Variant_ESTest" skipped="0" tests="1" time="0.046" timestamp="2023-02-05T11:30:52">
   <properties>
     <property name="java.vendor" value="Private Build" />
     <property name="sun.java.launcher" value="SUN_STANDARD" />
@@ -79,13 +79,13 @@
     <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib" />
     <property name="test.target" value="test" />
     <property name="maven.settings.offline" value="false" />
-    <property name="project.build.resourceEncoding" value="UTF-8" />
     <property name="java.vm.vendor" value="Private Build" />
+    <property name="project.build.resourceEncoding" value="UTF-8" />
     <property name="maven.settings.interactiveMode" value="true" />
     <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
-    <property name="java.class.path" value="/usr/share/ant/lib/ant-launcher.jar:/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/./target/classes/:/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/./evosuite-tests/:/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/./evosuite-standalone-runtime-1.0.6.jar:/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/./junit-4.12.jar:/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/hamcrest-core-1.3.jar:/home/sepehr/.ant/lib/evosuite-standalone-runtime-1.0.6.jar:/home/sepehr/.ant/lib/clover.jar:/home/sepehr/.ant/lib/evosuite-1.0.6.jar:/usr/share/ant/lib/ant-apache-bsf.jar:/usr/share/ant/lib/ant-testutil.jar:/usr/share/ant/lib/ant-swing.jar:/usr/share/ant/lib/ant-apache-resolver.jar:/usr/share/ant/lib/ant-jmf.jar:/usr/share/ant/lib/ant-jdepend.jar:/usr/share/ant/lib/ant-junit.jar:/usr/share/ant/lib/ant-jsch.jar:/usr/share/ant/lib/ant-launcher.jar:/usr/share/ant/lib/ant-apache-bcel.jar:/usr/share/ant/lib/ant-apache-xalan2.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-commons-net.jar:/usr/share/ant/lib/ant-apache-regexp.jar:/usr/share/ant/lib/ant-apache-oro.jar:/usr/share/ant/lib/ant-javamail.jar:/usr/share/ant/lib/ant-junit4.jar:/usr/share/ant/lib/ant-commons-logging.jar:/usr/share/ant/lib/ant-antlr.jar:/usr/share/ant/lib/ant-xz.jar:/usr/share/ant/lib/junit-4.12.jar:/usr/share/ant/lib/ant-apache-log4j.jar:/usr/lib/jvm/java-8-openjdk-amd64/lib/tools.jar" />
-    <property name="sun.java.command" value="org.apache.tools.ant.launch.Launcher -cp ./target/classes:./evosuite-tests:./evosuite-standalone-runtime-1.0.6.jar:./junit-4.12.jar:hamcrest-core-1.3.jar with.clover test clover.report" />
     <property name="ant.version" value="Apache Ant(TM) version 1.10.7 compiled on October 24 2019" />
+    <property name="java.class.path" value="/home/sepehr/.m2/repository/junit/junit/4.8.2/junit-4.8.2.jar:/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/evosuite-tests:/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/target/classes:/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/target/test-classes:/home/sepehr/.ant/lib/clover.jar:/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/evosuite-standalone-runtime-1.0.6.jar:/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/hamcrest-core-1.3.jar:/home/sepehr/.ant/lib/evosuite-1.0.6.jar:/usr/share/java/ant-launcher-1.10.7.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-junit.jar:/usr/share/ant/lib/ant-junit4.jar" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.fasterxml.jackson.core.Base64Variant_ESTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/target/test-reports/TEST-com.fasterxml.jackson.core.Base64Variant_ESTest.xml formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter crashfile=/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/junitvmwatcher4174134832452112991.properties propsfile=/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/junit7711440317454162451.properties" />
     <property name="project.name" value="jackson-core" />
     <property name="project.build.directory" value="target" />
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
@@ -99,18 +99,18 @@
     <property name="junit.present" value="true" />
     <property name="project.title" value="jackson-core" />
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
-    <property name="os.arch" value="amd64" />
-    <property name="maven.build.testResourceDir.0" value="src/test/resources" />
-    <property name="clover.jarpath" value="/home/sepehr/.ant/lib/clover.jar" />
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
+    <property name="os.arch" value="amd64" />
+    <property name="clover.jarpath" value="/home/sepehr/.ant/lib/clover.jar" />
+    <property name="maven.build.testResourceDir.0" value="src/test/resources" />
     <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext" />
     <property name="user.dir" value="/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f" />
     <property name="ant.file.jackson-core-from-maven" value="/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/maven-build.xml" />
     <property name="osgi.private" value="" />
     <property name="line.separator" value="&#xa;" />
-    <property name="osgi.versionpolicy" value="${range;[===,=+);${@}}" />
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM" />
-    <property name="basedir" value="/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f" />
+    <property name="osgi.versionpolicy" value="${range;[===,=+);${@}}" />
+    <property name="basedir" value="." />
     <property name="javadoc.maxmemory" value="1g" />
     <property name="ant.java.version" value="1.8" />
     <property name="osgi.import" value="*" />
@@ -124,151 +124,19 @@
     <property name="osgi.dynamicImport" value="" />
     <property name="clover.flushpolicy" value="directed" />
   </properties>
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test63" time="0.041" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test62" time="0.03" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test61" time="0.008" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test60" time="0.017" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test23" time="0.004" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test67" time="0.007" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test22" time="0.006" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test66" time="0.004" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test21" time="0.003" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test65" time="0.003" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test20" time="0.005" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test64" time="0.013" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test27" time="0.007" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test26" time="0.017" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test25" time="0.003" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test69" time="0.021" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test24" time="0.006" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test68" time="0.004" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test29" time="0.008" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test28" time="0.009" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test70" time="0.005" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test30" time="0.015" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test71" time="0.005" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test34" time="0.003" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test33" time="0.002" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test32" time="0.006" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test31" time="0.006" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test38" time="0.005" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test37" time="0.005" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test36" time="0.002" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test35" time="0.003" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test39" time="0.002" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test41" time="0.008" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test40" time="0.012" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test01" time="0.004" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test45" time="0.003" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test00" time="0.003" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test44" time="0.005" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test43" time="0.003" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test42" time="0.01" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test05" time="0.006" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test49" time="0.002" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test04" time="0.008" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test48" time="0.002" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test03" time="0.005" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test47" time="0.008" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test02" time="0.002" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test46" time="0.002" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test09" time="0.002" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test08" time="0.002" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test07" time="0.003" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test06" time="0.008" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test52" time="0.004" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test51" time="0.002" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test50" time="0.005" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test12" time="0.006" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test56" time="0.003" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test11" time="0.005" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test55" time="0.037" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test10" time="0.01" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test54" time="0.008" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test53" time="0.008" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test16" time="0.004" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test15" time="0.007" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test59" time="0.005" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test14" time="0.005" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test58" time="0.003" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test13" time="0.007" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test57" time="0.004" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test19" time="0.007" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test18" time="0.007" />
-  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="test17" time="0.004" />
-  <system-out><![CDATA[01:24:04.689 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Seeing class for first time: com.fasterxml.jackson.core.Base64Variant_ESTest
-01:24:04.693 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Instrumenting class 'com.fasterxml.jackson.core.Base64Variant_ESTest'.
-01:24:05.005 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Seeing class for first time: com.fasterxml.jackson.core.Base64Variant_ESTest_scaffolding
-01:24:05.012 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Instrumenting class 'com.fasterxml.jackson.core.Base64Variant_ESTest_scaffolding'.
-01:24:05.021 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Keeping class: com.fasterxml.jackson.core.Base64Variant_ESTest_scaffolding
-01:24:05.026 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Keeping class: com.fasterxml.jackson.core.Base64Variant_ESTest
-01:24:05.349 [main] DEBUG o.e.runtime.sandbox.MSecurityManager - Adding privileged thread: "Reference Handler"
-01:24:05.349 [main] DEBUG o.e.runtime.sandbox.MSecurityManager - Adding privileged thread: "Finalizer"
-01:24:05.349 [main] DEBUG o.e.runtime.sandbox.MSecurityManager - Adding privileged thread: "Signal Dispatcher"
-01:24:05.349 [main] DEBUG o.e.runtime.sandbox.MSecurityManager - Adding privileged thread: "Keep-Alive-Timer"
-01:24:05.349 [main] DEBUG o.e.runtime.sandbox.MSecurityManager - Adding privileged thread: "Java2D Disposer"
-01:24:05.349 [main] DEBUG o.e.runtime.sandbox.MSecurityManager - Adding privileged thread: "AWT-XAWT"
-01:24:05.349 [main] DEBUG o.e.runtime.sandbox.MSecurityManager - Adding privileged thread: "process reaper"
-01:24:05.350 [main] DEBUG o.e.runtime.sandbox.MSecurityManager - Adding privileged thread: "main"
-01:24:05.433 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Seeing class for first time: com.fasterxml.jackson.core.Base64Variant
-01:24:05.433 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Instrumenting class 'com.fasterxml.jackson.core.Base64Variant'.
-01:24:05.467 [main] INFO  o.e.r.i.MethodCallReplacementClassAdapter - Adding mock interface to class com/fasterxml/jackson/core/Base64Variant
-01:24:05.865 [main] INFO  o.e.r.i.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/fasterxml/jackson/core/Base64Variant
-01:24:05.865 [main] INFO  o.e.r.i.CreateClassResetClassAdapter - Adding bytecode for initializing field INT_SPACE
-01:24:05.866 [main] INFO  o.e.r.i.CreateClassResetClassAdapter - Adding bytecode for initializing field PADDING_CHAR_NONE
-01:24:05.866 [main] INFO  o.e.r.i.CreateClassResetClassAdapter - Adding bytecode for initializing field BASE64_VALUE_INVALID
-01:24:05.866 [main] INFO  o.e.r.i.CreateClassResetClassAdapter - Adding bytecode for initializing field BASE64_VALUE_PADDING
-01:24:05.874 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Keeping class: com.fasterxml.jackson.core.Base64Variant
-01:24:05.875 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Seeing class for first time: com.fasterxml.jackson.core.Base64Variants
-01:24:05.875 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Instrumenting class 'com.fasterxml.jackson.core.Base64Variants'.
-01:24:05.876 [main] INFO  o.e.r.i.MethodCallReplacementClassAdapter - Adding mock interface to class com/fasterxml/jackson/core/Base64Variants
-01:24:05.879 [main] INFO  o.e.r.i.CreateClassResetClassAdapter - Found static initializer in class com/fasterxml/jackson/core/Base64Variants
-01:24:05.880 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Keeping class: com.fasterxml.jackson.core.Base64Variants
-01:24:05.885 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Seeing class for first time: com.fasterxml.jackson.core.util.ByteArrayBuilder
-01:24:05.885 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Instrumenting class 'com.fasterxml.jackson.core.util.ByteArrayBuilder'.
-01:24:05.889 [main] INFO  o.e.r.i.MethodCallReplacementClassAdapter - Adding mock interface to class com/fasterxml/jackson/core/util/ByteArrayBuilder
-01:24:05.897 [main] INFO  o.e.r.i.CreateClassResetClassAdapter - Found static initializer in class com/fasterxml/jackson/core/util/ByteArrayBuilder
-01:24:05.897 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Defined package (3): package com.fasterxml.jackson.core.util, 596657833
-01:24:05.898 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Keeping class: com.fasterxml.jackson.core.util.ByteArrayBuilder
-01:24:05.899 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Seeing class for first time: com.fasterxml.jackson.core.util.BufferRecycler$CharBufferType
-01:24:05.899 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Instrumenting class 'com.fasterxml.jackson.core.util.BufferRecycler$CharBufferType'.
-01:24:05.899 [main] INFO  o.e.r.i.MethodCallReplacementClassAdapter - Adding mock interface to class com/fasterxml/jackson/core/util/BufferRecycler$CharBufferType
-01:24:05.900 [main] INFO  o.e.r.i.CreateClassResetClassAdapter - Found static initializer in class com/fasterxml/jackson/core/util/BufferRecycler$CharBufferType
-01:24:05.901 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Keeping class: com.fasterxml.jackson.core.util.BufferRecycler$CharBufferType
-01:24:05.905 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Seeing class for first time: com.fasterxml.jackson.core.util.BufferRecycler$ByteBufferType
-01:24:05.905 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Instrumenting class 'com.fasterxml.jackson.core.util.BufferRecycler$ByteBufferType'.
-01:24:05.906 [main] INFO  o.e.r.i.MethodCallReplacementClassAdapter - Adding mock interface to class com/fasterxml/jackson/core/util/BufferRecycler$ByteBufferType
-01:24:05.907 [main] INFO  o.e.r.i.CreateClassResetClassAdapter - Found static initializer in class com/fasterxml/jackson/core/util/BufferRecycler$ByteBufferType
-01:24:05.907 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Keeping class: com.fasterxml.jackson.core.util.BufferRecycler$ByteBufferType
-01:24:05.907 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Seeing class for first time: com.fasterxml.jackson.core.util.BufferRecycler
-01:24:05.908 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Instrumenting class 'com.fasterxml.jackson.core.util.BufferRecycler'.
-01:24:05.920 [main] INFO  o.e.r.i.MethodCallReplacementClassAdapter - Adding mock interface to class com/fasterxml/jackson/core/util/BufferRecycler
-01:24:05.922 [main] INFO  o.e.r.i.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/fasterxml/jackson/core/util/BufferRecycler
-01:24:05.922 [main] INFO  o.e.r.i.CreateClassResetClassAdapter - Adding bytecode for initializing field DEFAULT_WRITE_CONCAT_BUFFER_LEN
-01:24:05.922 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Keeping class: com.fasterxml.jackson.core.util.BufferRecycler
-01:24:06.022 [main] INFO  o.e.runtime.thread.ThreadStopper - Found new thread
-01:24:06.042 [main] INFO  o.e.runtime.thread.ThreadStopper - Found new thread
-01:24:06.046 [main] INFO  o.e.runtime.thread.ThreadStopper - Found new thread
-01:24:06.054 [main] INFO  o.e.runtime.thread.ThreadStopper - Found new thread
-01:24:06.061 [main] INFO  o.e.runtime.thread.ThreadStopper - Found new thread
-01:24:06.064 [main] INFO  o.e.runtime.thread.ThreadStopper - Found new thread
-01:24:06.067 [main] INFO  o.e.runtime.thread.ThreadStopper - Found new thread
-01:24:06.070 [main] INFO  o.e.runtime.thread.ThreadStopper - Found new thread
-01:24:06.075 [main] INFO  o.e.runtime.thread.ThreadStopper - Found new thread
-01:24:06.115 [main] INFO  o.e.runtime.thread.ThreadStopper - Found new thread
-01:24:06.143 [main] INFO  o.e.runtime.thread.ThreadStopper - Found new thread
-01:24:06.146 [main] INFO  o.e.runtime.thread.ThreadStopper - Found new thread
-01:24:06.153 [main] INFO  o.e.runtime.thread.ThreadStopper - Found new thread
-01:24:06.169 [main] INFO  o.e.runtime.thread.ThreadStopper - Found new thread
-01:24:06.183 [main] INFO  o.e.runtime.thread.ThreadStopper - Found new thread
-01:24:06.188 [main] INFO  o.e.runtime.thread.ThreadStopper - Found new thread
-01:24:06.204 [main] INFO  o.e.runtime.thread.ThreadStopper - Found new thread
-01:24:06.216 [main] INFO  o.e.runtime.thread.ThreadStopper - Found new thread
-01:24:06.229 [main] INFO  o.e.runtime.thread.ThreadStopper - Found new thread
-01:24:06.241 [main] INFO  o.e.runtime.thread.ThreadStopper - Found new thread
-01:24:06.249 [main] INFO  o.e.runtime.thread.ThreadStopper - Found new thread
-01:24:06.255 [main] INFO  o.e.runtime.thread.ThreadStopper - Found new thread
-01:24:06.260 [main] INFO  o.e.runtime.thread.ThreadStopper - Found new thread
+  <testcase classname="com.fasterxml.jackson.core.Base64Variant_ESTest" name="initializationError" time="0.009">
+    <error message="Field nfr must implement MethodRule" type="java.lang.Exception">java.lang.Exception: Field nfr must implement MethodRule
+	at org.evosuite.runtime.EvoRunner.&lt;init&gt;(EvoRunner.java:77)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+</error>
+  </testcase>
+  <system-out><![CDATA[04:30:52.605 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Seeing class for first time: com.fasterxml.jackson.core.Base64Variant_ESTest
+04:30:52.608 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Instrumenting class 'com.fasterxml.jackson.core.Base64Variant_ESTest'.
+04:30:52.659 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Seeing class for first time: com.fasterxml.jackson.core.Base64Variant_ESTest_scaffolding
+04:30:52.659 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Instrumenting class 'com.fasterxml.jackson.core.Base64Variant_ESTest_scaffolding'.
+04:30:52.665 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Keeping class: com.fasterxml.jackson.core.Base64Variant_ESTest_scaffolding
+04:30:52.665 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Keeping class: com.fasterxml.jackson.core.Base64Variant_ESTest
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

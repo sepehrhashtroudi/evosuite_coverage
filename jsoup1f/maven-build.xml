@@ -49,6 +49,7 @@
   <path id="build.test.classpath">
     <pathelement location="${maven.repo.local}/junit/junit/4.5/junit-4.5.jar"/>
     <pathelement location="${maven.repo.local}/commons-lang/commons-lang/2.4/commons-lang-2.4.jar"/>
+    <pathelement location="/evosuite-standalone-runtime-1.0.6.jar"/>
   </path>
 
   <!-- ====================================================================== -->
@@ -79,6 +80,7 @@
         <pathelement location="${maven.build.srcDir.0}"/>
       </src>
       <classpath refid="build.classpath"/>
+
     </javac>
   </target>
 
@@ -117,16 +119,29 @@
   <!-- ====================================================================== -->
   <!-- Run all tests                                                          -->
   <!-- ====================================================================== -->
+  <taskdef resource="cloverlib.xml" />
+  <clover-env/>
+  <target name="with.clover">
+    <clover-setup >
+      <files>
+        <exclude name="**/*_ESTest.java"/>
+        <exclude name="**/*_ESTest_scaffolding.java"/>
+      </files>
+    </clover-setup>
+  </target>
 
   <target name="test" 
           depends="compile-tests, junit-missing" 
           unless="junit.skipped" 
           description="Run the test cases">
     <mkdir dir="${maven.test.reports}"/>
-    <junit printSummary="yes" haltonerror="true" haltonfailure="true" fork="true" dir=".">
+    <junit printSummary="yes" haltonerror="false" haltonfailure="false" fork="true" dir=".">
       <sysproperty key="basedir" value="."/>
       <formatter type="xml"/>
       <formatter type="plain" usefile="false"/>
+      <classpath>
+        <pathelement path="/home/sepehr/.ant/lib/clover.jar"/>
+      </classpath>
       <classpath>
         <path refid="build.test.classpath"/>
         <pathelement location="${maven.build.outputDir}"/>
@@ -134,17 +149,25 @@
       </classpath>
       <batchtest todir="${maven.test.reports}" unless="test">
         <fileset dir="${maven.build.testDir.0}">
-          <include name="**/Test*.java"/>
-          <include name="**/*Test.java"/>
-          <include name="**/*TestCase.java"/>
-          <exclude name="**/*Abstract*Test.java"/>
+          <include name="**/*ESTest.java">
+          </include>
         </fileset>
+<!--        <fileset dir="${maven.build.testDir.0}">-->
+<!--          <include name="**/Test*.java"/>-->
+<!--          <include name="**/*Test.java"/>-->
+<!--          <include name="**/*TestCase.java"/>-->
+<!--          <exclude name="**/*Abstract*Test.java"/>-->
+<!--        </fileset>-->
       </batchtest>
       <batchtest todir="${maven.test.reports}" if="test">
         <fileset dir="${maven.build.testDir.0}">
-          <include name="**/${test}.java"/>
-          <exclude name="**/*Abstract*Test.java"/>
+          <include name="**/*ESTest.java">
+          </include>
         </fileset>
+<!--        <fileset dir="${maven.build.testDir.0}">-->
+<!--          <include name="**/${test}.java"/>-->
+<!--          <exclude name="**/*Abstract*Test.java"/>-->
+<!--        </fileset>-->
       </batchtest>
     </junit>
   </target>

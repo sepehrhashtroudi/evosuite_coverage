@@ -1,15 +1,20 @@
 
 ant clean
-rm -r  evosuite-tests/com/fasterxml/jackson/core/**/**/**/*.class
-rm -r  evosuite-tests/com/fasterxml/jackson/core/**/**/*.class
-rm -r  evosuite-tests/com/fasterxml/jackson/core/**/*.class
-rm -r  evosuite-tests/com/fasterxml/jackson/core/*.class
+rm -r  src/test/java/org/jsoup/**/**/**/*.class
+rm -r  src/test/java/org/jsoup/**/**/*.class
+rm -r  src/test/java/org/jsoup/**/*.class
+rm -r  src/test/java/org/jsoup/*.class
 defects4j compile
 export CLASSPATH=./target/classes:./evosuite-tests:./evosuite-standalone-runtime-1.0.6.jar:./junit-4.12.jar:hamcrest-core-1.3.jar
-javac evosuite-tests/com/fasterxml/jackson/core/**/**/**/*.java
-javac evosuite-tests/com/fasterxml/jackson/core/**/**/*.java
-javac evosuite-tests/com/fasterxml/jackson/core/**/*.java
-javac evosuite-tests/com/fasterxml/jackson/core/*.java
+# javac evosuite-tests/org/jsoup/**/**/**/*.java
+# javac evosuite-tests/org/jsoup/**/**/*.java
+# javac evosuite-tests/org/jsoup/**/*.java
+# javac evosuite-tests/org/jsoup/*.java
+
+javac src/test/java/org/jsoup/**/**/**/*.java
+javac src/test/java/org/jsoup/**/**/*.java
+javac src/test/java/org/jsoup/**/*.java
+javac src/test/java/org/jsoup/*.java
 
 rm -rf target
 

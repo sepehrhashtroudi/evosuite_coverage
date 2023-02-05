@@ -42,7 +42,8 @@
   <!-- ====================================================================== -->
   <!-- Defining classpaths                                                    -->
   <!-- ====================================================================== -->
-
+  <taskdef resource="cloverlib.xml" />
+  <clover-env/>
   <path id="build.classpath">
     <pathelement location="${maven.repo.local}/com/fasterxml/jackson/core/jackson-core/2.7.0-rc4-SNAPSHOT/jackson-core-2.7.0-rc4-20160106.062135-1.jar"/>
     <pathelement location="${maven.repo.local}/com/fasterxml/jackson/core/jackson-annotations/2.7.0-rc3/jackson-annotations-2.7.0-rc3.jar"/>
@@ -128,15 +129,28 @@
   <!-- Run all tests                                                          -->
   <!-- ====================================================================== -->
 
+
+  <target name="with.clover">
+    <clover-setup >
+      <files>
+        <exclude name="**/*_ESTest.java"/>
+        <exclude name="**/*_ESTest_scaffolding.java"/>
+      </files>
+    </clover-setup>
+  </target>
+
   <target name="test" 
           depends="compile-tests, junit-missing" 
           unless="junit.skipped" 
           description="Run the test cases">
     <mkdir dir="${maven.test.reports}"/>
-    <junit printSummary="yes" haltonerror="true" haltonfailure="true" fork="true" dir=".">
+    <junit printSummary="yes" haltonerror="false" haltonfailure="false" fork="true" dir=".">
       <sysproperty key="basedir" value="."/>
       <formatter type="xml"/>
       <formatter type="plain" usefile="false"/>
+      <classpath>
+        <pathelement path="/home/sepehr/.ant/lib/clover.jar"/>
+      </classpath>
       <classpath>
         <path refid="build.test.classpath"/>
         <pathelement location="${maven.build.outputDir}"/>
