@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="img/clover.ico" />
+
+    <link rel="stylesheet" href="aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('style.css');
+        @import url('tree.css');
+        
+    </style>
+
+    <script src="jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="package-nodes-tree.js" type="text/javascript"></script>
+    <script src="clover-tree.js" type="text/javascript"></script>
+    <script src="clover.js" type="text/javascript"></script>
+    <script src="clover-descriptions.js" type="text/javascript"></script>
+    <script src="cloud.js" type="text/javascript"></script>
+
+            <title>Gson 1.6</title>
+    </head>
+
+<body onresize="processTreeMapDashJson(treeMapJson);" >
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                    <a href="http://code.google.com/p/google-gson/" target="_top">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+                    </a>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                            <a href="http://code.google.com/p/google-gson/" target="_top">
+                                        Gson 1.6
+                                        </a>
+                    </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="aui-nav-selected">
+                    <a href="dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                  <div class="packages-tree-wrapper" data-root-relative="" data-package-name="">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <ol class="aui-nav aui-nav-breadcrumbs">
+            
+        <li><a href="dashboard.html">Project Clover database Sun Feb 5 2023 00:57:05 MST</a></li>
+    </ol>
+    
+<h1 class="aui-h2-clover">
+            Project overview
+    </h1>
+<div class="aui-tabs horizontal-tabs">
+        <ul class="tabs-menu">
+            <li class="menu-item active-tab">
+            <a href="dashboard.html">Dashboard</a>
+        </li>
+                <li class="menu-item ">
+            <a href="pkg-summary.html"><strong>Application code</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="testsrc-pkg-summary.html"><strong>Test code</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="test-pkg-summary.html"><strong>Test results</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="top-risks.html"><strong>Top risks</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="quick-wins.html"><strong>Quick wins</strong></a>
+        </li>
+                                                <li class="menu-item ">
+                <a href="treemap.html"><strong>Coverage tree map</strong></a>
+            </li>
+            </ul>
+    <div class="tabs-pane active-pane" id="tabs-first">
+
+        <div>&#160;</div>
+
+
+
+
+
+
+<div class="aui-group">
+    <div class="aui-item">
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                
+                <h3>
+                    Code coverage
+                    <small style="float:right; font-weight: normal">
+                        128 classes,
+                        0 /
+                        3,903 elements
+                    </small>
+                </h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+                <p><a href="pkg-summary.html">See more</a></p>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>
+                    Test results
+                    <small style="float:right; font-weight: normal">
+                        0 /
+                        0 tests
+                        0 secs
+                    </small>
+                </h3>
+            </header>
+            <div class="dashboard-widget-content">
+                                        <div class="aui-message aui-message-warning">
+        <p class="title">
+            <strong>No test results</strong>
+        </p>
+        <p>No test results could be found. Please ensure that you have instrumented your unit tests correctly.</p>
+    </div>
+                                <p><a href="test-pkg-summary.html">See more</a></p>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Code metrics</h3>
+            </header>
+                         
+
+<div id="$statsId" class="aui-item" style="display: ${display}">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this project">Branches:</label></div>
+        <div class="stats-box-value">850</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this project">Statements:</label></div>
+        <div class="stats-box-value">2,432</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this project">Methods:</label></div>
+        <div class="stats-box-value">621</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this project">Classes:</label></div>
+        <div class="stats-box-value">128</div>
+    </div>
+            <div class="stats-box">
+            <div class="stats-box-label"><label title="Total number of files in this project">Files:</label></div>
+            <div class="stats-box-value">90</div>
+        </div>
+                <div class="stats-box">
+            <div class="stats-box-label"><label title="Total number of packages in this project">Packages:</label></div>
+            <div class="stats-box-value">4</div>
+        </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this project">LOC:</label></div>
+        <div class="stats-box-value">11,588</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this project">NCLOC:</label></div>
+        <div class="stats-box-value">5,408</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this project">Total complexity:</label></div>
+        <div class="stats-box-value">1,244</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this project">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.51</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">3.92</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">4.85</div>
+    </div>
+            <div class="stats-box">
+            <div class="stats-box-label"><label title="Number of classes per package.">Classes/Package:</label></div>
+            <div class="stats-box-value">32</div>
+        </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this project">Average method complexity:</label></div>
+        <div class="stats-box-value">2</div>
+    </div>
+</div>
+
+</div>        </div>
+
+                <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Class Coverage Distribution</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <div style="text-align: center">                     <img src="img/classDistrubutionChart.png" alt="img/classDistrubutionChart.png" usemap="#classDistrubutionChart.png"/>
+                </div>
+                <map id="classDistrubutionChart.png" name="classDistrubutionChart.png">
+<area shape="rect" coords="38,15,60,206" title="107 classes have 0% coverage" alt="" nohref="nohref"/>
+</map>
+            </div>
+        </div>
+        
+                <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Class Complexity</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <div style="text-align: center">
+                    <img src="img/classComplexityChart.png" alt="img/classComplexityChart.png" usemap="#classComplexityChart.png"/>
+                </div>
+                <map id="classComplexityChart.png" name="classComplexityChart.png">
+<area shape="poly" coords="54,208,51,211,49,208,51,206,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: TypeToken.SimpleTypeToken" alt="" href="com/google/gson/reflect/TypeToken.html#TypeToken.SimpleTypeToken"/>
+<area shape="poly" coords="54,157,51,159,49,157,51,154,54,157,54,157" title="Complexity: 53; Coverage: 0%; Class: TypeToken" alt="" href="com/google/gson/reflect/TypeToken.html#TypeToken"/>
+<area shape="poly" coords="54,199,51,202,49,199,51,197,54,199,54,199" title="Complexity: 10; Coverage: 0%; Class: VersionExclusionStrategy" alt="" href="com/google/gson/VersionExclusionStrategy.html#VersionExclusionStrategy"/>
+<area shape="poly" coords="54,208,51,211,49,208,51,206,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: TypeToken.SimpleTypeToken" alt="" href="com/google/gson/reflect/TypeToken.html#TypeToken.SimpleTypeToken"/>
+<area shape="poly" coords="54,208,51,211,49,208,51,206,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: TypeToken.SimpleTypeToken" alt="" href="com/google/gson/reflect/TypeToken.html#TypeToken.SimpleTypeToken"/>
+<area shape="poly" coords="54,208,51,211,49,208,51,206,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: TypeToken.SimpleTypeToken" alt="" href="com/google/gson/reflect/TypeToken.html#TypeToken.SimpleTypeToken"/>
+<area shape="poly" coords="54,195,51,198,49,195,51,193,54,195,54,195" title="Complexity: 14; Coverage: 0%; Class: TypeUtils" alt="" href="com/google/gson/TypeUtils.html#TypeUtils"/>
+<area shape="poly" coords="54,203,51,206,49,203,51,201,54,203,54,203" title="Complexity: 6; Coverage: 0%; Class: TypeInfoMap" alt="" href="com/google/gson/TypeInfoMap.html#TypeInfoMap"/>
+<area shape="poly" coords="54,181,51,183,49,181,51,178,54,181,54,181" title="Complexity: 29; Coverage: 0%; Class: TypeInfoFactory" alt="" href="com/google/gson/TypeInfoFactory.html#TypeInfoFactory"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: TypeInfoCollection" alt="" href="com/google/gson/TypeInfoCollection.html#TypeInfoCollection"/>
+<area shape="poly" coords="54,203,51,206,49,203,51,201,54,203,54,203" title="Complexity: 6; Coverage: 0%; Class: TypeInfoMap" alt="" href="com/google/gson/TypeInfoMap.html#TypeInfoMap"/>
+<area shape="poly" coords="54,201,51,204,49,201,51,199,54,201,54,201" title="Complexity: 8; Coverage: 0%; Class: TypeInfo" alt="" href="com/google/gson/TypeInfo.html#TypeInfo"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: TypeInfoCollection" alt="" href="com/google/gson/TypeInfoCollection.html#TypeInfoCollection"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: TypeInfoCollection" alt="" href="com/google/gson/TypeInfoCollection.html#TypeInfoCollection"/>
+<area shape="poly" coords="54,204,51,207,49,204,51,202,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: Streams.AppendableWriter" alt="" href="com/google/gson/Streams.html#Streams.AppendableWriter"/>
+<area shape="poly" coords="54,179,51,181,49,179,51,176,54,179,54,179" title="Complexity: 31; Coverage: 0%; Class: Streams" alt="" href="com/google/gson/Streams.html#Streams"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: TypeInfoCollection" alt="" href="com/google/gson/TypeInfoCollection.html#TypeInfoCollection"/>
+<area shape="poly" coords="54,208,51,211,49,208,51,206,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: TypeToken.SimpleTypeToken" alt="" href="com/google/gson/reflect/TypeToken.html#TypeToken.SimpleTypeToken"/>
+<area shape="poly" coords="54,200,51,203,49,200,51,198,54,200,54,200" title="Complexity: 9; Coverage: 0%; Class: Primitives" alt="" href="com/google/gson/Primitives.html#Primitives"/>
+<area shape="poly" coords="54,204,51,207,49,204,51,202,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: Streams.AppendableWriter" alt="" href="com/google/gson/Streams.html#Streams.AppendableWriter"/>
+<area shape="poly" coords="54,197,51,200,49,197,51,195,54,197,54,197" title="Complexity: 12; Coverage: 0%; Class: ParameterizedTypeImpl" alt="" href="com/google/gson/ParameterizedTypeImpl.html#ParameterizedTypeImpl"/>
+<area shape="poly" coords="54,175,51,177,49,175,51,172,54,175,54,175" title="Complexity: 35; Coverage: 0%; Class: ParameterizedTypeHandlerMap" alt="" href="com/google/gson/ParameterizedTypeHandlerMap.html#ParameterizedTypeHandlerMap"/>
+<area shape="poly" coords="54,201,51,204,49,201,51,199,54,201,54,201" title="Complexity: 8; Coverage: 0%; Class: TypeInfo" alt="" href="com/google/gson/TypeInfo.html#TypeInfo"/>
+<area shape="poly" coords="54,179,51,181,49,179,51,176,54,179,54,179" title="Complexity: 31; Coverage: 0%; Class: Streams" alt="" href="com/google/gson/Streams.html#Streams"/>
+<area shape="poly" coords="54,205,51,208,49,205,51,203,54,205,54,205" title="Complexity: 4; Coverage: 0%; Class: ObjectNavigatorFactory" alt="" href="com/google/gson/ObjectNavigatorFactory.html#ObjectNavigatorFactory"/>
+<area shape="poly" coords="54,191,51,194,49,191,51,189,54,191,54,191" title="Complexity: 18; Coverage: 0%; Class: ObjectNavigator" alt="" href="com/google/gson/ObjectNavigator.html#ObjectNavigator"/>
+<area shape="poly" coords="54,207,51,210,49,207,51,205,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: NullExclusionStrategy" alt="" href="com/google/gson/NullExclusionStrategy.html#NullExclusionStrategy"/>
+<area shape="poly" coords="54,198,51,201,49,198,51,196,54,198,54,198" title="Complexity: 11; Coverage: 0%; Class: ModifyFirstLetterNamingPolicy" alt="" href="com/google/gson/ModifyFirstLetterNamingPolicy.html#ModifyFirstLetterNamingPolicy"/>
+<area shape="poly" coords="54,204,51,207,49,204,51,202,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: Streams.AppendableWriter" alt="" href="com/google/gson/Streams.html#Streams.AppendableWriter"/>
+<area shape="poly" coords="54,201,51,204,49,201,51,199,54,201,54,201" title="Complexity: 8; Coverage: 0%; Class: TypeInfo" alt="" href="com/google/gson/TypeInfo.html#TypeInfo"/>
+<area shape="poly" coords="54,195,51,198,49,195,51,193,54,195,54,195" title="Complexity: 14; Coverage: 0%; Class: TypeUtils" alt="" href="com/google/gson/TypeUtils.html#TypeUtils"/>
+<area shape="poly" coords="54,202,51,205,49,202,51,200,54,202,54,202" title="Complexity: 7; Coverage: 0%; Class: LruCache" alt="" href="com/google/gson/LruCache.html#LruCache"/>
+<area shape="poly" coords="54,208,51,211,49,208,51,206,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: TypeToken.SimpleTypeToken" alt="" href="com/google/gson/reflect/TypeToken.html#TypeToken.SimpleTypeToken"/>
+<area shape="poly" coords="54,208,51,211,49,208,51,206,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: TypeToken.SimpleTypeToken" alt="" href="com/google/gson/reflect/TypeToken.html#TypeToken.SimpleTypeToken"/>
+<area shape="poly" coords="54,208,51,211,49,208,51,206,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: TypeToken.SimpleTypeToken" alt="" href="com/google/gson/reflect/TypeToken.html#TypeToken.SimpleTypeToken"/>
+<area shape="poly" coords="54,208,51,211,49,208,51,206,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: TypeToken.SimpleTypeToken" alt="" href="com/google/gson/reflect/TypeToken.html#TypeToken.SimpleTypeToken"/>
+<area shape="poly" coords="54,207,51,210,49,207,51,205,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: NullExclusionStrategy" alt="" href="com/google/gson/NullExclusionStrategy.html#NullExclusionStrategy"/>
+<area shape="poly" coords="54,192,51,195,49,192,51,190,54,192,54,192" title="Complexity: 17; Coverage: 0%; Class: JsonTreeNavigator" alt="" href="com/google/gson/JsonTreeNavigator.html#JsonTreeNavigator"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: TypeInfoCollection" alt="" href="com/google/gson/TypeInfoCollection.html#TypeInfoCollection"/>
+<area shape="poly" coords="54,197,51,200,49,197,51,195,54,197,54,197" title="Complexity: 12; Coverage: 0%; Class: ParameterizedTypeImpl" alt="" href="com/google/gson/ParameterizedTypeImpl.html#ParameterizedTypeImpl"/>
+<area shape="poly" coords="54,166,51,168,49,166,51,163,54,166,54,166" title="Complexity: 44; Coverage: 0%; Class: JsonSerializationVisitor" alt="" href="com/google/gson/JsonSerializationVisitor.html#JsonSerializationVisitor"/>
+<area shape="poly" coords="54,204,51,207,49,204,51,202,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: Streams.AppendableWriter" alt="" href="com/google/gson/Streams.html#Streams.AppendableWriter"/>
+<area shape="poly" coords="54,144,51,147,49,144,51,142,54,144,54,144" title="Complexity: 66; Coverage: 0%; Class: JsonPrimitive" alt="" href="com/google/gson/JsonPrimitive.html#JsonPrimitive"/>
+<area shape="poly" coords="54,202,51,205,49,202,51,200,54,202,54,202" title="Complexity: 7; Coverage: 0%; Class: LruCache" alt="" href="com/google/gson/LruCache.html#LruCache"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: TypeInfoCollection" alt="" href="com/google/gson/TypeInfoCollection.html#TypeInfoCollection"/>
+<area shape="poly" coords="54,185,51,188,49,185,51,183,54,185,54,185" title="Complexity: 24; Coverage: 0%; Class: JsonObjectDeserializationVisitor" alt="" href="com/google/gson/JsonObjectDeserializationVisitor.html#JsonObjectDeserializationVisitor"/>
+<area shape="poly" coords="54,189,51,192,49,189,51,187,54,189,54,189" title="Complexity: 20; Coverage: 0%; Class: JsonObject" alt="" href="com/google/gson/JsonObject.html#JsonObject"/>
+<area shape="poly" coords="54,204,51,207,49,204,51,202,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: Streams.AppendableWriter" alt="" href="com/google/gson/Streams.html#Streams.AppendableWriter"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: TypeInfoCollection" alt="" href="com/google/gson/TypeInfoCollection.html#TypeInfoCollection"/>
+<area shape="poly" coords="54,207,51,210,49,207,51,205,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: NullExclusionStrategy" alt="" href="com/google/gson/NullExclusionStrategy.html#NullExclusionStrategy"/>
+<area shape="poly" coords="54,182,51,184,49,182,51,179,54,182,54,182" title="Complexity: 28; Coverage: 0%; Class: JsonElement" alt="" href="com/google/gson/JsonElement.html#JsonElement"/>
+<area shape="poly" coords="54,204,51,207,49,204,51,202,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: Streams.AppendableWriter" alt="" href="com/google/gson/Streams.html#Streams.AppendableWriter"/>
+<area shape="poly" coords="54,196,51,199,49,196,51,194,54,196,54,196" title="Complexity: 13; Coverage: 0%; Class: JsonDeserializationVisitor" alt="" href="com/google/gson/JsonDeserializationVisitor.html#JsonDeserializationVisitor"/>
+<area shape="poly" coords="54,198,51,201,49,198,51,196,54,198,54,198" title="Complexity: 11; Coverage: 0%; Class: ModifyFirstLetterNamingPolicy" alt="" href="com/google/gson/ModifyFirstLetterNamingPolicy.html#ModifyFirstLetterNamingPolicy"/>
+<area shape="poly" coords="54,192,51,195,49,192,51,190,54,192,54,192" title="Complexity: 17; Coverage: 0%; Class: JsonTreeNavigator" alt="" href="com/google/gson/JsonTreeNavigator.html#JsonTreeNavigator"/>
+<area shape="poly" coords="54,174,51,176,49,174,51,171,54,174,54,174" title="Complexity: 36; Coverage: 0%; Class: JsonArray" alt="" href="com/google/gson/JsonArray.html#JsonArray"/>
+<area shape="poly" coords="54,208,51,211,49,208,51,206,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: TypeToken.SimpleTypeToken" alt="" href="com/google/gson/reflect/TypeToken.html#TypeToken.SimpleTypeToken"/>
+<area shape="poly" coords="54,205,51,208,49,205,51,203,54,205,54,205" title="Complexity: 4; Coverage: 0%; Class: ObjectNavigatorFactory" alt="" href="com/google/gson/ObjectNavigatorFactory.html#ObjectNavigatorFactory"/>
+<area shape="poly" coords="54,166,51,168,49,166,51,163,54,166,54,166" title="Complexity: 44; Coverage: 0%; Class: JsonSerializationVisitor" alt="" href="com/google/gson/JsonSerializationVisitor.html#JsonSerializationVisitor"/>
+<area shape="poly" coords="54,173,51,175,49,173,51,170,54,173,54,173" title="Complexity: 37; Coverage: 0%; Class: Gson" alt="" href="com/google/gson/Gson.html#Gson"/>
+<area shape="poly" coords="54,202,51,205,49,202,51,200,54,202,54,202" title="Complexity: 7; Coverage: 0%; Class: LruCache" alt="" href="com/google/gson/LruCache.html#LruCache"/>
+<area shape="poly" coords="54,207,51,210,49,207,51,205,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: NullExclusionStrategy" alt="" href="com/google/gson/NullExclusionStrategy.html#NullExclusionStrategy"/>
+<area shape="poly" coords="54,207,51,210,49,207,51,205,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: NullExclusionStrategy" alt="" href="com/google/gson/NullExclusionStrategy.html#NullExclusionStrategy"/>
+<area shape="poly" coords="54,190,51,193,49,190,51,188,54,190,54,190" title="Complexity: 19; Coverage: 0%; Class: FieldAttributes" alt="" href="com/google/gson/FieldAttributes.html#FieldAttributes"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: TypeInfoCollection" alt="" href="com/google/gson/TypeInfoCollection.html#TypeInfoCollection"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: TypeInfoCollection" alt="" href="com/google/gson/TypeInfoCollection.html#TypeInfoCollection"/>
+<area shape="poly" coords="54,188,51,191,49,188,51,186,54,188,54,188" title="Complexity: 21; Coverage: 0%; Class: Escaper" alt="" href="com/google/gson/Escaper.html#Escaper"/>
+<area shape="poly" coords="54,204,51,207,49,204,51,202,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: Streams.AppendableWriter" alt="" href="com/google/gson/Streams.html#Streams.AppendableWriter"/>
+<area shape="poly" coords="54,194,51,197,49,194,51,192,54,194,54,194" title="Complexity: 15; Coverage: 0%; Class: DelegatingJsonElementVisitor" alt="" href="com/google/gson/DelegatingJsonElementVisitor.html#DelegatingJsonElementVisitor"/>
+<area shape="poly" coords="54,207,51,210,49,207,51,205,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: NullExclusionStrategy" alt="" href="com/google/gson/NullExclusionStrategy.html#NullExclusionStrategy"/>
+<area shape="poly" coords="54,207,51,210,49,207,51,205,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: NullExclusionStrategy" alt="" href="com/google/gson/NullExclusionStrategy.html#NullExclusionStrategy"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: TypeInfoCollection" alt="" href="com/google/gson/TypeInfoCollection.html#TypeInfoCollection"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: TypeInfoCollection" alt="" href="com/google/gson/TypeInfoCollection.html#TypeInfoCollection"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: TypeInfoCollection" alt="" href="com/google/gson/TypeInfoCollection.html#TypeInfoCollection"/>
+<area shape="poly" coords="54,207,51,210,49,207,51,205,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: NullExclusionStrategy" alt="" href="com/google/gson/NullExclusionStrategy.html#NullExclusionStrategy"/>
+<area shape="poly" coords="54,204,51,207,49,204,51,202,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: Streams.AppendableWriter" alt="" href="com/google/gson/Streams.html#Streams.AppendableWriter"/>
+<area shape="poly" coords="54,207,51,210,49,207,51,205,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: NullExclusionStrategy" alt="" href="com/google/gson/NullExclusionStrategy.html#NullExclusionStrategy"/>
+<area shape="poly" coords="54,204,51,207,49,204,51,202,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: Streams.AppendableWriter" alt="" href="com/google/gson/Streams.html#Streams.AppendableWriter"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: TypeInfoCollection" alt="" href="com/google/gson/TypeInfoCollection.html#TypeInfoCollection"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: TypeInfoCollection" alt="" href="com/google/gson/TypeInfoCollection.html#TypeInfoCollection"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: TypeInfoCollection" alt="" href="com/google/gson/TypeInfoCollection.html#TypeInfoCollection"/>
+<area shape="poly" coords="54,207,51,210,49,207,51,205,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: NullExclusionStrategy" alt="" href="com/google/gson/NullExclusionStrategy.html#NullExclusionStrategy"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: TypeInfoCollection" alt="" href="com/google/gson/TypeInfoCollection.html#TypeInfoCollection"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: TypeInfoCollection" alt="" href="com/google/gson/TypeInfoCollection.html#TypeInfoCollection"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: TypeInfoCollection" alt="" href="com/google/gson/TypeInfoCollection.html#TypeInfoCollection"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: TypeInfoCollection" alt="" href="com/google/gson/TypeInfoCollection.html#TypeInfoCollection"/>
+<area shape="poly" coords="54,201,51,204,49,201,51,199,54,201,54,201" title="Complexity: 8; Coverage: 0%; Class: TypeInfo" alt="" href="com/google/gson/TypeInfo.html#TypeInfo"/>
+<area shape="poly" coords="54,208,51,211,49,208,51,206,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: TypeToken.SimpleTypeToken" alt="" href="com/google/gson/reflect/TypeToken.html#TypeToken.SimpleTypeToken"/>
+<area shape="poly" coords="54,197,51,200,49,197,51,195,54,197,54,197" title="Complexity: 12; Coverage: 0%; Class: ParameterizedTypeImpl" alt="" href="com/google/gson/ParameterizedTypeImpl.html#ParameterizedTypeImpl"/>
+<area shape="poly" coords="54,200,51,203,49,200,51,198,54,200,54,200" title="Complexity: 9; Coverage: 0%; Class: Primitives" alt="" href="com/google/gson/Primitives.html#Primitives"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: TypeInfoCollection" alt="" href="com/google/gson/TypeInfoCollection.html#TypeInfoCollection"/>
+<area shape="poly" coords="54,205,51,208,49,205,51,203,54,205,54,205" title="Complexity: 4; Coverage: 0%; Class: ObjectNavigatorFactory" alt="" href="com/google/gson/ObjectNavigatorFactory.html#ObjectNavigatorFactory"/>
+<area shape="poly" coords="54,205,51,208,49,205,51,203,54,205,54,205" title="Complexity: 4; Coverage: 0%; Class: ObjectNavigatorFactory" alt="" href="com/google/gson/ObjectNavigatorFactory.html#ObjectNavigatorFactory"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: TypeInfoCollection" alt="" href="com/google/gson/TypeInfoCollection.html#TypeInfoCollection"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: TypeInfoCollection" alt="" href="com/google/gson/TypeInfoCollection.html#TypeInfoCollection"/>
+<area shape="poly" coords="54,204,51,207,49,204,51,202,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: Streams.AppendableWriter" alt="" href="com/google/gson/Streams.html#Streams.AppendableWriter"/>
+<area shape="poly" coords="54,208,51,211,49,208,51,206,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: TypeToken.SimpleTypeToken" alt="" href="com/google/gson/reflect/TypeToken.html#TypeToken.SimpleTypeToken"/>
+<area shape="poly" coords="54,204,51,207,49,204,51,202,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: Streams.AppendableWriter" alt="" href="com/google/gson/Streams.html#Streams.AppendableWriter"/>
+<area shape="poly" coords="54,200,51,203,49,200,51,198,54,200,54,200" title="Complexity: 9; Coverage: 0%; Class: Primitives" alt="" href="com/google/gson/Primitives.html#Primitives"/>
+<area shape="poly" coords="54,201,51,204,49,201,51,199,54,201,54,201" title="Complexity: 8; Coverage: 0%; Class: TypeInfo" alt="" href="com/google/gson/TypeInfo.html#TypeInfo"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: TypeInfoCollection" alt="" href="com/google/gson/TypeInfoCollection.html#TypeInfoCollection"/>
+<area shape="poly" coords="54,205,51,208,49,205,51,203,54,205,54,205" title="Complexity: 4; Coverage: 0%; Class: ObjectNavigatorFactory" alt="" href="com/google/gson/ObjectNavigatorFactory.html#ObjectNavigatorFactory"/>
+<area shape="poly" coords="54,204,51,207,49,204,51,202,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: Streams.AppendableWriter" alt="" href="com/google/gson/Streams.html#Streams.AppendableWriter"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: TypeInfoCollection" alt="" href="com/google/gson/TypeInfoCollection.html#TypeInfoCollection"/>
+<area shape="poly" coords="54,208,51,211,49,208,51,206,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: TypeToken.SimpleTypeToken" alt="" href="com/google/gson/reflect/TypeToken.html#TypeToken.SimpleTypeToken"/>
+<area shape="poly" coords="54,140,51,143,49,140,51,138,54,140,54,140" title="Complexity: 70; Coverage: 0%; Class: JsonWriter" alt="" href="com/google/gson/stream/JsonWriter.html#JsonWriter"/>
+<area shape="poly" coords="54,18,51,20,49,18,51,15,54,18,54,18" title="Complexity: 195; Coverage: 0%; Class: JsonReader" alt="" href="com/google/gson/stream/JsonReader.html#JsonReader"/>
+</map>
+            </div>
+        </div>
+        
+                    <div class="dashboard-widget">
+                <header class="dashboard-widget-header">
+                    <h3>Coverage tree map</h3>
+                </header>
+                <div class="dashboard-widget-content">
+                    <div id="infovis" style="width:100%; height:250px;">
+                        <div id="treemap-loader" style="position:relative;top:50px;">
+                            <p>
+                                Generating Coverage Tree Map. Please wait...
+                            </p>
+                            <p>
+                                <img src="img/ajax-loader.gif" alt="Loading Treemap"/>
+                            </p>
+                        </div>
+                    </div>
+                    <p><a href="treemap.html">See more</a></p>
+                </div>
+
+            </div>
+            </div>
+
+
+    <div class="aui-item">
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Top 20 project risks</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                
+                                                                <a class="tag" href="com/google/gson/Streams.html"
+                            style="font-size: 28px;color:#d04437"
+                            title="Average Method Complexity - 10.333 , Coverage - 0% ">Streams</a>
+                                    
+                                                                <a class="tag" href="com/google/gson/ObjectNavigator.html"
+                            style="font-size: 18px;color:#d04437"
+                            title="Average Method Complexity - 4.5 , Coverage - 0% ">ObjectNavigator</a>
+                                    
+                                                                <a class="tag" href="com/google/gson/stream/JsonReader.html"
+                            style="font-size: 18px;color:#d04437"
+                            title="Average Method Complexity - 4.432 , Coverage - 0% ">JsonReader</a>
+                                    
+                                                                <a class="tag" href="com/google/gson/JsonTreeNavigator.html"
+                            style="font-size: 18px;color:#d04437"
+                            title="Average Method Complexity - 4.25 , Coverage - 0% ">JsonTreeNavigator</a>
+                                    
+                                                                <a class="tag" href="com/google/gson/TypeInfoFactory.html"
+                            style="font-size: 18px;color:#d04437"
+                            title="Average Method Complexity - 4.143 , Coverage - 0% ">TypeInfoFactory</a>
+                                    
+                                                                <a class="tag" href="com/google/gson/ModifyFirstLetterNamingPolicy.html"
+                            style="font-size: 17px;color:#d04437"
+                            title="Average Method Complexity - 3.667 , Coverage - 0% ">ModifyFirstLetterNamingPolicy</a>
+                                    
+                                                                <a class="tag" href="com/google/gson/Escaper.html"
+                            style="font-size: 16px;color:#d04437"
+                            title="Average Method Complexity - 3 , Coverage - 0% ">Escaper</a>
+                                    
+                                                                <a class="tag" href="com/google/gson/DefaultTypeAdapters.html"
+                            style="font-size: 16px;color:#d04437"
+                            title="Average Method Complexity - 3 , Coverage - 0% ">DefaultTypeAdapters.CollectionTypeAdapter</a>
+                                    
+                                                                <a class="tag" href="com/google/gson/DefaultTypeAdapters.html"
+                            style="font-size: 16px;color:#d04437"
+                            title="Average Method Complexity - 3 , Coverage - 0% ">DefaultTypeAdapters.LocaleTypeAdapter</a>
+                                    
+                                                                <a class="tag" href="com/google/gson/ObjectTypePair.html"
+                            style="font-size: 16px;color:#d04437"
+                            title="Average Method Complexity - 2.818 , Coverage - 0% ">ObjectTypePair</a>
+                                    
+                                                                <a class="tag" href="com/google/gson/TypeUtils.html"
+                            style="font-size: 16px;color:#d04437"
+                            title="Average Method Complexity - 2.8 , Coverage - 0% ">TypeUtils</a>
+                                    
+                                                                <a class="tag" href="com/google/gson/JsonObjectDeserializationVisitor.html"
+                            style="font-size: 16px;color:#d04437"
+                            title="Average Method Complexity - 2.667 , Coverage - 0% ">JsonObjectDeserializationVisitor</a>
+                                    
+                                                                <a class="tag" href="com/google/gson/reflect/TypeToken.html"
+                            style="font-size: 15px;color:#d04437"
+                            title="Average Method Complexity - 2.524 , Coverage - 0% ">TypeToken</a>
+                                    
+                                                                <a class="tag" href="com/google/gson/stream/JsonWriter.html"
+                            style="font-size: 15px;color:#d04437"
+                            title="Average Method Complexity - 2.5 , Coverage - 0% ">JsonWriter</a>
+                                    
+                                                                <a class="tag" href="com/google/gson/ParameterizedTypeHandlerMap.html"
+                            style="font-size: 15px;color:#d04437"
+                            title="Average Method Complexity - 2.5 , Coverage - 0% ">ParameterizedTypeHandlerMap</a>
+                                    
+                                                                <a class="tag" href="com/google/gson/CamelCaseSeparatorNamingPolicy.html"
+                            style="font-size: 15px;color:#d04437"
+                            title="Average Method Complexity - 2.5 , Coverage - 0% ">CamelCaseSeparatorNamingPolicy</a>
+                                    
+                                                                <a class="tag" href="com/google/gson/DefaultTypeAdapters.html"
+                            style="font-size: 15px;color:#d04437"
+                            title="Average Method Complexity - 2.5 , Coverage - 0% ">DefaultTypeAdapters.FloatSerializer</a>
+                                    
+                                                                <a class="tag" href="com/google/gson/DefaultTypeAdapters.html"
+                            style="font-size: 15px;color:#d04437"
+                            title="Average Method Complexity - 2.5 , Coverage - 0% ">DefaultTypeAdapters.DoubleSerializer</a>
+                                    
+                                                                <a class="tag" href="com/google/gson/JsonStreamParser.html"
+                            style="font-size: 15px;color:#d04437"
+                            title="Average Method Complexity - 2.4 , Coverage - 0% ">JsonStreamParser</a>
+                                    
+                                                                <a class="tag" href="com/google/gson/JsonParser.html"
+                            style="font-size: 15px;color:#d04437"
+                            title="Average Method Complexity - 2.333 , Coverage - 0% ">JsonParser</a>
+                                                    <p><a href="top-risks.html">See more</a></p>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Most complex packages</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                
+                <table class="aui">
+                                            
+                                                <tr>
+                            <td>1. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                            <td>
+                                <a href="com/google/gson/pkg-summary.html">com.google.gson</a>
+                                <span class="aui-badge" title="Package complexity">924</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>2. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                            <td>
+                                <a href="com/google/gson/stream/pkg-summary.html">com.google.gson.stream</a>
+                                <span class="aui-badge" title="Package complexity">266</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>3. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                            <td>
+                                <a href="com/google/gson/reflect/pkg-summary.html">com.google.gson.reflect</a>
+                                <span class="aui-badge" title="Package complexity">54</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>4. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">-1.0</span> - </div><div style="display: table-cell">
+<div title="Empty" class="barEmpty" style="min-width:40px;"></div></div></div></td>
+                            <td>
+                                <a href="com/google/gson/annotations/pkg-summary.html">com.google.gson.annotations</a>
+                                <span class="aui-badge" title="Package complexity">0</span>
+                            </td>
+                        </tr>
+                                    </table>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Most complex classes</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <table class="aui">
+                                            
+                                                <tr>
+                            <td>1. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                            <td>
+                                <a  href="com/google/gson/stream/JsonReader.html"  title="com.google.gson.stream.JsonReader">JsonReader</a>
+                                <span class="aui-badge" title="Class complexity">195</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>2. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                            <td>
+                                <a  href="com/google/gson/stream/JsonWriter.html"  title="com.google.gson.stream.JsonWriter">JsonWriter</a>
+                                <span class="aui-badge" title="Class complexity">70</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>3. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                            <td>
+                                <a  href="com/google/gson/JsonPrimitive.html"  title="com.google.gson.JsonPrimitive">JsonPrimitive</a>
+                                <span class="aui-badge" title="Class complexity">66</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>4. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                            <td>
+                                <a  href="com/google/gson/reflect/TypeToken.html"  title="com.google.gson.reflect.TypeToken">TypeToken</a>
+                                <span class="aui-badge" title="Class complexity">53</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>5. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                            <td>
+                                <a  href="com/google/gson/JsonSerializationVisitor.html"  title="com.google.gson.JsonSerializationVisitor">JsonSerializationVisitor</a>
+                                <span class="aui-badge" title="Class complexity">44</span>
+                            </td>
+                        </tr>
+                                    </table>
+            </div>
+        </div>
+
+                <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Least tested methods</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <table class="aui">
+                                            
+
+                    <tr>
+                        <td align="right">1.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="TypeInfoFactory.getActualType(Type,Type,Class&lt;?&gt;)&#160;:&#160;Type" href="com/google/gson/TypeInfoFactory.html?line=58#src-58">TypeInfoFactory.getActualType(Type,Type,Class&lt;?&gt;)&#160;:&#160;Type</a>
+                            <span class="aui-badge" title="Method complexity">13</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">2.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="Streams.write(JsonElement,boolean,JsonWriter)&#160;:&#160;void" href="com/google/gson/Streams.html?line=86#src-86">Streams.write(JsonElement,boolean,JsonWriter)&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">12</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">3.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="JsonWriter.string(String)&#160;:&#160;void" href="com/google/gson/stream/JsonWriter.html?line=424#src-424">JsonWriter.string(String)&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">16</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">4.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="TypeToken.isAssignableFrom(Type,ParameterizedType,Map&lt;String,&#160;Type&gt;)&#160;:&#160;boolean" href="com/google/gson/reflect/TypeToken.html?line=216#src-216">TypeToken.isAssignableFrom(Type,ParameterizedType,Map&lt;String,&#160;Type&gt;)&#160;:&#160;boolean</a>
+                            <span class="aui-badge" title="Method complexity">10</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">5.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="JsonReader.nextLiteral()&#160;:&#160;String" href="com/google/gson/stream/JsonReader.html?line=971#src-971">JsonReader.nextLiteral()&#160;:&#160;String</a>
+                            <span class="aui-badge" title="Method complexity">22</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">6.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="Escaper.escapeJsonString(CharSequence,StringBuffer)&#160;:&#160;void" href="com/google/gson/Escaper.html?line=78#src-78">Escaper.escapeJsonString(CharSequence,StringBuffer)&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">12</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">7.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="JsonReader.quickPeek()&#160;:&#160;JsonToken" href="com/google/gson/stream/JsonReader.html?line=354#src-354">JsonReader.quickPeek()&#160;:&#160;JsonToken</a>
+                            <span class="aui-badge" title="Method complexity">16</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">8.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="Streams.parse(JsonReader)&#160;:&#160;JsonElement" href="com/google/gson/Streams.html?line=36#src-36">Streams.parse(JsonReader)&#160;:&#160;JsonElement</a>
+                            <span class="aui-badge" title="Method complexity">17</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">9.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="ObjectNavigator.accept(Visitor)&#160;:&#160;void" href="com/google/gson/ObjectNavigator.html?line=101#src-101">ObjectNavigator.accept(Visitor)&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">11</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">10.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="JsonReader.nextNonWhitespace()&#160;:&#160;int" href="com/google/gson/stream/JsonReader.html?line=833#src-833">JsonReader.nextNonWhitespace()&#160;:&#160;int</a>
+                            <span class="aui-badge" title="Method complexity">14</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">11.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="JsonReader.nextInObject(boolean)&#160;:&#160;JsonToken" href="com/google/gson/stream/JsonReader.html?line=709#src-709">JsonReader.nextInObject(boolean)&#160;:&#160;JsonToken</a>
+                            <span class="aui-badge" title="Method complexity">9</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">12.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="JsonReader.nextString(char)&#160;:&#160;String" href="com/google/gson/stream/JsonReader.html?line=930#src-930">JsonReader.nextString(char)&#160;:&#160;String</a>
+                            <span class="aui-badge" title="Method complexity">9</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">13.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="ObjectTypePair.equals(Object)&#160;:&#160;boolean" href="com/google/gson/ObjectTypePair.html?line=104#src-104">ObjectTypePair.equals(Object)&#160;:&#160;boolean</a>
+                            <span class="aui-badge" title="Method complexity">10</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">14.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="DefaultTypeAdapters.createDefaultDeserializers()&#160;:&#160;ParameterizedTypeHandlerMap&lt;JsonDeserializer&lt;?&gt;&gt;" href="com/google/gson/DefaultTypeAdapters.html?line=141#src-141">DefaultTypeAdapters.createDefaultDeserializers()&#160;:&#160;ParameterizedTypeHandlerMap&lt;JsonDeserializer&lt;?&gt;&gt;</a>
+                            <span class="aui-badge" title="Method complexity">1</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">15.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="TypeInfoFactory.extractTypeForHierarchy(Type,TypeVariable&lt;?&gt;)&#160;:&#160;Type" href="com/google/gson/TypeInfoFactory.html?line=117#src-117">TypeInfoFactory.extractTypeForHierarchy(Type,TypeVariable&lt;?&gt;)&#160;:&#160;Type</a>
+                            <span class="aui-badge" title="Method complexity">8</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">16.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="GsonBuilder.create()&#160;:&#160;Gson" href="com/google/gson/GsonBuilder.html?line=499#src-499">GsonBuilder.create()&#160;:&#160;Gson</a>
+                            <span class="aui-badge" title="Method complexity">4</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">17.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="JsonReader.nextInArray(boolean)&#160;:&#160;JsonToken" href="com/google/gson/stream/JsonReader.html?line=668#src-668">JsonReader.nextInArray(boolean)&#160;:&#160;JsonToken</a>
+                            <span class="aui-badge" title="Method complexity">9</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">18.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="JsonObjectDeserializationVisitor.visitFieldUsingCustomHandler(FieldAttributes,Type,Object)&#160;:&#160;boolean" href="com/google/gson/JsonObjectDeserializationVisitor.html?line=95#src-95">JsonObjectDeserializationVisitor.visitFieldUsingCustomHandler(FieldAttributes,Type,Object)&#160;:&#160;boolean</a>
+                            <span class="aui-badge" title="Method complexity">9</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">19.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="JsonTreeNavigator.navigate(JsonElement)&#160;:&#160;void" href="com/google/gson/JsonTreeNavigator.html?line=36#src-36">JsonTreeNavigator.navigate(JsonElement)&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">7</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">20.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="DefaultTypeAdapters.createDefaultSerializers()&#160;:&#160;ParameterizedTypeHandlerMap&lt;JsonSerializer&lt;?&gt;&gt;" href="com/google/gson/DefaultTypeAdapters.html?line=103#src-103">DefaultTypeAdapters.createDefaultSerializers()&#160;:&#160;ParameterizedTypeHandlerMap&lt;JsonSerializer&lt;?&gt;&gt;</a>
+                            <span class="aui-badge" title="Method complexity">1</span>
+
+                        </td>
+                    </tr>
+                                    </table>
+            </div>
+        </div>
+        
+    </div>
+</div>
+                            </div> <!-- tabs-pane active-pane -->
+                        </div>
+
+    <script type="text/javascript" src="jit.js" ></script>
+    <script type="text/javascript" src="treemap-dash-json.js" ></script>
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Sun Feb 5 2023 00:57:11 MST using coverage data from Wed Dec 31 1969 17:00:00 MST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

@@ -112,6 +112,16 @@
   <!-- ====================================================================== -->
   <!-- Run all tests                                                          -->
   <!-- ====================================================================== -->
+  <taskdef resource="cloverlib.xml"/>
+  <clover-env/>
+  <target name="with.clover">
+    <clover-setup >
+      <files>
+        <exclude name="**/*_ESTest.java"/>
+        <exclude name="**/*_ESTest_scaffolding.java"/>
+      </files>
+    </clover-setup>
+  </target>
 
   <target name="test" 
           depends="compile-tests, junit-missing" 
@@ -128,18 +138,21 @@
         <pathelement location="${maven.build.testOutputDir}"/>
       </classpath>
       <batchtest todir="${maven.test.reports}" unless="test">
-        <fileset dir="${maven.build.testDir.0}">
-          <include name="**/Test*.java"/>
-          <include name="**/*Test.java"/>
-          <include name="**/*TestCase.java"/>
-          <exclude name="**/*Abstract*Test.java"/>
+<!--        <fileset dir="${maven.build.testDir.0}">-->
+<!--          <include name="**/Test*.java"/>-->
+<!--          <include name="**/*Test.java"/>-->
+<!--          <include name="**/*TestCase.java"/>-->
+<!--          <exclude name="**/*Abstract*Test.java"/>-->
+<!--        </fileset>-->
+        <fileset dir="${basedir}/evosuite-tests">
+          <include name="**/*_ESTest.java"/>
         </fileset>
       </batchtest>
       <batchtest todir="${maven.test.reports}" if="test">
-        <fileset dir="${maven.build.testDir.0}">
-          <include name="**/${test}.java"/>
-          <exclude name="**/*Abstract*Test.java"/>
-        </fileset>
+<!--        <fileset dir="${maven.build.testDir.0}">-->
+<!--          <include name="**/${test}.java"/>-->
+<!--          <exclude name="**/*Abstract*Test.java"/>-->
+<!--        </fileset>-->
       </batchtest>
     </junit>
   </target>
