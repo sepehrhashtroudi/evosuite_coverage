@@ -1,5 +1,5 @@
 Testsuite: org.apache.commons.lang3.concurrent.LazyInitializer_ESTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.361 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.337 sec
 ------------- Standard Error -----------------
 SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation

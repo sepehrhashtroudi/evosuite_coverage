@@ -99,7 +99,7 @@
     <target name="test" depends="compile.tests" description="Run all unit test cases">
         <echo message="Running unit tests ..."/>
         <mkdir dir="${build.home}/test-reports"/>
-        <junit printsummary="true" showoutput="true" fork="yes" haltonfailure="${test.failonerror}">
+        <junit printsummary="true" showoutput="true" fork="yes" haltonfailure="false">
             <classpath>
                 <pathelement path="/home/sepehr/.ant/lib/clover.jar"/>
             </classpath>

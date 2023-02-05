@@ -1,5 +1,5 @@
 Testsuite: org.apache.commons.lang3.time.FormatCache_ESTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.397 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.381 sec
 ------------- Standard Error -----------------
 SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
