@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="1" failures="0" hostname="sepehr-UX310UQK" name="com.fasterxml.jackson.core.JsonFactory_ESTest" skipped="0" tests="1" time="0.033" timestamp="2023-02-05T11:30:54">
+<testsuite errors="120" failures="0" hostname="sepehr-UX310UQK" name="com.fasterxml.jackson.core.JsonFactory_ESTest" skipped="0" tests="125" time="2.141" timestamp="2023-02-06T02:40:19">
   <properties>
     <property name="java.vendor" value="Private Build" />
     <property name="sun.java.launcher" value="SUN_STANDARD" />
@@ -84,8 +84,8 @@
     <property name="maven.settings.interactiveMode" value="true" />
     <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
     <property name="ant.version" value="Apache Ant(TM) version 1.10.7 compiled on October 24 2019" />
-    <property name="java.class.path" value="/home/sepehr/.m2/repository/junit/junit/4.8.2/junit-4.8.2.jar:/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/evosuite-tests:/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/target/classes:/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/target/test-classes:/home/sepehr/.ant/lib/clover.jar:/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/evosuite-standalone-runtime-1.0.6.jar:/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/hamcrest-core-1.3.jar:/home/sepehr/.ant/lib/evosuite-1.0.6.jar:/usr/share/java/ant-launcher-1.10.7.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-junit.jar:/usr/share/ant/lib/ant-junit4.jar" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.fasterxml.jackson.core.JsonFactory_ESTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/target/test-reports/TEST-com.fasterxml.jackson.core.JsonFactory_ESTest.xml formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter crashfile=/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/junitvmwatcher3291930127279574017.properties propsfile=/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/junit5190628463108598955.properties" />
+    <property name="java.class.path" value="/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/junit-4.12.jar:/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/evosuite-tests:/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/target/classes:/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/target/test-classes:/home/sepehr/.ant/lib/clover.jar:/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/evosuite-standalone-runtime-1.0.6.jar:/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/hamcrest-core-1.3.jar:/usr/share/java/ant-launcher-1.10.7.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-junit.jar:/usr/share/ant/lib/ant-junit4.jar" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.fasterxml.jackson.core.JsonFactory_ESTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/target/test-reports/TEST-com.fasterxml.jackson.core.JsonFactory_ESTest.xml formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter crashfile=/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/junitvmwatcher5461221613233732811.properties propsfile=/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/junit7517088450736913341.properties" />
     <property name="project.name" value="jackson-core" />
     <property name="project.build.directory" value="target" />
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
@@ -124,22 +124,1158 @@
     <property name="osgi.dynamicImport" value="" />
     <property name="clover.flushpolicy" value="directed" />
   </properties>
-  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="initializationError" time="0.006">
-    <error message="Field nfr must implement MethodRule" type="java.lang.Exception">java.lang.Exception: Field nfr must implement MethodRule
-	at org.evosuite.runtime.EvoRunner.&lt;init&gt;(EvoRunner.java:77)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test118" time="0.024">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:260)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test118(JsonFactory_ESTest.java:1543)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
 </error>
   </testcase>
-  <system-out><![CDATA[04:30:53.955 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Seeing class for first time: com.fasterxml.jackson.core.JsonFactory_ESTest
-04:30:53.958 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Instrumenting class 'com.fasterxml.jackson.core.JsonFactory_ESTest'.
-04:30:54.017 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Seeing class for first time: com.fasterxml.jackson.core.JsonFactory_ESTest_scaffolding
-04:30:54.017 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Instrumenting class 'com.fasterxml.jackson.core.JsonFactory_ESTest_scaffolding'.
-04:30:54.020 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Keeping class: com.fasterxml.jackson.core.JsonFactory_ESTest_scaffolding
-04:30:54.021 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Keeping class: com.fasterxml.jackson.core.JsonFactory_ESTest
-04:30:54.021 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Seeing class for first time: com.fasterxml.jackson.core.format.InputAccessor
-04:30:54.021 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Instrumenting class 'com.fasterxml.jackson.core.format.InputAccessor'.
-04:30:54.063 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Keeping class: com.fasterxml.jackson.core.format.InputAccessor
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test119" time="0.01">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:260)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test119(JsonFactory_ESTest.java:1550)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test116" time="0.011">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:260)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test116(JsonFactory_ESTest.java:1505)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test117" time="0.01">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test117(JsonFactory_ESTest.java:1526)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test114" time="0.008">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:260)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test114(JsonFactory_ESTest.java:1491)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test115" time="0.007">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:260)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test115(JsonFactory_ESTest.java:1498)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test079" time="0.008">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test079(JsonFactory_ESTest.java:1145)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test112" time="0.01">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test112(JsonFactory_ESTest.java:1464)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test113" time="0.008">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:260)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test113(JsonFactory_ESTest.java:1471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test080" time="0.006">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:260)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test080(JsonFactory_ESTest.java:1155)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test081" time="0.006">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:260)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test081(JsonFactory_ESTest.java:1162)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test000" time="0.007">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test000(JsonFactory_ESTest.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test088" time="0.006">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test088(JsonFactory_ESTest.java:1232)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test121" time="0.007">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test121(JsonFactory_ESTest.java:1575)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test001" time="0.006">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test001(JsonFactory_ESTest.java:77)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test089" time="0.017">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test089(JsonFactory_ESTest.java:1241)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test122" time="0.006">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test122(JsonFactory_ESTest.java:1584)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test086" time="0.006">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:260)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test086(JsonFactory_ESTest.java:1213)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test087" time="0.005">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:260)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test087(JsonFactory_ESTest.java:1223)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test120" time="0.007">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test120(JsonFactory_ESTest.java:1567)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test084" time="0.008">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test084(JsonFactory_ESTest.java:1199)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test085" time="0.007">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:260)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test085(JsonFactory_ESTest.java:1206)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test082" time="0.006">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:260)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test082(JsonFactory_ESTest.java:1173)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test083" time="0.006">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:260)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test083(JsonFactory_ESTest.java:1190)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test008" time="0.005">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:260)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test008(JsonFactory_ESTest.java:153)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test009" time="0.006">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test009(JsonFactory_ESTest.java:165)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test006" time="0.005">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:260)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test006(JsonFactory_ESTest.java:135)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test007" time="0.006">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test007(JsonFactory_ESTest.java:145)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test004" time="0.006">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test004(JsonFactory_ESTest.java:117)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test005" time="0.006">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:260)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test005(JsonFactory_ESTest.java:126)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test002" time="0.007">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test002(JsonFactory_ESTest.java:98)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test123" time="0.006">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test123(JsonFactory_ESTest.java:1592)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test003" time="0.006">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:260)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test003(JsonFactory_ESTest.java:108)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test124" time="0.006">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:260)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test124(JsonFactory_ESTest.java:1610)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test091" time="0.006">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:260)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test091(JsonFactory_ESTest.java:1265)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test092" time="0.006">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:260)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test092(JsonFactory_ESTest.java:1274)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test090" time="0.008">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:260)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test090(JsonFactory_ESTest.java:1249)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test011" time="0.007">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:260)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test011(JsonFactory_ESTest.java:184)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test099" time="0.008">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:260)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test099(JsonFactory_ESTest.java:1337)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test012" time="0.01">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:260)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test012(JsonFactory_ESTest.java:192)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test097" time="0.005" />
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test010" time="0.007">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test010(JsonFactory_ESTest.java:175)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test098" time="0.006">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:260)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test098(JsonFactory_ESTest.java:1328)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test095" time="0.005" />
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test096" time="0.005" />
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test093" time="0.009">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:260)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test093(JsonFactory_ESTest.java:1284)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test094" time="0.002" />
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test059" time="0.002">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:260)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test059(JsonFactory_ESTest.java:903)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test057" time="0.007">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:260)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test057(JsonFactory_ESTest.java:886)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test058" time="0.004">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test058(JsonFactory_ESTest.java:895)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test066" time="0.003">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:260)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test066(JsonFactory_ESTest.java:980)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test067" time="0.003" />
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test100" time="0.002">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test100(JsonFactory_ESTest.java:1355)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test064" time="0.002">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:260)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test064(JsonFactory_ESTest.java:963)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test065" time="0.002">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:260)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test065(JsonFactory_ESTest.java:971)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test062" time="0.002">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:260)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test062(JsonFactory_ESTest.java:947)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test063" time="0.002">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test063(JsonFactory_ESTest.java:955)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test060" time="0.003">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test060(JsonFactory_ESTest.java:911)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test061" time="0.002">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test061(JsonFactory_ESTest.java:934)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test107" time="0.002">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:260)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test107(JsonFactory_ESTest.java:1422)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test108" time="0.002">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test108(JsonFactory_ESTest.java:1430)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test105" time="0.002">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test105(JsonFactory_ESTest.java:1397)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test106" time="0.002">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test106(JsonFactory_ESTest.java:1406)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test103" time="0.002">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:260)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test103(JsonFactory_ESTest.java:1379)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test104" time="0.003">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test104(JsonFactory_ESTest.java:1387)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test068" time="0.002">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:260)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test068(JsonFactory_ESTest.java:995)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test101" time="0.003">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test101(JsonFactory_ESTest.java:1363)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test069" time="0.002">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test069(JsonFactory_ESTest.java:1013)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test102" time="0.001">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:260)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test102(JsonFactory_ESTest.java:1371)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test109" time="0.003">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test109(JsonFactory_ESTest.java:1439)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test070" time="0.002">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test070(JsonFactory_ESTest.java:1031)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test077" time="0.002">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test077(JsonFactory_ESTest.java:1123)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test110" time="0.002">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test110(JsonFactory_ESTest.java:1448)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test078" time="0.002">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:260)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test078(JsonFactory_ESTest.java:1133)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test111" time="0.001">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:260)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test111(JsonFactory_ESTest.java:1456)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test075" time="0.001">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:260)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test075(JsonFactory_ESTest.java:1096)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test076" time="0.001">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:260)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test076(JsonFactory_ESTest.java:1108)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test073" time="0.002">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test073(JsonFactory_ESTest.java:1065)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test074" time="0.002">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test074(JsonFactory_ESTest.java:1080)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test071" time="0.002">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test071(JsonFactory_ESTest.java:1040)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test072" time="0.002">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test072(JsonFactory_ESTest.java:1053)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test039" time="0.002">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test039(JsonFactory_ESTest.java:584)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test037" time="0.002">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test037(JsonFactory_ESTest.java:548)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test038" time="0.003">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test038(JsonFactory_ESTest.java:566)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test035" time="0.005">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:260)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test035(JsonFactory_ESTest.java:513)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test036" time="0.002">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test036(JsonFactory_ESTest.java:531)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test044" time="0.005">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test044(JsonFactory_ESTest.java:669)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test045" time="0.003">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test045(JsonFactory_ESTest.java:686)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test042" time="0.002">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test042(JsonFactory_ESTest.java:635)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test043" time="0.002">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:260)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test043(JsonFactory_ESTest.java:651)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test040" time="0.004">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:260)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test040(JsonFactory_ESTest.java:601)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test041" time="0.002">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:260)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test041(JsonFactory_ESTest.java:619)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test048" time="0.001">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test048(JsonFactory_ESTest.java:745)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test049" time="0.004">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test049(JsonFactory_ESTest.java:765)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test046" time="0.003">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test046(JsonFactory_ESTest.java:705)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test047" time="0.002">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:260)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test047(JsonFactory_ESTest.java:727)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test055" time="0.002">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:260)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test055(JsonFactory_ESTest.java:867)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test056" time="0.002">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test056(JsonFactory_ESTest.java:877)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test053" time="0.002">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test053(JsonFactory_ESTest.java:842)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test054" time="0.002">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:260)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test054(JsonFactory_ESTest.java:855)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test051" time="0.002">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:260)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test051(JsonFactory_ESTest.java:802)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test052" time="0.004">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:260)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test052(JsonFactory_ESTest.java:819)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test050" time="0.002">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:260)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test050(JsonFactory_ESTest.java:785)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test019" time="0.002">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:260)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test019(JsonFactory_ESTest.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test017" time="0.002">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:260)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test017(JsonFactory_ESTest.java:242)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test018" time="0.002">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:260)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test018(JsonFactory_ESTest.java:253)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test015" time="0.002">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test015(JsonFactory_ESTest.java:224)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test016" time="0.002">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test016(JsonFactory_ESTest.java:233)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test013" time="0.002">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test013(JsonFactory_ESTest.java:202)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test014" time="0.002">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test014(JsonFactory_ESTest.java:213)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test022" time="0.002">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test022(JsonFactory_ESTest.java:296)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test023" time="0.002">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:260)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test023(JsonFactory_ESTest.java:307)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test020" time="0.002">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:260)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test020(JsonFactory_ESTest.java:276)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test021" time="0.001">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:260)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test021(JsonFactory_ESTest.java:285)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test028" time="0.001">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:260)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test028(JsonFactory_ESTest.java:397)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test029" time="0.001">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:260)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test029(JsonFactory_ESTest.java:413)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test026" time="0.003">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:260)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test026(JsonFactory_ESTest.java:359)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test027" time="0.002">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test027(JsonFactory_ESTest.java:378)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test024" time="0.002">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test024(JsonFactory_ESTest.java:324)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test025" time="0.002">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:260)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test025(JsonFactory_ESTest.java:343)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test033" time="0.002">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:260)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test033(JsonFactory_ESTest.java:478)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test034" time="0.002">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test034(JsonFactory_ESTest.java:496)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test031" time="0.002">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:260)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test031(JsonFactory_ESTest.java:445)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test032" time="0.002">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:260)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test032(JsonFactory_ESTest.java:462)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <testcase classname="com.fasterxml.jackson.core.JsonFactory_ESTest" name="test030" time="0.002">
+    <error message="tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer" type="java.lang.IllegalAccessError">java.lang.IllegalAccessError: tried to access class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$__CLR4_4_15a55a5lds7gu1m from class com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+	at com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer.createRoot(BytesToNameCanonicalizer.java:318)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:184)
+	at com.fasterxml.jackson.core.JsonFactory.&lt;init&gt;(JsonFactory.java:260)
+	at com.fasterxml.jackson.core.JsonFactory_ESTest.test030(JsonFactory_ESTest.java:429)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:750)
+</error>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+]]></system-err>
 </testsuite>

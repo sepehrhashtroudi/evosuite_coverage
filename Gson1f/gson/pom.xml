@@ -38,12 +38,33 @@
     <system>Google Code Issue Tracking</system>
     <url>http://code.google.com/p/google-gson/issues/list</url>
   </issueManagement>
-
+  <properties>
+    <evosuiteVersion>1.0.6</evosuiteVersion>
+  </properties>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
       <version>3.8.2</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.evosuite</groupId>
+      <artifactId>evosuite-standalone-runtime</artifactId>
+      <version>${evosuiteVersion}</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
@@ -120,6 +141,26 @@
            <show>public</show>
          </configuration>
        </plugin>
+      <plugin>
+        <groupId>org.evosuite.plugins</groupId>
+        <artifactId>evosuite-maven-plugin</artifactId>
+        <version>${evosuiteVersion}</version>
+        <executions><execution>
+          <goals> <goal> prepare </goal> </goals>
+          <phase> process-test-classes </phase>
+        </execution></executions>
+      </plugin>
+      <plugin>
+        <groupId>org.openclover</groupId>
+        <artifactId>clover-maven-plugin</artifactId>
+        <version>4.4.1</version>
+        <configuration>
+          <excludes>
+            <exclude>**/*_ESTest.java</exclude>
+            <exclude>**/*_ESTest_scaffolding.java</exclude>
+          </excludes>
+        </configuration>
+      </plugin>
        <plugin>
          <groupId>org.apache.maven.plugins</groupId>
          <artifactId>maven-eclipse-plugin</artifactId>

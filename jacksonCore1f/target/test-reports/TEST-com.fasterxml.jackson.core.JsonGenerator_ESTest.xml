@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="1" failures="0" hostname="sepehr-UX310UQK" name="com.fasterxml.jackson.core.JsonGenerator_ESTest" skipped="0" tests="1" time="0.04" timestamp="2023-02-05T11:30:55">
+<testsuite errors="0" failures="0" hostname="sepehr-UX310UQK" name="com.fasterxml.jackson.core.JsonGenerator_ESTest" skipped="0" tests="99" time="1.712" timestamp="2023-02-06T02:40:23">
   <properties>
     <property name="java.vendor" value="Private Build" />
     <property name="sun.java.launcher" value="SUN_STANDARD" />
@@ -84,8 +84,8 @@
     <property name="maven.settings.interactiveMode" value="true" />
     <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
     <property name="ant.version" value="Apache Ant(TM) version 1.10.7 compiled on October 24 2019" />
-    <property name="java.class.path" value="/home/sepehr/.m2/repository/junit/junit/4.8.2/junit-4.8.2.jar:/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/evosuite-tests:/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/target/classes:/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/target/test-classes:/home/sepehr/.ant/lib/clover.jar:/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/evosuite-standalone-runtime-1.0.6.jar:/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/hamcrest-core-1.3.jar:/home/sepehr/.ant/lib/evosuite-1.0.6.jar:/usr/share/java/ant-launcher-1.10.7.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-junit.jar:/usr/share/ant/lib/ant-junit4.jar" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.fasterxml.jackson.core.JsonGenerator_ESTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/target/test-reports/TEST-com.fasterxml.jackson.core.JsonGenerator_ESTest.xml formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter crashfile=/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/junitvmwatcher5344382400706421169.properties propsfile=/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/junit1873413351337789927.properties" />
+    <property name="java.class.path" value="/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/junit-4.12.jar:/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/evosuite-tests:/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/target/classes:/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/target/test-classes:/home/sepehr/.ant/lib/clover.jar:/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/evosuite-standalone-runtime-1.0.6.jar:/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/hamcrest-core-1.3.jar:/usr/share/java/ant-launcher-1.10.7.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-junit.jar:/usr/share/ant/lib/ant-junit4.jar" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.fasterxml.jackson.core.JsonGenerator_ESTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/target/test-reports/TEST-com.fasterxml.jackson.core.JsonGenerator_ESTest.xml formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter crashfile=/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/junitvmwatcher2585884017146969670.properties propsfile=/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/junit8134248386214016444.properties" />
     <property name="project.name" value="jackson-core" />
     <property name="project.build.directory" value="target" />
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
@@ -124,103 +124,108 @@
     <property name="osgi.dynamicImport" value="" />
     <property name="clover.flushpolicy" value="directed" />
   </properties>
-  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="initializationError" time="0.006">
-    <error message="Field nfr must implement MethodRule" type="java.lang.Exception">java.lang.Exception: Field nfr must implement MethodRule
-	at org.evosuite.runtime.EvoRunner.&lt;init&gt;(EvoRunner.java:77)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-</error>
-  </testcase>
-  <system-out><![CDATA[04:30:54.986 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Seeing class for first time: com.fasterxml.jackson.core.JsonGenerator_ESTest
-04:30:54.989 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Instrumenting class 'com.fasterxml.jackson.core.JsonGenerator_ESTest'.
-04:30:55.043 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Seeing class for first time: com.fasterxml.jackson.core.JsonGenerator_ESTest_scaffolding
-04:30:55.043 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Instrumenting class 'com.fasterxml.jackson.core.JsonGenerator_ESTest_scaffolding'.
-04:30:55.046 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Keeping class: com.fasterxml.jackson.core.JsonGenerator_ESTest_scaffolding
-04:30:55.046 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Keeping class: com.fasterxml.jackson.core.JsonGenerator_ESTest
-04:30:55.046 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Seeing class for first time: com.fasterxml.jackson.core.SerializableString
-04:30:55.047 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Instrumenting class 'com.fasterxml.jackson.core.SerializableString'.
-04:30:55.086 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Keeping class: com.fasterxml.jackson.core.SerializableString
-04:30:55.086 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Seeing class for first time: com.fasterxml.jackson.core.JsonGenerator
-04:30:55.086 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Instrumenting class 'com.fasterxml.jackson.core.JsonGenerator'.
-04:30:55.087 [main] INFO  o.e.r.i.MethodCallReplacementClassAdapter - Adding mock interface to class com/fasterxml/jackson/core/JsonGenerator
-04:30:55.169 [main] INFO  o.e.r.i.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/fasterxml/jackson/core/JsonGenerator
-04:30:55.169 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Seeing class for first time: com.fasterxml.jackson.core.Versioned
-04:30:55.169 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Instrumenting class 'com.fasterxml.jackson.core.Versioned'.
-04:30:55.170 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Keeping class: com.fasterxml.jackson.core.Versioned
-04:30:55.170 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Keeping class: com.fasterxml.jackson.core.JsonGenerator
-04:30:55.170 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Seeing class for first time: com.fasterxml.jackson.core.json.WriterBasedJsonGenerator
-04:30:55.170 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Instrumenting class 'com.fasterxml.jackson.core.json.WriterBasedJsonGenerator'.
-04:30:55.174 [main] INFO  o.e.r.i.MethodCallReplacementClassAdapter - Adding mock interface to class com/fasterxml/jackson/core/json/WriterBasedJsonGenerator
-04:30:55.194 [main] INFO  o.e.r.i.CreateClassResetClassAdapter - Found static initializer in class com/fasterxml/jackson/core/json/WriterBasedJsonGenerator
-04:30:55.196 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Seeing class for first time: com.fasterxml.jackson.core.json.JsonGeneratorImpl
-04:30:55.196 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Instrumenting class 'com.fasterxml.jackson.core.json.JsonGeneratorImpl'.
-04:30:55.197 [main] INFO  o.e.r.i.MethodCallReplacementClassAdapter - Adding mock interface to class com/fasterxml/jackson/core/json/JsonGeneratorImpl
-04:30:55.198 [main] INFO  o.e.r.i.CreateClassResetClassAdapter - Found static initializer in class com/fasterxml/jackson/core/json/JsonGeneratorImpl
-04:30:55.198 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Seeing class for first time: com.fasterxml.jackson.core.base.GeneratorBase
-04:30:55.199 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Instrumenting class 'com.fasterxml.jackson.core.base.GeneratorBase'.
-04:30:55.200 [main] INFO  o.e.r.i.MethodCallReplacementClassAdapter - Adding mock interface to class com/fasterxml/jackson/core/base/GeneratorBase
-04:30:55.206 [main] INFO  o.e.r.i.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/fasterxml/jackson/core/base/GeneratorBase
-04:30:55.207 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Keeping class: com.fasterxml.jackson.core.base.GeneratorBase
-04:30:55.207 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Keeping class: com.fasterxml.jackson.core.json.JsonGeneratorImpl
-04:30:55.207 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Keeping class: com.fasterxml.jackson.core.json.WriterBasedJsonGenerator
-04:30:55.207 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Seeing class for first time: com.fasterxml.jackson.core.util.ByteArrayBuilder
-04:30:55.207 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Instrumenting class 'com.fasterxml.jackson.core.util.ByteArrayBuilder'.
-04:30:55.208 [main] INFO  o.e.r.i.MethodCallReplacementClassAdapter - Adding mock interface to class com/fasterxml/jackson/core/util/ByteArrayBuilder
-04:30:55.211 [main] INFO  o.e.r.i.CreateClassResetClassAdapter - Found static initializer in class com/fasterxml/jackson/core/util/ByteArrayBuilder
-04:30:55.212 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Keeping class: com.fasterxml.jackson.core.util.ByteArrayBuilder
-04:30:55.212 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Seeing class for first time: com.fasterxml.jackson.core.PrettyPrinter
-04:30:55.212 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Instrumenting class 'com.fasterxml.jackson.core.PrettyPrinter'.
-04:30:55.213 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Keeping class: com.fasterxml.jackson.core.PrettyPrinter
-04:30:55.213 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Seeing class for first time: com.fasterxml.jackson.core.json.UTF8JsonGenerator
-04:30:55.213 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Instrumenting class 'com.fasterxml.jackson.core.json.UTF8JsonGenerator'.
-04:30:55.215 [main] INFO  o.e.r.i.MethodCallReplacementClassAdapter - Adding mock interface to class com/fasterxml/jackson/core/json/UTF8JsonGenerator
-04:30:55.226 [main] INFO  o.e.r.i.CreateClassResetClassAdapter - Found static initializer in class com/fasterxml/jackson/core/json/UTF8JsonGenerator
-04:30:55.227 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Keeping class: com.fasterxml.jackson.core.json.UTF8JsonGenerator
-04:30:55.228 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Seeing class for first time: com.fasterxml.jackson.core.JsonParser
-04:30:55.228 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Instrumenting class 'com.fasterxml.jackson.core.JsonParser'.
-04:30:55.229 [main] INFO  o.e.r.i.MethodCallReplacementClassAdapter - Adding mock interface to class com/fasterxml/jackson/core/JsonParser
-04:30:55.233 [main] INFO  o.e.r.i.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/fasterxml/jackson/core/JsonParser
-04:30:55.233 [main] INFO  o.e.r.i.CreateClassResetClassAdapter - Adding bytecode for initializing field MIN_BYTE_I
-04:30:55.233 [main] INFO  o.e.r.i.CreateClassResetClassAdapter - Adding bytecode for initializing field MAX_BYTE_I
-04:30:55.233 [main] INFO  o.e.r.i.CreateClassResetClassAdapter - Adding bytecode for initializing field MIN_SHORT_I
-04:30:55.233 [main] INFO  o.e.r.i.CreateClassResetClassAdapter - Adding bytecode for initializing field MAX_SHORT_I
-04:30:55.234 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Keeping class: com.fasterxml.jackson.core.JsonParser
-04:30:55.234 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Seeing class for first time: com.fasterxml.jackson.core.json.ReaderBasedJsonParser
-04:30:55.234 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Instrumenting class 'com.fasterxml.jackson.core.json.ReaderBasedJsonParser'.
-04:30:55.236 [main] INFO  o.e.r.i.MethodCallReplacementClassAdapter - Adding mock interface to class com/fasterxml/jackson/core/json/ReaderBasedJsonParser
-04:30:55.245 [main] INFO  o.e.r.i.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/fasterxml/jackson/core/json/ReaderBasedJsonParser
-04:30:55.246 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Seeing class for first time: com.fasterxml.jackson.core.base.ParserBase
-04:30:55.246 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Instrumenting class 'com.fasterxml.jackson.core.base.ParserBase'.
-04:30:55.247 [main] INFO  o.e.r.i.MethodCallReplacementClassAdapter - Adding mock interface to class com/fasterxml/jackson/core/base/ParserBase
-04:30:55.252 [main] INFO  o.e.r.i.CreateClassResetClassAdapter - Found static initializer in class com/fasterxml/jackson/core/base/ParserBase
-04:30:55.253 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Seeing class for first time: com.fasterxml.jackson.core.base.ParserMinimalBase
-04:30:55.253 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Instrumenting class 'com.fasterxml.jackson.core.base.ParserMinimalBase'.
-04:30:55.254 [main] INFO  o.e.r.i.MethodCallReplacementClassAdapter - Adding mock interface to class com/fasterxml/jackson/core/base/ParserMinimalBase
-04:30:55.256 [main] INFO  o.e.r.i.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/fasterxml/jackson/core/base/ParserMinimalBase
-04:30:55.256 [main] INFO  o.e.r.i.CreateClassResetClassAdapter - Adding bytecode for initializing field INT_TAB
-04:30:55.256 [main] INFO  o.e.r.i.CreateClassResetClassAdapter - Adding bytecode for initializing field INT_LF
-04:30:55.256 [main] INFO  o.e.r.i.CreateClassResetClassAdapter - Adding bytecode for initializing field INT_CR
-04:30:55.257 [main] INFO  o.e.r.i.CreateClassResetClassAdapter - Adding bytecode for initializing field INT_SPACE
-04:30:55.257 [main] INFO  o.e.r.i.CreateClassResetClassAdapter - Adding bytecode for initializing field INT_LBRACKET
-04:30:55.257 [main] INFO  o.e.r.i.CreateClassResetClassAdapter - Adding bytecode for initializing field INT_RBRACKET
-04:30:55.257 [main] INFO  o.e.r.i.CreateClassResetClassAdapter - Adding bytecode for initializing field INT_LCURLY
-04:30:55.257 [main] INFO  o.e.r.i.CreateClassResetClassAdapter - Adding bytecode for initializing field INT_RCURLY
-04:30:55.257 [main] INFO  o.e.r.i.CreateClassResetClassAdapter - Adding bytecode for initializing field INT_QUOTE
-04:30:55.257 [main] INFO  o.e.r.i.CreateClassResetClassAdapter - Adding bytecode for initializing field INT_BACKSLASH
-04:30:55.257 [main] INFO  o.e.r.i.CreateClassResetClassAdapter - Adding bytecode for initializing field INT_SLASH
-04:30:55.257 [main] INFO  o.e.r.i.CreateClassResetClassAdapter - Adding bytecode for initializing field INT_COLON
-04:30:55.257 [main] INFO  o.e.r.i.CreateClassResetClassAdapter - Adding bytecode for initializing field INT_COMMA
-04:30:55.257 [main] INFO  o.e.r.i.CreateClassResetClassAdapter - Adding bytecode for initializing field INT_ASTERISK
-04:30:55.257 [main] INFO  o.e.r.i.CreateClassResetClassAdapter - Adding bytecode for initializing field INT_APOSTROPHE
-04:30:55.257 [main] INFO  o.e.r.i.CreateClassResetClassAdapter - Adding bytecode for initializing field INT_b
-04:30:55.257 [main] INFO  o.e.r.i.CreateClassResetClassAdapter - Adding bytecode for initializing field INT_f
-04:30:55.257 [main] INFO  o.e.r.i.CreateClassResetClassAdapter - Adding bytecode for initializing field INT_n
-04:30:55.257 [main] INFO  o.e.r.i.CreateClassResetClassAdapter - Adding bytecode for initializing field INT_r
-04:30:55.257 [main] INFO  o.e.r.i.CreateClassResetClassAdapter - Adding bytecode for initializing field INT_t
-04:30:55.257 [main] INFO  o.e.r.i.CreateClassResetClassAdapter - Adding bytecode for initializing field INT_u
-04:30:55.258 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Keeping class: com.fasterxml.jackson.core.base.ParserMinimalBase
-04:30:55.258 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Keeping class: com.fasterxml.jackson.core.base.ParserBase
-04:30:55.258 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Keeping class: com.fasterxml.jackson.core.json.ReaderBasedJsonParser
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test43" time="0.023" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test42" time="0.012" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test45" time="0.011" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test44" time="0.011" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test47" time="0.007" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test46" time="0.009" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test49" time="0.006" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test48" time="0.008" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test41" time="0.007" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test40" time="0.006" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test54" time="0.023" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test53" time="0.006" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test56" time="0.008" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test55" time="0.006" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test58" time="0.005" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test57" time="0.029" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test59" time="0.006" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test50" time="0.007" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test52" time="0.009" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test51" time="0.006" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test65" time="0.009" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test64" time="0.008" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test67" time="0.009" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test66" time="0.006" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test69" time="0.007" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test68" time="0.004" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test61" time="0.004" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test60" time="0.004" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test63" time="0.004" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test62" time="0.004" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test76" time="0.004" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test75" time="0.005" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test78" time="0.004" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test77" time="0.005" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test79" time="0.005" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test70" time="0.005" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test72" time="0.005" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test71" time="0.005" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test74" time="0.005" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test73" time="0.005" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test07" time="0.027" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test06" time="0.006" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test09" time="0.005" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test08" time="0.006" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test87" time="0.004" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test86" time="0.006" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test01" time="0.007" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test89" time="0.004" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test00" time="0.013" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test88" time="0.005" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test03" time="0.006" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test02" time="0.007" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test05" time="0.006" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test04" time="0.005" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test81" time="0.006" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test80" time="0.003" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test83" time="0.002" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test82" time="0.002" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test85" time="0.002" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test84" time="0.001" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test18" time="0.003" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test17" time="0.003" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test19" time="0.005" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test10" time="0.002" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test98" time="0.002" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test97" time="0.002" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test12" time="0.002" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test11" time="0.003" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test14" time="0.002" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test13" time="0.002" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test16" time="0.002" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test15" time="0.002" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test90" time="0.003" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test92" time="0.002" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test91" time="0.002" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test94" time="0.002" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test93" time="0.002" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test96" time="0.003" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test95" time="0.005" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test29" time="0.003" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test28" time="0.003" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test21" time="0.001" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test20" time="0.002" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test23" time="0.003" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test22" time="0.003" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test25" time="0.005" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test24" time="0.002" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test27" time="0.001" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test26" time="0.002" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test39" time="0.004" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test32" time="0.003" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test31" time="0.002" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test34" time="0.003" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test33" time="0.002" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test36" time="0.002" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test35" time="0.002" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test38" time="0.002" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test37" time="0.002" />
+  <testcase classname="com.fasterxml.jackson.core.JsonGenerator_ESTest" name="test30" time="0.002" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+]]></system-err>
 </testsuite>

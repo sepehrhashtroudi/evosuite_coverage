@@ -71,7 +71,7 @@ import java.util.Map;
  * @author Inderjeet Singh
  * @author Joel Leitch
  */
-public final class Gson {public static class __CLR4_4_1jejeldr3ciem{public static com_atlassian_clover.CoverageRecorder R;public static com_atlassian_clover.CloverProfile[] profiles = { };@java.lang.SuppressWarnings("unchecked") public static <I, T extends I> I lambdaInc(final int i,final T l,final int si){java.lang.reflect.InvocationHandler h=new java.lang.reflect.InvocationHandler(){public java.lang.Object invoke(java.lang.Object p,java.lang.reflect.Method m,java.lang.Object[] a) throws Throwable{R.inc(i);R.inc(si);try{return m.invoke(l,a);}catch(java.lang.reflect.InvocationTargetException e){throw e.getCause()!=null?e.getCause():new RuntimeException("Clover failed to invoke instrumented lambda",e);}}};return (I)java.lang.reflect.Proxy.newProxyInstance(l.getClass().getClassLoader(),l.getClass().getInterfaces(),h);}static{com_atlassian_clover.CoverageRecorder _R=null;try{com_atlassian_clover.CloverVersionInfo.An_old_version_of_clover_is_on_your_compilation_classpath___Please_remove___Required_version_is___4_4_1();if(2019101123313948L!=com_atlassian_clover.CloverVersionInfo.getBuildStamp()){com_atlassian_clover.Clover.l("[CLOVER] WARNING: The Clover version used in instrumentation does not match the runtime version. You need to run instrumented classes against the same version of Clover that you instrumented with.");com_atlassian_clover.Clover.l("[CLOVER] WARNING: Instr=4.4.1#2019101123313948,Runtime="+com_atlassian_clover.CloverVersionInfo.getReleaseNum()+"#"+com_atlassian_clover.CloverVersionInfo.getBuildStamp());}R=com_atlassian_clover.Clover.getNullRecorder();_R=com_atlassian_clover.Clover.getNullRecorder();_R=com_atlassian_clover.Clover.getRecorder("\u002f\u0068\u006f\u006d\u0065\u002f\u0073\u0065\u0070\u0065\u0068\u0072\u002f\u006d\u0061\u0073\u0074\u0065\u0072\u0073\u002f\u0074\u0065\u0073\u0074\u005f\u0067\u0065\u006e\u0065\u0072\u0061\u0074\u0069\u006f\u006e\u002f\u0065\u0076\u006f\u0073\u0075\u0069\u0074\u0065\u005f\u0063\u006f\u0076\u0065\u0072\u0061\u0067\u0065\u002f\u0047\u0073\u006f\u006e\u0031\u0066\u002f\u0067\u0073\u006f\u006e\u002f\u0074\u0061\u0072\u0067\u0065\u0074\u002f\u0063\u006c\u006f\u0076\u0065\u0072\u002f\u0063\u006c\u006f\u0076\u0065\u0072\u002e\u0064\u0062",1675583825374L,8589935092L,830,profiles,new java.lang.String[]{"clover.distributed.coverage",null});}catch(java.lang.SecurityException e){java.lang.System.err.println("[CLOVER] FATAL ERROR: Clover could not be initialised because it has insufficient security privileges. Please consult the Clover documentation on the security policy file changes required. ("+e.getClass()+":"+e.getMessage()+")");}catch(java.lang.NoClassDefFoundError e){java.lang.System.err.println("[CLOVER] FATAL ERROR: Clover could not be initialised. Are you sure you have Clover in the runtime classpath? ("+e.getClass()+":"+e.getMessage()+")");}catch(java.lang.Throwable t){java.lang.System.err.println("[CLOVER] FATAL ERROR: Clover could not be initialised because of an unexpected error. ("+t.getClass()+":"+t.getMessage()+")");}R=_R;}}public static final com_atlassian_clover.TestNameSniffer __CLR4_4_1_TEST_NAME_SNIFFER=com_atlassian_clover.TestNameSniffer.NULL_INSTANCE;
+public final class Gson {public static class __CLR4_4_1jejelds19gdd{public static com_atlassian_clover.CoverageRecorder R;public static com_atlassian_clover.CloverProfile[] profiles = { };@java.lang.SuppressWarnings("unchecked") public static <I, T extends I> I lambdaInc(final int i,final T l,final int si){java.lang.reflect.InvocationHandler h=new java.lang.reflect.InvocationHandler(){public java.lang.Object invoke(java.lang.Object p,java.lang.reflect.Method m,java.lang.Object[] a) throws Throwable{R.inc(i);R.inc(si);try{return m.invoke(l,a);}catch(java.lang.reflect.InvocationTargetException e){throw e.getCause()!=null?e.getCause():new RuntimeException("Clover failed to invoke instrumented lambda",e);}}};return (I)java.lang.reflect.Proxy.newProxyInstance(l.getClass().getClassLoader(),l.getClass().getInterfaces(),h);}static{com_atlassian_clover.CoverageRecorder _R=null;try{com_atlassian_clover.CloverVersionInfo.An_old_version_of_clover_is_on_your_compilation_classpath___Please_remove___Required_version_is___4_4_1();if(2019101123313948L!=com_atlassian_clover.CloverVersionInfo.getBuildStamp()){com_atlassian_clover.Clover.l("[CLOVER] WARNING: The Clover version used in instrumentation does not match the runtime version. You need to run instrumented classes against the same version of Clover that you instrumented with.");com_atlassian_clover.Clover.l("[CLOVER] WARNING: Instr=4.4.1#2019101123313948,Runtime="+com_atlassian_clover.CloverVersionInfo.getReleaseNum()+"#"+com_atlassian_clover.CloverVersionInfo.getBuildStamp());}R=com_atlassian_clover.Clover.getNullRecorder();_R=com_atlassian_clover.Clover.getNullRecorder();_R=com_atlassian_clover.Clover.getRecorder("\u002f\u0068\u006f\u006d\u0065\u002f\u0073\u0065\u0070\u0065\u0068\u0072\u002f\u006d\u0061\u0073\u0074\u0065\u0072\u0073\u002f\u0074\u0065\u0073\u0074\u005f\u0067\u0065\u006e\u0065\u0072\u0061\u0074\u0069\u006f\u006e\u002f\u0065\u0076\u006f\u0073\u0075\u0069\u0074\u0065\u005f\u0063\u006f\u0076\u0065\u0072\u0061\u0067\u0065\u002f\u0047\u0073\u006f\u006e\u0031\u0066\u002f\u0067\u0073\u006f\u006e\u002f\u0074\u0061\u0072\u0067\u0065\u0074\u002f\u0063\u006c\u006f\u0076\u0065\u0072\u002f\u0063\u006c\u006f\u0076\u0065\u0072\u002e\u0064\u0062",1675640789680L,8589935092L,830,profiles,new java.lang.String[]{"clover.distributed.coverage",null});}catch(java.lang.SecurityException e){java.lang.System.err.println("[CLOVER] FATAL ERROR: Clover could not be initialised because it has insufficient security privileges. Please consult the Clover documentation on the security policy file changes required. ("+e.getClass()+":"+e.getMessage()+")");}catch(java.lang.NoClassDefFoundError e){java.lang.System.err.println("[CLOVER] FATAL ERROR: Clover could not be initialised. Are you sure you have Clover in the runtime classpath? ("+e.getClass()+":"+e.getMessage()+")");}catch(java.lang.Throwable t){java.lang.System.err.println("[CLOVER] FATAL ERROR: Clover could not be initialised because of an unexpected error. ("+t.getClass()+":"+t.getMessage()+")");}R=_R;}}public static final com_atlassian_clover.TestNameSniffer __CLR4_4_1_TEST_NAME_SNIFFER=com_atlassian_clover.TestNameSniffer.NULL_INSTANCE;
 
   //TODO(inder): get rid of all the registerXXX methods and take all such parameters in the
   // constructor instead. At the minimum, mark those methods private.
@@ -151,40 +151,40 @@ public final class Gson {public static class __CLR4_4_1jejeldr3ciem{public stati
     this(DEFAULT_EXCLUSION_STRATEGY, DEFAULT_EXCLUSION_STRATEGY, DEFAULT_NAMING_POLICY,
     new MappedObjectConstructor(DefaultTypeAdapters.getDefaultInstanceCreators()),
     false, DefaultTypeAdapters.getDefaultSerializers(),
-    DefaultTypeAdapters.getDefaultDeserializers(), DEFAULT_JSON_NON_EXECUTABLE, true, false);__CLR4_4_1jejeldr3ciem.R.inc(699);try{__CLR4_4_1jejeldr3ciem.R.inc(698);
-  }finally{__CLR4_4_1jejeldr3ciem.R.flushNeeded();}}
+    DefaultTypeAdapters.getDefaultDeserializers(), DEFAULT_JSON_NON_EXECUTABLE, true, false);__CLR4_4_1jejelds19gdd.R.inc(699);try{__CLR4_4_1jejelds19gdd.R.inc(698);
+  }finally{__CLR4_4_1jejelds19gdd.R.flushNeeded();}}
 
   Gson(ExclusionStrategy serializationStrategy, ExclusionStrategy deserializationStrategy,
        FieldNamingStrategy2 fieldNamingPolicy, MappedObjectConstructor objectConstructor,
        boolean serializeNulls, ParameterizedTypeHandlerMap<JsonSerializer<?>> serializers,
        ParameterizedTypeHandlerMap<JsonDeserializer<?>> deserializers,
-       boolean generateNonExecutableGson, boolean htmlSafe, boolean prettyPrinting) {try{__CLR4_4_1jejeldr3ciem.R.inc(700);
-    __CLR4_4_1jejeldr3ciem.R.inc(701);this.serializationStrategy = serializationStrategy;
-    __CLR4_4_1jejeldr3ciem.R.inc(702);this.deserializationStrategy = deserializationStrategy;
-    __CLR4_4_1jejeldr3ciem.R.inc(703);this.fieldNamingPolicy = fieldNamingPolicy;
-    __CLR4_4_1jejeldr3ciem.R.inc(704);this.objectConstructor = objectConstructor;
-    __CLR4_4_1jejeldr3ciem.R.inc(705);this.serializeNulls = serializeNulls;
-    __CLR4_4_1jejeldr3ciem.R.inc(706);this.serializers = serializers;
-    __CLR4_4_1jejeldr3ciem.R.inc(707);this.deserializers = deserializers;
-    __CLR4_4_1jejeldr3ciem.R.inc(708);this.generateNonExecutableJson = generateNonExecutableGson;
-    __CLR4_4_1jejeldr3ciem.R.inc(709);this.htmlSafe = htmlSafe;
-    __CLR4_4_1jejeldr3ciem.R.inc(710);this.prettyPrinting = prettyPrinting;
-  }finally{__CLR4_4_1jejeldr3ciem.R.flushNeeded();}}
+       boolean generateNonExecutableGson, boolean htmlSafe, boolean prettyPrinting) {try{__CLR4_4_1jejelds19gdd.R.inc(700);
+    __CLR4_4_1jejelds19gdd.R.inc(701);this.serializationStrategy = serializationStrategy;
+    __CLR4_4_1jejelds19gdd.R.inc(702);this.deserializationStrategy = deserializationStrategy;
+    __CLR4_4_1jejelds19gdd.R.inc(703);this.fieldNamingPolicy = fieldNamingPolicy;
+    __CLR4_4_1jejelds19gdd.R.inc(704);this.objectConstructor = objectConstructor;
+    __CLR4_4_1jejelds19gdd.R.inc(705);this.serializeNulls = serializeNulls;
+    __CLR4_4_1jejelds19gdd.R.inc(706);this.serializers = serializers;
+    __CLR4_4_1jejelds19gdd.R.inc(707);this.deserializers = deserializers;
+    __CLR4_4_1jejelds19gdd.R.inc(708);this.generateNonExecutableJson = generateNonExecutableGson;
+    __CLR4_4_1jejelds19gdd.R.inc(709);this.htmlSafe = htmlSafe;
+    __CLR4_4_1jejelds19gdd.R.inc(710);this.prettyPrinting = prettyPrinting;
+  }finally{__CLR4_4_1jejelds19gdd.R.flushNeeded();}}
 
-  private ObjectNavigatorFactory createDefaultObjectNavigatorFactory(ExclusionStrategy strategy) {try{__CLR4_4_1jejeldr3ciem.R.inc(711);
-    __CLR4_4_1jejeldr3ciem.R.inc(712);return new ObjectNavigatorFactory(strategy, fieldNamingPolicy);
-  }finally{__CLR4_4_1jejeldr3ciem.R.flushNeeded();}}
+  private ObjectNavigatorFactory createDefaultObjectNavigatorFactory(ExclusionStrategy strategy) {try{__CLR4_4_1jejelds19gdd.R.inc(711);
+    __CLR4_4_1jejelds19gdd.R.inc(712);return new ObjectNavigatorFactory(strategy, fieldNamingPolicy);
+  }finally{__CLR4_4_1jejelds19gdd.R.flushNeeded();}}
 
-  private static ExclusionStrategy createExclusionStrategy(double version) {try{__CLR4_4_1jejeldr3ciem.R.inc(713);
-    __CLR4_4_1jejeldr3ciem.R.inc(714);List<ExclusionStrategy> strategies = new LinkedList<ExclusionStrategy>();
-    __CLR4_4_1jejeldr3ciem.R.inc(715);strategies.add(DEFAULT_ANON_LOCAL_CLASS_EXCLUSION_STRATEGY);
-    __CLR4_4_1jejeldr3ciem.R.inc(716);strategies.add(DEFAULT_SYNTHETIC_FIELD_EXCLUSION_STRATEGY);
-    __CLR4_4_1jejeldr3ciem.R.inc(717);strategies.add(DEFAULT_MODIFIER_BASED_EXCLUSION_STRATEGY);
-    __CLR4_4_1jejeldr3ciem.R.inc(718);if ((((version != VersionConstants.IGNORE_VERSIONS)&&(__CLR4_4_1jejeldr3ciem.R.iget(719)!=0|true))||(__CLR4_4_1jejeldr3ciem.R.iget(720)==0&false))) {{
-      __CLR4_4_1jejeldr3ciem.R.inc(721);strategies.add(new VersionExclusionStrategy(version));
+  private static ExclusionStrategy createExclusionStrategy(double version) {try{__CLR4_4_1jejelds19gdd.R.inc(713);
+    __CLR4_4_1jejelds19gdd.R.inc(714);List<ExclusionStrategy> strategies = new LinkedList<ExclusionStrategy>();
+    __CLR4_4_1jejelds19gdd.R.inc(715);strategies.add(DEFAULT_ANON_LOCAL_CLASS_EXCLUSION_STRATEGY);
+    __CLR4_4_1jejelds19gdd.R.inc(716);strategies.add(DEFAULT_SYNTHETIC_FIELD_EXCLUSION_STRATEGY);
+    __CLR4_4_1jejelds19gdd.R.inc(717);strategies.add(DEFAULT_MODIFIER_BASED_EXCLUSION_STRATEGY);
+    __CLR4_4_1jejelds19gdd.R.inc(718);if ((((version != VersionConstants.IGNORE_VERSIONS)&&(__CLR4_4_1jejelds19gdd.R.iget(719)!=0|true))||(__CLR4_4_1jejelds19gdd.R.iget(720)==0&false))) {{
+      __CLR4_4_1jejelds19gdd.R.inc(721);strategies.add(new VersionExclusionStrategy(version));
     }
-    }__CLR4_4_1jejeldr3ciem.R.inc(722);return new DisjunctionExclusionStrategy(strategies);
-  }finally{__CLR4_4_1jejeldr3ciem.R.flushNeeded();}}
+    }__CLR4_4_1jejelds19gdd.R.inc(722);return new DisjunctionExclusionStrategy(strategies);
+  }finally{__CLR4_4_1jejelds19gdd.R.flushNeeded();}}
 
   /**
    * This method serializes the specified object into its equivalent representation as a tree of
@@ -199,12 +199,12 @@ public final class Gson {public static class __CLR4_4_1jejeldr3ciem{public stati
    * @return Json representation of {@code src}.
    * @since 1.4
    */
-  public JsonElement toJsonTree(Object src) {try{__CLR4_4_1jejeldr3ciem.R.inc(723);
-    __CLR4_4_1jejeldr3ciem.R.inc(724);if ((((src == null)&&(__CLR4_4_1jejeldr3ciem.R.iget(725)!=0|true))||(__CLR4_4_1jejeldr3ciem.R.iget(726)==0&false))) {{
-      __CLR4_4_1jejeldr3ciem.R.inc(727);return JsonNull.createJsonNull();
+  public JsonElement toJsonTree(Object src) {try{__CLR4_4_1jejelds19gdd.R.inc(723);
+    __CLR4_4_1jejelds19gdd.R.inc(724);if ((((src == null)&&(__CLR4_4_1jejelds19gdd.R.iget(725)!=0|true))||(__CLR4_4_1jejelds19gdd.R.iget(726)==0&false))) {{
+      __CLR4_4_1jejelds19gdd.R.inc(727);return JsonNull.createJsonNull();
     }
-    }__CLR4_4_1jejeldr3ciem.R.inc(728);return toJsonTree(src, src.getClass());
-  }finally{__CLR4_4_1jejeldr3ciem.R.flushNeeded();}}
+    }__CLR4_4_1jejelds19gdd.R.inc(728);return toJsonTree(src, src.getClass());
+  }finally{__CLR4_4_1jejelds19gdd.R.flushNeeded();}}
 
   /**
    * This method serializes the specified object, including those of generic types, into its
@@ -222,14 +222,14 @@ public final class Gson {public static class __CLR4_4_1jejeldr3ciem{public stati
    * @return Json representation of {@code src}
    * @since 1.4
    */
-  public JsonElement toJsonTree(Object src, Type typeOfSrc) {try{__CLR4_4_1jejeldr3ciem.R.inc(729);
-    __CLR4_4_1jejeldr3ciem.R.inc(730);if ((((src == null)&&(__CLR4_4_1jejeldr3ciem.R.iget(731)!=0|true))||(__CLR4_4_1jejeldr3ciem.R.iget(732)==0&false))) {{
-      __CLR4_4_1jejeldr3ciem.R.inc(733);return JsonNull.createJsonNull();
+  public JsonElement toJsonTree(Object src, Type typeOfSrc) {try{__CLR4_4_1jejelds19gdd.R.inc(729);
+    __CLR4_4_1jejelds19gdd.R.inc(730);if ((((src == null)&&(__CLR4_4_1jejelds19gdd.R.iget(731)!=0|true))||(__CLR4_4_1jejelds19gdd.R.iget(732)==0&false))) {{
+      __CLR4_4_1jejelds19gdd.R.inc(733);return JsonNull.createJsonNull();
     }
-    }__CLR4_4_1jejeldr3ciem.R.inc(734);JsonSerializationContextDefault context = new JsonSerializationContextDefault(
+    }__CLR4_4_1jejelds19gdd.R.inc(734);JsonSerializationContextDefault context = new JsonSerializationContextDefault(
         createDefaultObjectNavigatorFactory(serializationStrategy), serializeNulls, serializers);
-    __CLR4_4_1jejeldr3ciem.R.inc(735);return context.serialize(src, typeOfSrc, true);
-  }finally{__CLR4_4_1jejeldr3ciem.R.flushNeeded();}}
+    __CLR4_4_1jejelds19gdd.R.inc(735);return context.serialize(src, typeOfSrc, true);
+  }finally{__CLR4_4_1jejelds19gdd.R.flushNeeded();}}
 
   /**
    * This method serializes the specified object into its equivalent Json representation.
@@ -244,12 +244,12 @@ public final class Gson {public static class __CLR4_4_1jejeldr3ciem{public stati
    * @param src the object for which Json representation is to be created setting for Gson
    * @return Json representation of {@code src}.
    */
-  public String toJson(Object src) {try{__CLR4_4_1jejeldr3ciem.R.inc(736);
-    __CLR4_4_1jejeldr3ciem.R.inc(737);if ((((src == null)&&(__CLR4_4_1jejeldr3ciem.R.iget(738)!=0|true))||(__CLR4_4_1jejeldr3ciem.R.iget(739)==0&false))) {{
-      __CLR4_4_1jejeldr3ciem.R.inc(740);return (((serializeNulls )&&(__CLR4_4_1jejeldr3ciem.R.iget(741)!=0|true))||(__CLR4_4_1jejeldr3ciem.R.iget(742)==0&false))? NULL_STRING : "";
+  public String toJson(Object src) {try{__CLR4_4_1jejelds19gdd.R.inc(736);
+    __CLR4_4_1jejelds19gdd.R.inc(737);if ((((src == null)&&(__CLR4_4_1jejelds19gdd.R.iget(738)!=0|true))||(__CLR4_4_1jejelds19gdd.R.iget(739)==0&false))) {{
+      __CLR4_4_1jejelds19gdd.R.inc(740);return (((serializeNulls )&&(__CLR4_4_1jejelds19gdd.R.iget(741)!=0|true))||(__CLR4_4_1jejelds19gdd.R.iget(742)==0&false))? NULL_STRING : "";
     }
-    }__CLR4_4_1jejeldr3ciem.R.inc(743);return toJson(src, src.getClass());
-  }finally{__CLR4_4_1jejeldr3ciem.R.flushNeeded();}}
+    }__CLR4_4_1jejelds19gdd.R.inc(743);return toJson(src, src.getClass());
+  }finally{__CLR4_4_1jejelds19gdd.R.flushNeeded();}}
 
   /**
    * This method serializes the specified object, including those of generic types, into its
@@ -266,11 +266,11 @@ public final class Gson {public static class __CLR4_4_1jejeldr3ciem{public stati
    * </pre>
    * @return Json representation of {@code src}
    */
-  public String toJson(Object src, Type typeOfSrc) {try{__CLR4_4_1jejeldr3ciem.R.inc(744);
-    __CLR4_4_1jejeldr3ciem.R.inc(745);StringWriter writer = new StringWriter();
-    __CLR4_4_1jejeldr3ciem.R.inc(746);toJson(toJsonTree(src, typeOfSrc), writer);
-    __CLR4_4_1jejeldr3ciem.R.inc(747);return writer.toString();
-  }finally{__CLR4_4_1jejeldr3ciem.R.flushNeeded();}}
+  public String toJson(Object src, Type typeOfSrc) {try{__CLR4_4_1jejelds19gdd.R.inc(744);
+    __CLR4_4_1jejelds19gdd.R.inc(745);StringWriter writer = new StringWriter();
+    __CLR4_4_1jejelds19gdd.R.inc(746);toJson(toJsonTree(src, typeOfSrc), writer);
+    __CLR4_4_1jejelds19gdd.R.inc(747);return writer.toString();
+  }finally{__CLR4_4_1jejelds19gdd.R.flushNeeded();}}
 
   /**
    * This method serializes the specified object into its equivalent Json representation.
@@ -285,17 +285,17 @@ public final class Gson {public static class __CLR4_4_1jejeldr3ciem{public stati
    * @param writer Writer to which the Json representation needs to be written
    * @since 1.2
    */
-  public void toJson(Object src, Appendable writer) {try{__CLR4_4_1jejeldr3ciem.R.inc(748);
-    __CLR4_4_1jejeldr3ciem.R.inc(749);try {
-      __CLR4_4_1jejeldr3ciem.R.inc(750);if ((((src != null)&&(__CLR4_4_1jejeldr3ciem.R.iget(751)!=0|true))||(__CLR4_4_1jejeldr3ciem.R.iget(752)==0&false))) {{
-        __CLR4_4_1jejeldr3ciem.R.inc(753);toJson(src, src.getClass(), writer);
-      } }else {__CLR4_4_1jejeldr3ciem.R.inc(754);if ((((serializeNulls)&&(__CLR4_4_1jejeldr3ciem.R.iget(755)!=0|true))||(__CLR4_4_1jejeldr3ciem.R.iget(756)==0&false))) {{
-        __CLR4_4_1jejeldr3ciem.R.inc(757);writeOutNullString(writer);
+  public void toJson(Object src, Appendable writer) {try{__CLR4_4_1jejelds19gdd.R.inc(748);
+    __CLR4_4_1jejelds19gdd.R.inc(749);try {
+      __CLR4_4_1jejelds19gdd.R.inc(750);if ((((src != null)&&(__CLR4_4_1jejelds19gdd.R.iget(751)!=0|true))||(__CLR4_4_1jejelds19gdd.R.iget(752)==0&false))) {{
+        __CLR4_4_1jejelds19gdd.R.inc(753);toJson(src, src.getClass(), writer);
+      } }else {__CLR4_4_1jejelds19gdd.R.inc(754);if ((((serializeNulls)&&(__CLR4_4_1jejelds19gdd.R.iget(755)!=0|true))||(__CLR4_4_1jejelds19gdd.R.iget(756)==0&false))) {{
+        __CLR4_4_1jejelds19gdd.R.inc(757);writeOutNullString(writer);
       }
     }}} catch (IOException ioe) {
-      __CLR4_4_1jejeldr3ciem.R.inc(758);throw new RuntimeException(ioe);
+      __CLR4_4_1jejelds19gdd.R.inc(758);throw new RuntimeException(ioe);
     }
-  }finally{__CLR4_4_1jejeldr3ciem.R.flushNeeded();}}
+  }finally{__CLR4_4_1jejelds19gdd.R.flushNeeded();}}
 
   /**
    * This method serializes the specified object, including those of generic types, into its
@@ -312,18 +312,18 @@ public final class Gson {public static class __CLR4_4_1jejeldr3ciem{public stati
    * @param writer Writer to which the Json representation of src needs to be written.
    * @since 1.2
    */
-  public void toJson(Object src, Type typeOfSrc, Appendable writer) {try{__CLR4_4_1jejeldr3ciem.R.inc(759);
-    __CLR4_4_1jejeldr3ciem.R.inc(760);JsonElement jsonElement = toJsonTree(src, typeOfSrc);
-    __CLR4_4_1jejeldr3ciem.R.inc(761);toJson(jsonElement, writer);
-  }finally{__CLR4_4_1jejeldr3ciem.R.flushNeeded();}}
+  public void toJson(Object src, Type typeOfSrc, Appendable writer) {try{__CLR4_4_1jejelds19gdd.R.inc(759);
+    __CLR4_4_1jejelds19gdd.R.inc(760);JsonElement jsonElement = toJsonTree(src, typeOfSrc);
+    __CLR4_4_1jejelds19gdd.R.inc(761);toJson(jsonElement, writer);
+  }finally{__CLR4_4_1jejelds19gdd.R.flushNeeded();}}
 
   /**
    * Writes the JSON representation of {@code src} of type {@code typeOfSrc} to
    * {@code writer}.
    */
-  public void toJson(Object src, Type typeOfSrc, JsonWriter writer) {try{__CLR4_4_1jejeldr3ciem.R.inc(762);
-    __CLR4_4_1jejeldr3ciem.R.inc(763);toJson(toJsonTree(src, typeOfSrc), writer);
-  }finally{__CLR4_4_1jejeldr3ciem.R.flushNeeded();}}
+  public void toJson(Object src, Type typeOfSrc, JsonWriter writer) {try{__CLR4_4_1jejelds19gdd.R.inc(762);
+    __CLR4_4_1jejelds19gdd.R.inc(763);toJson(toJsonTree(src, typeOfSrc), writer);
+  }finally{__CLR4_4_1jejelds19gdd.R.flushNeeded();}}
 
   /**
    * Converts a tree of {@link JsonElement}s into its equivalent JSON representation.
@@ -332,11 +332,11 @@ public final class Gson {public static class __CLR4_4_1jejeldr3ciem{public stati
    * @return JSON String representation of the tree
    * @since 1.4
    */
-  public String toJson(JsonElement jsonElement) {try{__CLR4_4_1jejeldr3ciem.R.inc(764);
-    __CLR4_4_1jejeldr3ciem.R.inc(765);StringWriter writer = new StringWriter();
-    __CLR4_4_1jejeldr3ciem.R.inc(766);toJson(jsonElement, writer);
-    __CLR4_4_1jejeldr3ciem.R.inc(767);return writer.toString();
-  }finally{__CLR4_4_1jejeldr3ciem.R.flushNeeded();}}
+  public String toJson(JsonElement jsonElement) {try{__CLR4_4_1jejelds19gdd.R.inc(764);
+    __CLR4_4_1jejelds19gdd.R.inc(765);StringWriter writer = new StringWriter();
+    __CLR4_4_1jejelds19gdd.R.inc(766);toJson(jsonElement, writer);
+    __CLR4_4_1jejelds19gdd.R.inc(767);return writer.toString();
+  }finally{__CLR4_4_1jejelds19gdd.R.flushNeeded();}}
 
   /**
    * Writes out the equivalent JSON for a tree of {@link JsonElement}s.
@@ -345,38 +345,38 @@ public final class Gson {public static class __CLR4_4_1jejeldr3ciem{public stati
    * @param writer Writer to which the Json representation needs to be written
    * @since 1.4
    */
-  public void toJson(JsonElement jsonElement, Appendable writer) {try{__CLR4_4_1jejeldr3ciem.R.inc(768);
-    __CLR4_4_1jejeldr3ciem.R.inc(769);try {
-      __CLR4_4_1jejeldr3ciem.R.inc(770);if ((((generateNonExecutableJson)&&(__CLR4_4_1jejeldr3ciem.R.iget(771)!=0|true))||(__CLR4_4_1jejeldr3ciem.R.iget(772)==0&false))) {{
-        __CLR4_4_1jejeldr3ciem.R.inc(773);writer.append(JSON_NON_EXECUTABLE_PREFIX);
+  public void toJson(JsonElement jsonElement, Appendable writer) {try{__CLR4_4_1jejelds19gdd.R.inc(768);
+    __CLR4_4_1jejelds19gdd.R.inc(769);try {
+      __CLR4_4_1jejelds19gdd.R.inc(770);if ((((generateNonExecutableJson)&&(__CLR4_4_1jejelds19gdd.R.iget(771)!=0|true))||(__CLR4_4_1jejelds19gdd.R.iget(772)==0&false))) {{
+        __CLR4_4_1jejelds19gdd.R.inc(773);writer.append(JSON_NON_EXECUTABLE_PREFIX);
       }
-      }__CLR4_4_1jejeldr3ciem.R.inc(774);JsonWriter jsonWriter = new JsonWriter(Streams.writerForAppendable(writer));
-      __CLR4_4_1jejeldr3ciem.R.inc(775);if ((((prettyPrinting)&&(__CLR4_4_1jejeldr3ciem.R.iget(776)!=0|true))||(__CLR4_4_1jejeldr3ciem.R.iget(777)==0&false))) {{
-        __CLR4_4_1jejeldr3ciem.R.inc(778);jsonWriter.setIndent("  ");
+      }__CLR4_4_1jejelds19gdd.R.inc(774);JsonWriter jsonWriter = new JsonWriter(Streams.writerForAppendable(writer));
+      __CLR4_4_1jejelds19gdd.R.inc(775);if ((((prettyPrinting)&&(__CLR4_4_1jejelds19gdd.R.iget(776)!=0|true))||(__CLR4_4_1jejelds19gdd.R.iget(777)==0&false))) {{
+        __CLR4_4_1jejelds19gdd.R.inc(778);jsonWriter.setIndent("  ");
       }
-      }__CLR4_4_1jejeldr3ciem.R.inc(779);toJson(jsonElement, jsonWriter);
+      }__CLR4_4_1jejelds19gdd.R.inc(779);toJson(jsonElement, jsonWriter);
     } catch (IOException e) {
-      __CLR4_4_1jejeldr3ciem.R.inc(780);throw new RuntimeException(e);
+      __CLR4_4_1jejelds19gdd.R.inc(780);throw new RuntimeException(e);
     }
-  }finally{__CLR4_4_1jejeldr3ciem.R.flushNeeded();}}
+  }finally{__CLR4_4_1jejelds19gdd.R.flushNeeded();}}
 
   /**
    * Writes the JSON for {@code jsonElement} to {@code writer}.
    */
-  public void toJson(JsonElement jsonElement, JsonWriter writer) {try{__CLR4_4_1jejeldr3ciem.R.inc(781);
-    __CLR4_4_1jejeldr3ciem.R.inc(782);boolean oldLenient = writer.isLenient();
-    __CLR4_4_1jejeldr3ciem.R.inc(783);writer.setLenient(true);
-    __CLR4_4_1jejeldr3ciem.R.inc(784);boolean oldHtmlSafe = writer.isHtmlSafe();
-    __CLR4_4_1jejeldr3ciem.R.inc(785);writer.setHtmlSafe(htmlSafe);
-    __CLR4_4_1jejeldr3ciem.R.inc(786);try {
-      __CLR4_4_1jejeldr3ciem.R.inc(787);Streams.write(jsonElement, serializeNulls, writer);
+  public void toJson(JsonElement jsonElement, JsonWriter writer) {try{__CLR4_4_1jejelds19gdd.R.inc(781);
+    __CLR4_4_1jejelds19gdd.R.inc(782);boolean oldLenient = writer.isLenient();
+    __CLR4_4_1jejelds19gdd.R.inc(783);writer.setLenient(true);
+    __CLR4_4_1jejelds19gdd.R.inc(784);boolean oldHtmlSafe = writer.isHtmlSafe();
+    __CLR4_4_1jejelds19gdd.R.inc(785);writer.setHtmlSafe(htmlSafe);
+    __CLR4_4_1jejelds19gdd.R.inc(786);try {
+      __CLR4_4_1jejelds19gdd.R.inc(787);Streams.write(jsonElement, serializeNulls, writer);
     } catch (IOException e) {
-      __CLR4_4_1jejeldr3ciem.R.inc(788);throw new JsonIOException(e);
+      __CLR4_4_1jejelds19gdd.R.inc(788);throw new JsonIOException(e);
     } finally {
-      __CLR4_4_1jejeldr3ciem.R.inc(789);writer.setLenient(oldLenient);
-      __CLR4_4_1jejeldr3ciem.R.inc(790);writer.setHtmlSafe(oldHtmlSafe);
+      __CLR4_4_1jejelds19gdd.R.inc(789);writer.setLenient(oldLenient);
+      __CLR4_4_1jejelds19gdd.R.inc(790);writer.setHtmlSafe(oldHtmlSafe);
     }
-  }finally{__CLR4_4_1jejeldr3ciem.R.flushNeeded();}}
+  }finally{__CLR4_4_1jejelds19gdd.R.flushNeeded();}}
 
   /**
    * This method deserializes the specified Json into an object of the specified class. It is not
@@ -396,10 +396,10 @@ public final class Gson {public static class __CLR4_4_1jejeldr3ciem{public stati
    * classOfT
    */
   @SuppressWarnings("unchecked")
-  public <T> T fromJson(String json, Class<T> classOfT) throws JsonParseException {try{__CLR4_4_1jejeldr3ciem.R.inc(791);
-    __CLR4_4_1jejeldr3ciem.R.inc(792);Object object = fromJson(json, (Type) classOfT);
-    __CLR4_4_1jejeldr3ciem.R.inc(793);return Primitives.wrap(classOfT).cast(object);
-  }finally{__CLR4_4_1jejeldr3ciem.R.flushNeeded();}}
+  public <T> T fromJson(String json, Class<T> classOfT) throws JsonParseException {try{__CLR4_4_1jejelds19gdd.R.inc(791);
+    __CLR4_4_1jejelds19gdd.R.inc(792);Object object = fromJson(json, (Type) classOfT);
+    __CLR4_4_1jejelds19gdd.R.inc(793);return Primitives.wrap(classOfT).cast(object);
+  }finally{__CLR4_4_1jejelds19gdd.R.flushNeeded();}}
 
   /**
    * This method deserializes the specified Json into an object of the specified type. This method
@@ -419,14 +419,14 @@ public final class Gson {public static class __CLR4_4_1jejeldr3ciem{public stati
    * @throws JsonParseException if json is not a valid representation for an object of type typeOfT
    */
   @SuppressWarnings("unchecked")
-  public <T> T fromJson(String json, Type typeOfT) throws JsonParseException {try{__CLR4_4_1jejeldr3ciem.R.inc(794);
-    __CLR4_4_1jejeldr3ciem.R.inc(795);if ((((json == null)&&(__CLR4_4_1jejeldr3ciem.R.iget(796)!=0|true))||(__CLR4_4_1jejeldr3ciem.R.iget(797)==0&false))) {{
-      __CLR4_4_1jejeldr3ciem.R.inc(798);return null;
+  public <T> T fromJson(String json, Type typeOfT) throws JsonParseException {try{__CLR4_4_1jejelds19gdd.R.inc(794);
+    __CLR4_4_1jejelds19gdd.R.inc(795);if ((((json == null)&&(__CLR4_4_1jejelds19gdd.R.iget(796)!=0|true))||(__CLR4_4_1jejelds19gdd.R.iget(797)==0&false))) {{
+      __CLR4_4_1jejelds19gdd.R.inc(798);return null;
     }
-    }__CLR4_4_1jejeldr3ciem.R.inc(799);StringReader reader = new StringReader(json);
-    __CLR4_4_1jejeldr3ciem.R.inc(800);T target = (T) fromJson(reader, typeOfT);
-    __CLR4_4_1jejeldr3ciem.R.inc(801);return target;
-  }finally{__CLR4_4_1jejeldr3ciem.R.flushNeeded();}}
+    }__CLR4_4_1jejelds19gdd.R.inc(799);StringReader reader = new StringReader(json);
+    __CLR4_4_1jejelds19gdd.R.inc(800);T target = (T) fromJson(reader, typeOfT);
+    __CLR4_4_1jejelds19gdd.R.inc(801);return target;
+  }finally{__CLR4_4_1jejelds19gdd.R.flushNeeded();}}
 
   /**
    * This method deserializes the Json read from the specified reader into an object of the
@@ -446,10 +446,10 @@ public final class Gson {public static class __CLR4_4_1jejeldr3ciem{public stati
    * classOfT
    * @since 1.2
    */
-  public <T> T fromJson(Reader json, Class<T> classOfT) throws JsonParseException {try{__CLR4_4_1jejeldr3ciem.R.inc(802);
-    __CLR4_4_1jejeldr3ciem.R.inc(803);Object object = fromJson(new JsonReader(json), classOfT);
-    __CLR4_4_1jejeldr3ciem.R.inc(804);return Primitives.wrap(classOfT).cast(object);
-  }finally{__CLR4_4_1jejeldr3ciem.R.flushNeeded();}}
+  public <T> T fromJson(Reader json, Class<T> classOfT) throws JsonParseException {try{__CLR4_4_1jejelds19gdd.R.inc(802);
+    __CLR4_4_1jejelds19gdd.R.inc(803);Object object = fromJson(new JsonReader(json), classOfT);
+    __CLR4_4_1jejelds19gdd.R.inc(804);return Primitives.wrap(classOfT).cast(object);
+  }finally{__CLR4_4_1jejelds19gdd.R.flushNeeded();}}
 
   /**
    * This method deserializes the Json read from the specified reader into an object of the
@@ -469,25 +469,25 @@ public final class Gson {public static class __CLR4_4_1jejeldr3ciem{public stati
    * @throws JsonParseException if json is not a valid representation for an object of type typeOfT
    * @since 1.2
    */
-  public <T> T fromJson(Reader json, Type typeOfT) throws JsonParseException {try{__CLR4_4_1jejeldr3ciem.R.inc(805);
-    __CLR4_4_1jejeldr3ciem.R.inc(806);return this.<T>fromJson(new JsonReader(json), typeOfT);
-  }finally{__CLR4_4_1jejeldr3ciem.R.flushNeeded();}}
+  public <T> T fromJson(Reader json, Type typeOfT) throws JsonParseException {try{__CLR4_4_1jejelds19gdd.R.inc(805);
+    __CLR4_4_1jejelds19gdd.R.inc(806);return this.<T>fromJson(new JsonReader(json), typeOfT);
+  }finally{__CLR4_4_1jejelds19gdd.R.flushNeeded();}}
 
   /**
    * Reads the next JSON value from {@code reader} and convert it to an object
    * of type {@code typeOfT}.
    */
   @SuppressWarnings("unchecked") // this method is unsafe and should be used very carefully
-  public <T> T fromJson(JsonReader reader, Type typeOfT) throws JsonParseException {try{__CLR4_4_1jejeldr3ciem.R.inc(807);
-    __CLR4_4_1jejeldr3ciem.R.inc(808);boolean oldLenient = reader.isLenient();
-    __CLR4_4_1jejeldr3ciem.R.inc(809);reader.setLenient(true);
-    __CLR4_4_1jejeldr3ciem.R.inc(810);try {
-      __CLR4_4_1jejeldr3ciem.R.inc(811);JsonElement root = Streams.parse(reader);
-      __CLR4_4_1jejeldr3ciem.R.inc(812);return (T) fromJson(root, typeOfT);
+  public <T> T fromJson(JsonReader reader, Type typeOfT) throws JsonParseException {try{__CLR4_4_1jejelds19gdd.R.inc(807);
+    __CLR4_4_1jejelds19gdd.R.inc(808);boolean oldLenient = reader.isLenient();
+    __CLR4_4_1jejelds19gdd.R.inc(809);reader.setLenient(true);
+    __CLR4_4_1jejelds19gdd.R.inc(810);try {
+      __CLR4_4_1jejelds19gdd.R.inc(811);JsonElement root = Streams.parse(reader);
+      __CLR4_4_1jejelds19gdd.R.inc(812);return (T) fromJson(root, typeOfT);
     } finally {
-      __CLR4_4_1jejeldr3ciem.R.inc(813);reader.setLenient(oldLenient);
+      __CLR4_4_1jejelds19gdd.R.inc(813);reader.setLenient(oldLenient);
     }
-  }finally{__CLR4_4_1jejeldr3ciem.R.flushNeeded();}}
+  }finally{__CLR4_4_1jejelds19gdd.R.flushNeeded();}}
 
   /**
    * This method deserializes the Json read from the specified parse tree into an object of the
@@ -505,10 +505,10 @@ public final class Gson {public static class __CLR4_4_1jejeldr3ciem{public stati
    * @throws JsonParseException if json is not a valid representation for an object of type typeOfT
    * @since 1.3
    */
-  public <T> T fromJson(JsonElement json, Class<T> classOfT) throws JsonParseException {try{__CLR4_4_1jejeldr3ciem.R.inc(814);
-    __CLR4_4_1jejeldr3ciem.R.inc(815);Object object = fromJson(json, (Type) classOfT);
-    __CLR4_4_1jejeldr3ciem.R.inc(816);return Primitives.wrap(classOfT).cast(object);
-  }finally{__CLR4_4_1jejeldr3ciem.R.flushNeeded();}}
+  public <T> T fromJson(JsonElement json, Class<T> classOfT) throws JsonParseException {try{__CLR4_4_1jejelds19gdd.R.inc(814);
+    __CLR4_4_1jejelds19gdd.R.inc(815);Object object = fromJson(json, (Type) classOfT);
+    __CLR4_4_1jejelds19gdd.R.inc(816);return Primitives.wrap(classOfT).cast(object);
+  }finally{__CLR4_4_1jejelds19gdd.R.flushNeeded();}}
 
   /**
    * This method deserializes the Json read from the specified parse tree into an object of the
@@ -529,29 +529,29 @@ public final class Gson {public static class __CLR4_4_1jejeldr3ciem{public stati
    * @since 1.3
    */
   @SuppressWarnings("unchecked")
-  public <T> T fromJson(JsonElement json, Type typeOfT) throws JsonParseException {try{__CLR4_4_1jejeldr3ciem.R.inc(817);
-    __CLR4_4_1jejeldr3ciem.R.inc(818);if ((((json == null)&&(__CLR4_4_1jejeldr3ciem.R.iget(819)!=0|true))||(__CLR4_4_1jejeldr3ciem.R.iget(820)==0&false))) {{
-      __CLR4_4_1jejeldr3ciem.R.inc(821);return null;
+  public <T> T fromJson(JsonElement json, Type typeOfT) throws JsonParseException {try{__CLR4_4_1jejelds19gdd.R.inc(817);
+    __CLR4_4_1jejelds19gdd.R.inc(818);if ((((json == null)&&(__CLR4_4_1jejelds19gdd.R.iget(819)!=0|true))||(__CLR4_4_1jejelds19gdd.R.iget(820)==0&false))) {{
+      __CLR4_4_1jejelds19gdd.R.inc(821);return null;
     }
-    }__CLR4_4_1jejeldr3ciem.R.inc(822);JsonDeserializationContext context = new JsonDeserializationContextDefault(
+    }__CLR4_4_1jejelds19gdd.R.inc(822);JsonDeserializationContext context = new JsonDeserializationContextDefault(
         createDefaultObjectNavigatorFactory(deserializationStrategy), deserializers,
         objectConstructor);
-    __CLR4_4_1jejeldr3ciem.R.inc(823);T target = (T) context.deserialize(json, typeOfT);
-    __CLR4_4_1jejeldr3ciem.R.inc(824);return target;
-  }finally{__CLR4_4_1jejeldr3ciem.R.flushNeeded();}}
+    __CLR4_4_1jejelds19gdd.R.inc(823);T target = (T) context.deserialize(json, typeOfT);
+    __CLR4_4_1jejelds19gdd.R.inc(824);return target;
+  }finally{__CLR4_4_1jejelds19gdd.R.flushNeeded();}}
 
   /**
    * Appends the {@link #NULL_STRING} to the {@code writer} object.
    *
    * @param writer the object to append the null value to
    */
-  private void writeOutNullString(Appendable writer) throws IOException {try{__CLR4_4_1jejeldr3ciem.R.inc(825);
-    __CLR4_4_1jejeldr3ciem.R.inc(826);writer.append(NULL_STRING);
-  }finally{__CLR4_4_1jejeldr3ciem.R.flushNeeded();}}
+  private void writeOutNullString(Appendable writer) throws IOException {try{__CLR4_4_1jejelds19gdd.R.inc(825);
+    __CLR4_4_1jejelds19gdd.R.inc(826);writer.append(NULL_STRING);
+  }finally{__CLR4_4_1jejelds19gdd.R.flushNeeded();}}
 
   @Override
-  public String toString() {try{__CLR4_4_1jejeldr3ciem.R.inc(827);
-  	__CLR4_4_1jejeldr3ciem.R.inc(828);StringBuilder sb = new StringBuilder("{")
+  public String toString() {try{__CLR4_4_1jejelds19gdd.R.inc(827);
+  	__CLR4_4_1jejelds19gdd.R.inc(828);StringBuilder sb = new StringBuilder("{")
   	    .append("serializeNulls:").append(serializeNulls)
   	    .append(",serializers:").append(serializers)
   	    .append(",deserializers:").append(deserializers)
@@ -561,6 +561,6 @@ public final class Gson {public static class __CLR4_4_1jejeldr3ciem{public stati
       	// just a utility class around instance creators, and its toString() only displays them.
         .append(",instanceCreators:").append(objectConstructor)
         .append("}");
-  	__CLR4_4_1jejeldr3ciem.R.inc(829);return sb.toString();
-  }finally{__CLR4_4_1jejeldr3ciem.R.flushNeeded();}}
+  	__CLR4_4_1jejelds19gdd.R.inc(829);return sb.toString();
+  }finally{__CLR4_4_1jejelds19gdd.R.flushNeeded();}}
 }

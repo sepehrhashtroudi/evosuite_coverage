@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="1" failures="0" hostname="sepehr-UX310UQK" name="com.fasterxml.jackson.core.JsonStreamContext_ESTest" skipped="0" tests="1" time="0.035" timestamp="2023-02-05T11:30:57">
+<testsuite errors="0" failures="0" hostname="sepehr-UX310UQK" name="com.fasterxml.jackson.core.JsonStreamContext_ESTest" skipped="0" tests="25" time="0.316" timestamp="2023-02-06T02:40:31">
   <properties>
     <property name="java.vendor" value="Private Build" />
     <property name="sun.java.launcher" value="SUN_STANDARD" />
@@ -84,8 +84,8 @@
     <property name="maven.settings.interactiveMode" value="true" />
     <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
     <property name="ant.version" value="Apache Ant(TM) version 1.10.7 compiled on October 24 2019" />
-    <property name="java.class.path" value="/home/sepehr/.m2/repository/junit/junit/4.8.2/junit-4.8.2.jar:/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/evosuite-tests:/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/target/classes:/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/target/test-classes:/home/sepehr/.ant/lib/clover.jar:/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/evosuite-standalone-runtime-1.0.6.jar:/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/hamcrest-core-1.3.jar:/home/sepehr/.ant/lib/evosuite-1.0.6.jar:/usr/share/java/ant-launcher-1.10.7.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-junit.jar:/usr/share/ant/lib/ant-junit4.jar" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.fasterxml.jackson.core.JsonStreamContext_ESTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/target/test-reports/TEST-com.fasterxml.jackson.core.JsonStreamContext_ESTest.xml formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter crashfile=/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/junitvmwatcher7761993632879736630.properties propsfile=/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/junit5582728988669852730.properties" />
+    <property name="java.class.path" value="/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/junit-4.12.jar:/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/evosuite-tests:/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/target/classes:/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/target/test-classes:/home/sepehr/.ant/lib/clover.jar:/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/evosuite-standalone-runtime-1.0.6.jar:/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/hamcrest-core-1.3.jar:/usr/share/java/ant-launcher-1.10.7.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-junit.jar:/usr/share/ant/lib/ant-junit4.jar" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.fasterxml.jackson.core.JsonStreamContext_ESTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/target/test-reports/TEST-com.fasterxml.jackson.core.JsonStreamContext_ESTest.xml formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter crashfile=/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/junitvmwatcher159806113468674641.properties propsfile=/home/sepehr/masters/test_generation/evosuite_coverage/jacksonCore1f/junit3502718707878760965.properties" />
     <property name="project.name" value="jackson-core" />
     <property name="project.build.directory" value="target" />
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
@@ -124,38 +124,34 @@
     <property name="osgi.dynamicImport" value="" />
     <property name="clover.flushpolicy" value="directed" />
   </properties>
-  <testcase classname="com.fasterxml.jackson.core.JsonStreamContext_ESTest" name="initializationError" time="0.006">
-    <error message="Field nfr must implement MethodRule" type="java.lang.Exception">java.lang.Exception: Field nfr must implement MethodRule
-	at org.evosuite.runtime.EvoRunner.&lt;init&gt;(EvoRunner.java:77)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-</error>
-  </testcase>
-  <system-out><![CDATA[04:30:57.785 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Seeing class for first time: com.fasterxml.jackson.core.JsonStreamContext_ESTest
-04:30:57.788 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Instrumenting class 'com.fasterxml.jackson.core.JsonStreamContext_ESTest'.
-04:30:57.825 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Seeing class for first time: com.fasterxml.jackson.core.JsonStreamContext_ESTest_scaffolding
-04:30:57.825 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Instrumenting class 'com.fasterxml.jackson.core.JsonStreamContext_ESTest_scaffolding'.
-04:30:57.829 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Keeping class: com.fasterxml.jackson.core.JsonStreamContext_ESTest_scaffolding
-04:30:57.829 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Keeping class: com.fasterxml.jackson.core.JsonStreamContext_ESTest
-04:30:57.829 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Seeing class for first time: com.fasterxml.jackson.core.JsonStreamContext
-04:30:57.829 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Instrumenting class 'com.fasterxml.jackson.core.JsonStreamContext'.
-04:30:57.835 [main] INFO  o.e.r.i.MethodCallReplacementClassAdapter - Adding mock interface to class com/fasterxml/jackson/core/JsonStreamContext
-04:30:57.939 [main] INFO  o.e.r.i.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/fasterxml/jackson/core/JsonStreamContext
-04:30:57.939 [main] INFO  o.e.r.i.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_ROOT
-04:30:57.939 [main] INFO  o.e.r.i.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_ARRAY
-04:30:57.939 [main] INFO  o.e.r.i.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_OBJECT
-04:30:57.940 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Keeping class: com.fasterxml.jackson.core.JsonStreamContext
-04:30:57.940 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Seeing class for first time: com.fasterxml.jackson.core.json.JsonWriteContext
-04:30:57.940 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Instrumenting class 'com.fasterxml.jackson.core.json.JsonWriteContext'.
-04:30:57.940 [main] INFO  o.e.r.i.MethodCallReplacementClassAdapter - Adding mock interface to class com/fasterxml/jackson/core/json/JsonWriteContext
-04:30:57.943 [main] INFO  o.e.r.i.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/fasterxml/jackson/core/json/JsonWriteContext
-04:30:57.943 [main] INFO  o.e.r.i.CreateClassResetClassAdapter - Adding bytecode for initializing field STATUS_OK_AS_IS
-04:30:57.943 [main] INFO  o.e.r.i.CreateClassResetClassAdapter - Adding bytecode for initializing field STATUS_OK_AFTER_COMMA
-04:30:57.943 [main] INFO  o.e.r.i.CreateClassResetClassAdapter - Adding bytecode for initializing field STATUS_OK_AFTER_COLON
-04:30:57.943 [main] INFO  o.e.r.i.CreateClassResetClassAdapter - Adding bytecode for initializing field STATUS_OK_AFTER_SPACE
-04:30:57.943 [main] INFO  o.e.r.i.CreateClassResetClassAdapter - Adding bytecode for initializing field STATUS_EXPECT_VALUE
-04:30:57.943 [main] INFO  o.e.r.i.CreateClassResetClassAdapter - Adding bytecode for initializing field STATUS_EXPECT_NAME
-04:30:57.944 [main] INFO  o.e.r.instrumentation.EvoClassLoader - Keeping class: com.fasterxml.jackson.core.json.JsonWriteContext
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
+  <testcase classname="com.fasterxml.jackson.core.JsonStreamContext_ESTest" name="test09" time="0.01" />
+  <testcase classname="com.fasterxml.jackson.core.JsonStreamContext_ESTest" name="test08" time="0.003" />
+  <testcase classname="com.fasterxml.jackson.core.JsonStreamContext_ESTest" name="test07" time="0.002" />
+  <testcase classname="com.fasterxml.jackson.core.JsonStreamContext_ESTest" name="test06" time="0.002" />
+  <testcase classname="com.fasterxml.jackson.core.JsonStreamContext_ESTest" name="test01" time="0.004" />
+  <testcase classname="com.fasterxml.jackson.core.JsonStreamContext_ESTest" name="test23" time="0.002" />
+  <testcase classname="com.fasterxml.jackson.core.JsonStreamContext_ESTest" name="test00" time="0.001" />
+  <testcase classname="com.fasterxml.jackson.core.JsonStreamContext_ESTest" name="test22" time="0.001" />
+  <testcase classname="com.fasterxml.jackson.core.JsonStreamContext_ESTest" name="test21" time="0.002" />
+  <testcase classname="com.fasterxml.jackson.core.JsonStreamContext_ESTest" name="test20" time="0.002" />
+  <testcase classname="com.fasterxml.jackson.core.JsonStreamContext_ESTest" name="test05" time="0.012" />
+  <testcase classname="com.fasterxml.jackson.core.JsonStreamContext_ESTest" name="test04" time="0.002" />
+  <testcase classname="com.fasterxml.jackson.core.JsonStreamContext_ESTest" name="test03" time="0.002" />
+  <testcase classname="com.fasterxml.jackson.core.JsonStreamContext_ESTest" name="test02" time="0.002" />
+  <testcase classname="com.fasterxml.jackson.core.JsonStreamContext_ESTest" name="test24" time="0.002" />
+  <testcase classname="com.fasterxml.jackson.core.JsonStreamContext_ESTest" name="test19" time="0.004" />
+  <testcase classname="com.fasterxml.jackson.core.JsonStreamContext_ESTest" name="test18" time="0.001" />
+  <testcase classname="com.fasterxml.jackson.core.JsonStreamContext_ESTest" name="test17" time="0.001" />
+  <testcase classname="com.fasterxml.jackson.core.JsonStreamContext_ESTest" name="test12" time="0.002" />
+  <testcase classname="com.fasterxml.jackson.core.JsonStreamContext_ESTest" name="test11" time="0.002" />
+  <testcase classname="com.fasterxml.jackson.core.JsonStreamContext_ESTest" name="test10" time="0.002" />
+  <testcase classname="com.fasterxml.jackson.core.JsonStreamContext_ESTest" name="test16" time="0.002" />
+  <testcase classname="com.fasterxml.jackson.core.JsonStreamContext_ESTest" name="test15" time="0.001" />
+  <testcase classname="com.fasterxml.jackson.core.JsonStreamContext_ESTest" name="test14" time="0.002" />
+  <testcase classname="com.fasterxml.jackson.core.JsonStreamContext_ESTest" name="test13" time="0.002" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+]]></system-err>
 </testsuite>

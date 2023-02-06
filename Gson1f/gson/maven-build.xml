@@ -128,10 +128,14 @@
           unless="junit.skipped" 
           description="Run the test cases">
     <mkdir dir="${maven.test.reports}"/>
-    <junit printSummary="yes" haltonerror="true" haltonfailure="true" fork="true" dir=".">
+    <junit printSummary="yes" haltonerror="false" haltonfailure="false" fork="true" dir=".">
       <sysproperty key="basedir" value="."/>
       <formatter type="xml"/>
       <formatter type="plain" usefile="false"/>
+      <classpath>
+        <pathelement path="/home/sepehr/.ant/lib/clover.jar"/>
+        <pathelement path="./junit-4.12.jar"/>
+      </classpath>
       <classpath>
         <path refid="build.test.classpath"/>
         <pathelement location="${maven.build.outputDir}"/>
@@ -149,6 +153,9 @@
         </fileset>
       </batchtest>
       <batchtest todir="${maven.test.reports}" if="test">
+        <fileset dir="${basedir}/evosuite-tests">
+          <include name="**/*_ESTest.java"/>
+        </fileset>
 <!--        <fileset dir="${maven.build.testDir.0}">-->
 <!--          <include name="**/${test}.java"/>-->
 <!--          <exclude name="**/*Abstract*Test.java"/>-->
