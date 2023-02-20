@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="1" failures="1" hostname="sepehr-UX310UQK" name="org.jsoup.select.Selector_ESTest" skipped="0" tests="3" time="0.494" timestamp="2023-02-05T22:55:09">
+<testsuite errors="1" failures="1" hostname="sepehr-UX310UQK" name="org.jsoup.select.Selector_ESTest" skipped="0" tests="3" time="0.541" timestamp="2023-02-10T07:29:53">
   <properties>
     <property name="java.vendor" value="Private Build" />
     <property name="sun.java.launcher" value="SUN_STANDARD" />
@@ -67,7 +67,7 @@
     <property name="java.vm.vendor" value="Private Build" />
     <property name="maven.settings.interactiveMode" value="true" />
     <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner org.jsoup.select.Selector_ESTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/sepehr/masters/test_generation/evosuite_coverage/jsoup1f/target/test-reports/TEST-org.jsoup.select.Selector_ESTest.xml formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter crashfile=/home/sepehr/masters/test_generation/evosuite_coverage/jsoup1f/junitvmwatcher6313448857488552481.properties propsfile=/home/sepehr/masters/test_generation/evosuite_coverage/jsoup1f/junit7608927679471557351.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner org.jsoup.select.Selector_ESTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/sepehr/masters/test_generation/evosuite_coverage/jsoup1f/target/test-reports/TEST-org.jsoup.select.Selector_ESTest.xml formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter crashfile=/home/sepehr/masters/test_generation/evosuite_coverage/jsoup1f/junitvmwatcher970233195045021032.properties propsfile=/home/sepehr/masters/test_generation/evosuite_coverage/jsoup1f/junit563092125922312419.properties" />
     <property name="java.class.path" value="/home/sepehr/.ant/lib/clover.jar:/home/sepehr/.m2/repository/junit/junit/4.5/junit-4.5.jar:/home/sepehr/.m2/repository/commons-lang/commons-lang/2.4/commons-lang-2.4.jar:/home/sepehr/masters/test_generation/evosuite_coverage/jsoup1f/target/classes:/home/sepehr/masters/test_generation/evosuite_coverage/jsoup1f/target/test-classes:/home/sepehr/masters/test_generation/evosuite_coverage/jsoup1f/evosuite-tests:/home/sepehr/masters/test_generation/evosuite_coverage/jsoup1f/evosuite-standalone-runtime-1.0.6.jar:/home/sepehr/masters/test_generation/evosuite_coverage/jsoup1f/junit-4.12.jar:/home/sepehr/masters/test_generation/evosuite_coverage/jsoup1f/hamcrest-core-1.3.jar:/usr/share/java/ant-launcher-1.10.7.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-junit.jar:/usr/share/ant/lib/ant-junit4.jar" />
     <property name="ant.version" value="Apache Ant(TM) version 1.10.7 compiled on October 24 2019" />
     <property name="project.name" value="jsoup" />
@@ -103,7 +103,7 @@
     <property name="ant.file.jsoup" value="/home/sepehr/masters/test_generation/evosuite_coverage/jsoup1f/build.xml" />
     <property name="clover.flushpolicy" value="directed" />
   </properties>
-  <testcase classname="org.jsoup.select.Selector_ESTest" name="test0" time="0.048">
+  <testcase classname="org.jsoup.select.Selector_ESTest" name="test0" time="0.057">
     <failure message="Expecting exception: NoClassDefFoundError" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Expecting exception: NoClassDefFoundError
 	at org.jsoup.select.Selector_ESTest.test0(Selector_ESTest.java:27)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
@@ -112,8 +112,8 @@
 	at java.lang.Thread.run(Thread.java:750)
 </failure>
   </testcase>
-  <testcase classname="org.jsoup.select.Selector_ESTest" name="test1" time="0.002" />
-  <testcase classname="org.jsoup.select.Selector_ESTest" name="test2" time="0.002">
+  <testcase classname="org.jsoup.select.Selector_ESTest" name="test1" time="0.003" />
+  <testcase classname="org.jsoup.select.Selector_ESTest" name="test2" time="0.003">
     <error message="The validated string is empty" type="org.evosuite.runtime.mock.java.lang.MockIllegalArgumentException">org.evosuite.runtime.mock.java.lang.MockIllegalArgumentException: The validated string is empty
 	at org.apache.commons.lang.Validate.notEmpty(Validate.java:382)
 	at org.jsoup.select.Selector.&lt;init&gt;(Selector.java:57)

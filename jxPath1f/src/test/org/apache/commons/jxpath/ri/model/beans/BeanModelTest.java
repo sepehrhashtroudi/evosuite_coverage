@@ -55,16 +55,13 @@ public class BeanModelTest extends BeanModelTestCase {
         return new TestBeanFactory();
     }
     
-    public void testIndexedProperty() {
-        JXPathContext context =
-            JXPathContext.newContext(null, new TestIndexedPropertyBean());
-            
-        assertXPathValueAndPointer(
-            context,
-            "indexed[1]",
-            new Integer(0),
-            "/indexed[1]");
-    }
+
+public void testIndexedProperty128() { 
+     JXPathContext context = JXPathContext.newContext(null, new TestIndexedPropertyBean()); 
+     assertXPathValueAndPointer(context, "indexed[1]", new Integer(0), "/indexed[1]"); 
+ } 
+
+    
 
 
 }

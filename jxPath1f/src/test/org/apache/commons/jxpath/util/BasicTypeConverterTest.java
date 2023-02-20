@@ -46,46 +46,129 @@ public class BasicTypeConverterTest extends TestCase {
         super(name);
     }
 
-    public void testPrimitiveToString() {
-        assertConversion(new Integer(1), String.class, "1");
-    }
 
-    public void testArrayToList() {
-        assertConversion(
-            new int[] { 1, 2 },
-            List.class,
-            Arrays.asList(new Object[] { new Integer(1), new Integer(2)}));
-    }
+public void testInvalidConversion28() { 
+     boolean exception = false; 
+     try { 
+         TypeUtils.convert("'foo'", Date.class); 
+     } catch (Throwable ex) { 
+         exception = true; 
+     } 
+     assertTrue("Type conversion exception", exception); 
+ } 
 
-    public void testArrayToArray() {
-        assertConversion(
-            new int[] { 1, 2 },
-            String[].class,
-            Arrays.asList(new String[] { "1", "2" }));
-    }
 
-    public void testListToArray() {
-        assertConversion(
-            Arrays.asList(new Integer[] { new Integer(1), new Integer(2)}),
-            String[].class,
-            Arrays.asList(new String[] { "1", "2" }));
+public void testArrayToList93() { 
+     assertConversion(new int[] { 1, 2 }, List.class, Arrays.asList(new Object[] { new Integer(1), new Integer(2) })); 
+ } 
 
-        assertConversion(
-            Arrays.asList(new String[] { "1", "2" }),
-            int[].class,
-            Arrays.asList(new Integer[] { new Integer(1), new Integer(2)}));
-    }
 
-    public void testInvalidConversion() {
-        boolean exception = false;
-        try {
-            TypeUtils.convert("'foo'", Date.class);
-        }
-        catch (Throwable ex) {
-            exception = true;
-        }
-        assertTrue("Type conversion exception", exception);
-    }
+public void testSingletonArrayToString94() { 
+     assertConversion(new String[] { "Earth" }, String.class, "Earth"); 
+ } 
+
+
+public void testBeanUtilsConverter95() { 
+     assertConversion("12", BigDecimal.class, new BigDecimal(12)); 
+ } 
+
+
+public void testListToArray96() { 
+     assertConversion(Arrays.asList(new Integer[] { new Integer(1), new Integer(2) }), String[].class, Arrays.asList(new String[] { "1", "2" })); 
+     assertConversion(Arrays.asList(new String[] { "1", "2" }), int[].class, Arrays.asList(new Integer[] { new Integer(1), new Integer(2) })); 
+ } 
+
+
+public void testNodeSetToInteger97() { 
+     assertConversion(new NodeSet() { 
+  
+         public List getNodes() { 
+             return null; 
+         } 
+  
+         public List getPointers() { 
+             return null; 
+         } 
+  
+         public List getValues() { 
+             return Collections.singletonList("9"); 
+         } 
+     }, Integer.class, new Integer(9)); 
+ } 
+
+
+public void testArrayToArray98() { 
+     assertConversion(new int[] { 1, 2 }, String[].class, Arrays.asList(new String[] { "1", "2" })); 
+ } 
+
+
+public void testNodeSetToString100() { 
+     assertConversion(new NodeSet() { 
+  
+         public List getNodes() { 
+             return null; 
+         } 
+  
+         public List getPointers() { 
+             return null; 
+         } 
+  
+         public List getValues() { 
+             List list = new ArrayList(); 
+             list.add("hello"); 
+             list.add("goodbye"); 
+             return Collections.singletonList(list); 
+         } 
+     }, String.class, "hello"); 
+ } 
+
+
+public void testSingletonCollectionToString101() { 
+     assertConversion(Collections.singleton("Earth"), String.class, "Earth"); 
+ } 
+
+
+public void testPointerToString102() { 
+     assertConversion(new Pointer() { 
+  
+         public Object getValue() { 
+             return "value"; 
+         } 
+  
+         public Object getNode() { 
+             return null; 
+         } 
+  
+         public void setValue(Object value) { 
+         } 
+  
+         public Object getRootNode() { 
+             return null; 
+         } 
+  
+         public String asPath() { 
+             return null; 
+         } 
+  
+         public Object clone() { 
+             return null; 
+         } 
+  
+         public int compareTo(Object o) { 
+             return 0; 
+         } 
+     }, String.class, "value"); 
+ } 
+
+    
+
+    
+
+    
+
+    
+
+    
 
     public void assertConversion(Object from, Class toType, Object expected) {
         boolean can = TypeUtils.canConvert(from, toType);
@@ -104,72 +187,16 @@ public class BasicTypeConverterTest extends TestCase {
             result);
     }
     
-    public void testSingletonCollectionToString() {
-        assertConversion(Collections.singleton("Earth"), String.class, "Earth");
-    }
+    
 
-    public void testSingletonArrayToString() {
-        assertConversion(new String[] { "Earth" }, String.class, "Earth");
-    }
+    
 
-    public void testPointerToString() {
-        assertConversion(new Pointer() {
-            public Object getValue() {
-                return "value";
-            }
-            public Object getNode() {
-                return null;
-            }
-            public void setValue(Object value) {
-            }
-            public Object getRootNode() {
-                return null;
-            }
-            public String asPath() {
-                return null;
-            }
-            public Object clone() {
-                return null;
-            }
-            public int compareTo(Object o) {
-                return 0;
-            }
-        }, String.class, "value");
-    }
+    
 
-    public void testNodeSetToString() {
-        assertConversion(new NodeSet() {
-            public List getNodes() {
-                return null;
-            }
-            public List getPointers() {
-                return null;
-            }
-            public List getValues() {
-                List list = new ArrayList();
-                list.add("hello");
-                list.add("goodbye");
-                return Collections.singletonList(list);
-            }
-        }, String.class, "hello");
-    }
+    
 
     // succeeds in current version
-    public void testNodeSetToInteger() {
-        assertConversion(new NodeSet() {
-            public List getNodes() {
-                return null;
-            }
-            public List getPointers() {
-                return null;
-            }
-            public List getValues() {
-                return Collections.singletonList("9");
-            }
-        }, Integer.class, new Integer(9));
-    }    
+        
     
-    public void testBeanUtilsConverter() {
-        assertConversion("12", BigDecimal.class, new BigDecimal(12));
-    }
+    
 }

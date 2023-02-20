@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1675637714592" clover="4.4.1">
-   <project timestamp="1675637709900">
+<coverage generated="1676014199478" clover="4.4.1">
+   <project timestamp="1676014194191">
       <metrics coveredelements="373" complexity="645" loc="4492" methods="374" classes="43" statements="1389" packages="6" coveredconditionals="16" coveredmethods="84" elements="2217" ncloc="2540" files="21" conditionals="454" coveredstatements="273"/>
       <package name="org.jsoup.nodes">
          <metrics coveredelements="104" complexity="274" loc="1984" methods="185" classes="25" statements="501" coveredconditionals="8" coveredmethods="38" elements="840" ncloc="1025" files="10" conditionals="154" coveredstatements="58"/>
@@ -2203,7 +2203,7 @@
          </file>
       </package>
    </project>
-   <testproject timestamp="1675637709900">
+   <testproject timestamp="1676014194191">
       <metrics coveredelements="0" complexity="0" loc="0" methods="0" classes="0" statements="0" packages="0" coveredconditionals="0" coveredmethods="0" elements="0" ncloc="0" files="0" conditionals="0" coveredstatements="0"/>
    </testproject>
 </coverage>

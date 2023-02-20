@@ -1,0 +1,1012 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a1ad83df-6c66-4ca5-bb53-e26bc6181474" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../jacksonCore1f/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jacksonCore1f/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clover/clover4_4_1.db" beforeDir="false" afterPath="$PROJECT_DIR$/.clover/clover4_4_1.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clover/clover4_4_1.dbaz8ppd_ldrzfdns" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clover/clover4_4_1.dbaz8ppd_ldrzfdns.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clover/clover4_4_1.dbj5nd4b_ldrzfbwh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clover/clover4_4_1.dbj5nd4b_ldrzfbwh.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clover/clover4_4_1.dbk8nk0s_ldrzfa9d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clover/clover4_4_1.dbk8nk0s_ldrzfa9d.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clover/clover4_4_1.dbkus38h_ldrzfcuu" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clover/clover4_4_1.dbkus38h_ldrzfcuu.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clover/clover4_4_1.dboximhf_ldrzfb3r" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clover/clover4_4_1.dboximhf_ldrzfb3r.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clover/clover4_4_1.dbrtp0zr_ldrzf9hl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clover/clover4_4_1.dbt494sh_ldrzfeyx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clover/clover4_4_1.dbt494sh_ldrzfeyx.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clover/clover4_4_1.dbyusy5l_ldrzffoi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clover/clover4_4_1.dbyusy5l_ldrzffoi.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.cloverhistory/jsoup/clover-20230205155509.xml.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/agg-pkgs.html" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/agg-pkgs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/clover.xml" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/clover.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/historical-json.js" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/historical-json.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/historical.html" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/historical.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/img/chart0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/img/chart0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/img/chart1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/img/chart1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/org/jsoup/DataUtil.html" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/org/jsoup/DataUtil.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/org/jsoup/Jsoup.html" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/org/jsoup/Jsoup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/org/jsoup/examples/ListLinks.html" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/org/jsoup/examples/ListLinks.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/org/jsoup/examples/package-info.html" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/org/jsoup/examples/package-info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/org/jsoup/examples/pkg-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/org/jsoup/examples/pkg-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/org/jsoup/examples/quick-wins.html" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/org/jsoup/examples/quick-wins.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/org/jsoup/examples/test-pkg-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/org/jsoup/examples/test-pkg-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/org/jsoup/examples/top-risks.html" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/org/jsoup/examples/top-risks.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/org/jsoup/nodes/Attribute.html" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/org/jsoup/nodes/Attribute.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/org/jsoup/nodes/Attributes.html" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/org/jsoup/nodes/Attributes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/org/jsoup/nodes/Comment.html" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/org/jsoup/nodes/Comment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/org/jsoup/nodes/DataNode.html" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/org/jsoup/nodes/DataNode.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/org/jsoup/nodes/Document.html" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/org/jsoup/nodes/Document.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/org/jsoup/nodes/Element.html" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/org/jsoup/nodes/Element.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/org/jsoup/nodes/Evaluator.html" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/org/jsoup/nodes/Evaluator.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/org/jsoup/nodes/Node.html" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/org/jsoup/nodes/Node.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/org/jsoup/nodes/TextNode.html" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/org/jsoup/nodes/TextNode.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/org/jsoup/nodes/XmlDeclaration.html" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/org/jsoup/nodes/XmlDeclaration.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/org/jsoup/nodes/package-info.html" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/org/jsoup/nodes/package-info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/org/jsoup/nodes/pkg-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/org/jsoup/nodes/pkg-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/org/jsoup/nodes/quick-wins.html" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/org/jsoup/nodes/quick-wins.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/org/jsoup/nodes/test-pkg-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/org/jsoup/nodes/test-pkg-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/org/jsoup/nodes/top-risks.html" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/org/jsoup/nodes/top-risks.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/org/jsoup/package-info.html" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/org/jsoup/package-info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/org/jsoup/parser/Parser.html" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/org/jsoup/parser/Parser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/org/jsoup/parser/Tag.html" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/org/jsoup/parser/Tag.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/org/jsoup/parser/TokenQueue.html" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/org/jsoup/parser/TokenQueue.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/org/jsoup/parser/package-info.html" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/org/jsoup/parser/package-info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/org/jsoup/parser/pkg-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/org/jsoup/parser/pkg-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/org/jsoup/parser/quick-wins.html" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/org/jsoup/parser/quick-wins.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/org/jsoup/parser/test-pkg-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/org/jsoup/parser/test-pkg-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/org/jsoup/parser/top-risks.html" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/org/jsoup/parser/top-risks.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/org/jsoup/pkg-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/org/jsoup/pkg-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/org/jsoup/quick-wins.html" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/org/jsoup/quick-wins.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/org/jsoup/safety/Cleaner.html" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/org/jsoup/safety/Cleaner.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/org/jsoup/safety/Whitelist.html" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/org/jsoup/safety/Whitelist.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/org/jsoup/safety/package-info.html" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/org/jsoup/safety/package-info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/org/jsoup/safety/pkg-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/org/jsoup/safety/pkg-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/org/jsoup/safety/quick-wins.html" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/org/jsoup/safety/quick-wins.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/org/jsoup/safety/test-pkg-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/org/jsoup/safety/test-pkg-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/org/jsoup/safety/top-risks.html" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/org/jsoup/safety/top-risks.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/org/jsoup/select/Collector.html" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/org/jsoup/select/Collector.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/org/jsoup/select/Elements.html" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/org/jsoup/select/Elements.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/org/jsoup/select/Selector.html" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/org/jsoup/select/Selector.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/org/jsoup/select/package-info.html" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/org/jsoup/select/package-info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/org/jsoup/select/pkg-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/org/jsoup/select/pkg-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/org/jsoup/select/quick-wins.html" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/org/jsoup/select/quick-wins.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/org/jsoup/select/test-pkg-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/org/jsoup/select/test-pkg-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/org/jsoup/select/top-risks.html" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/org/jsoup/select/top-risks.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/org/jsoup/test-pkg-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/org/jsoup/test-pkg-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/org/jsoup/top-risks.html" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/org/jsoup/top-risks.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/pkg-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/pkg-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/project.js" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/project.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/quick-wins.html" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/quick-wins.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/test-pkg-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/test-pkg-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/testsrc-agg-pkgs.html" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/testsrc-agg-pkgs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/testsrc-pkg-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/testsrc-pkg-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/top-risks.html" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/top-risks.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/treemap-dash-json.js" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/treemap-dash-json.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/treemap-json.js" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/treemap-json.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clover/jsoup/treemap.html" beforeDir="false" afterPath="$PROJECT_DIR$/clover/jsoup/treemap.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/jsoup/DataUtil$__CLR4_4_1c0c0ldrzf6cy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/jsoup/DataUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/jsoup/DataUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/jsoup/Jsoup$__CLR4_4_11717ldrzf68j.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/jsoup/Jsoup.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/jsoup/Jsoup.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/jsoup/examples/ListLinks$__CLR4_4_11kf1kfldrzf6kj.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/jsoup/examples/ListLinks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/jsoup/examples/ListLinks.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/jsoup/nodes/Attribute$__CLR4_4_11i81i8ldrzf6jy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/jsoup/nodes/Attribute.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/jsoup/nodes/Attribute.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/jsoup/nodes/Attributes$__CLR4_4_117r17rldrzf6i8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/jsoup/nodes/Attributes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/jsoup/nodes/Attributes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/jsoup/nodes/Comment$__CLR4_4_11jp1jpldrzf6k5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/jsoup/nodes/Comment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/jsoup/nodes/Comment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/jsoup/nodes/DataNode$__CLR4_4_119c19cldrzf6if.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/jsoup/nodes/DataNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/jsoup/nodes/DataNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/jsoup/nodes/Document$__CLR4_4_115w15wldrzf6hy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/jsoup/nodes/Document.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/jsoup/nodes/Document.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/jsoup/nodes/Element$__CLR4_4_1vrvrldrzf6hd.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/jsoup/nodes/Element.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/jsoup/nodes/Element.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/jsoup/nodes/Evaluator$AllElements.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/jsoup/nodes/Evaluator$AllElements.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/jsoup/nodes/Evaluator$Attribute.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/jsoup/nodes/Evaluator$Attribute.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/jsoup/nodes/Evaluator$AttributeKeyPair.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/jsoup/nodes/Evaluator$AttributeKeyPair.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/jsoup/nodes/Evaluator$AttributeWithValue.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/jsoup/nodes/Evaluator$AttributeWithValue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/jsoup/nodes/Evaluator$AttributeWithValueContaining.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/jsoup/nodes/Evaluator$AttributeWithValueContaining.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/jsoup/nodes/Evaluator$AttributeWithValueEnding.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/jsoup/nodes/Evaluator$AttributeWithValueEnding.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/jsoup/nodes/Evaluator$AttributeWithValueNot.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/jsoup/nodes/Evaluator$AttributeWithValueNot.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/jsoup/nodes/Evaluator$AttributeWithValueStarting.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/jsoup/nodes/Evaluator$AttributeWithValueStarting.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/jsoup/nodes/Evaluator$Class.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/jsoup/nodes/Evaluator$Class.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/jsoup/nodes/Evaluator$Id.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/jsoup/nodes/Evaluator$Id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/jsoup/nodes/Evaluator$IndexEquals.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/jsoup/nodes/Evaluator$IndexEquals.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/jsoup/nodes/Evaluator$IndexEvaluator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/jsoup/nodes/Evaluator$IndexEvaluator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/jsoup/nodes/Evaluator$IndexGreaterThan.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/jsoup/nodes/Evaluator$IndexGreaterThan.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/jsoup/nodes/Evaluator$IndexLessThan.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/jsoup/nodes/Evaluator$IndexLessThan.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/jsoup/nodes/Evaluator$Tag.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/jsoup/nodes/Evaluator$Tag.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/jsoup/nodes/Evaluator$__CLR4_4_11gm1gmldrzf6jm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/jsoup/nodes/Evaluator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/jsoup/nodes/Evaluator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/jsoup/nodes/Node$__CLR4_4_11l81l8ldrzf6l1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/jsoup/nodes/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/jsoup/nodes/Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/jsoup/nodes/TextNode$__CLR4_4_100ldrzf67g.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/jsoup/nodes/TextNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/jsoup/nodes/TextNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/jsoup/nodes/XmlDeclaration$__CLR4_4_11k11k1ldrzf6ka.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/jsoup/nodes/XmlDeclaration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/jsoup/nodes/XmlDeclaration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/jsoup/parser/Parser$__CLR4_4_11a11a1ldrzf6j3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/jsoup/parser/Parser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/jsoup/parser/Parser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/jsoup/parser/Tag$__CLR4_4_1d6d6ldrzf6du.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/jsoup/parser/Tag.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/jsoup/parser/Tag.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/jsoup/parser/TokenQueue$__CLR4_4_18l8lldrzf6cj.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/jsoup/parser/TokenQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/jsoup/parser/TokenQueue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/jsoup/safety/Cleaner$ElementMeta.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/jsoup/safety/Cleaner$ElementMeta.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/jsoup/safety/Cleaner$__CLR4_4_1pipildrzf6f9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/jsoup/safety/Cleaner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/jsoup/safety/Cleaner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/jsoup/safety/Whitelist$AttributeKey.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/jsoup/safety/Whitelist$AttributeKey.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/jsoup/safety/Whitelist$AttributeValue.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/jsoup/safety/Whitelist$AttributeValue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/jsoup/safety/Whitelist$Protocol.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/jsoup/safety/Whitelist$Protocol.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/jsoup/safety/Whitelist$TagName.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/jsoup/safety/Whitelist$TagName.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/jsoup/safety/Whitelist$TypedValue.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/jsoup/safety/Whitelist$TypedValue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/jsoup/safety/Whitelist$__CLR4_4_1r2r2ldrzf6g4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/jsoup/safety/Whitelist.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/jsoup/safety/Whitelist.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/jsoup/select/Collector$__CLR4_4_119q19qldrzf6ij.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/jsoup/select/Collector.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/jsoup/select/Collector.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/jsoup/select/Elements$__CLR4_4_1kjkjldrzf6ep.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/jsoup/select/Elements.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/jsoup/select/Elements.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/jsoup/select/Selector$SelectorParseException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/jsoup/select/Selector$SelectorParseException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/jsoup/select/Selector$__CLR4_4_12020ldrzf69o.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/jsoup/select/Selector.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/jsoup/select/Selector.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-reports/TEST-org.jsoup.DataUtil_ESTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/TEST-org.jsoup.DataUtil_ESTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-reports/TEST-org.jsoup.examples.ListLinks_ESTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/TEST-org.jsoup.examples.ListLinks_ESTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-reports/TEST-org.jsoup.nodes.Attribute_ESTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/TEST-org.jsoup.nodes.Attribute_ESTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-reports/TEST-org.jsoup.nodes.Attributes_ESTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/TEST-org.jsoup.nodes.Attributes_ESTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-reports/TEST-org.jsoup.nodes.Evaluator_ESTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/TEST-org.jsoup.nodes.Evaluator_ESTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-reports/TEST-org.jsoup.parser.TokenQueue_ESTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/TEST-org.jsoup.parser.TokenQueue_ESTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-reports/TEST-org.jsoup.safety.Whitelist_ESTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/TEST-org.jsoup.safety.Whitelist_ESTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-reports/TEST-org.jsoup.select.Collector_ESTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/TEST-org.jsoup.select.Collector_ESTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-reports/TEST-org.jsoup.select.Selector_ESTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/TEST-org.jsoup.select.Selector_ESTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/.clover/clover4_4_1.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/.idea/jxPath1f.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/.idea/libraries/jxPath1f.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/.idea/libraries/mockrunner_0_4_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/all_tests" beforeDir="false" afterPath="$PROJECT_DIR$/../jxPath1f/all_tests" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/build.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jxPath1f/build.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/failing_tests" beforeDir="false" afterPath="$PROJECT_DIR$/../jxPath1f/failing_tests" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/src/test/org/apache/commons/jxpath/JXPathTestCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/src/test/org/apache/commons/jxpath/JXPathTestSuite.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/src/test/org/apache/commons/jxpath/NestedTestBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/src/test/org/apache/commons/jxpath/TestBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/src/test/org/apache/commons/jxpath/TestMixedModelBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/src/test/org/apache/commons/jxpath/TestNull.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/src/test/org/apache/commons/jxpath/Vendor.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/src/test/org/apache/commons/jxpath/ri/JXPathCompiledExpressionTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/src/test/org/apache/commons/jxpath/ri/StressTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/src/test/org/apache/commons/jxpath/ri/axes/RecursiveAxesTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/src/test/org/apache/commons/jxpath/ri/axes/RecursiveBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/src/test/org/apache/commons/jxpath/ri/axes/SimplePathInterpreterTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/src/test/org/apache/commons/jxpath/ri/axes/TestBeanWithNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/src/test/org/apache/commons/jxpath/ri/compiler/ContextDependencyTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/src/test/org/apache/commons/jxpath/ri/compiler/CoreFunctionTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/src/test/org/apache/commons/jxpath/ri/compiler/CoreOperationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/src/test/org/apache/commons/jxpath/ri/compiler/ExtensionFunctionTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/src/test/org/apache/commons/jxpath/ri/compiler/TestFunctions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/src/test/org/apache/commons/jxpath/ri/compiler/TestFunctions2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/src/test/org/apache/commons/jxpath/ri/compiler/VariableFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/src/test/org/apache/commons/jxpath/ri/compiler/VariableTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/src/test/org/apache/commons/jxpath/ri/model/BeanModelTestCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/src/test/org/apache/commons/jxpath/ri/model/ExceptionPropertyTestBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/src/test/org/apache/commons/jxpath/ri/model/MixedModelTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/src/test/org/apache/commons/jxpath/ri/model/TestMixedModelFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/src/test/org/apache/commons/jxpath/ri/model/XMLModelTestCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/src/test/org/apache/commons/jxpath/ri/model/beans/BeanModelTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/src/test/org/apache/commons/jxpath/ri/model/beans/TestBeanFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/src/test/org/apache/commons/jxpath/ri/model/beans/TestIndexedPropertyBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/src/test/org/apache/commons/jxpath/ri/model/container/ContainerModelTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/src/test/org/apache/commons/jxpath/ri/model/dom/DOMModelTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/src/test/org/apache/commons/jxpath/ri/model/dom/TestDOMFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/src/test/org/apache/commons/jxpath/ri/model/dynabeans/DynaBeanModelTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/src/test/org/apache/commons/jxpath/ri/model/dynabeans/TestDynaBeanFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/src/test/org/apache/commons/jxpath/ri/model/dynamic/DynamicPropertiesModelTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/src/test/org/apache/commons/jxpath/ri/model/dynamic/TestDynamicPropertyFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/src/test/org/apache/commons/jxpath/ri/model/jdom/JDOMModelTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/src/test/org/apache/commons/jxpath/ri/model/jdom/TestJDOMFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/src/test/org/apache/commons/jxpath/util/BasicTypeConverterTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/AbstractFactory$__CLR4_4_16k06k0ldry8x46$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/AbstractFactory$__CLR4_4_16k06k0ldry8x46.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/AbstractFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/BasicNodeSet$__CLR4_4_157p57pldry8wy5$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/BasicNodeSet$__CLR4_4_157p57pldry8wy5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/BasicNodeSet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/BasicVariables$__CLR4_4_1crtcrtldry8xj8$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/BasicVariables$__CLR4_4_1crtcrtldry8xj8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/BasicVariables.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ClassFunctions$__CLR4_4_16j36j3ldry8x42$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ClassFunctions$__CLR4_4_16j36j3ldry8x42.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ClassFunctions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/CompiledExpression.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/Container.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/DynamicPropertyHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ExpressionContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/Function.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/FunctionLibrary$__CLR4_4_14444ldry8w4t$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/FunctionLibrary$__CLR4_4_14444ldry8w4t.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/FunctionLibrary.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/Functions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/IdentityManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/JXPathAbstractFactoryException$__CLR4_4_100ldry8w1k$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/JXPathAbstractFactoryException$__CLR4_4_100ldry8w1k.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/JXPathAbstractFactoryException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/JXPathBasicBeanInfo$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/JXPathBasicBeanInfo$__CLR4_4_161u61uldry8x29$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/JXPathBasicBeanInfo$__CLR4_4_161u61uldry8x29.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/JXPathBasicBeanInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/JXPathBeanInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/JXPathContext$__CLR4_4_18dc8dcldry8xbx$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/JXPathContext$__CLR4_4_18dc8dcldry8xbx.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/JXPathContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/JXPathContextFactory$__CLR4_4_15a25a2ldry8wyo$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/JXPathContextFactory$__CLR4_4_15a25a2ldry8wyo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/JXPathContextFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/JXPathContextFactoryConfigurationError$__CLR4_4_17ht7htldry8x7u$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/JXPathContextFactoryConfigurationError$__CLR4_4_17ht7htldry8x7u.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/JXPathContextFactoryConfigurationError.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/JXPathException$__CLR4_4_1cl3cl3ldry8xi5$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/JXPathException$__CLR4_4_1cl3cl3ldry8xi5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/JXPathException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/JXPathFunctionNotFoundException$__CLR4_4_183v83vldry8xap$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/JXPathFunctionNotFoundException$__CLR4_4_183v83vldry8xap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/JXPathFunctionNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/JXPathIntrospector$__CLR4_4_13ei3eildry8ws6$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/JXPathIntrospector$__CLR4_4_13ei3eildry8ws6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/JXPathIntrospector.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/JXPathInvalidAccessException$__CLR4_4_15p85p8ldry8x09$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/JXPathInvalidAccessException$__CLR4_4_15p85p8ldry8x09.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/JXPathInvalidAccessException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/JXPathInvalidSyntaxException$__CLR4_4_1663663ldry8x2k$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/JXPathInvalidSyntaxException$__CLR4_4_1663663ldry8x2k.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/JXPathInvalidSyntaxException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/JXPathNotFoundException$__CLR4_4_1coecoeldry8xig$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/JXPathNotFoundException$__CLR4_4_1coecoeldry8xig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/JXPathNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/JXPathTypeConversionException$__CLR4_4_17ie7ieldry8x7x$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/JXPathTypeConversionException$__CLR4_4_17ie7ieldry8x7x.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/JXPathTypeConversionException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/KeyManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/MapDynamicPropertyHandler$__CLR4_4_15cq5cqldry8wyy$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/MapDynamicPropertyHandler$__CLR4_4_15cq5cqldry8wyy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/MapDynamicPropertyHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/NodeSet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/PackageFunctions$__CLR4_4_1cm2cm2ldry8xid$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/PackageFunctions$__CLR4_4_1cm2cm2ldry8xid.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/PackageFunctions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/Pointer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/Variables.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/XMLDocumentContainer$__CLR4_4_18he8heldry8xc8$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/XMLDocumentContainer$__CLR4_4_18he8heldry8xc8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/XMLDocumentContainer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/functions/ConstructorFunction$__CLR4_4_1807807ldry8xaa$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/functions/ConstructorFunction$__CLR4_4_1807807ldry8xaa.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/functions/ConstructorFunction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/functions/MethodFunction$__CLR4_4_1ddyddyldry8xld$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/functions/MethodFunction$__CLR4_4_1ddyddyldry8xld.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/functions/MethodFunction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/Compiler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/EvalContext$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/EvalContext$__CLR4_4_1d33d33ldry8xke$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/EvalContext$__CLR4_4_1d33d33ldry8xke.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/EvalContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/InfoSetUtil$__CLR4_4_124b24bldry8wkk$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/InfoSetUtil$__CLR4_4_124b24bldry8wkk.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/InfoSetUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/JXPathCompiledExpression$__CLR4_4_1611611ldry8x1y$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/JXPathCompiledExpression$__CLR4_4_1611611ldry8x1y.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/JXPathCompiledExpression.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/JXPathContextFactoryReferenceImpl$__CLR4_4_156y56yldry8wxw$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/JXPathContextFactoryReferenceImpl$__CLR4_4_156y56yldry8wxw.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/JXPathContextFactoryReferenceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/JXPathContextReferenceImpl$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/JXPathContextReferenceImpl$__CLR4_4_12ug2ugldry8wq3$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/JXPathContextReferenceImpl$__CLR4_4_12ug2ugldry8wq3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/JXPathContextReferenceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/NamespaceResolver$__CLR4_4_13b13b1ldry8wrm$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/NamespaceResolver$__CLR4_4_13b13b1ldry8wrm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/NamespaceResolver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/Parser$__CLR4_4_17zl7zlldry8xa5$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/Parser$__CLR4_4_17zl7zlldry8xa5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/Parser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/QName$__CLR4_4_1811811ldry8xae$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/QName$__CLR4_4_1811811ldry8xae.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/QName.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/axes/AncestorContext$__CLR4_4_155g55gldry8wxp$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/axes/AncestorContext$__CLR4_4_155g55gldry8wxp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/axes/AncestorContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/axes/AttributeContext$__CLR4_4_12w2wldry8w3v$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/axes/AttributeContext$__CLR4_4_12w2wldry8w3v.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/axes/AttributeContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/axes/ChildContext$__CLR4_4_14sz4szldry8wwa$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/axes/ChildContext$__CLR4_4_14sz4szldry8wwa.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/axes/ChildContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/axes/DescendantContext$__CLR4_4_11sm1smldry8wi1$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/axes/DescendantContext$__CLR4_4_11sm1smldry8wi1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/axes/DescendantContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/axes/InitialContext$__CLR4_4_17uy7uyldry8x99$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/axes/InitialContext$__CLR4_4_17uy7uyldry8x99.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/axes/InitialContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/axes/NamespaceContext$__CLR4_4_1535535ldry8wxb$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/axes/NamespaceContext$__CLR4_4_1535535ldry8wxb.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/axes/NamespaceContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/axes/NodeSetContext$__CLR4_4_134d34dldry8wqe$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/axes/NodeSetContext$__CLR4_4_134d34dldry8wqe.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/axes/NodeSetContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/axes/ParentContext$__CLR4_4_1cs7cs7ldry8xjb$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/axes/ParentContext$__CLR4_4_1cs7cs7ldry8xjb.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/axes/ParentContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/axes/PrecedingOrFollowingContext$__CLR4_4_1ciccicldry8xi0$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/axes/PrecedingOrFollowingContext$__CLR4_4_1ciccicldry8xi0.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/axes/PrecedingOrFollowingContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/axes/PredicateContext$__CLR4_4_15pc5pcldry8x0h$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/axes/PredicateContext$__CLR4_4_15pc5pcldry8x0h.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/axes/PredicateContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/axes/RootContext$__CLR4_4_1dbsdbsldry8xky$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/axes/RootContext$__CLR4_4_1dbsdbsldry8xky.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/axes/RootContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/axes/SelfContext$__CLR4_4_14my4myldry8wvo$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/axes/SelfContext$__CLR4_4_14my4myldry8wvo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/axes/SelfContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter$__CLR4_4_15d45d4ldry8wzv$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter$__CLR4_4_15d45d4ldry8wzv.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/axes/SimplePathInterpreter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/axes/UnionContext$__CLR4_4_1595595ldry8wyc$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/axes/UnionContext$__CLR4_4_1595595ldry8wyc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/axes/UnionContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/Constant$__CLR4_4_1571571ldry8wy0$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/Constant$__CLR4_4_1571571ldry8wy0.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/Constant.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/CoreFunction$__CLR4_4_171o71oldry8x6t$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/CoreFunction$__CLR4_4_171o71oldry8x6t.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/CoreFunction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/CoreOperation$__CLR4_4_14ut4utldry8wwg$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/CoreOperation$__CLR4_4_14ut4utldry8wwg.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/CoreOperation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/CoreOperationAdd$__CLR4_4_1cogcogldry8xij$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/CoreOperationAdd$__CLR4_4_1cogcogldry8xij.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/CoreOperationAdd.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/CoreOperationAnd$__CLR4_4_145m45mldry8wum$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/CoreOperationAnd$__CLR4_4_145m45mldry8wum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/CoreOperationAnd.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/CoreOperationCompare$__CLR4_4_1848848ldry8xaz$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/CoreOperationCompare$__CLR4_4_1848848ldry8xaz.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/CoreOperationCompare.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/CoreOperationDivide$__CLR4_4_12cy2cyldry8wli$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/CoreOperationDivide$__CLR4_4_12cy2cyldry8wli.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/CoreOperationDivide.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/CoreOperationEqual$__CLR4_4_154n54nldry8wxf$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/CoreOperationEqual$__CLR4_4_154n54nldry8wxf.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/CoreOperationEqual.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/CoreOperationGreaterThan$__CLR4_4_168j68jldry8x2x$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/CoreOperationGreaterThan$__CLR4_4_168j68jldry8x2x.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/CoreOperationGreaterThan.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/CoreOperationGreaterThanOrEqual$__CLR4_4_1covcovldry8xin$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/CoreOperationGreaterThanOrEqual$__CLR4_4_1covcovldry8xin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/CoreOperationGreaterThanOrEqual.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/CoreOperationLessThan$__CLR4_4_123x23xldry8wk4$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/CoreOperationLessThan$__CLR4_4_123x23xldry8wk4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/CoreOperationLessThan.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/CoreOperationLessThanOrEqual$__CLR4_4_15tc5tcldry8x11$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/CoreOperationLessThanOrEqual$__CLR4_4_15tc5tcldry8x11.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/CoreOperationLessThanOrEqual.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/CoreOperationMod$__CLR4_4_12id2idldry8wn9$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/CoreOperationMod$__CLR4_4_12id2idldry8wn9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/CoreOperationMod.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/CoreOperationMultiply$__CLR4_4_143q43qldry8wub$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/CoreOperationMultiply$__CLR4_4_143q43qldry8wub.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/CoreOperationMultiply.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/CoreOperationNegate$__CLR4_4_183x83xldry8xar$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/CoreOperationNegate$__CLR4_4_183x83xldry8xar.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/CoreOperationNegate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/CoreOperationNotEqual$__CLR4_4_17s27s2ldry8x8y$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/CoreOperationNotEqual$__CLR4_4_17s27s2ldry8x8y.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/CoreOperationNotEqual.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/CoreOperationOr$__CLR4_4_122e22eldry8wjn$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/CoreOperationOr$__CLR4_4_122e22eldry8wjn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/CoreOperationOr.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/CoreOperationSubtract$__CLR4_4_13hc3hcldry8wsb$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/CoreOperationSubtract$__CLR4_4_13hc3hcldry8wsb.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/CoreOperationSubtract.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/CoreOperationUnion$__CLR4_4_1cpncpnldry8xiv$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/CoreOperationUnion$__CLR4_4_1cpncpnldry8xiv.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/CoreOperationUnion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/Expression$PointerIterator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/Expression$ValueIterator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/Expression$__CLR4_4_17y07y0ldry8x9v$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/Expression$__CLR4_4_17y07y0ldry8x9v.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/Expression.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/ExpressionPath$__CLR4_4_11lx1lxldry8wgw$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/ExpressionPath$__CLR4_4_11lx1lxldry8wgw.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/ExpressionPath.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/ExtensionFunction$__CLR4_4_12p12p1ldry8woc$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/ExtensionFunction$__CLR4_4_12p12p1ldry8woc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/ExtensionFunction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/LocationPath$__CLR4_4_1353353ldry8wqi$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/LocationPath$__CLR4_4_1353353ldry8wqi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/LocationPath.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/NameAttributeTest$__CLR4_4_1369369ldry8wqm$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/NameAttributeTest$__CLR4_4_1369369ldry8wqm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/NameAttributeTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/NodeNameTest$__CLR4_4_11j51j5ldry8wfe$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/NodeNameTest$__CLR4_4_11j51j5ldry8wfe.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/NodeNameTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/NodeTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/NodeTypeTest$__CLR4_4_14w44w4ldry8wwj$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/NodeTypeTest$__CLR4_4_14w44w4ldry8wwj.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/NodeTypeTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/Operation$__CLR4_4_121y21yldry8wjh$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/Operation$__CLR4_4_121y21yldry8wjh.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/Operation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/Path$__CLR4_4_15tq5tqldry8x1d$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/Path$__CLR4_4_15tq5tqldry8x1d.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/Path.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/ProcessingInstructionTest$__CLR4_4_12da2daldry8wln$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/ProcessingInstructionTest$__CLR4_4_12da2daldry8wln.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/ProcessingInstructionTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/Step$__CLR4_4_17ii7iildry8x86$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/Step$__CLR4_4_17ii7iildry8x86.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/Step.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/TreeCompiler$__CLR4_4_136f36fldry8wqz$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/TreeCompiler$__CLR4_4_136f36fldry8wqz.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/TreeCompiler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/VariableReference$__CLR4_4_158r58rldry8wy8$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/VariableReference$__CLR4_4_158r58rldry8wy8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/compiler/VariableReference.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/NodeIterator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/NodePointer$__CLR4_4_13un3unldry8wu1$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/NodePointer$__CLR4_4_13un3unldry8wu1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/NodePointer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/NodePointerFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/VariablePointer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/VariablePointer$__CLR4_4_186v86vldry8xbe$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/VariablePointer$__CLR4_4_186v86vldry8xbe.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/VariablePointer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/beans/BeanAttributeIterator$__CLR4_4_11op1opldry8wh7$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/beans/BeanAttributeIterator$__CLR4_4_11op1opldry8wh7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/beans/BeanAttributeIterator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/beans/BeanPointer$__CLR4_4_17se7seldry8x95$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/beans/BeanPointer$__CLR4_4_17se7seldry8x95.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/beans/BeanPointer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/beans/BeanPointerFactory$__CLR4_4_17kz7kzldry8x8b$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/beans/BeanPointerFactory$__CLR4_4_17kz7kzldry8x8b.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/beans/BeanPointerFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/beans/BeanPropertyPointer$__CLR4_4_12dg2dgldry8wmy$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/beans/BeanPropertyPointer$__CLR4_4_12dg2dgldry8wmy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/beans/BeanPropertyPointer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/beans/CollectionAttributeNodeIterator$__CLR4_4_154z54zldry8wxi$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/beans/CollectionAttributeNodeIterator$__CLR4_4_154z54zldry8wxi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/beans/CollectionAttributeNodeIterator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/beans/CollectionChildNodeIterator$__CLR4_4_11z61z6ldry8wj1$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/beans/CollectionChildNodeIterator$__CLR4_4_11z61z6ldry8wj1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/beans/CollectionChildNodeIterator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/beans/CollectionNodeIterator$__CLR4_4_15zf5zfldry8x1r$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/beans/CollectionNodeIterator$__CLR4_4_15zf5zfldry8x1r.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/beans/CollectionNodeIterator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/beans/CollectionPointer$__CLR4_4_168x68xldry8x36$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/beans/CollectionPointer$__CLR4_4_168x68xldry8x36.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/beans/CollectionPointer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/beans/CollectionPointerFactory$__CLR4_4_15cc5ccldry8wys$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/beans/CollectionPointerFactory$__CLR4_4_15cc5ccldry8wys.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/beans/CollectionPointerFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/beans/LangAttributePointer$__CLR4_4_13d83d8ldry8wrw$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/beans/LangAttributePointer$__CLR4_4_13d83d8ldry8wrw.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/beans/LangAttributePointer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/beans/NullElementPointer$__CLR4_4_17wa7waldry8x9l$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/beans/NullElementPointer$__CLR4_4_17wa7waldry8x9l.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/beans/NullElementPointer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/beans/NullPointer$__CLR4_4_18i78i7ldry8xce$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/beans/NullPointer$__CLR4_4_18i78i7ldry8xce.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/beans/NullPointer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/beans/NullPropertyPointer$__CLR4_4_16dm6dmldry8x3l$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/beans/NullPropertyPointer$__CLR4_4_16dm6dmldry8x3l.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/beans/NullPropertyPointer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/beans/PropertyIterator$__CLR4_4_17lb7lbldry8x8t$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/beans/PropertyIterator$__CLR4_4_17lb7lbldry8x8t.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/beans/PropertyIterator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/beans/PropertyOwnerPointer$__CLR4_4_11v11v1ldry8wif$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/beans/PropertyOwnerPointer$__CLR4_4_11v11v1ldry8wif.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/beans/PropertyOwnerPointer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/beans/PropertyPointer$__CLR4_4_12lp2lpldry8wo4$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/beans/PropertyPointer$__CLR4_4_12lp2lpldry8wo4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/beans/PropertyPointer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/container/ContainerPointer$__CLR4_4_12qe2qeldry8wol$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/container/ContainerPointer$__CLR4_4_12qe2qeldry8wol.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/container/ContainerPointer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/container/ContainerPointerFactory$__CLR4_4_1cp9cp9ldry8xis$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/container/ContainerPointerFactory$__CLR4_4_1cp9cp9ldry8xis.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/container/ContainerPointerFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/dom/DOMAttributeIterator$__CLR4_4_11pf1pfldry8whn$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/dom/DOMAttributeIterator$__CLR4_4_11pf1pfldry8whn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/dom/DOMAttributeIterator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/dom/DOMAttributePointer$__CLR4_4_1646646ldry8x2g$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/dom/DOMAttributePointer$__CLR4_4_1646646ldry8x2g.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/dom/DOMAttributePointer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/dom/DOMNamespaceIterator$__CLR4_4_1442442ldry8wui$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/dom/DOMNamespaceIterator$__CLR4_4_1442442ldry8wui.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/dom/DOMNamespaceIterator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/dom/DOMNodeIterator$__CLR4_4_11zb1zbldry8wja$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/dom/DOMNodeIterator$__CLR4_4_11zb1zbldry8wja.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/dom/DOMNodeIterator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/dom/DOMNodePointer$__CLR4_4_1463463ldry8wvc$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/dom/DOMNodePointer$__CLR4_4_1463463ldry8wvc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/dom/DOMNodePointer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/dom/DOMPointerFactory$__CLR4_4_12sj2sjldry8wor$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/dom/DOMPointerFactory$__CLR4_4_12sj2sjldry8wor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/dom/DOMPointerFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/dom/NamespacePointer$__CLR4_4_1828828ldry8xaj$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/dom/NamespacePointer$__CLR4_4_1828828ldry8xaj.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/dom/NamespacePointer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/dynabeans/DynaBeanPointer$__CLR4_4_1665665ldry8x2q$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/dynabeans/DynaBeanPointer$__CLR4_4_1665665ldry8x2q.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/dynabeans/DynaBeanPointer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/dynabeans/DynaBeanPointerFactory$__CLR4_4_17vw7vwldry8x9g$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/dynabeans/DynaBeanPointerFactory$__CLR4_4_17vw7vwldry8x9g.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/dynabeans/DynaBeanPointerFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/dynabeans/DynaBeanPropertyPointer$__CLR4_4_128i28ildry8wl3$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/dynabeans/DynaBeanPropertyPointer$__CLR4_4_128i28ildry8wl3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/dynabeans/DynaBeanPropertyPointer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/dynamic/DynamicAttributeIterator$__CLR4_4_156t56tldry8wxt$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/dynamic/DynamicAttributeIterator$__CLR4_4_156t56tldry8wxt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/dynamic/DynamicAttributeIterator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/dynamic/DynamicPointer$__CLR4_4_12ip2ipldry8wnh$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/dynamic/DynamicPointer$__CLR4_4_12ip2ipldry8wnh.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/dynamic/DynamicPointer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/dynamic/DynamicPointerFactory$__CLR4_4_16gj6gjldry8x3q$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/dynamic/DynamicPointerFactory$__CLR4_4_16gj6gjldry8x3q.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/dynamic/DynamicPointerFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/dynamic/DynamicPropertyIterator$__CLR4_4_183t83tldry8xam$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/dynamic/DynamicPropertyIterator$__CLR4_4_183t83tldry8xam.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/dynamic/DynamicPropertyIterator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/dynamic/DynamicPropertyPointer$__CLR4_4_14nx4nxldry8ww2$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/dynamic/DynamicPropertyPointer$__CLR4_4_14nx4nxldry8ww2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/dynamic/DynamicPropertyPointer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/jdom/JDOMAttributeIterator$__CLR4_4_16h56h5ldry8x3w$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/jdom/JDOMAttributeIterator$__CLR4_4_16h56h5ldry8x3w.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/jdom/JDOMAttributeIterator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/jdom/JDOMAttributePointer$__CLR4_4_1cq7cq7ldry8xj4$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/jdom/JDOMAttributePointer$__CLR4_4_1cq7cq7ldry8xj4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/jdom/JDOMAttributePointer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/jdom/JDOMNamespaceIterator$__CLR4_4_12k12k1ldry8wnp$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/jdom/JDOMNamespaceIterator$__CLR4_4_12k12k1ldry8wnp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/jdom/JDOMNamespaceIterator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/jdom/JDOMNamespacePointer$__CLR4_4_12sx2sxldry8wow$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/jdom/JDOMNamespacePointer$__CLR4_4_12sx2sxldry8wow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/jdom/JDOMNamespacePointer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/jdom/JDOMNodeIterator$__CLR4_4_1d8ed8eldry8xkn$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/jdom/JDOMNodeIterator$__CLR4_4_1d8ed8eldry8xkn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/jdom/JDOMNodeIterator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/jdom/JDOMNodePointer$__CLR4_4_16k46k4ldry8x59$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/jdom/JDOMNodePointer$__CLR4_4_16k46k4ldry8x59.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/jdom/JDOMNodePointer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/jdom/JDOMPointerFactory$__CLR4_4_167x67xldry8x2u$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/jdom/JDOMPointerFactory$__CLR4_4_167x67xldry8x2u.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/model/jdom/JDOMPointerFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/parser/ParseException$__CLR4_4_122ldry8w2n$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/parser/ParseException$__CLR4_4_122ldry8w2n.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/parser/ParseException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/parser/SimpleCharStream$__CLR4_4_14wl4wlldry8wx4$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/parser/SimpleCharStream$__CLR4_4_14wl4wlldry8wx4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/parser/SimpleCharStream.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/parser/Token$__CLR4_4_13ho3holdry8wsh$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/parser/Token$__CLR4_4_13ho3holdry8wsh.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/parser/Token.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/parser/TokenMgrError$__CLR4_4_11ji1jildry8wfx$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/parser/TokenMgrError$__CLR4_4_11ji1jildry8wfx.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/parser/TokenMgrError.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/parser/XPathParser$JJCalls.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/parser/XPathParser$__CLR4_4_18jz8jzldry8xgl$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/parser/XPathParser$__CLR4_4_18jz8jzldry8xgl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/parser/XPathParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/parser/XPathParserConstants.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/parser/XPathParserTokenManager$__CLR4_4_15t5tldry8wcv$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/parser/XPathParserTokenManager$__CLR4_4_15t5tldry8wcv.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/ri/parser/XPathParserTokenManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/servlet/Constants.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/servlet/HttpSessionAndServletContext$__CLR4_4_13d13d1ldry8wrq$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/servlet/HttpSessionAndServletContext$__CLR4_4_13d13d1ldry8wrq.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/servlet/HttpSessionAndServletContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/servlet/HttpSessionHandler$__CLR4_4_15oc5ocldry8x06$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/servlet/HttpSessionHandler$__CLR4_4_15oc5ocldry8x06.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/servlet/HttpSessionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/servlet/JXPathServletContexts$__CLR4_4_139b39bldry8wrc$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/servlet/JXPathServletContexts$__CLR4_4_139b39bldry8wrc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/servlet/JXPathServletContexts.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/servlet/KeywordVariables$__CLR4_4_18cx8cxldry8xbi$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/servlet/KeywordVariables$__CLR4_4_18cx8cxldry8xbi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/servlet/KeywordVariables.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/servlet/PageContextHandler$__CLR4_4_11l61l6ldry8wgd$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/servlet/PageContextHandler$__CLR4_4_11l61l6ldry8wgd.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/servlet/PageContextHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/servlet/PageScopeContext$__CLR4_4_12cq2cqldry8wlb$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/servlet/PageScopeContext$__CLR4_4_12cq2cqldry8wlb.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/servlet/PageScopeContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/servlet/PageScopeContextHandler$__CLR4_4_1ddmddmldry8xl3$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/servlet/PageScopeContextHandler$__CLR4_4_1ddmddmldry8xl3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/servlet/PageScopeContextHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/servlet/ServletContextHandler$__CLR4_4_15sy5syldry8x0w$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/servlet/ServletContextHandler$__CLR4_4_15sy5syldry8x0w.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/servlet/ServletContextHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/servlet/ServletRequestAndContext$__CLR4_4_1dbhdbhldry8xks$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/servlet/ServletRequestAndContext$__CLR4_4_1dbhdbhldry8xks.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/servlet/ServletRequestAndContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/servlet/ServletRequestHandler$__CLR4_4_122v22vldry8wjx$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/servlet/ServletRequestHandler$__CLR4_4_122v22vldry8wjx.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/servlet/ServletRequestHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/util/BasicTypeConverter$ValueNodeSet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/util/BasicTypeConverter$ValuePointer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/util/BasicTypeConverter$__CLR4_4_13hu3huldry8wt5$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/util/BasicTypeConverter$__CLR4_4_13hu3huldry8wt5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/util/BasicTypeConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/util/MethodLookupUtils$__CLR4_4_1dffdffldry8xlo$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/util/MethodLookupUtils$__CLR4_4_1dffdffldry8xlo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/util/MethodLookupUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/util/TypeConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/util/TypeUtils$__CLR4_4_17zd7zdldry8x9z$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/util/TypeUtils$__CLR4_4_17zd7zdldry8x9z.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/util/TypeUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/util/ValueUtils$__CLR4_4_1ct4ct4ldry8xk2$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/util/ValueUtils$__CLR4_4_1ct4ct4ldry8xk2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/util/ValueUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/xml/DOMParser$__CLR4_4_15z45z4ldry8x1j$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/xml/DOMParser$__CLR4_4_15z45z4ldry8x1j.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/xml/DOMParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/xml/DocumentContainer$__CLR4_4_11xd1xdldry8wiu$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/xml/DocumentContainer$__CLR4_4_11xd1xdldry8wiu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/xml/DocumentContainer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/xml/JDOMParser$__CLR4_4_1554554ldry8wxl$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/xml/JDOMParser$__CLR4_4_1554554ldry8wxl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/xml/JDOMParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/xml/XMLParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/xml/XMLParser2$__CLR4_4_16cy6cyldry8x3c$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/xml/XMLParser2$__CLR4_4_16cy6cyldry8x3c.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/classes/org/apache/commons/jxpath/xml/XMLParser2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/lib/ant-1.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/lib/ant-optional-1.5.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/lib/ant-optional-1.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/lib/commons-beanutils-1.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/lib/commons-collections-2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/lib/commons-logging-1.0.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/lib/jdom-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/lib/junit-3.8.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/lib/junit-3.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/lib/servletapi-2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/lib/xerces-1.2.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/lib/xml-apis-2.0.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/JXPathTestCase$__CLR4_4_1dn1dn1ldry90ux$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/JXPathTestCase$__CLR4_4_1dn1dn1ldry90ux.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/JXPathTestCase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/JXPathTestSuite$__CLR4_4_1ed2ed2ldry90x6$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/JXPathTestSuite$__CLR4_4_1ed2ed2ldry90x6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/JXPathTestSuite.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/NestedTestBean$__CLR4_4_1e0ee0eldry90vu$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/NestedTestBean$__CLR4_4_1e0ee0eldry90vu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/NestedTestBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/TestBean$__CLR4_4_1eb5eb5ldry90wz$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/TestBean$__CLR4_4_1eb5eb5ldry90wz.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/TestBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/TestMixedModelBean$__CLR4_4_1eubeubldry90yp$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/TestMixedModelBean$__CLR4_4_1eubeubldry90yp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/TestMixedModelBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/TestNull$__CLR4_4_1f79f79ldry90zn$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/TestNull$__CLR4_4_1f79f79ldry90zn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/TestNull.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/Vendor.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/JXPathCompiledExpressionTest$__CLR4_4_1dtldtlldry90vh$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/JXPathCompiledExpressionTest$__CLR4_4_1dtldtlldry90vh.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/JXPathCompiledExpressionTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/StressTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/StressTest$StressRunnable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/StressTest$__CLR4_4_1ea6ea6ldry90ww$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/StressTest$__CLR4_4_1ea6ea6ldry90ww.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/StressTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/axes/RecursiveAxesTest$__CLR4_4_1fdofdoldry9109$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/axes/RecursiveAxesTest$__CLR4_4_1fdofdoldry9109.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/axes/RecursiveAxesTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/axes/RecursiveBean$__CLR4_4_1felfelldry910e$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/axes/RecursiveBean$__CLR4_4_1felfelldry910e.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/axes/RecursiveBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/axes/SimplePathInterpreterTest$__CLR4_4_1ep7ep7ldry90yi$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/axes/SimplePathInterpreterTest$__CLR4_4_1ep7ep7ldry90yi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/axes/SimplePathInterpreterTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/axes/TestBeanWithNode$__CLR4_4_1fe4fe4ldry910c$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/axes/TestBeanWithNode$__CLR4_4_1fe4fe4ldry910c.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/axes/TestBeanWithNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/compiler/ContextDependencyTest$__CLR4_4_1fh8fh8ldry910m$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/compiler/ContextDependencyTest$__CLR4_4_1fh8fh8ldry910m.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/compiler/ContextDependencyTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/compiler/CoreFunctionTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/compiler/CoreFunctionTest$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/compiler/CoreFunctionTest$__CLR4_4_1fezfezldry910j$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/compiler/CoreFunctionTest$__CLR4_4_1fezfezldry910j.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/compiler/CoreFunctionTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/compiler/CoreOperationTest$__CLR4_4_1f50f50ldry90zi$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/compiler/CoreOperationTest$__CLR4_4_1f50f50ldry90zi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/compiler/CoreOperationTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/compiler/ExtensionFunctionTest$Context.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/compiler/ExtensionFunctionTest$__CLR4_4_1f91f91ldry9100$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/compiler/ExtensionFunctionTest$__CLR4_4_1f91f91ldry9100.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/compiler/ExtensionFunctionTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/compiler/TestFunctions$__CLR4_4_1dymdymldry90vs$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/compiler/TestFunctions$__CLR4_4_1dymdymldry90vs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/compiler/TestFunctions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/compiler/TestFunctions2$__CLR4_4_1e0xe0xldry90vw$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/compiler/TestFunctions2$__CLR4_4_1e0xe0xldry90vw.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/compiler/TestFunctions2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/compiler/VariableFactory$__CLR4_4_1dxndxnldry90vn$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/compiler/VariableFactory$__CLR4_4_1dxndxnldry90vn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/compiler/VariableFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/compiler/VariableTest$__CLR4_4_1e28e28ldry90w7$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/compiler/VariableTest$__CLR4_4_1e28e28ldry90w7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/compiler/VariableTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/model/BeanModelTestCase$__CLR4_4_1edpedpldry90xm$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/model/BeanModelTestCase$__CLR4_4_1edpedpldry90xm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/model/BeanModelTestCase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/model/ExceptionPropertyTestBean$__CLR4_4_1ecwecwldry90x2$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/model/ExceptionPropertyTestBean$__CLR4_4_1ecwecwldry90x2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/model/ExceptionPropertyTestBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/model/MixedModelTest$__CLR4_4_1e4pe4pldry90wp$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/model/MixedModelTest$__CLR4_4_1e4pe4pldry90wp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/model/MixedModelTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/model/TestMixedModelFactory$__CLR4_4_1e0ze0zldry90vz$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/model/TestMixedModelFactory$__CLR4_4_1e0ze0zldry90vz.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/model/TestMixedModelFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/model/XMLModelTestCase$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/model/XMLModelTestCase$__CLR4_4_1ezmezmldry90z9$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/model/XMLModelTestCase$__CLR4_4_1ezmezmldry90z9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/model/XMLModelTestCase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/model/beans/BeanModelTest$__CLR4_4_1e4ee4eldry90wc$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/model/beans/BeanModelTest$__CLR4_4_1e4ee4eldry90wc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/model/beans/BeanModelTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/model/beans/TestBeanFactory$__CLR4_4_1fd0fd0ldry9107$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/model/beans/TestBeanFactory$__CLR4_4_1fd0fd0ldry9107.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/model/beans/TestBeanFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/model/beans/TestIndexedPropertyBean$__CLR4_4_1e22e22ldry90w1$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/model/beans/TestIndexedPropertyBean$__CLR4_4_1e22e22ldry90w1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/model/beans/TestIndexedPropertyBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/model/container/ContainerModelTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/model/container/ContainerModelTest$ArrayContainer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/model/container/ContainerModelTest$Bean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/model/container/ContainerModelTest$ListContainer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/model/container/ContainerModelTest$__CLR4_4_1dlddldldry90u5$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/model/container/ContainerModelTest$__CLR4_4_1dlddldldry90u5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/model/container/ContainerModelTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/model/dom/DOMModelTest$__CLR4_4_1ds5ds5ldry90v5$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/model/dom/DOMModelTest$__CLR4_4_1ds5ds5ldry90v5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/model/dom/DOMModelTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/model/dom/TestDOMFactory$__CLR4_4_1f67f67ldry90zl$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/model/dom/TestDOMFactory$__CLR4_4_1f67f67ldry90zl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/model/dom/TestDOMFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/model/dynabeans/DynaBeanModelTest$__CLR4_4_1eu3eu3ldry90ym$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/model/dynabeans/DynaBeanModelTest$__CLR4_4_1eu3eu3ldry90ym.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/model/dynabeans/DynaBeanModelTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/model/dynabeans/TestDynaBeanFactory$__CLR4_4_1fc8fc8ldry9105$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/model/dynabeans/TestDynaBeanFactory$__CLR4_4_1fc8fc8ldry9105.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/model/dynabeans/TestDynaBeanFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/model/dynamic/DynamicPropertiesModelTest$__CLR4_4_1ewgewgldry90yy$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/model/dynamic/DynamicPropertiesModelTest$__CLR4_4_1ewgewgldry90yy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/model/dynamic/DynamicPropertiesModelTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/model/dynamic/TestDynamicPropertyFactory$__CLR4_4_1evievildry90yr$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/model/dynamic/TestDynamicPropertyFactory$__CLR4_4_1evievildry90yr.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/model/dynamic/TestDynamicPropertyFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/model/jdom/JDOMModelTest$__CLR4_4_1f7lf7lldry90zr$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/model/jdom/JDOMModelTest$__CLR4_4_1f7lf7lldry90zr.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/model/jdom/JDOMModelTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/model/jdom/TestJDOMFactory$__CLR4_4_1em5em5ldry90xu$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/model/jdom/TestJDOMFactory$__CLR4_4_1em5em5ldry90xu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/ri/model/jdom/TestJDOMFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/util/BasicTypeConverterTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/util/BasicTypeConverterTest$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/util/BasicTypeConverterTest$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/util/BasicTypeConverterTest$__CLR4_4_1en8en8ldry90y6$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/util/BasicTypeConverterTest$__CLR4_4_1en8en8ldry90y6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-classes/org/apache/commons/jxpath/util/BasicTypeConverterTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.AbstractFactory_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.BasicNodeSet_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.BasicVariables_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ClassFunctions_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.FunctionLibrary_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.JXPathAbstractFactoryException_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.JXPathBasicBeanInfo_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.JXPathContextFactoryConfigurationError_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.JXPathContextFactory_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.JXPathContext_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.JXPathException_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.JXPathFunctionNotFoundException_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.JXPathIntrospector_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.JXPathInvalidAccessException_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.JXPathInvalidSyntaxException_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.JXPathNotFoundException_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.JXPathTypeConversionException_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.MapDynamicPropertyHandler_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.PackageFunctions_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.XMLDocumentContainer_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.functions.ConstructorFunction_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.functions.MethodFunction_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.EvalContext_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.InfoSetUtil_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.JXPathCompiledExpression_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.JXPathContextFactoryReferenceImpl_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.JXPathContextReferenceImpl_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.NamespaceResolver_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.Parser_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.QName_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.axes.AncestorContext_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.axes.AttributeContext_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.axes.ChildContext_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.axes.DescendantContext_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.axes.InitialContext_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.axes.NamespaceContext_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.axes.NodeSetContext_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.axes.ParentContext_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.axes.PrecedingOrFollowingContext_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.axes.PredicateContext_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.axes.RootContext_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.axes.SelfContext_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.axes.SimplePathInterpreter_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.axes.UnionContext_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.compiler.Constant_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.compiler.CoreFunction_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.compiler.CoreOperationAdd_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.compiler.CoreOperationAnd_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.compiler.CoreOperationCompare_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.compiler.CoreOperationDivide_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.compiler.CoreOperationEqual_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.compiler.CoreOperationGreaterThanOrEqual_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.compiler.CoreOperationGreaterThan_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.compiler.CoreOperationLessThanOrEqual_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.compiler.CoreOperationLessThan_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.compiler.CoreOperationMod_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.compiler.CoreOperationMultiply_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.compiler.CoreOperationNegate_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.compiler.CoreOperationNotEqual_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.compiler.CoreOperationOr_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.compiler.CoreOperationSubtract_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.compiler.CoreOperationUnion_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.compiler.CoreOperation_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.compiler.ExpressionPath_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.compiler.Expression_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.compiler.ExtensionFunction_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.compiler.LocationPath_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.compiler.NameAttributeTest_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.compiler.NodeNameTest_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.compiler.NodeTest_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.compiler.NodeTypeTest_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.compiler.Operation_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.compiler.Path_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.compiler.ProcessingInstructionTest_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.compiler.Step_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.compiler.TreeCompiler_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.compiler.VariableReference_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.model.NodePointer_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.model.VariablePointer_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.model.beans.BeanAttributeIterator_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.model.beans.BeanPointerFactory_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.model.beans.BeanPointer_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.model.beans.BeanPropertyPointer_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.model.beans.CollectionAttributeNodeIterator_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.model.beans.CollectionChildNodeIterator_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.model.beans.CollectionNodeIterator_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.model.beans.CollectionPointerFactory_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.model.beans.CollectionPointer_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.model.beans.LangAttributePointer_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.model.beans.NullElementPointer_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.model.beans.NullPointer_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.model.beans.NullPropertyPointer_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.model.beans.PropertyIterator_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.model.beans.PropertyOwnerPointer_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.model.beans.PropertyPointer_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.model.container.ContainerPointerFactory_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.model.container.ContainerPointer_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.model.dom.DOMAttributeIterator_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.model.dom.DOMAttributePointer_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.model.dom.DOMNamespaceIterator_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.model.dom.DOMNodeIterator_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.model.dom.DOMNodePointer_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.model.dom.DOMPointerFactory_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.model.dom.NamespacePointer_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.model.dynabeans.DynaBeanPointerFactory_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.model.dynamic.DynamicAttributeIterator_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.model.dynamic.DynamicPointerFactory_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.model.dynamic.DynamicPointer_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.model.dynamic.DynamicPropertyIterator_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.model.dynamic.DynamicPropertyPointer_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.model.jdom.JDOMNamespacePointer_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.parser.ParseException_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.parser.SimpleCharStream_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.parser.TokenMgrError_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.parser.Token_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.parser.XPathParserTokenManager_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.ri.parser.XPathParser_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.servlet.Constants_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.servlet.HttpSessionHandler_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.servlet.KeywordVariables_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.servlet.PageContextHandler_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.servlet.PageScopeContextHandler_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.servlet.ServletContextHandler_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.servlet.ServletRequestHandler_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.util.BasicTypeConverter_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.util.MethodLookupUtils_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.util.TypeUtils_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.util.ValueUtils_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.xml.DOMParser_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.xml.DocumentContainer_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.xml.JDOMParser_ESTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxPath1f/target/test-reports/TEST-org.apache.commons.jxpath.xml.XMLParser2_ESTest.xml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2LXOpPGRWZD8hNZ2EFfL0BDtVc4" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/home/sepehr/masters/test_generation/model_generated_coverage/Compress1f_nopt_0"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a1ad83df-6c66-4ca5-bb53-e26bc6181474" name="Changes" comment="" />
+      <created>1676014144976</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1676014144976</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

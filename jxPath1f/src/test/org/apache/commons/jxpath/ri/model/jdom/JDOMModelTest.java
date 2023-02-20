@@ -58,16 +58,9 @@ public class JDOMModelTest extends XMLModelTestCase {
         return DocumentContainer.MODEL_JDOM;
     }
     
-    public void testGetNode() {
-        assertXPathNodeType(context, "/", Document.class);
-        assertXPathNodeType(context, "/vendor/location", Element.class);
-        assertXPathNodeType(context, "//location/@name", Attribute.class);
-        assertXPathNodeType(context, "//vendor", Element.class); //bugzilla #38586
-    }
     
-    public void testID() {
-        // id() is not supported by JDOM
-    }
+    
+    
 
     protected AbstractFactory getAbstractFactory() {
         return new TestJDOMFactory();

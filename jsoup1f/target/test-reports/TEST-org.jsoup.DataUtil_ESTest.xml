@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="3" failures="0" hostname="sepehr-UX310UQK" name="org.jsoup.DataUtil_ESTest" skipped="0" tests="11" time="1.08" timestamp="2023-02-05T22:54:59">
+<testsuite errors="3" failures="0" hostname="sepehr-UX310UQK" name="org.jsoup.DataUtil_ESTest" skipped="0" tests="11" time="2.509" timestamp="2023-02-10T07:29:40">
   <properties>
     <property name="java.vendor" value="Private Build" />
     <property name="sun.java.launcher" value="SUN_STANDARD" />
@@ -67,7 +67,7 @@
     <property name="java.vm.vendor" value="Private Build" />
     <property name="maven.settings.interactiveMode" value="true" />
     <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner org.jsoup.DataUtil_ESTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/sepehr/masters/test_generation/evosuite_coverage/jsoup1f/target/test-reports/TEST-org.jsoup.DataUtil_ESTest.xml formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter crashfile=/home/sepehr/masters/test_generation/evosuite_coverage/jsoup1f/junitvmwatcher490134721195236312.properties propsfile=/home/sepehr/masters/test_generation/evosuite_coverage/jsoup1f/junit4214126907864914078.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner org.jsoup.DataUtil_ESTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/sepehr/masters/test_generation/evosuite_coverage/jsoup1f/target/test-reports/TEST-org.jsoup.DataUtil_ESTest.xml formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter crashfile=/home/sepehr/masters/test_generation/evosuite_coverage/jsoup1f/junitvmwatcher1629154809568379288.properties propsfile=/home/sepehr/masters/test_generation/evosuite_coverage/jsoup1f/junit8676936379284239101.properties" />
     <property name="java.class.path" value="/home/sepehr/.ant/lib/clover.jar:/home/sepehr/.m2/repository/junit/junit/4.5/junit-4.5.jar:/home/sepehr/.m2/repository/commons-lang/commons-lang/2.4/commons-lang-2.4.jar:/home/sepehr/masters/test_generation/evosuite_coverage/jsoup1f/target/classes:/home/sepehr/masters/test_generation/evosuite_coverage/jsoup1f/target/test-classes:/home/sepehr/masters/test_generation/evosuite_coverage/jsoup1f/evosuite-tests:/home/sepehr/masters/test_generation/evosuite_coverage/jsoup1f/evosuite-standalone-runtime-1.0.6.jar:/home/sepehr/masters/test_generation/evosuite_coverage/jsoup1f/junit-4.12.jar:/home/sepehr/masters/test_generation/evosuite_coverage/jsoup1f/hamcrest-core-1.3.jar:/usr/share/java/ant-launcher-1.10.7.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-junit.jar:/usr/share/ant/lib/ant-junit4.jar" />
     <property name="ant.version" value="Apache Ant(TM) version 1.10.7 compiled on October 24 2019" />
     <property name="project.name" value="jsoup" />
@@ -103,14 +103,14 @@
     <property name="ant.file.jsoup" value="/home/sepehr/masters/test_generation/evosuite_coverage/jsoup1f/build.xml" />
     <property name="clover.flushpolicy" value="directed" />
   </properties>
-  <testcase classname="org.jsoup.DataUtil_ESTest" name="test10" time="0.022" />
-  <testcase classname="org.jsoup.DataUtil_ESTest" name="test01" time="0.002" />
-  <testcase classname="org.jsoup.DataUtil_ESTest" name="test00" time="0.002" />
-  <testcase classname="org.jsoup.DataUtil_ESTest" name="test03" time="0.002" />
-  <testcase classname="org.jsoup.DataUtil_ESTest" name="test02" time="0.007" />
-  <testcase classname="org.jsoup.DataUtil_ESTest" name="test05" time="0.002" />
-  <testcase classname="org.jsoup.DataUtil_ESTest" name="test04" time="0.003" />
-  <testcase classname="org.jsoup.DataUtil_ESTest" name="test07" time="0.019">
+  <testcase classname="org.jsoup.DataUtil_ESTest" name="test10" time="0.041" />
+  <testcase classname="org.jsoup.DataUtil_ESTest" name="test01" time="0.009" />
+  <testcase classname="org.jsoup.DataUtil_ESTest" name="test00" time="0.003" />
+  <testcase classname="org.jsoup.DataUtil_ESTest" name="test03" time="0.011" />
+  <testcase classname="org.jsoup.DataUtil_ESTest" name="test02" time="0.013" />
+  <testcase classname="org.jsoup.DataUtil_ESTest" name="test05" time="0.011" />
+  <testcase classname="org.jsoup.DataUtil_ESTest" name="test04" time="0.014" />
+  <testcase classname="org.jsoup.DataUtil_ESTest" name="test07" time="0.035">
     <error message="Only http &amp; https protocols supported" type="org.evosuite.runtime.mock.java.lang.MockIllegalArgumentException">org.evosuite.runtime.mock.java.lang.MockIllegalArgumentException: Only http &amp; https protocols supported
 	at org.apache.commons.lang.Validate.isTrue(Validate.java:157)
 	at org.jsoup.DataUtil.load(DataUtil.java:38)
@@ -121,7 +121,7 @@
 	at java.lang.Thread.run(Thread.java:750)
 </error>
   </testcase>
-  <testcase classname="org.jsoup.DataUtil_ESTest" name="test06" time="0.007">
+  <testcase classname="org.jsoup.DataUtil_ESTest" name="test06" time="0.008">
     <error message="timeout can not be negative" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: timeout can not be negative
 	at java.net.URLConnection.setConnectTimeout(URLConnection.java:388)
 	at org.evosuite.runtime.mock.java.net.EvoHttpURLConnection.setConnectTimeout(EvoHttpURLConnection.java:213)
@@ -134,7 +134,7 @@
 </error>
   </testcase>
   <testcase classname="org.jsoup.DataUtil_ESTest" name="test09" time="0.002" />
-  <testcase classname="org.jsoup.DataUtil_ESTest" name="test08" time="0.003">
+  <testcase classname="org.jsoup.DataUtil_ESTest" name="test08" time="0.007">
     <error message="timeout can not be negative" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: timeout can not be negative
 	at java.net.URLConnection.setConnectTimeout(URLConnection.java:388)
 	at org.evosuite.runtime.mock.java.net.EvoHttpURLConnection.setConnectTimeout(EvoHttpURLConnection.java:213)
@@ -162,7 +162,7 @@ com_atlassian_clover.Clover$InitialisedRuntime$1.run(Clover.java:521)
 java.security.AccessController.doPrivileged(Native Method)
 com_atlassian_clover.Clover$InitialisedRuntime.getRecorder(Clover.java:521)
 com_atlassian_clover.Clover.getRecorder(Clover.java:107)
-org.jsoup.DataUtil$__CLR4_4_1c0c0ldrzf6cy.<clinit>(DataUtil.java:13)
+org.jsoup.DataUtil$__CLR4_4_1c0c0ldy7keot.<clinit>(DataUtil.java:13)
 org.jsoup.DataUtil.load(DataUtil.java:22)
 org.jsoup.DataUtil_ESTest.test10(DataUtil_ESTest.java:161)
 sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)

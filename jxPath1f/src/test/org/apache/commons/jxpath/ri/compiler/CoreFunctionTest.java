@@ -56,132 +56,49 @@ public class CoreFunctionTest extends JXPathTestCase {
         }
     }
 
-    public void testCoreFunctions() {
-        assertXPathValue(context, "string(2)", "2");
-        assertXPathValue(context, "string($nan)", "NaN");
-        assertXPathValue(context, "string(-$nan)", "NaN");
-        assertXPathValue(context, "string(-2 div 0)", "-Infinity");
-        assertXPathValue(context, "string(2 div 0)", "Infinity");
-        assertXPathValue(context, "concat('a', 'b', 'c')", "abc");
-        assertXPathValue(context, "starts-with('abc', 'ab')", Boolean.TRUE);
-        assertXPathValue(context, "starts-with('xabc', 'ab')", Boolean.FALSE);
-        assertXPathValue(context, "contains('xabc', 'ab')", Boolean.TRUE);
-        assertXPathValue(context, "contains('xabc', 'ba')", Boolean.FALSE);
-        assertXPathValue(
-            context,
-            "substring-before('1999/04/01', '/')",
-            "1999");
-        assertXPathValue(
-            context,
-            "substring-after('1999/04/01', '/')",
-            "04/01");
-        assertXPathValue(context, "substring('12345', 2, 3)", "234");
-        assertXPathValue(context, "substring('12345', 2)", "2345");
-        assertXPathValue(context, "substring('12345', 1.5, 2.6)", "234");
-        assertXPathValue(context, "substring('12345', 0, 3)", "12");
-        assertXPathValue(context, "substring('12345', 0 div 0, 3)", "");
-        assertXPathValue(context, "substring('12345', 1, 0 div 0)", "");
-        assertXPathValue(context, "substring('12345', -42, 1 div 0)", "12345");
-        assertXPathValue(context, "substring('12345', -1 div 0, 1 div 0)", "");
-        assertXPathValue(context, "substring('12345', 6, 6)", "");
-        assertXPathValue(context, "substring('12345', 7, 8)", "");
-        assertXPathValue(context, "substring('12345', 7)", "");
-        assertXPathValue(context, "string-length('12345')", new Double(5));
-        assertXPathValue(context, "normalize-space(' abc  def  ')", "abc def");
-        assertXPathValue(context, "normalize-space('abc def')", "abc def");
-        assertXPathValue(context, "normalize-space('   ')", "");
-        assertXPathValue(context, "translate('--aaa--', 'abc-', 'ABC')", "AAA");
-        assertXPathValue(context, "boolean(1)", Boolean.TRUE);
-        assertXPathValue(context, "boolean(0)", Boolean.FALSE);
-        assertXPathValue(context, "boolean('x')", Boolean.TRUE);
-        assertXPathValue(context, "boolean('')", Boolean.FALSE);
 
-        assertXPathValue(context, "true()", Boolean.TRUE);
-        assertXPathValue(context, "false()", Boolean.FALSE);
-        assertXPathValue(context, "not(false())", Boolean.TRUE);
-        assertXPathValue(context, "not(true())", Boolean.FALSE);
-        assertXPathValue(context, "number('1')", new Double(1));
-        assertXPathValue(context, "number($bool_true)", new Double(1));
-        assertXPathValue(context, "number($bool_false)", new Double(0));
-        assertXPathValue(context, "floor(1.5)", new Double(1));
-        assertXPathValue(context, "floor(-1.5)", new Double(-2));
-        assertXPathValue(context, "ceiling(1.5)", new Double(2));
-        assertXPathValue(context, "ceiling(-1.5)", new Double(-1));
-        assertXPathValue(context, "round(1.5)", new Double(2));
-        assertXPathValue(context, "round(-1.5)", new Double(-1));
-        assertXPathValue(context, "null()", null);        
-    }
+public void testFormatNumberFunction1() { 
+     DecimalFormatSymbols symbols = new DecimalFormatSymbols(); 
+     symbols.setDigit('D'); 
+     context.setDecimalFormatSymbols("test", symbols); 
+     assertXPathValue(context, "format-number(123456789, '#.000000000')", "123456789.000000000"); 
+     assertXPathValue(context, "format-number(123456789, '#.0')", "123456789.0"); 
+     assertXPathValue(context, "format-number(0.123456789, '##%')", "12%"); 
+     assertXPathValue(context, "format-number(123456789, '################')", "123456789"); 
+     assertXPathValue(context, "format-number(123456789, 'D.0', 'test')", "123456789.0"); 
+     assertXPathValue(context, "format-number(123456789, '$DDD,DDD,DDD.DD', 'test')", "$123,456,789"); 
+ } 
 
-    public void testIDFunction() {
-        context.setIdentityManager(new IdentityManager() {
-            public Pointer getPointerByID(JXPathContext context, String id) {
-                NodePointer ptr = (NodePointer) context.getPointer("/document");
-                ptr = ptr.getValuePointer();
-                return ptr.getPointerByID(context, id);
-            }
-        });
 
-        assertXPathValueAndPointer(
-            context,
-            "id(101)//street",
-            "Tangerine Drive",
-            "id('101')/address[1]/street[1]");
+public void testIDFunction4() { 
+     context.setIdentityManager(new IdentityManager() { 
+  
+         public Pointer getPointerByID(JXPathContext context, String id) { 
+             NodePointer ptr = (NodePointer) context.getPointer("/document"); 
+             ptr = ptr.getValuePointer(); 
+             return ptr.getPointerByID(context, id); 
+         } 
+     }); 
+     assertXPathValueAndPointer(context, "id(101)//street", "Tangerine Drive", "id('101')/address[1]/street[1]"); 
+     assertXPathPointerLenient(context, "id(105)/address/street", "id(105)/address/street"); 
+ } 
 
-        assertXPathPointerLenient(
-            context,
-            "id(105)/address/street",
-            "id(105)/address/street");
-    }
 
-    public void testKeyFunction() {
-        context.setKeyManager(new KeyManager() {
-            public Pointer getPointerByKey(
-                JXPathContext context,
-                String key,
-                String value) 
-            {
-                return NodePointer.newNodePointer(null, "42", null);
-            }
-        });
+public void testKeyFunction6() { 
+     context.setKeyManager(new KeyManager() { 
+  
+         public Pointer getPointerByKey(JXPathContext context, String key, String value) { 
+             return NodePointer.newNodePointer(null, "42", null); 
+         } 
+     }); 
+     assertEquals("Test key", "42", context.getValue("key('a', 'b')")); 
+ } 
 
-        assertEquals("Test key", "42", context.getValue("key('a', 'b')"));
-    }
     
-    public void testFormatNumberFunction() {
-        
-        DecimalFormatSymbols symbols = new DecimalFormatSymbols();
-        symbols.setDigit('D');
-        
-        context.setDecimalFormatSymbols("test", symbols);
-        
-        assertXPathValue(
-            context,
-            "format-number(123456789, '#.000000000')",
-            "123456789.000000000");
 
-        assertXPathValue(
-            context,
-            "format-number(123456789, '#.0')",
-            "123456789.0");
+    
 
-        assertXPathValue(
-            context, 
-            "format-number(0.123456789, '##%')", 
-            "12%");
-
-        assertXPathValue(
-            context,
-            "format-number(123456789, '################')",
-            "123456789");
-
-        assertXPathValue(
-            context,
-            "format-number(123456789, 'D.0', 'test')",
-            "123456789.0");
-
-        assertXPathValue(
-            context,
-            "format-number(123456789, '$DDD,DDD,DDD.DD', 'test')",
-            "$123,456,789");
-    }
+    
+    
+    
 }

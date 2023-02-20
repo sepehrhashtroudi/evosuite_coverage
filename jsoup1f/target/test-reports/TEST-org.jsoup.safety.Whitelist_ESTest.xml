@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="6" failures="13" hostname="sepehr-UX310UQK" name="org.jsoup.safety.Whitelist_ESTest" skipped="0" tests="19" time="0.626" timestamp="2023-02-05T22:55:06">
+<testsuite errors="6" failures="13" hostname="sepehr-UX310UQK" name="org.jsoup.safety.Whitelist_ESTest" skipped="0" tests="19" time="1.009" timestamp="2023-02-10T07:29:50">
   <properties>
     <property name="java.vendor" value="Private Build" />
     <property name="sun.java.launcher" value="SUN_STANDARD" />
@@ -67,7 +67,7 @@
     <property name="java.vm.vendor" value="Private Build" />
     <property name="maven.settings.interactiveMode" value="true" />
     <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner org.jsoup.safety.Whitelist_ESTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/sepehr/masters/test_generation/evosuite_coverage/jsoup1f/target/test-reports/TEST-org.jsoup.safety.Whitelist_ESTest.xml formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter crashfile=/home/sepehr/masters/test_generation/evosuite_coverage/jsoup1f/junitvmwatcher8347565988000662572.properties propsfile=/home/sepehr/masters/test_generation/evosuite_coverage/jsoup1f/junit6141720611930137962.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner org.jsoup.safety.Whitelist_ESTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/sepehr/masters/test_generation/evosuite_coverage/jsoup1f/target/test-reports/TEST-org.jsoup.safety.Whitelist_ESTest.xml formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter crashfile=/home/sepehr/masters/test_generation/evosuite_coverage/jsoup1f/junitvmwatcher4618630107492477836.properties propsfile=/home/sepehr/masters/test_generation/evosuite_coverage/jsoup1f/junit2873115211552993229.properties" />
     <property name="java.class.path" value="/home/sepehr/.ant/lib/clover.jar:/home/sepehr/.m2/repository/junit/junit/4.5/junit-4.5.jar:/home/sepehr/.m2/repository/commons-lang/commons-lang/2.4/commons-lang-2.4.jar:/home/sepehr/masters/test_generation/evosuite_coverage/jsoup1f/target/classes:/home/sepehr/masters/test_generation/evosuite_coverage/jsoup1f/target/test-classes:/home/sepehr/masters/test_generation/evosuite_coverage/jsoup1f/evosuite-tests:/home/sepehr/masters/test_generation/evosuite_coverage/jsoup1f/evosuite-standalone-runtime-1.0.6.jar:/home/sepehr/masters/test_generation/evosuite_coverage/jsoup1f/junit-4.12.jar:/home/sepehr/masters/test_generation/evosuite_coverage/jsoup1f/hamcrest-core-1.3.jar:/usr/share/java/ant-launcher-1.10.7.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-junit.jar:/usr/share/ant/lib/ant-junit4.jar" />
     <property name="ant.version" value="Apache Ant(TM) version 1.10.7 compiled on October 24 2019" />
     <property name="project.name" value="jsoup" />
@@ -103,7 +103,7 @@
     <property name="ant.file.jsoup" value="/home/sepehr/masters/test_generation/evosuite_coverage/jsoup1f/build.xml" />
     <property name="clover.flushpolicy" value="directed" />
   </properties>
-  <testcase classname="org.jsoup.safety.Whitelist_ESTest" name="test04" time="0.067">
+  <testcase classname="org.jsoup.safety.Whitelist_ESTest" name="test04" time="0.081">
     <error message="The validated string is empty" type="org.evosuite.runtime.mock.java.lang.MockIllegalArgumentException">org.evosuite.runtime.mock.java.lang.MockIllegalArgumentException: The validated string is empty
 	at org.apache.commons.lang.Validate.notEmpty(Validate.java:382)
 	at org.jsoup.safety.Whitelist.addProtocols(Whitelist.java:264)
@@ -114,7 +114,7 @@
 	at java.lang.Thread.run(Thread.java:750)
 </error>
   </testcase>
-  <testcase classname="org.jsoup.safety.Whitelist_ESTest" name="test15" time="0.005">
+  <testcase classname="org.jsoup.safety.Whitelist_ESTest" name="test15" time="0.017">
     <failure message="Expecting exception: NoClassDefFoundError" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Expecting exception: NoClassDefFoundError
 	at org.jsoup.safety.Whitelist_ESTest.test15(Whitelist_ESTest.java:260)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
@@ -123,7 +123,7 @@
 	at java.lang.Thread.run(Thread.java:750)
 </failure>
   </testcase>
-  <testcase classname="org.jsoup.safety.Whitelist_ESTest" name="test16" time="0.004">
+  <testcase classname="org.jsoup.safety.Whitelist_ESTest" name="test16" time="0.007">
     <failure message="Expecting exception: NoClassDefFoundError" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Expecting exception: NoClassDefFoundError
 	at org.jsoup.safety.Whitelist_ESTest.test16(Whitelist_ESTest.java:275)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
@@ -132,7 +132,7 @@
 	at java.lang.Thread.run(Thread.java:750)
 </failure>
   </testcase>
-  <testcase classname="org.jsoup.safety.Whitelist_ESTest" name="test05" time="0.004">
+  <testcase classname="org.jsoup.safety.Whitelist_ESTest" name="test05" time="0.003">
     <error message="The validated string is empty" type="org.evosuite.runtime.mock.java.lang.MockIllegalArgumentException">org.evosuite.runtime.mock.java.lang.MockIllegalArgumentException: The validated string is empty
 	at org.apache.commons.lang.Validate.notEmpty(Validate.java:382)
 	at org.jsoup.safety.Whitelist.addAttributes(Whitelist.java:209)
@@ -143,7 +143,7 @@
 	at java.lang.Thread.run(Thread.java:750)
 </error>
   </testcase>
-  <testcase classname="org.jsoup.safety.Whitelist_ESTest" name="test02" time="0.004">
+  <testcase classname="org.jsoup.safety.Whitelist_ESTest" name="test02" time="0.005">
     <failure message="Expecting exception: NoClassDefFoundError" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Expecting exception: NoClassDefFoundError
 	at org.jsoup.safety.Whitelist_ESTest.test02(Whitelist_ESTest.java:58)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
@@ -152,7 +152,7 @@
 	at java.lang.Thread.run(Thread.java:750)
 </failure>
   </testcase>
-  <testcase classname="org.jsoup.safety.Whitelist_ESTest" name="test13" time="0.005">
+  <testcase classname="org.jsoup.safety.Whitelist_ESTest" name="test13" time="0.003">
     <error message="The validated object is null" type="org.evosuite.runtime.mock.java.lang.MockIllegalArgumentException">org.evosuite.runtime.mock.java.lang.MockIllegalArgumentException: The validated object is null
 	at org.apache.commons.lang.Validate.notNull(Validate.java:222)
 	at org.jsoup.safety.Whitelist$TypedValue.&lt;init&gt;(Whitelist.java:390)
@@ -164,7 +164,7 @@
 	at java.lang.Thread.run(Thread.java:750)
 </error>
   </testcase>
-  <testcase classname="org.jsoup.safety.Whitelist_ESTest" name="test14" time="0.003">
+  <testcase classname="org.jsoup.safety.Whitelist_ESTest" name="test14" time="0.004">
     <failure message="Expecting exception: NoClassDefFoundError" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Expecting exception: NoClassDefFoundError
 	at org.jsoup.safety.Whitelist_ESTest.test14(Whitelist_ESTest.java:245)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
@@ -173,7 +173,7 @@
 	at java.lang.Thread.run(Thread.java:750)
 </failure>
   </testcase>
-  <testcase classname="org.jsoup.safety.Whitelist_ESTest" name="test03" time="0.004">
+  <testcase classname="org.jsoup.safety.Whitelist_ESTest" name="test03" time="0.007">
     <error message="The validated string is empty" type="org.evosuite.runtime.mock.java.lang.MockIllegalArgumentException">org.evosuite.runtime.mock.java.lang.MockIllegalArgumentException: The validated string is empty
 	at org.apache.commons.lang.Validate.notEmpty(Validate.java:382)
 	at org.jsoup.safety.Whitelist.addTags(Whitelist.java:186)
@@ -184,7 +184,7 @@
 	at java.lang.Thread.run(Thread.java:750)
 </error>
   </testcase>
-  <testcase classname="org.jsoup.safety.Whitelist_ESTest" name="test11" time="0.005">
+  <testcase classname="org.jsoup.safety.Whitelist_ESTest" name="test11" time="0.003">
     <failure message="Expecting exception: NoClassDefFoundError" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Expecting exception: NoClassDefFoundError
 	at org.jsoup.safety.Whitelist_ESTest.test11(Whitelist_ESTest.java:200)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
@@ -193,7 +193,7 @@
 	at java.lang.Thread.run(Thread.java:750)
 </failure>
   </testcase>
-  <testcase classname="org.jsoup.safety.Whitelist_ESTest" name="test00" time="0.004">
+  <testcase classname="org.jsoup.safety.Whitelist_ESTest" name="test00" time="0.005">
     <failure message="Expecting exception: NoClassDefFoundError" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Expecting exception: NoClassDefFoundError
 	at org.jsoup.safety.Whitelist_ESTest.test00(Whitelist_ESTest.java:27)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
@@ -202,7 +202,7 @@
 	at java.lang.Thread.run(Thread.java:750)
 </failure>
   </testcase>
-  <testcase classname="org.jsoup.safety.Whitelist_ESTest" name="test12" time="0.002">
+  <testcase classname="org.jsoup.safety.Whitelist_ESTest" name="test12" time="0.003">
     <failure message="Expecting exception: NoClassDefFoundError" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Expecting exception: NoClassDefFoundError
 	at org.jsoup.safety.Whitelist_ESTest.test12(Whitelist_ESTest.java:215)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
@@ -220,7 +220,7 @@
 	at java.lang.Thread.run(Thread.java:750)
 </failure>
   </testcase>
-  <testcase classname="org.jsoup.safety.Whitelist_ESTest" name="test10" time="0.002">
+  <testcase classname="org.jsoup.safety.Whitelist_ESTest" name="test10" time="0.003">
     <failure message="Expecting exception: NoClassDefFoundError" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Expecting exception: NoClassDefFoundError
 	at org.jsoup.safety.Whitelist_ESTest.test10(Whitelist_ESTest.java:185)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
@@ -229,7 +229,7 @@
 	at java.lang.Thread.run(Thread.java:750)
 </failure>
   </testcase>
-  <testcase classname="org.jsoup.safety.Whitelist_ESTest" name="test08" time="0.008">
+  <testcase classname="org.jsoup.safety.Whitelist_ESTest" name="test08" time="0.003">
     <error message="The validated object is null" type="org.evosuite.runtime.mock.java.lang.MockIllegalArgumentException">org.evosuite.runtime.mock.java.lang.MockIllegalArgumentException: The validated object is null
 	at org.apache.commons.lang.Validate.notNull(Validate.java:222)
 	at org.jsoup.safety.Whitelist$TypedValue.&lt;init&gt;(Whitelist.java:390)
@@ -250,7 +250,7 @@
 	at java.lang.Thread.run(Thread.java:750)
 </failure>
   </testcase>
-  <testcase classname="org.jsoup.safety.Whitelist_ESTest" name="test17" time="0.009">
+  <testcase classname="org.jsoup.safety.Whitelist_ESTest" name="test17" time="0.007">
     <failure message="Expecting exception: NoClassDefFoundError" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Expecting exception: NoClassDefFoundError
 	at org.jsoup.safety.Whitelist_ESTest.test17(Whitelist_ESTest.java:291)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
@@ -259,7 +259,7 @@
 	at java.lang.Thread.run(Thread.java:750)
 </failure>
   </testcase>
-  <testcase classname="org.jsoup.safety.Whitelist_ESTest" name="test06" time="0.004">
+  <testcase classname="org.jsoup.safety.Whitelist_ESTest" name="test06" time="0.008">
     <failure message="Expecting exception: NoClassDefFoundError" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Expecting exception: NoClassDefFoundError
 	at org.jsoup.safety.Whitelist_ESTest.test06(Whitelist_ESTest.java:124)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
@@ -277,7 +277,7 @@
 	at java.lang.Thread.run(Thread.java:750)
 </failure>
   </testcase>
-  <testcase classname="org.jsoup.safety.Whitelist_ESTest" name="test07" time="0.003">
+  <testcase classname="org.jsoup.safety.Whitelist_ESTest" name="test07" time="0.005">
     <error type="java.lang.NullPointerException">java.lang.NullPointerException
 	at org.jsoup.safety.Whitelist.isSafeAttribute(Whitelist.java:299)
 	at org.jsoup.safety.Whitelist_ESTest.test07(Whitelist_ESTest.java:139)

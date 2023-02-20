@@ -44,31 +44,30 @@ public class StressTest extends TestCase {
         super(name);
     }
 
-    public void testThreads() throws Throwable {
-        context = JXPathContext.newContext(null, new Double(100));
-        Thread[] threadArray = new Thread[THREAD_COUNT];
-        for (int i = 0; i < THREAD_COUNT; i++) {
-            threadArray[i] = new Thread(new StressRunnable());
-        }
+
+public void testThreads90() throws Throwable { 
+     context = JXPathContext.newContext(null, new Double(100)); 
+     Thread[] threadArray = new Thread[THREAD_COUNT]; 
+     for (int i = 0; i < THREAD_COUNT; i++) { 
+         threadArray[i] = new Thread(new StressRunnable()); 
+     } 
+     for (int i = 0; i < threadArray.length; i++) { 
+         threadArray[i].start(); 
+     } 
+     for (int i = 0; i < threadArray.length; i++) { 
+         try { 
+             threadArray[i].join(); 
+         } catch (InterruptedException e) { 
+             assertTrue("Interrupted", false); 
+         } 
+     } 
+     if (exception != null) { 
+         throw exception; 
+     } 
+     assertEquals("Test count", THREAD_COUNT * THREAD_DURATION, count); 
+ } 
+
         
-        for (int i = 0; i < threadArray.length; i++) {
-            threadArray[i].start();
-        }
-
-        for (int i = 0; i < threadArray.length; i++) {
-            try {
-                threadArray[i].join();
-            }
-            catch (InterruptedException e) {
-                assertTrue("Interrupted", false);
-            }
-        }
-
-        if (exception != null) {
-            throw exception;
-        }
-        assertEquals("Test count", THREAD_COUNT * THREAD_DURATION, count);
-    }    
 
     private final class StressRunnable implements Runnable {
         public void run() {

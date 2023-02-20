@@ -1,6 +1,6 @@
-var treeMapJson = {"id":"Clover database Thu Jan 12 2023 21:41:04 MST0","name":"","data":{
-    "$area":71333.0,"$color":6.7822747,"title":
-    " 71333 Elements, 6.8% Coverage"},"children":[{"id":
+var treeMapJson = {"id":"Clover database Thu Feb 16 2023 14:10:00 MST0","name":"","data":{
+    "$area":71333.0,"$color":6.9855466,"title":
+    " 71333 Elements, 7% Coverage"},"children":[{"id":
       "com.google.debugging.sourcemap.proto30","name":
       "com.google.debugging.sourcemap.proto","data":{"$area":764.0,"$color":
         0.0,"title":
@@ -44,8 +44,8 @@ var treeMapJson = {"id":"Clover database Thu Jan 12 2023 21:41:04 MST0","name":"
             "Mapping.OriginalMapping.Builder 224 Elements, 0% Coverage"},
           "children":[]}]},{"id":"com.google.javascript.jscomp0","name":
       "com.google.javascript.jscomp","data":{"$area":50153.0,"$color":
-        5.710526,"title":
-        "com.google.javascript.jscomp 50153 Elements, 5.7% Coverage"},
+        6.0096107,"title":
+        "com.google.javascript.jscomp 50153 Elements, 6% Coverage"},
       "children":[{"id":"InstrumentationOrBuilder0","name":
           "InstrumentationOrBuilder","data":{"$area":0.0,"$color":-100.0,
             "path":
@@ -168,17 +168,17 @@ var treeMapJson = {"id":"Clover database Thu Jan 12 2023 21:41:04 MST0","name":"
             "title":
             "TypeInferencePass.SecondScopeBuildingCallback 3 Elements, 0% Coverage"},
           "children":[]},{"id":"JvmMetrics3290","name":"JvmMetrics","data":{
-            "$area":186.0,"$color":67.741936,"path":
+            "$area":186.0,"$color":75.268814,"path":
             "com/google/javascript/jscomp/JvmMetrics.html#JvmMetrics",
-            "title":"JvmMetrics 186 Elements, 67.7% Coverage"},"children":[]},
+            "title":"JvmMetrics 186 Elements, 75.3% Coverage"},"children":[]},
         {"id":"JSModule5037","name":"JSModule","data":{"$area":110.0,
-            "$color":72.72727,"path":
+            "$color":74.545456,"path":
             "com/google/javascript/jscomp/JSModule.html#JSModule","title":
-            "JSModule 110 Elements, 72.7% Coverage"},"children":[]},{"id":
+            "JSModule 110 Elements, 74.5% Coverage"},"children":[]},{"id":
           "ConstCheck5384","name":"ConstCheck","data":{"$area":67.0,"$color":
-            44.77612,"path":
+            40.298508,"path":
             "com/google/javascript/jscomp/ConstCheck.html#ConstCheck",
-            "title":"ConstCheck 67 Elements, 44.8% Coverage"},"children":[]},
+            "title":"ConstCheck 67 Elements, 40.3% Coverage"},"children":[]},
         {"id":"TypedScopeCreator5451","name":"TypedScopeCreator","data":{
             "$area":110.0,"$color":0.0,"path":
             "com/google/javascript/jscomp/TypedScopeCreator.html#TypedScopeCreator",
@@ -284,9 +284,9 @@ var treeMapJson = {"id":"Clover database Thu Jan 12 2023 21:41:04 MST0","name":"
             "com/google/javascript/jscomp/JsMessage.html#JsMessage.Builder",
             "title":"JsMessage.Builder 81 Elements, 4.9% Coverage"},
           "children":[]},{"id":"JsMessage.Hash9480","name":
-          "JsMessage.Hash","data":{"$area":152.0,"$color":63.815792,"path":
+          "JsMessage.Hash","data":{"$area":152.0,"$color":92.10526,"path":
             "com/google/javascript/jscomp/JsMessage.html#JsMessage.Hash",
-            "title":"JsMessage.Hash 152 Elements, 63.8% Coverage"},
+            "title":"JsMessage.Hash 152 Elements, 92.1% Coverage"},
           "children":[]},{"id":"JsMessage.IdGenerator9632","name":
           "JsMessage.IdGenerator","data":{"$area":0.0,"$color":-100.0,"path":
             
@@ -298,10 +298,10 @@ var treeMapJson = {"id":"Clover database Thu Jan 12 2023 21:41:04 MST0","name":"
             "title":"BasicErrorManager 36 Elements, 0% Coverage"},"children":
           []},{"id":"BasicErrorManager.LeveledJSErrorComparator9668","name":
           "BasicErrorManager.LeveledJSErrorComparator","data":{"$area":
-            60.0,"$color":63.333332,"path":
+            60.0,"$color":76.666664,"path":
             "com/google/javascript/jscomp/BasicErrorManager.html#BasicErrorManager.LeveledJSErrorComparator",
             "title":
-            "BasicErrorManager.LeveledJSErrorComparator 60 Elements, 63.3% Coverage"},
+            "BasicErrorManager.LeveledJSErrorComparator 60 Elements, 76.7% Coverage"},
           "children":[]},{"id":"BasicErrorManager.ErrorWithLevel9728","name":
           "BasicErrorManager.ErrorWithLevel","data":{"$area":3.0,"$color":
             100.0,"path":
@@ -355,9 +355,9 @@ var treeMapJson = {"id":"Clover database Thu Jan 12 2023 21:41:04 MST0","name":"
             "title":
             "PeepholeOptimizationsPass.PeepholeChangeHandler 2 Elements, 0% Coverage"},
           "children":[]},{"id":"JSError10093","name":"JSError","data":{
-            "$area":110.0,"$color":100.0,"path":
+            "$area":110.0,"$color":96.36363,"path":
             "com/google/javascript/jscomp/JSError.html#JSError","title":
-            "JSError 110 Elements, 100% Coverage"},"children":[]},{"id":
+            "JSError 110 Elements, 96.4% Coverage"},"children":[]},{"id":
           "ChainCalls10203","name":"ChainCalls","data":{"$area":11.0,
             "$color":18.181818,"path":
             "com/google/javascript/jscomp/ChainCalls.html#ChainCalls",
@@ -377,25 +377,25 @@ var treeMapJson = {"id":"Clover database Thu Jan 12 2023 21:41:04 MST0","name":"
             "com/google/javascript/jscomp/ChainCalls.html#ChainCalls.CallSite",
             "title":"ChainCalls.CallSite 6 Elements, 0% Coverage"},
           "children":[]},{"id":"Tracer10298","name":"Tracer","data":{"$area":
-            192.0,"$color":59.375,"path":
+            192.0,"$color":53.125,"path":
             "com/google/javascript/jscomp/Tracer.html#Tracer","title":
-            "Tracer 192 Elements, 59.4% Coverage"},"children":[]},{"id":
+            "Tracer 192 Elements, 53.1% Coverage"},"children":[]},{"id":
           "Tracer.InternalClock10298","name":"Tracer.InternalClock","data":{
             "$area":0.0,"$color":-100.0,"path":
             "com/google/javascript/jscomp/Tracer.html#Tracer.InternalClock",
             "title":"Tracer.InternalClock 0 Elements,  -  Coverage"},
           "children":[]},{"id":"Tracer.Stat10451","name":"Tracer.Stat",
-          "data":{"$area":10.0,"$color":80.0,"path":
+          "data":{"$area":10.0,"$color":60.000004,"path":
             "com/google/javascript/jscomp/Tracer.html#Tracer.Stat","title":
-            "Tracer.Stat 10 Elements, 80% Coverage"},"children":[]},{"id":
+            "Tracer.Stat 10 Elements, 60% Coverage"},"children":[]},{"id":
           "Tracer.Event10489","name":"Tracer.Event","data":{"$area":39.0,
             "$color":7.692308,"path":
             "com/google/javascript/jscomp/Tracer.html#Tracer.Event","title":
             "Tracer.Event 39 Elements, 7.7% Coverage"},"children":[]},{"id":
           "Tracer.ThreadTrace10528","name":"Tracer.ThreadTrace","data":{
-            "$area":155.0,"$color":20.64516,"path":
+            "$area":155.0,"$color":42.580647,"path":
             "com/google/javascript/jscomp/Tracer.html#Tracer.ThreadTrace",
-            "title":"Tracer.ThreadTrace 155 Elements, 20.6% Coverage"},
+            "title":"Tracer.ThreadTrace 155 Elements, 42.6% Coverage"},
           "children":[]},{"id":"Tracer.TracingStatistic10694","name":
           "Tracer.TracingStatistic","data":{"$area":0.0,"$color":-100.0,
             "path":
@@ -403,10 +403,10 @@ var treeMapJson = {"id":"Clover database Thu Jan 12 2023 21:41:04 MST0","name":"
             "title":"Tracer.TracingStatistic 0 Elements,  -  Coverage"},
           "children":[]},{"id":"Tracer.AtomicTracerStatMap10694","name":
           "Tracer.AtomicTracerStatMap","data":{"$area":18.0,"$color":
-            83.33333,"path":
+            55.555557,"path":
             "com/google/javascript/jscomp/Tracer.html#Tracer.AtomicTracerStatMap",
             "title":
-            "Tracer.AtomicTracerStatMap 18 Elements, 83.3% Coverage"},
+            "Tracer.AtomicTracerStatMap 18 Elements, 55.6% Coverage"},
           "children":[]},{"id":"JsAst10745","name":"JsAst","data":{"$area":
             34.0,"$color":23.529411,"path":
             "com/google/javascript/jscomp/JsAst.html#JsAst","title":
@@ -499,10 +499,10 @@ var treeMapJson = {"id":"Clover database Thu Jan 12 2023 21:41:04 MST0","name":"
           "children":[]},{"id":
           "ObjectPropertyStringPostprocess.Callback12649","name":
           "ObjectPropertyStringPostprocess.Callback","data":{"$area":31.0,
-            "$color":0.0,"path":
+            "$color":12.903225,"path":
             "com/google/javascript/jscomp/ObjectPropertyStringPostprocess.html#ObjectPropertyStringPostprocess.Callback",
             "title":
-            "ObjectPropertyStringPostprocess.Callback 31 Elements, 0% Coverage"},
+            "ObjectPropertyStringPostprocess.Callback 31 Elements, 12.9% Coverage"},
           "children":[]},{"id":"ProcessTweaks12680","name":"ProcessTweaks",
           "data":{"$area":81.0,"$color":4.9382715,"path":
             "com/google/javascript/jscomp/ProcessTweaks.html#ProcessTweaks",
@@ -567,9 +567,9 @@ var treeMapJson = {"id":"Clover database Thu Jan 12 2023 21:41:04 MST0","name":"
             "com/google/javascript/jscomp/AliasExternals.html#AliasExternals.Symbol",
             "title":"AliasExternals.Symbol 19 Elements, 0% Coverage"},
           "children":[]},{"id":"ScopedAliases13206","name":"ScopedAliases",
-          "data":{"$area":30.0,"$color":0.0,"path":
+          "data":{"$area":30.0,"$color":53.333336,"path":
             "com/google/javascript/jscomp/ScopedAliases.html#ScopedAliases",
-            "title":"ScopedAliases 30 Elements, 0% Coverage"},"children":[]},
+            "title":"ScopedAliases 30 Elements, 53.3% Coverage"},"children":[]},
         {"id":"ScopedAliases.AliasUsage13236","name":
           "ScopedAliases.AliasUsage","data":{"$area":0.0,"$color":-100.0,
             "path":
@@ -587,10 +587,10 @@ var treeMapJson = {"id":"Clover database Thu Jan 12 2023 21:41:04 MST0","name":"
             "title":
             "ScopedAliases.AliasedTypeNode 9 Elements, 0% Coverage"},
           "children":[]},{"id":"ScopedAliases.Traversal13250","name":
-          "ScopedAliases.Traversal","data":{"$area":208.0,"$color":0.0,
-            "path":
+          "ScopedAliases.Traversal","data":{"$area":208.0,"$color":
+            13.942307,"path":
             "com/google/javascript/jscomp/ScopedAliases.html#ScopedAliases.Traversal",
-            "title":"ScopedAliases.Traversal 208 Elements, 0% Coverage"},
+            "title":"ScopedAliases.Traversal 208 Elements, 13.9% Coverage"},
           "children":[]},{"id":"CodingConventions14488","name":
           "CodingConventions","data":{"$area":3.0,"$color":66.66667,"path":
             "com/google/javascript/jscomp/CodingConventions.html#CodingConventions",
@@ -1266,15 +1266,15 @@ var treeMapJson = {"id":"Clover database Thu Jan 12 2023 21:41:04 MST0","name":"
             "title":
             "RescopeGlobalSymbols.MakeExternsReferenceWindowExplicitly 12 Elements, 0% Coverage"},
           "children":[]},{"id":"CombinedCompilerPass25120","name":
-          "CombinedCompilerPass","data":{"$area":32.0,"$color":93.75,"path":
+          "CombinedCompilerPass","data":{"$area":32.0,"$color":100.0,"path":
             "com/google/javascript/jscomp/CombinedCompilerPass.html#CombinedCompilerPass",
-            "title":"CombinedCompilerPass 32 Elements, 93.8% Coverage"},
+            "title":"CombinedCompilerPass 32 Elements, 100% Coverage"},
           "children":[]},{"id":"CombinedCompilerPass.CallbackWrapper25135",
           "name":"CombinedCompilerPass.CallbackWrapper","data":{"$area":
-            33.0,"$color":66.66667,"path":
+            33.0,"$color":78.78788,"path":
             "com/google/javascript/jscomp/CombinedCompilerPass.html#CombinedCompilerPass.CallbackWrapper",
             "title":
-            "CombinedCompilerPass.CallbackWrapper 33 Elements, 66.7% Coverage"},
+            "CombinedCompilerPass.CallbackWrapper 33 Elements, 78.8% Coverage"},
           "children":[]},{"id":"NameGenerator25345","name":"NameGenerator",
           "data":{"$area":62.0,"$color":100.0,"path":
             "com/google/javascript/jscomp/NameGenerator.html#NameGenerator",
@@ -1415,10 +1415,10 @@ var treeMapJson = {"id":"Clover database Thu Jan 12 2023 21:41:04 MST0","name":"
             "com/google/javascript/jscomp/CompilerInput.html#CompilerInput.DepsFinder",
             "title":"CompilerInput.DepsFinder 25 Elements, 0% Coverage"},
           "children":[]},{"id":"GlobalVarReferenceMap26676","name":
-          "GlobalVarReferenceMap","data":{"$area":99.0,"$color":4.040404,
+          "GlobalVarReferenceMap","data":{"$area":99.0,"$color":5.050505,
             "path":
             "com/google/javascript/jscomp/GlobalVarReferenceMap.html#GlobalVarReferenceMap",
-            "title":"GlobalVarReferenceMap 99 Elements, 4% Coverage"},
+            "title":"GlobalVarReferenceMap 99 Elements, 5.1% Coverage"},
           "children":[]},{"id":"GlobalVarReferenceMap.SourceRefRange26765",
           "name":"GlobalVarReferenceMap.SourceRefRange","data":{"$area":
             8.0,"$color":0.0,"path":
@@ -1450,10 +1450,10 @@ var treeMapJson = {"id":"Clover database Thu Jan 12 2023 21:41:04 MST0","name":"
             "com/google/javascript/jscomp/SourceMap.html#SourceMap.LocationMapping",
             "title":"SourceMap.LocationMapping 3 Elements, 0% Coverage"},
           "children":[]},{"id":"ByPathWarningsGuard26858","name":
-          "ByPathWarningsGuard","data":{"$area":29.0,"$color":41.37931,
+          "ByPathWarningsGuard","data":{"$area":29.0,"$color":44.827587,
             "path":
             "com/google/javascript/jscomp/ByPathWarningsGuard.html#ByPathWarningsGuard",
-            "title":"ByPathWarningsGuard 29 Elements, 41.4% Coverage"},
+            "title":"ByPathWarningsGuard 29 Elements, 44.8% Coverage"},
           "children":[]},{"id":"ControlStructureCheck27629","name":
           "ControlStructureCheck","data":{"$area":24.0,"$color":75.0,"path":
             "com/google/javascript/jscomp/ControlStructureCheck.html#ControlStructureCheck",
@@ -2160,10 +2160,10 @@ var treeMapJson = {"id":"Clover database Thu Jan 12 2023 21:41:04 MST0","name":"
             "SymbolTable.JSDocInfoCollector 36 Elements, 0% Coverage"},
           "children":[]},{"id":"SourceInformationAnnotator40421","name":
           "SourceInformationAnnotator","data":{"$area":37.0,"$color":
-            67.567566,"path":
+            56.75676,"path":
             "com/google/javascript/jscomp/SourceInformationAnnotator.html#SourceInformationAnnotator",
             "title":
-            "SourceInformationAnnotator 37 Elements, 67.6% Coverage"},
+            "SourceInformationAnnotator 37 Elements, 56.8% Coverage"},
           "children":[]},{"id":"SideEffectsAnalysis40458","name":
           "SideEffectsAnalysis","data":{"$area":126.0,"$color":0.0,"path":
             "com/google/javascript/jscomp/SideEffectsAnalysis.html#SideEffectsAnalysis",
@@ -2516,9 +2516,9 @@ var treeMapJson = {"id":"Clover database Thu Jan 12 2023 21:41:04 MST0","name":"
             "com/google/javascript/jscomp/SourceAst.html#SourceAst","title":
             "SourceAst 0 Elements,  -  Coverage"},"children":[]},{"id":
           "StrictModeCheck44506","name":"StrictModeCheck","data":{"$area":
-            130.0,"$color":25.384617,"path":
+            130.0,"$color":30.769232,"path":
             "com/google/javascript/jscomp/StrictModeCheck.html#StrictModeCheck",
-            "title":"StrictModeCheck 130 Elements, 25.4% Coverage"},
+            "title":"StrictModeCheck 130 Elements, 30.8% Coverage"},
           "children":[]},{"id":"StrictModeCheck.NonExternChecks44636","name":
           "StrictModeCheck.NonExternChecks","data":{"$area":33.0,"$color":
             0.0,"path":
@@ -2526,10 +2526,10 @@ var treeMapJson = {"id":"Clover database Thu Jan 12 2023 21:41:04 MST0","name":"
             "title":
             "StrictModeCheck.NonExternChecks 33 Elements, 0% Coverage"},
           "children":[]},{"id":"NameAnonymousFunctions44669","name":
-          "NameAnonymousFunctions","data":{"$area":6.0,"$color":100.0,"path":
-            
+          "NameAnonymousFunctions","data":{"$area":6.0,"$color":83.33333,
+            "path":
             "com/google/javascript/jscomp/NameAnonymousFunctions.html#NameAnonymousFunctions",
-            "title":"NameAnonymousFunctions 6 Elements, 100% Coverage"},
+            "title":"NameAnonymousFunctions 6 Elements, 83.3% Coverage"},
           "children":[]},{"id":
           "NameAnonymousFunctions.AnonymousFunctionNamer44675","name":
           "NameAnonymousFunctions.AnonymousFunctionNamer","data":{"$area":
@@ -2625,10 +2625,10 @@ var treeMapJson = {"id":"Clover database Thu Jan 12 2023 21:41:04 MST0","name":"
           "children":[]},{"id":
           "FieldCleanupPass.QualifiedNameSearchTraversal45364","name":
           "FieldCleanupPass.QualifiedNameSearchTraversal","data":{"$area":
-            27.0,"$color":11.111112,"path":
+            27.0,"$color":29.62963,"path":
             "com/google/javascript/jscomp/FieldCleanupPass.html#FieldCleanupPass.QualifiedNameSearchTraversal",
             "title":
-            "FieldCleanupPass.QualifiedNameSearchTraversal 27 Elements, 11.1% Coverage"},
+            "FieldCleanupPass.QualifiedNameSearchTraversal 27 Elements, 29.6% Coverage"},
           "children":[]},{"id":"AstParallelizer45674","name":
           "AstParallelizer","data":{"$area":68.0,"$color":0.0,"path":
             "com/google/javascript/jscomp/AstParallelizer.html#AstParallelizer",
@@ -2644,9 +2644,9 @@ var treeMapJson = {"id":"Clover database Thu Jan 12 2023 21:41:04 MST0","name":"
             "com/google/javascript/jscomp/CheckSuspiciousCode.html#CheckSuspiciousCode",
             "title":"CheckSuspiciousCode 42 Elements, 61.9% Coverage"},
           "children":[]},{"id":"VariableNameGenerator45799","name":
-          "VariableNameGenerator","data":{"$area":10.0,"$color":40.0,"path":
+          "VariableNameGenerator","data":{"$area":10.0,"$color":70.0,"path":
             "com/google/javascript/jscomp/VariableNameGenerator.html#VariableNameGenerator",
-            "title":"VariableNameGenerator 10 Elements, 40% Coverage"},
+            "title":"VariableNameGenerator 10 Elements, 70% Coverage"},
           "children":[]},{"id":"UnreachableCodeElimination45809","name":
           "UnreachableCodeElimination","data":{"$area":19.0,"$color":
             89.47369,"path":
@@ -2688,15 +2688,15 @@ var treeMapJson = {"id":"Clover database Thu Jan 12 2023 21:41:04 MST0","name":"
             "com/google/javascript/jscomp/ErrorManager.html#ErrorManager",
             "title":"ErrorManager 0 Elements,  -  Coverage"},"children":[]},{
           "id":"PrepareAst46702","name":"PrepareAst","data":{"$area":49.0,
-            "$color":44.897957,"path":
+            "$color":51.02041,"path":
             "com/google/javascript/jscomp/PrepareAst.html#PrepareAst",
-            "title":"PrepareAst 49 Elements, 44.9% Coverage"},"children":[]},
-        {"id":"PrepareAst.PrepareAnnotations46751","name":
+            "title":"PrepareAst 49 Elements, 51% Coverage"},"children":[]},{
+          "id":"PrepareAst.PrepareAnnotations46751","name":
           "PrepareAst.PrepareAnnotations","data":{"$area":49.0,"$color":
-            36.734695,"path":
+            26.530611,"path":
             "com/google/javascript/jscomp/PrepareAst.html#PrepareAst.PrepareAnnotations",
             "title":
-            "PrepareAst.PrepareAnnotations 49 Elements, 36.7% Coverage"},
+            "PrepareAst.PrepareAnnotations 49 Elements, 26.5% Coverage"},
           "children":[]},{"id":"JSSourceFile47131","name":"JSSourceFile",
           "data":{"$area":23.0,"$color":0.0,"path":
             "com/google/javascript/jscomp/JSSourceFile.html#JSSourceFile",
@@ -2770,10 +2770,10 @@ var treeMapJson = {"id":"Clover database Thu Jan 12 2023 21:41:04 MST0","name":"
             "title":"WarningLevel 48 Elements, 29.2% Coverage"},"children":[]},
         {"id":"ObjectPropertyStringPreprocess47845","name":
           "ObjectPropertyStringPreprocess","data":{"$area":13.0,"$color":
-            92.30769,"path":
+            46.153847,"path":
             "com/google/javascript/jscomp/ObjectPropertyStringPreprocess.html#ObjectPropertyStringPreprocess",
             "title":
-            "ObjectPropertyStringPreprocess 13 Elements, 92.3% Coverage"},
+            "ObjectPropertyStringPreprocess 13 Elements, 46.2% Coverage"},
           "children":[]},{"id":
           "ObjectPropertyStringPreprocess.Callback47858","name":
           "ObjectPropertyStringPreprocess.Callback","data":{"$area":40.0,
@@ -2841,9 +2841,9 @@ var treeMapJson = {"id":"Clover database Thu Jan 12 2023 21:41:04 MST0","name":"
             "title":
             "DefaultPassConfig.HotSwapPassFactory 4 Elements, 50% Coverage"},
           "children":[]},{"id":"NodeUtil49183","name":"NodeUtil","data":{
-            "$area":1916.0,"$color":2.453027,"path":
+            "$area":1916.0,"$color":2.5574112,"path":
             "com/google/javascript/jscomp/NodeUtil.html#NodeUtil","title":
-            "NodeUtil 1916 Elements, 2.5% Coverage"},"children":[]},{"id":
+            "NodeUtil 1916 Elements, 2.6% Coverage"},"children":[]},{"id":
           "NodeUtil.NumbericResultPredicate49997","name":
           "NodeUtil.NumbericResultPredicate","data":{"$area":2.0,"$color":
             0.0,"path":
@@ -2907,10 +2907,10 @@ var treeMapJson = {"id":"Clover database Thu Jan 12 2023 21:41:04 MST0","name":"
             "ShowByPathWarningsGuard.ShowType 0 Elements,  -  Coverage"},
           "children":[]},{"id":"ExtractPrototypeMemberDeclarations51152",
           "name":"ExtractPrototypeMemberDeclarations","data":{"$area":55.0,
-            "$color":10.909091,"path":
+            "$color":14.545454,"path":
             "com/google/javascript/jscomp/ExtractPrototypeMemberDeclarations.html#ExtractPrototypeMemberDeclarations",
             "title":
-            "ExtractPrototypeMemberDeclarations 55 Elements, 10.9% Coverage"},
+            "ExtractPrototypeMemberDeclarations 55 Elements, 14.5% Coverage"},
           "children":[]},{"id":
           "ExtractPrototypeMemberDeclarations.Pattern51152","name":
           "ExtractPrototypeMemberDeclarations.Pattern","data":{"$area":4.0,
@@ -2921,10 +2921,10 @@ var treeMapJson = {"id":"Clover database Thu Jan 12 2023 21:41:04 MST0","name":"
           "children":[]},{"id":
           "ExtractPrototypeMemberDeclarations.GatherExtractionInfo51211",
           "name":"ExtractPrototypeMemberDeclarations.GatherExtractionInfo",
-          "data":{"$area":22.0,"$color":0.0,"path":
+          "data":{"$area":22.0,"$color":27.272728,"path":
             "com/google/javascript/jscomp/ExtractPrototypeMemberDeclarations.html#ExtractPrototypeMemberDeclarations.GatherExtractionInfo",
             "title":
-            "ExtractPrototypeMemberDeclarations.GatherExtractionInfo 22 Elements, 0% Coverage"},
+            "ExtractPrototypeMemberDeclarations.GatherExtractionInfo 22 Elements, 27.3% Coverage"},
           "children":[]},{"id":
           "ExtractPrototypeMemberDeclarations.ExtractionInstance51233",
           "name":"ExtractPrototypeMemberDeclarations.ExtractionInstance",
@@ -3050,9 +3050,9 @@ var treeMapJson = {"id":"Clover database Thu Jan 12 2023 21:41:04 MST0","name":"
             "com/google/javascript/jscomp/MoveFunctionDeclarations.html#MoveFunctionDeclarations",
             "title":"MoveFunctionDeclarations 31 Elements, 9.7% Coverage"},
           "children":[]},{"id":"NodeTraversal53896","name":"NodeTraversal",
-          "data":{"$area":278.0,"$color":38.848923,"path":
+          "data":{"$area":278.0,"$color":42.805756,"path":
             "com/google/javascript/jscomp/NodeTraversal.html#NodeTraversal",
-            "title":"NodeTraversal 278 Elements, 38.8% Coverage"},"children":
+            "title":"NodeTraversal 278 Elements, 42.8% Coverage"},"children":
           []},{"id":"NodeTraversal.Callback53896","name":
           "NodeTraversal.Callback","data":{"$area":0.0,"$color":-100.0,
             "path":
@@ -3272,23 +3272,23 @@ var treeMapJson = {"id":"Clover database Thu Jan 12 2023 21:41:04 MST0","name":"
             "title":"PassConfig.State 10 Elements, 0% Coverage"},"children":[]},
         {"id":"SimpleDefinitionFinder55937","name":
           "SimpleDefinitionFinder","data":{"$area":179.0,"$color":
-            14.525139,"path":
+            3.9106145,"path":
             "com/google/javascript/jscomp/SimpleDefinitionFinder.html#SimpleDefinitionFinder",
-            "title":"SimpleDefinitionFinder 179 Elements, 14.5% Coverage"},
+            "title":"SimpleDefinitionFinder 179 Elements, 3.9% Coverage"},
           "children":[]},{"id":
           "SimpleDefinitionFinder.DefinitionGatheringCallback55995","name":
           "SimpleDefinitionFinder.DefinitionGatheringCallback","data":{
-            "$area":73.0,"$color":13.69863,"path":
+            "$area":73.0,"$color":2.739726,"path":
             "com/google/javascript/jscomp/SimpleDefinitionFinder.html#SimpleDefinitionFinder.DefinitionGatheringCallback",
             "title":
-            "SimpleDefinitionFinder.DefinitionGatheringCallback 73 Elements, 13.7% Coverage"},
+            "SimpleDefinitionFinder.DefinitionGatheringCallback 73 Elements, 2.7% Coverage"},
           "children":[]},{"id":
           "SimpleDefinitionFinder.UseSiteGatheringCallback56068","name":
           "SimpleDefinitionFinder.UseSiteGatheringCallback","data":{"$area":
-            10.0,"$color":50.0,"path":
+            10.0,"$color":0.0,"path":
             "com/google/javascript/jscomp/SimpleDefinitionFinder.html#SimpleDefinitionFinder.UseSiteGatheringCallback",
             "title":
-            "SimpleDefinitionFinder.UseSiteGatheringCallback 10 Elements, 50% Coverage"},
+            "SimpleDefinitionFinder.UseSiteGatheringCallback 10 Elements, 0% Coverage"},
           "children":[]},{"id":"MemoizedScopeCreator56207","name":
           "MemoizedScopeCreator","data":{"$area":30.0,"$color":0.0,"path":
             "com/google/javascript/jscomp/MemoizedScopeCreator.html#MemoizedScopeCreator",
@@ -3319,14 +3319,14 @@ var treeMapJson = {"id":"Clover database Thu Jan 12 2023 21:41:04 MST0","name":"
             "com/google/javascript/jscomp/CheckLevelLegacy.html#CheckLevelLegacy",
             "title":"CheckLevelLegacy 0 Elements,  -  Coverage"},"children":[]},
         {"id":"XtbMessageBundle56326","name":"XtbMessageBundle","data":{
-            "$area":33.0,"$color":72.72727,"path":
+            "$area":33.0,"$color":69.69697,"path":
             "com/google/javascript/jscomp/XtbMessageBundle.html#XtbMessageBundle",
-            "title":"XtbMessageBundle 33 Elements, 72.7% Coverage"},
+            "title":"XtbMessageBundle 33 Elements, 69.7% Coverage"},
           "children":[]},{"id":"XtbMessageBundle.Handler56359","name":
-          "XtbMessageBundle.Handler","data":{"$area":50.0,"$color":4.0,
+          "XtbMessageBundle.Handler","data":{"$area":50.0,"$color":0.0,
             "path":
             "com/google/javascript/jscomp/XtbMessageBundle.html#XtbMessageBundle.Handler",
-            "title":"XtbMessageBundle.Handler 50 Elements, 4% Coverage"},
+            "title":"XtbMessageBundle.Handler 50 Elements, 0% Coverage"},
           "children":[]},{"id":
           "XtbMessageBundle.SecureEntityResolver56409","name":
           "XtbMessageBundle.SecureEntityResolver","data":{"$area":2.0,
@@ -3426,10 +3426,10 @@ var treeMapJson = {"id":"Clover database Thu Jan 12 2023 21:41:04 MST0","name":"
             "title":
             "ClosureCodeRemoval.FindAssertionCalls 12 Elements, 0% Coverage"},
           "children":[]},{"id":"CheckMissingGetCssName57625","name":
-          "CheckMissingGetCssName","data":{"$area":53.0,"$color":20.754717,
+          "CheckMissingGetCssName","data":{"$area":53.0,"$color":16.981133,
             "path":
             "com/google/javascript/jscomp/CheckMissingGetCssName.html#CheckMissingGetCssName",
-            "title":"CheckMissingGetCssName 53 Elements, 20.8% Coverage"},
+            "title":"CheckMissingGetCssName 53 Elements, 17% Coverage"},
           "children":[]},{"id":"PureFunctionIdentifier57678","name":
           "PureFunctionIdentifier","data":{"$area":215.0,"$color":0.0,"path":
             
@@ -3650,10 +3650,10 @@ var treeMapJson = {"id":"Clover database Thu Jan 12 2023 21:41:04 MST0","name":"
             "MustBeReachingVariableDef.MustDefJoin 29 Elements, 0% Coverage"},
           "children":[]},{"id":"DevirtualizePrototypeMethods60383","name":
           "DevirtualizePrototypeMethods","data":{"$area":234.0,"$color":
-            4.2735043,"path":
+            3.846154,"path":
             "com/google/javascript/jscomp/DevirtualizePrototypeMethods.html#DevirtualizePrototypeMethods",
             "title":
-            "DevirtualizePrototypeMethods 234 Elements, 4.3% Coverage"},
+            "DevirtualizePrototypeMethods 234 Elements, 3.8% Coverage"},
           "children":[]},{"id":"DiagnosticGroups60971","name":
           "DiagnosticGroups","data":{"$area":22.0,"$color":59.090908,"path":
             "com/google/javascript/jscomp/DiagnosticGroups.html#DiagnosticGroups",
@@ -3671,10 +3671,10 @@ var treeMapJson = {"id":"Clover database Thu Jan 12 2023 21:41:04 MST0","name":"
             "com/google/javascript/jscomp/CheckMissingReturn.html#CheckMissingReturn",
             "title":"CheckMissingReturn 75 Elements, 0% Coverage"},
           "children":[]},{"id":"MakeDeclaredNamesUnique61130","name":
-          "MakeDeclaredNamesUnique","data":{"$area":104.0,"$color":0.0,
-            "path":
+          "MakeDeclaredNamesUnique","data":{"$area":104.0,"$color":
+            3.846154,"path":
             "com/google/javascript/jscomp/MakeDeclaredNamesUnique.html#MakeDeclaredNamesUnique",
-            "title":"MakeDeclaredNamesUnique 104 Elements, 0% Coverage"},
+            "title":"MakeDeclaredNamesUnique 104 Elements, 3.8% Coverage"},
           "children":[]},{"id":"MakeDeclaredNamesUnique.Renamer61234","name":
           "MakeDeclaredNamesUnique.Renamer","data":{"$area":0.0,"$color":
             -100.0,"path":
@@ -3746,16 +3746,15 @@ var treeMapJson = {"id":"Clover database Thu Jan 12 2023 21:41:04 MST0","name":"
             "title":
             "ShadowVariables.DoShadowVariables 82 Elements, 0% Coverage"},
           "children":[]},{"id":"DefinitionsRemover61610","name":
-          "DefinitionsRemover","data":{"$area":69.0,"$color":7.2463765,
-            "path":
+          "DefinitionsRemover","data":{"$area":69.0,"$color":0.0,"path":
             "com/google/javascript/jscomp/DefinitionsRemover.html#DefinitionsRemover",
-            "title":"DefinitionsRemover 69 Elements, 7.2% Coverage"},
+            "title":"DefinitionsRemover 69 Elements, 0% Coverage"},
           "children":[]},{"id":"DefinitionsRemover.Definition61679","name":
           "DefinitionsRemover.Definition","data":{"$area":10.0,"$color":
-            20.0,"path":
+            0.0,"path":
             "com/google/javascript/jscomp/DefinitionsRemover.html#DefinitionsRemover.Definition",
             "title":
-            "DefinitionsRemover.Definition 10 Elements, 20% Coverage"},
+            "DefinitionsRemover.Definition 10 Elements, 0% Coverage"},
           "children":[]},{"id":
           "DefinitionsRemover.IncompleteDefinition61689","name":
           "DefinitionsRemover.IncompleteDefinition","data":{"$area":9.0,
@@ -3814,10 +3813,10 @@ var treeMapJson = {"id":"Clover database Thu Jan 12 2023 21:41:04 MST0","name":"
           "children":[]},{"id":
           "DefinitionsRemover.ObjectLiteralPropertyDefinition61742","name":
           "DefinitionsRemover.ObjectLiteralPropertyDefinition","data":{
-            "$area":17.0,"$color":29.411766,"path":
+            "$area":17.0,"$color":0.0,"path":
             "com/google/javascript/jscomp/DefinitionsRemover.html#DefinitionsRemover.ObjectLiteralPropertyDefinition",
             "title":
-            "DefinitionsRemover.ObjectLiteralPropertyDefinition 17 Elements, 29.4% Coverage"},
+            "DefinitionsRemover.ObjectLiteralPropertyDefinition 17 Elements, 0% Coverage"},
           "children":[]},{"id":"DefinitionsRemover.VarDefinition61759",
           "name":"DefinitionsRemover.VarDefinition","data":{"$area":16.0,
             "$color":0.0,"path":
@@ -3882,10 +3881,10 @@ var treeMapJson = {"id":"Clover database Thu Jan 12 2023 21:41:04 MST0","name":"
             "title":
             "CodingConvention.AssertionFunctionSpec 13 Elements, 0% Coverage"},
           "children":[]},{"id":"SyntacticScopeCreator61935","name":
-          "SyntacticScopeCreator","data":{"$area":116.0,"$color":18.965517,
+          "SyntacticScopeCreator","data":{"$area":116.0,"$color":21.551723,
             "path":
             "com/google/javascript/jscomp/SyntacticScopeCreator.html#SyntacticScopeCreator",
-            "title":"SyntacticScopeCreator 116 Elements, 19% Coverage"},
+            "title":"SyntacticScopeCreator 116 Elements, 21.6% Coverage"},
           "children":[]},{"id":
           "SyntacticScopeCreator.RedeclarationHandler62021","name":
           "SyntacticScopeCreator.RedeclarationHandler","data":{"$area":0.0,
@@ -3901,9 +3900,9 @@ var treeMapJson = {"id":"Clover database Thu Jan 12 2023 21:41:04 MST0","name":"
             "title":
             "SyntacticScopeCreator.DefaultRedeclarationHandler 22 Elements, 0% Coverage"},
           "children":[]},{"id":"AstValidator62073","name":"AstValidator",
-          "data":{"$area":618.0,"$color":19.417475,"path":
+          "data":{"$area":618.0,"$color":23.786407,"path":
             "com/google/javascript/jscomp/AstValidator.html#AstValidator",
-            "title":"AstValidator 618 Elements, 19.4% Coverage"},"children":[]},
+            "title":"AstValidator 618 Elements, 23.8% Coverage"},"children":[]},
         {"id":"AstValidator.ViolationHandler62073","name":
           "AstValidator.ViolationHandler","data":{"$area":0.0,"$color":
             -100.0,"path":
@@ -3965,10 +3964,10 @@ var treeMapJson = {"id":"Clover database Thu Jan 12 2023 21:41:04 MST0","name":"
             "title":"IgnoreCajaProperties 5 Elements, 100% Coverage"},
           "children":[]},{"id":"IgnoreCajaProperties.Traversal63976","name":
           "IgnoreCajaProperties.Traversal","data":{"$area":20.0,"$color":
-            0.0,"path":
+            15.000001,"path":
             "com/google/javascript/jscomp/IgnoreCajaProperties.html#IgnoreCajaProperties.Traversal",
             "title":
-            "IgnoreCajaProperties.Traversal 20 Elements, 0% Coverage"},
+            "IgnoreCajaProperties.Traversal 20 Elements, 15% Coverage"},
           "children":[]},{"id":"PassFactory63996","name":"PassFactory",
           "data":{"$area":9.0,"$color":33.333336,"path":
             "com/google/javascript/jscomp/PassFactory.html#PassFactory",
@@ -4158,9 +4157,10 @@ var treeMapJson = {"id":"Clover database Thu Jan 12 2023 21:41:04 MST0","name":"
             "com/google/javascript/jscomp/PeepholeFoldConstants.html#PeepholeFoldConstants",
             "title":"PeepholeFoldConstants 1109 Elements, 0% Coverage"},
           "children":[]},{"id":"MinimizeExitPoints68342","name":
-          "MinimizeExitPoints","data":{"$area":160.0,"$color":24.375,"path":
+          "MinimizeExitPoints","data":{"$area":160.0,"$color":29.374998,
+            "path":
             "com/google/javascript/jscomp/MinimizeExitPoints.html#MinimizeExitPoints",
-            "title":"MinimizeExitPoints 160 Elements, 24.4% Coverage"},
+            "title":"MinimizeExitPoints 160 Elements, 29.4% Coverage"},
           "children":[]},{"id":"ScopeCreator68502","name":"ScopeCreator",
           "data":{"$area":0.0,"$color":-100.0,"path":
             "com/google/javascript/jscomp/ScopeCreator.html#ScopeCreator",
@@ -4183,8 +4183,8 @@ var treeMapJson = {"id":"Clover database Thu Jan 12 2023 21:41:04 MST0","name":"
             "Warning 8 Elements, 100% Coverage"},"children":[]}]},{"id":
       "com.google.javascript.jscomp.deps14332","name":
       "com.google.javascript.jscomp.deps","data":{"$area":633.0,"$color":
-        16.113745,"title":
-        "com.google.javascript.jscomp.deps 633 Elements, 16.1% Coverage"},
+        17.21959,"title":
+        "com.google.javascript.jscomp.deps 633 Elements, 17.2% Coverage"},
       "children":[{"id":"DepsGenerator14332","name":"DepsGenerator","data":{
             "$area":156.0,"$color":0.0,"path":
             "com/google/javascript/jscomp/deps/DepsGenerator.html#DepsGenerator",
@@ -4204,9 +4204,9 @@ var treeMapJson = {"id":"Clover database Thu Jan 12 2023 21:41:04 MST0","name":"
             "com/google/javascript/jscomp/deps/DependencyInfo.html#DependencyInfo",
             "title":"DependencyInfo 0 Elements,  -  Coverage"},"children":[]},
         {"id":"JsFileLineParser34089","name":"JsFileLineParser","data":{
-            "$area":108.0,"$color":47.22222,"path":
+            "$area":108.0,"$color":53.7037,"path":
             "com/google/javascript/jscomp/deps/JsFileLineParser.html#JsFileLineParser",
-            "title":"JsFileLineParser 108 Elements, 47.2% Coverage"},
+            "title":"JsFileLineParser 108 Elements, 53.7% Coverage"},
           "children":[]},{"id":"JsFileLineParser.ParseException34089","name":
           "JsFileLineParser.ParseException","data":{"$area":5.0,"$color":
             100.0,"path":
@@ -4255,15 +4255,15 @@ var treeMapJson = {"id":"Clover database Thu Jan 12 2023 21:41:04 MST0","name":"
             "title":"PathUtil 70 Elements, 0% Coverage"},"children":[]}]},{
       "id":"com.google.javascript.rhino8572","name":
       "com.google.javascript.rhino","data":{"$area":3699.0,"$color":
-        27.115437,"title":
-        "com.google.javascript.rhino 3699 Elements, 27.1% Coverage"},
+        27.223576,"title":
+        "com.google.javascript.rhino 3699 Elements, 27.2% Coverage"},
       "children":[{"id":"IR8572","name":"IR","data":{"$area":358.0,"$color":
             3.0726259,"path":"com/google/javascript/rhino/IR.html#IR",
             "title":"IR 358 Elements, 3.1% Coverage"},"children":[]},{"id":
           "ScriptRuntime9000","name":"ScriptRuntime","data":{"$area":296.0,
-            "$color":57.77027,"path":
+            "$color":54.72973,"path":
             "com/google/javascript/rhino/ScriptRuntime.html#ScriptRuntime",
-            "title":"ScriptRuntime 296 Elements, 57.8% Coverage"},"children":
+            "title":"ScriptRuntime 296 Elements, 54.7% Coverage"},"children":
           []},{"id":"SimpleErrorReporter16171","name":
           "SimpleErrorReporter","data":{"$area":35.0,"$color":94.28571,
             "path":
@@ -4274,14 +4274,14 @@ var treeMapJson = {"id":"Clover database Thu Jan 12 2023 21:41:04 MST0","name":"
             "com/google/javascript/rhino/JSDocInfoBuilder.html#JSDocInfoBuilder",
             "title":"JSDocInfoBuilder 464 Elements, 0% Coverage"},"children":
           []},{"id":"TokenStream31571","name":"TokenStream","data":{"$area":
-            369.0,"$color":77.77778,"path":
+            369.0,"$color":81.571815,"path":
             "com/google/javascript/rhino/TokenStream.html#TokenStream",
-            "title":"TokenStream 369 Elements, 77.8% Coverage"},"children":[]},
+            "title":"TokenStream 369 Elements, 81.6% Coverage"},"children":[]},
         {"id":"Node40955","name":"Node","data":{"$area":1107.0,"$color":
-            23.125565,"path":"com/google/javascript/rhino/Node.html#Node",
-            "title":"Node 1107 Elements, 23.1% Coverage"},"children":[]},{
-          "id":"Node.NumberNode40999","name":"Node.NumberNode","data":{
-            "$area":22.0,"$color":0.0,"path":
+            23.03523,"path":"com/google/javascript/rhino/Node.html#Node",
+            "title":"Node 1107 Elements, 23% Coverage"},"children":[]},{"id":
+          "Node.NumberNode40999","name":"Node.NumberNode","data":{"$area":
+            22.0,"$color":0.0,"path":
             "com/google/javascript/rhino/Node.html#Node.NumberNode","title":
             "Node.NumberNode 22 Elements, 0% Coverage"},"children":[]},{"id":
           "Node.StringNode41021","name":"Node.StringNode","data":{"$area":
@@ -4732,8 +4732,8 @@ var treeMapJson = {"id":"Clover database Thu Jan 12 2023 21:41:04 MST0","name":"
             "title":"InstanceObjectType 61 Elements, 0% Coverage"},
           "children":[]}]},{"id":"com.google.javascript.jscomp.regex7269",
       "name":"com.google.javascript.jscomp.regex","data":{"$area":1688.0,
-        "$color":19.075829,"title":
-        "com.google.javascript.jscomp.regex 1688 Elements, 19.1% Coverage"},
+        "$color":18.957346,"title":
+        "com.google.javascript.jscomp.regex 1688 Elements, 19% Coverage"},
       "children":[{"id":"RegExpTree7269","name":"RegExpTree","data":{"$area":
             87.0,"$color":0.0,"path":
             "com/google/javascript/jscomp/regex/RegExpTree.html#RegExpTree",
@@ -4812,10 +4812,10 @@ var treeMapJson = {"id":"Clover database Thu Jan 12 2023 21:41:04 MST0","name":"
             "title":
             "RegExpTree.Concatenation.Simplifier 61 Elements, 0% Coverage"},
           "children":[]},{"id":"CharRanges19790","name":"CharRanges","data":{
-            "$area":327.0,"$color":96.636086,"path":
+            "$area":327.0,"$color":96.02447,"path":
             "com/google/javascript/jscomp/regex/CharRanges.html#CharRanges",
-            "title":"CharRanges 327 Elements, 96.6% Coverage"},"children":[]},
-        {"id":"CaseCanonicalize30301","name":"CaseCanonicalize","data":{
+            "title":"CharRanges 327 Elements, 96% Coverage"},"children":[]},{
+          "id":"CaseCanonicalize30301","name":"CaseCanonicalize","data":{
             "$area":55.0,"$color":0.0,"path":
             "com/google/javascript/jscomp/regex/CaseCanonicalize.html#CaseCanonicalize",
             "title":"CaseCanonicalize 55 Elements, 0% Coverage"},"children":[]},
@@ -4826,8 +4826,8 @@ var treeMapJson = {"id":"Clover database Thu Jan 12 2023 21:41:04 MST0","name":"
             "title":"CaseCanonicalize.DeltaSet 3 Elements, 0% Coverage"},
           "children":[]}]},{"id":"com.google.javascript.jscomp.graph7052",
       "name":"com.google.javascript.jscomp.graph","data":{"$area":781.0,
-        "$color":20.742638,"title":
-        "com.google.javascript.jscomp.graph 781 Elements, 20.7% Coverage"},
+        "$color":21.254803,"title":
+        "com.google.javascript.jscomp.graph 781 Elements, 21.3% Coverage"},
       "children":[{"id":"LinkedUndirectedGraph7052","name":
           "LinkedUndirectedGraph","data":{"$area":146.0,"$color":3.4246576,
             "path":
@@ -4979,10 +4979,10 @@ var treeMapJson = {"id":"Clover database Thu Jan 12 2023 21:41:04 MST0","name":"
           "children":[]},{"id":
           "LinkedDirectedGraph.LinkedDirectedGraphEdge34013","name":
           "LinkedDirectedGraph.LinkedDirectedGraphEdge","data":{"$area":
-            34.0,"$color":35.294117,"path":
+            34.0,"$color":47.058823,"path":
             "com/google/javascript/jscomp/graph/LinkedDirectedGraph.html#LinkedDirectedGraph.LinkedDirectedGraphEdge",
             "title":
-            "LinkedDirectedGraph.LinkedDirectedGraphEdge 34 Elements, 35.3% Coverage"},
+            "LinkedDirectedGraph.LinkedDirectedGraphEdge 34 Elements, 47.1% Coverage"},
           "children":[]},{"id":
           "LinkedDirectedGraph.AnnotatedLinkedDirectedGraphEdge34047","name":
           "LinkedDirectedGraph.AnnotatedLinkedDirectedGraphEdge","data":{
@@ -5136,8 +5136,8 @@ var treeMapJson = {"id":"Clover database Thu Jan 12 2023 21:41:04 MST0","name":"
             "title":"ReverseAbstractInterpreter 0 Elements,  -  Coverage"},
           "children":[]}]},{"id":"com.google.debugging.sourcemap5451","name":
       "com.google.debugging.sourcemap","data":{"$area":1928.0,"$color":
-        13.485477,"title":
-        "com.google.debugging.sourcemap 1928 Elements, 13.5% Coverage"},
+        12.551868,"title":
+        "com.google.debugging.sourcemap 1928 Elements, 12.6% Coverage"},
       "children":[{"id":"SourceMappingReversable5451","name":
           "SourceMappingReversable","data":{"$area":0.0,"$color":-100.0,
             "path":
@@ -5269,9 +5269,9 @@ var treeMapJson = {"id":"Clover database Thu Jan 12 2023 21:41:04 MST0","name":"
             "com/google/debugging/sourcemap/Base64VLQ.html#Base64VLQ.CharIterator",
             "title":"Base64VLQ.CharIterator 0 Elements,  -  Coverage"},
           "children":[]},{"id":"Util34202","name":"Util","data":{"$area":
-            77.0,"$color":88.31169,"path":
+            77.0,"$color":77.92207,"path":
             "com/google/debugging/sourcemap/Util.html#Util","title":
-            "Util 77 Elements, 88.3% Coverage"},"children":[]},{"id":
+            "Util 77 Elements, 77.9% Coverage"},"children":[]},{"id":
           "SourceMapParseException34279","name":"SourceMapParseException",
           "data":{"$area":2.0,"$color":100.0,"path":
             "com/google/debugging/sourcemap/SourceMapParseException.html#SourceMapParseException",
@@ -5291,9 +5291,10 @@ var treeMapJson = {"id":"Clover database Thu Jan 12 2023 21:41:04 MST0","name":"
             "title":
             "SourceMapGeneratorFactory 13 Elements, 84.6% Coverage"},
           "children":[]},{"id":"SourceMapLineDecoder44928","name":
-          "SourceMapLineDecoder","data":{"$area":60.0,"$color":95.0,"path":
+          "SourceMapLineDecoder","data":{"$area":60.0,"$color":86.666664,
+            "path":
             "com/google/debugging/sourcemap/SourceMapLineDecoder.html#SourceMapLineDecoder",
-            "title":"SourceMapLineDecoder 60 Elements, 95% Coverage"},
+            "title":"SourceMapLineDecoder 60 Elements, 86.7% Coverage"},
           "children":[]},{"id":"SourceMapLineDecoder.LineEntry44988","name":
           "SourceMapLineDecoder.LineEntry","data":{"$area":3.0,"$color":
             100.0,"path":
@@ -5425,10 +5426,10 @@ var treeMapJson = {"id":"Clover database Thu Jan 12 2023 21:41:04 MST0","name":"
             "SourceMapGeneratorV2.LineMapper 44 Elements, 0% Coverage"},
           "children":[]},{"id":"SourceMapGeneratorV2.LineMapEncoder60847",
           "name":"SourceMapGeneratorV2.LineMapEncoder","data":{"$area":
-            60.0,"$color":93.333336,"path":
+            60.0,"$color":85.0,"path":
             "com/google/debugging/sourcemap/SourceMapGeneratorV2.html#SourceMapGeneratorV2.LineMapEncoder",
             "title":
-            "SourceMapGeneratorV2.LineMapEncoder 60 Elements, 93.3% Coverage"},
+            "SourceMapGeneratorV2.LineMapEncoder 60 Elements, 85% Coverage"},
           "children":[]},{"id":
           "SourceMapGeneratorV2.UsedMappingCheck60907","name":
           "SourceMapGeneratorV2.UsedMappingCheck","data":{"$area":5.0,

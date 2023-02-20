@@ -61,12 +61,15 @@ public class DOMModelTest extends XMLModelTestCase {
         return new TestDOMFactory();
     }
     
-    public void testGetNode() {
-        assertXPathNodeType(context, "/", Document.class);
-        assertXPathNodeType(context, "/vendor/location", Element.class);
-        assertXPathNodeType(context, "//location/@name", Attr.class);
-        assertXPathNodeType(context, "//vendor", Element.class);
-    }
+
+public void testGetNode137() { 
+     assertXPathNodeType(context, "/", Document.class); 
+     assertXPathNodeType(context, "/vendor/location", Element.class); 
+     assertXPathNodeType(context, "//location/@name", Attr.class); 
+     assertXPathNodeType(context, "//vendor", Element.class); 
+ } 
+
+    
     
     protected String getXMLSignature(
         Object node,

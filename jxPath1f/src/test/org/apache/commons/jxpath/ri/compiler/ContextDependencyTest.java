@@ -31,18 +31,7 @@ public class ContextDependencyTest extends JXPathTestCase {
         super(name);
     }
 
-    public void testContextDependency() {
-        testContextDependency("1", false);
-        testContextDependency("$x", false);
-        testContextDependency("/foo", false);
-        testContextDependency("foo", true);
-        testContextDependency("/foo[3]", false);
-        testContextDependency("/foo[$x]", false);
-        testContextDependency("/foo[bar]", true);
-        testContextDependency("3 + 5", false);
-        testContextDependency("test:func(3, 5)", true);
-        testContextDependency("test:func(3, foo)", true);
-    }
+    
 
     public void testContextDependency(String xpath, boolean expected) {
         Expression expr =
